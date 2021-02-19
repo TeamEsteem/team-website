@@ -1,26 +1,7 @@
 import Landing from "./pages/landing";
 import "./App.scss";
-import { createMuiTheme, ThemeProvider, Typography } from "@material-ui/core";
-import Omnes from "./assets/fonts/Omnes Semibold Regular.ttf";
-
-const primaryFont = createMuiTheme({
-  typography: {
-    fontFamily: ["Inter", "sans-serif"].join(","),
-  },
-});
-
-const secondaryFont = createMuiTheme({
-  typography: {
-    fontFamily: "Omnes Semibold, sans-serif",
-  },
-  overrides: {
-    MuiCssBaseline: {
-      "@global": {
-        "@font-face": [Omnes],
-      },
-    },
-  },
-});
+import { ThemeProvider, Typography } from "@material-ui/core";
+import { primaryFont, secondaryFont } from "./components/fonts";
 
 function App() {
   return (
@@ -31,8 +12,8 @@ function App() {
         display: "flex",
       }}
     >
-      <ThemeProvider theme={secondaryFont}>
-        <Typography style={{ fontSize: "20px", fontWeight: "500" }}>
+      <ThemeProvider theme={primaryFont}>
+        <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
           <Landing />
         </Typography>
       </ThemeProvider>
