@@ -1,4 +1,5 @@
 import Landing from "./pages/landing";
+import Header from "./pages/nav-bar";
 import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
@@ -10,6 +11,11 @@ function App() {
         position: "relative",
       }}
     >
+      <div className= "Nav-bar">
+      <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+        <Header />
+        </Typography>
+      </div>
       <div className="App-header">
         <ThemeProvider theme={secondaryFont}>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>

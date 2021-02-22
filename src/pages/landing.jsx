@@ -18,6 +18,7 @@ import {
   Button,
 } from "@material-ui/core";
 import { primaryFont } from "../components/fonts";
+
 class Landing extends Component {
   render() {
     return (
