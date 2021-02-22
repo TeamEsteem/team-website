@@ -17,7 +17,13 @@ import {
     Button,
   } from "@material-ui/core";
   import { primaryFont } from "../components/fonts";
-  import "../index.css";
+  import styled from 'styled-components';
+
+  const navButton = styled.button`
+  padding: 100px;
+  font-size: 40px;
+  color: red;
+  `;
 
 class Header extends Component{ 
     render() {
@@ -33,8 +39,8 @@ class Header extends Component{
           >
 
               <ThemeProvider theme={primaryFont} >
-                <Button color="inherit" style ={{paddingRight:50, fontSize:20}} >Home</Button>
-                <Button color="inherit" style ={{paddingRight:50, fontSize:20}}>About Us</Button>
+                <Button color="inherit" style ={{paddingRight:50, fontSize:20}}>HOME</Button>
+                <Button color="inherit" style ={{paddingRight:50, fontSize:20}}>ABOUT US</Button>
                 <Button color="inherit" style ={{paddingRight:50, fontSize:20}}>Sponsors</Button>
                 <Button color="inherit" style ={{paddingRight:50, fontSize:20}}>More</Button>
               </ThemeProvider>
