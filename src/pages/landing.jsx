@@ -17,13 +17,20 @@ import {
   ThemeProvider,
   Button,
 } from "@material-ui/core";
-import { primaryFont } from "../components/fonts";
+import { primaryFont, secondaryFont } from "../components/fonts";
+import Header from "../pages/nav-bar";
 
 class Landing extends Component {
   render() {
     return (
       <div style={{ margin: "auto" }}>
-        {/* <Box m={2}></Box> */}
+        <Box m={-15}></Box>
+        <div>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Header />
+          </Typography>
+        </div>
+        <Box m={10}></Box>
         <Grid
           container
           alignContent="center"
@@ -46,12 +53,14 @@ class Landing extends Component {
             ></img>
           </Grid>
           <Grid item>
-            <Typography
-              variant="h1"
-              style={{ textAlign: "center", color: esteemGreen }}
-            >
-              The Landing<br></br> <Box m={-2}></Box>page.
-            </Typography>
+            <ThemeProvider theme={secondaryFont}>
+              <Typography
+                variant="h1"
+                style={{ textAlign: "center", color: esteemGreen }}
+              >
+                The Landing<br></br> <Box m={-2}></Box>page.
+              </Typography>
+            </ThemeProvider>
           </Grid>
           <Box m={2}></Box>
           <Grid item>
