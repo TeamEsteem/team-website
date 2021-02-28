@@ -24,13 +24,13 @@ class Landing extends Component {
   render() {
     return (
       <div style={{ margin: "auto" }}>
-        <Box m={-15}></Box>
+        {/* <Box m={-15}></Box> */}
         <div>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />
           </Typography>
         </div>
-        <Box m={10}></Box>
+        {/* <Box m={10}></Box> */}
         <Grid
           container
           alignContent="center"
