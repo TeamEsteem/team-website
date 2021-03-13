@@ -2,8 +2,21 @@ import { Typography, Box } from "@material-ui/core";
 import React, { Component } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { TimelineElement } from "../components/singleTimeline";
+import PopUp from "../components/singlePopUp"; 
+
 
 class Timeline extends Component {
+  state = {
+    seen: false
+    };
+
+   togglePop = () => {
+    this.setState({
+     seen: !this.state.seen
+    });
+   };
+  
+  
   render() {
     return (
       <>
@@ -26,6 +39,7 @@ class Timeline extends Component {
             subtitle="Miami, FL"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
             date="2011-present"
+            iconOnClick={() => alert(1)}
           ></TimelineElement>
           <TimelineElement
             title="Creative Director"
