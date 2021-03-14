@@ -2,24 +2,22 @@ import { Typography, Box } from "@material-ui/core";
 import React, { Component } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { TimelineElement } from "../components/singleTimeline";
-import PopUp from "../components/singlePopUp"; 
-
+import PopUp from "../components/singlePopUp";
 
 class Timeline extends Component {
   state = {
-    seen: false
-    };
+    seen: false,
+  };
 
-   togglePop = () => {
+  togglePop = () => {
     this.setState({
-     seen: !this.state.seen
+      seen: !this.state.seen,
     });
-   };
-  
-  
+  };
+
   render() {
     return (
-      <>
+      <div id="timeline">
         <Box
           style={{
             textAlign: "center",
@@ -91,7 +89,7 @@ class Timeline extends Component {
             tag="secondary"
           ></TimelineElement>
         </VerticalTimeline>
-      </>
+      </div>
     );
   }
 }
