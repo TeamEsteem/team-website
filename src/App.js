@@ -1,6 +1,7 @@
 import Landing from "./pages/landing";
 import Header from "./pages/nav-bar";
 import Timeline from "./pages/timeline";
+
 import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";

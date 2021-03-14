@@ -19,18 +19,16 @@ import {
 } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import Header from "../pages/nav-bar";
-
+import NavDrawer from "../components/drawer";
 class Landing extends Component {
   render() {
     return (
       <div style={{ margin: "auto" }}>
-        {/* <Box m={-15}></Box> */}
         <div>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />
           </Typography>
         </div>
-        {/* <Box m={10}></Box> */}
         <Grid
           container
           alignContent="center"

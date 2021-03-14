@@ -22,6 +22,7 @@ import { primaryFont } from "../components/fonts";
 import styled from "styled-components";
 import "../index.css";
 import "../App.scss";
+import NavDrawer from "../components/drawer";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 
 const navButton = styled.button`
@@ -96,12 +97,13 @@ class Header extends Component {
                 }}
               >
                 <Typography style={{ fontWeight: "lighter" }}>
-                  More..
+                  <NavDrawer />
                 </Typography>
               </IconButton>
             </ThemeProvider>
           </Toolbar>
         </AppBar>
+
         {/* <Box m={10} /> */}
       </Box>
     );
