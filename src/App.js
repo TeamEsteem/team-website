@@ -1,27 +1,38 @@
 import Landing from "./pages/landing";
 import Header from "./pages/nav-bar";
 import Timeline from "./pages/timeline";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
+import Sponsors from "./pages/sponsors/sponsors";
+
 function App() {
   return (
     <div className="Body">
-      <div className="App-header">
-        <ThemeProvider theme={secondaryFont}>
-          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
-            <Landing />
-          </Typography>
-        </ThemeProvider>
-      </div>
-      <div className="Timeline">
-        <ThemeProvider theme={secondaryFont}>
-          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
-            <Timeline />
-          </Typography>
-        </ThemeProvider>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <div className="App-header">
+              <ThemeProvider theme={secondaryFont}>
+                <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+                  <Landing />
+                </Typography>
+              </ThemeProvider>
+            </div>
+            <div className="Timeline">
+              <ThemeProvider theme={secondaryFont}>
+                <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+                  <Timeline />
+                </Typography>
+              </ThemeProvider>
+            </div>
+          </Route>
+          <Route exact path="/sponsors">
+            <Sponsors />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

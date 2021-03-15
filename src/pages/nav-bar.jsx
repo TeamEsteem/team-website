@@ -24,6 +24,7 @@ import "../index.css";
 import "../App.scss";
 import NavDrawer from "../components/drawer";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
+import { Link } from "react-router-dom";
 
 const navButton = styled.button`
   padding: 100px;
@@ -80,15 +81,18 @@ class Header extends Component {
               >
                 <Typography>About Us</Typography>
               </IconButton>
-              <IconButton
-                style={{
-                  fontWeight: "lighter",
-                  justifyContent: "center",
-                  color: white,
-                }}
-              >
-                <Typography>Sponsors</Typography>
-              </IconButton>
+              <Link to="/sponsors">
+                <IconButton
+                  style={{
+                    fontWeight: "lighter",
+                    justifyContent: "center",
+                    color: white,
+                  }}
+                >
+                  <Typography>Sponsors</Typography>
+                </IconButton>
+              </Link>
+
               <IconButton
                 style={{
                   fontWeight: "lighter",
