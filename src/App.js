@@ -1,6 +1,7 @@
 import Landing from "./pages/landing";
 import Header from "./pages/nav-bar";
 import Timeline from "./pages/timeline";
+import {Section1, Section2} from "./pages/landing-sections";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
@@ -24,6 +25,20 @@ function App() {
               <ThemeProvider theme={secondaryFont}>
                 <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
                   <Timeline />
+                </Typography>
+              </ThemeProvider>
+            </div>
+            <div className="Landing-Section1">
+              <ThemeProvider theme={secondaryFont}>
+                <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+                  <Section1 />
+                </Typography>
+              </ThemeProvider>
+            </div>
+            <div className="Landing-Section2">
+              <ThemeProvider theme={secondaryFont}>
+                <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+                  <Section2 />
                 </Typography>
               </ThemeProvider>
             </div>
