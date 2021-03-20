@@ -8,20 +8,12 @@ import {
   darkGrey,
   black,
 } from "../components/colors";
-import EsteemLogo from "../assets/images/logos.svg";
-import SDMELogo from "../assets/images/SDMELogo.svg";
 import {
   Grid,
   Typography,
-  Box,
   ThemeProvider,
-  Button,
 } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "../components/fonts";
-import Header from "../pages/nav-bar";
-import NavDrawer from "../components/drawer";
-import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
-import { Link } from "react-scroll";
 import "../App.scss";
 
 function FormRow() {
