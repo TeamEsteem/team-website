@@ -35,60 +35,51 @@ class Timeline extends Component {
         <VerticalTimeline>
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
-            iconOnClick={() => alert(1)}
           ></TimelineElement>
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
             tag="secondary"
           ></TimelineElement>
 
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
           ></TimelineElement>
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
             tag="secondary"
           ></TimelineElement>
 
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
           ></TimelineElement>
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
             tag="secondary"
           ></TimelineElement>
 
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
           ></TimelineElement>
           <TimelineElement
             title="Creative Director"
-            subtitle="Miami, FL"
+            subtitle="2011-present"
             desc="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-            date="2011-present"
             tag="secondary"
-          ></TimelineElement>
+          ></TimelineElement>   
         </VerticalTimeline>
         <div class="timeline-bottom">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

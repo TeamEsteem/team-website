@@ -7,6 +7,7 @@ import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
+import Team from "./pages/team";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route exact path="/sponsors">
             <Sponsors />
+          </Route>
+           <Route exact path="/team">
+            <Team />
           </Route>
         </Switch>
       </Router>

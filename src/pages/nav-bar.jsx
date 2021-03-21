@@ -63,6 +63,7 @@ class Header extends Component {
             }}
           >
             <ThemeProvider theme={primaryFont}>
+            <Link to="/">
               <IconButton
                 style={{
                   fontWeight: "lighter",
@@ -72,15 +73,19 @@ class Header extends Component {
               >
                 <HomeRoundedIcon />
               </IconButton>
-              <IconButton
-                style={{
-                  fontWeight: "lighter",
-                  justifyContent: "center",
-                  color: white,
-                }}
-              >
-                <Typography>About Us</Typography>
-              </IconButton>
+              </Link>
+              <Link to="/team">
+                <IconButton
+                  style={{
+                    fontWeight: "lighter",
+                    justifyContent: "center",
+                    color: white,
+                  }}
+                >
+                
+                  <Typography>About Us</Typography>
+                </IconButton>
+              </Link>
               <Link to="/sponsors">
                 <IconButton
                   style={{
@@ -100,6 +105,8 @@ class Header extends Component {
                   color: white,
                 }}
               >
+
+
                 <Typography style={{ fontWeight: "lighter" }}>
                   <NavDrawer />
                 </Typography>
