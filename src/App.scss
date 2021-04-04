@@ -8,7 +8,6 @@
 .Body {
   // position: relative;
   height: 100vh;
-  overflow: auto;
   flex-grow: 1;
 }
 
@@ -122,7 +121,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
+
   line-height: 0;
 }
 
@@ -157,7 +156,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
   line-height: 0;
 }
 
@@ -179,4 +177,12 @@
       width: calc(118% + 1.3px);
       height: 83px;
   }
+}
+
+.navbar{
+  box-shadow: "none";
+  padding:30;
+  position: "absolute";
+  margin: "auto";
+  background-color:  "transparent";
 }

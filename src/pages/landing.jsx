@@ -23,10 +23,13 @@ import NavDrawer from "../components/drawer";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 import { Link } from "react-scroll";
 
+
+
 class Landing extends Component {
+
   render() {
     return (
-      <div style={{ margin: "auto" }}>
+      <div style={{ margin: "auto" }}  onScroll={this.handleScroll}>
         <div>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />

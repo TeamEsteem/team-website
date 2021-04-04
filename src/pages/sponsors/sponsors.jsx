@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 import "../../index.css"
+import Header from "../nav-bar";
+import {
+  Grid,
+  Typography,
+  Box,
+  ThemeProvider,
+  Button,
+} from "@material-ui/core";
 
 class Sponsors extends Component {
   render() {
     return <div>
+        <div>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Header />
+          </Typography>
+        </div>
       <br /><br /><br /><br /><br /><br />
       <div className="sponsors">
 
