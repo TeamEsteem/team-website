@@ -4,6 +4,15 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import { TimelineElement } from "../components/singleTimeline";
 import PopUp from "../components/singlePopUp";
 import "../App.scss";
+import {
+  white,
+  grey,
+  lightGreen,
+  esteemGreen,
+  darkGreen,
+  darkGrey,
+  black,
+} from "../components/colors";
 
 class Timeline extends Component {
   state = {
@@ -22,13 +31,13 @@ class Timeline extends Component {
         <Box
           style={{
             textAlign: "center",
-            color: "#fafafa",
+            color: black,
             marginBottom: "20px",
           }}
         >
-          <Typography variant="h1">Timeline</Typography>
+          <Typography variant="h1" style={{ color:black }}>Timeline</Typography>
           <Box m={-1}></Box>
-          <Typography variant="subtitle1" style={{ marginBottom: "10px" }}>
+          <Typography variant="subtitle1" style={{ color:darkGrey, marginBottom: "10px" }}>
             Some funky subtitle
           </Typography>
         </Box>

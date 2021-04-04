@@ -28,7 +28,7 @@
 }
 
 .Timeline {
-  background-color: black;
+  background-color: #2e6659;
 }
 
 .Nav-button {
@@ -36,14 +36,20 @@
 }
 
 .Landing-Section1 {
-  background-color: #202020;
+  background-color:  black;
   padding-top: 100px;
 }
 
 .Landing-Section2 {
+  background-color: #2e6659;
+  padding-top: 100px;
+}
+
+.Footer {
   background-color: black;
   padding-top: 100px;
 }
+
 
 
 
@@ -52,7 +58,6 @@
   padding:50px;
   border-radius: 1em;
   box-shadow: 0 3px 0 #0c0c0c;
-  
 }
 
 .mission-block{
@@ -134,7 +139,7 @@
 }
 
 .timeline-bottom .shape-fill {
-  fill: #202020;
+  fill: black;
 }
 
 /** For mobile devices **/
@@ -168,9 +173,29 @@
 }
 
 .sections-bottom .shape-fill {
-  fill: black;
+  fill: #2e6659;
 }
 
+.custom-shape-divider-top-1617567759 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1617567759 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1617567759 .shape-fill {
+  fill: #2e6659;
+}
 /** For mobile devices **/
 @media (max-width: 767px) {
   .sections-bottom svg {

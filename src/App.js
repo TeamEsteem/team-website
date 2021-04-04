@@ -2,6 +2,7 @@ import Landing from "./pages/landing";
 import Header from "./pages/nav-bar";
 import Timeline from "./pages/timeline";
 import {Section1, Section2} from "./pages/landing-sections";
+import Footer from "./pages/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
@@ -40,6 +41,20 @@ function App() {
               <ThemeProvider theme={secondaryFont}>
                 <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
                   <Section2 />
+                </Typography>
+              </ThemeProvider>
+            </div>
+
+{/* 
+<div class="custom-shape-divider-top-1617567759" style={{ backgroundColor: "black"}}>
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+    </svg>
+</div> */}
+            <div className="Footer">
+              <ThemeProvider theme={secondaryFont}>
+                <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+                  <Footer />
                 </Typography>
               </ThemeProvider>
             </div>

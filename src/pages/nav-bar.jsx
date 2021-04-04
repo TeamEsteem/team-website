@@ -37,21 +37,13 @@ const navButton = styled.button`
 const useStyles = makeStyles(theme => ({
   navbar: {
     boxShadow: "none",
-    padding:30,
+    padding:40,
     position: "fixed",
     margin: "auto",
     backgroundColor:  "transparent",
   },
 
   
-  scrolledBar: {  
-    boxShadow: "none",
-    padding:30,
-    position: "fixed",
-    margin: "auto",
-    backgroundColor:  "red",
-  } 
-
 }));
 
 const Nav = React.forwardRef((props, ref) =>{
@@ -61,18 +53,33 @@ const Nav = React.forwardRef((props, ref) =>{
   return(
       <AppBar
       ref = {ref}
-      className={classes.scrolledBar}
+      className={classes.navbar}
       >
       <Toolbar
         style={{
           alignContent: "center",
-          marginLeft: "auto",
+  
           marginRight: "auto",
           position: "absolute",
           top: "50%",
           transform: "translateY(-50%)",
         }}
       >
+
+        
+<IconButton
+            style={{
+              fontWeight: "lighter",
+              justifyContent: "center",
+              color: white,
+            }}
+          >
+
+
+            <Typography style={{ fontWeight: "lighter" }}>
+              <NavDrawer />
+            </Typography>
+          </IconButton>
         <ThemeProvider theme={primaryFont}>
         <Link to="/">
           <IconButton
@@ -91,6 +98,7 @@ const Nav = React.forwardRef((props, ref) =>{
                 fontWeight: "lighter",
                 justifyContent: "center",
                 color: white,
+                size: "medium",
               }}
             >
             
@@ -109,19 +117,6 @@ const Nav = React.forwardRef((props, ref) =>{
             </IconButton>
           </Link>
 
-          <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: white,
-            }}
-          >
-
-
-            <Typography style={{ fontWeight: "lighter" }}>
-              <NavDrawer />
-            </Typography>
-          </IconButton>
         </ThemeProvider>
       </Toolbar>
     </AppBar>
@@ -148,7 +143,6 @@ class Header extends Component {
   }
 
   handleScroll = () => {
-    console.log(this.nav.current.className);
     if (window.scrollY > 400) {
       this.nav.current.style.backgroundColor = "black";
       this.nav.current.style.transition = "background-color 0.5s ease";

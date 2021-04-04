@@ -46,11 +46,11 @@ export function TimelineElement(props) {
         className="vertical-timeline-element--work"
         date={<Typography style={{ color: grey }}>{props.date}</Typography>}
         contentArrowStyle={{ borderRight: "7px solid" + esteemGreen }}
-        iconStyle={{ background: white, color: lightGreen }}
+        iconStyle={{ background: darkGrey, color: lightGreen }}
         iconOnClick={togglePopup}
         contentStyle={{
-          background: white,
-          color: darkGreen,
+          background: darkGrey,
+          color: "#34af92",
           paddingTop: 20,
         }}
         // icon={<WorkIcon />}
@@ -88,10 +88,10 @@ export function TimelineElement(props) {
         className="vertical-timeline-element--work"
         contentStyle={{
           background: esteemGreen,
-          color: white,
+          color: black,
           paddingTop: 20,
         }}
-        contentArrowStyle={{ borderRight: "7px solid" + white }}
+        contentArrowStyle={{ borderRight: "7px solid" + black }}
         date={<Typography style={{ color: grey }}>{props.date}</Typography>}
         iconStyle={{ background: darkGreen, color: esteemGreen }}
         iconOnClick={togglePopup}
