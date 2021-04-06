@@ -107,7 +107,7 @@ class Header extends Component {
   }
   handleScroll = () => {
     if (window.scrollY > 400) {
-      this.props.nav.current.style.backgroundColor = black;
+      this.nav.current.style.backgroundColor = black;
       this.nav.current.style.transition = "background-color 0.5s ease";
     } else {
       this.nav.current.style.backgroundColor = "transparent";

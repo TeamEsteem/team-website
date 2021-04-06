@@ -23,6 +23,7 @@ import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
 import EsteemLogo from "../assets/images/logos.svg";
 import SDMELogo from "../assets/images/SDMELogo.svg";
+import Blank from "../assets/images/blank.png";
 
 function FormRow2() {
     return (
@@ -109,15 +110,15 @@ function FormRow1() {
       <React.Fragment>
           <Grid
            container
-           direction="column"
-           justify="space-evenly"
+           direction="row"
+           justify="space-between"
            alignItems="center"
           >
             <Grid item>
                 <img
                 src={EsteemLogo}
                 alt="logos"
-                width="300em"
+                width="350em"
                 style={{
                     alignContent: "center",
                     display: "block",
@@ -126,14 +127,29 @@ function FormRow1() {
                     position: "relative",
                 }}
                 ></img>
-            <br></br>
+
             </Grid>
-            <br></br><br></br>
+            <Grid item>
+                <img
+                src={Blank}
+                alt="logos"
+                width="550em"
+                height="50em"
+                style={{
+                    alignContent: "center",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    position: "relative",
+                }}
+                ></img>
+
+            </Grid>
             <Grid item>
                 <img
                 src={SDMELogo}
                 alt="logos"
-                width="300em"
+                width="350em"
                 style={{
                     alignContent: "center",
                     display: "block",
@@ -142,9 +158,8 @@ function FormRow1() {
                     position: "relative",
                 }}
                 ></img>
-            <br></br>
             </Grid>
-            <br></br><br></br>
+
   
         </Grid>
       </React.Fragment>
@@ -158,15 +173,14 @@ class Footer extends Component{
             <div style={{ margin: "auto"}}  >
                 <Grid
                 container
-                direction="row"
-                justify="space-evenly"
-                alignItems="baseline"
+                direction="column"
+                justify="flex-start"
+                alignItems="center"
                 spacing={4}
                 >
                     <Grid >
                         <FormRow1 />
                     </Grid>
-                    <br></br><br></br>
                     <Grid >
                         <FormRow2 />
                     </Grid>
