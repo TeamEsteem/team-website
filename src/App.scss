@@ -36,7 +36,7 @@
 }
 
 .Landing-Section1 {
-  background-color:  black;
+  background-color: black;
   padding-top: 100px;
 }
 
@@ -50,76 +50,65 @@
   padding-top: 100px;
 }
 
-
-
-
-.wwd-block{
+.wwd-block {
   background-color: black;
-  padding:50px;
+  padding: 50px;
+  border-radius: 2em;
+  box-shadow: 0 3px 0 #0c0c0c;
+  border: 2px solid #2e6659;
+}
+
+.mission-block {
+  background-color: #202020;
+  padding: 50px;
   border-radius: 1em;
   box-shadow: 0 3px 0 #0c0c0c;
 }
 
-.mission-block{
+.team-block {
   background-color: #202020;
-  padding:50px;
-  border-radius: 1em;
-  box-shadow: 0 3px 0 #0c0c0c;
-  
-}
-
-.team-block{
-  background-color: #202020;
-  padding:50px;
+  padding: 50px;
   border-radius: 3em;
   box-shadow: 0 3px 0 #0c0c0c;
   margin: 30px;
   align-items: center;
   min-width: 200px;
-  
 }
 
-.team-block-1{
+.team-block-1 {
   background-color: #202020;
-  padding:30px;
+  padding: 30px;
   border-radius: 1em;
   box-shadow: 0 3px 0 #0c0c0c;
   margin: 30px;
 }
 
-.team-block-2{
+.team-block-2 {
   margin: 20px;
 }
 
-
-.team-block:hover{
+.team-block:hover {
   cursor: pointer;
   transition: 0.6;
   animation: sizeUp 0.6s forwards;
 }
 
-.team-block-1:hover{
+.team-block-1:hover {
   cursor: pointer;
   transition: 0.6;
   animation: sizeUp 0.6s forwards;
 }
-
-
 
 @keyframes sizeUp {
   0% {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
   100% {
-      opacity: 1;
-      transform: scale(1.1);
+    opacity: 1;
+    transform: scale(1.1);
   }
 }
-
-
-
-
 
 .timeline-bottom {
   position: relative;
@@ -145,16 +134,15 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
   .timeline-bottom svg {
-      width: calc(118% + 1.3px);
-      height: 83px;
+    width: calc(118% + 1.3px);
+    height: 83px;
   }
 }
 
-.team{
+.team {
   background-color: black;
   padding-top: 100px;
 }
-
 
 .sections-bottom {
   position: relative;
@@ -199,15 +187,15 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
   .sections-bottom svg {
-      width: calc(118% + 1.3px);
-      height: 83px;
+    width: calc(118% + 1.3px);
+    height: 83px;
   }
 }
 
-.navbar{
+.navbar {
   box-shadow: "none";
-  padding:30;
+  padding: 30;
   position: "absolute";
   margin: "auto";
-  background-color:  "transparent";
+  background-color: "transparent";
 }

@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { ThemeProvider } from "styled-components";
+
 import {
   white,
   grey,
@@ -16,15 +17,15 @@ import {
   black,
 } from "../components/colors";
 import { primaryFont, secondaryFont } from "./fonts";
-import "../index.css"
+import "../index.css";
 
-
-
-const Popup = props => {
+const Popup = (props) => {
   return (
     <div className="popup-box">
       <div className="box">
-        <span className="close-icon" onClick={props.handleClose}>x</span>
+        <span className="close-icon" onClick={props.handleClose}>
+          x
+        </span>
         {props.content}
       </div>
     </div>
@@ -32,15 +33,12 @@ const Popup = props => {
 };
 
 export function TimelineElement(props) {
-
   const [isOpen, setIsOpen] = useState(false);
- 
+
   const togglePopup = () => {
-   setIsOpen(!isOpen);
-  }
+    setIsOpen(!isOpen);
+  };
   if (props.tag === "secondary") {
-
-
     return (
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -52,18 +50,34 @@ export function TimelineElement(props) {
           background: darkGrey,
           color: "#34af92",
           paddingTop: 20,
+          borderRadius: "1em",
         }}
         // icon={<WorkIcon />}
       >
-         {isOpen && <Popup
-      content={<>
-        <b>Design your Popup</b>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button>Test button</button>
-      </>}
-      handleClose={togglePopup}
-    />}
-    
+        {isOpen && (
+          <Popup
+            content={
+              <>
+                <b>Design your Popup</b>
+                <ThemeProvider theme={primaryFont}>
+                  <Typography variant="body2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </Typography>
+                </ThemeProvider>
+                <button>Test button</button>
+              </>
+            }
+            handleClose={togglePopup}
+          />
+        )}
+
         <ThemeProvider theme={secondaryFont}>
           <Typography variant="h3" className="vertical-timeline-element-title">
             {props.title}
@@ -76,7 +90,7 @@ export function TimelineElement(props) {
           </Typography>
         </ThemeProvider>
         {/* <ThemeProvider theme={primaryFont}> */}
-        <Typography variant="body1" style={{ fontWeight: "lighter" }}>
+        <Typography variant="body1" style={{ fontWeight: "100", color: white }}>
           {props.desc}
         </Typography>
         {/* </ThemeProvider> */}
@@ -90,21 +104,37 @@ export function TimelineElement(props) {
           background: esteemGreen,
           color: black,
           paddingTop: 20,
+          borderRadius: "1em",
         }}
         contentArrowStyle={{ borderRight: "7px solid" + black }}
         date={<Typography style={{ color: grey }}>{props.date}</Typography>}
         iconStyle={{ background: darkGreen, color: esteemGreen }}
         iconOnClick={togglePopup}
       >
-                 {isOpen && <Popup
-      content={<>
-        <b>Design your Popup</b>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button>Test button</button>
-      </>}
-      handleClose={togglePopup}
-    />}
-        
+        {isOpen && (
+          <Popup
+            content={
+              <>
+                <b>Design your Popup</b>
+                <ThemeProvider theme={primaryFont}>
+                  <Typography variant="body2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </Typography>
+                </ThemeProvider>
+                <button>Test button</button>
+              </>
+            }
+            handleClose={togglePopup}
+          />
+        )}
+
         <ThemeProvider theme={secondaryFont}>
           <Typography variant="h3" className="vertical-timeline-element-title">
             {props.title}
@@ -115,12 +145,15 @@ export function TimelineElement(props) {
           >
             {props.subtitle}
           </Typography>
+          <ThemeProvider theme={primaryFont}>
+            <Typography
+              variant="body1"
+              style={{ fontWeight: "100", color: white }}
+            >
+              {props.desc}
+            </Typography>
+          </ThemeProvider>
         </ThemeProvider>
-        {/* <ThemeProvider theme={primaryFont}> */}
-        <Typography variant="body1" style={{ fontWeight: "300" }}>
-          {props.desc}
-        </Typography>
-        {/* </ThemeProvider> */}
       </VerticalTimelineElement>
     );
   }
