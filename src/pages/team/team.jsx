@@ -7,9 +7,9 @@ import {
   darkGreen,
   darkGrey,
   black,
-} from "../components/colors";
-import EsteemLogo from "../assets/images/logos.svg";
-import SDMELogo from "../assets/images/SDMELogo.svg";
+} from "../../components/colors";
+// import EsteemLogo from "../assets/images/logos.svg";
+// import SDMELogo from "../assets/images/SDMELogo.svg";
 import {
   Grid,
   Typography,
@@ -18,12 +18,12 @@ import {
   Button,
 } from "@material-ui/core";
 import GridBase from "@material-ui/core/Grid";
-import { primaryFont, secondaryFont } from "../components/fonts";
-import Header from "../pages/nav-bar";
-import NavDrawer from "../components/drawer";
+import { primaryFont, secondaryFont } from "../../components/fonts";
+import Header from "../nav-bar";
+import NavDrawer from "../../components/drawer";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 import { Link } from "react-scroll";
-import "../App.scss";
+import "../../App.scss";
 
 function MakeDoubleTeam(props) {
   return (

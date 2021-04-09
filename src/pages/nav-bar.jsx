@@ -41,7 +41,6 @@ const Nav = React.forwardRef((props, ref) => {
       <Toolbar
         style={{
           alignContent: "center",
-
           marginRight: "auto",
           position: "absolute",
           top: "50%",
@@ -61,14 +60,24 @@ const Nav = React.forwardRef((props, ref) => {
         </IconButton>
         <ThemeProvider theme={primaryFont}>
           <Link to="/">
-            <IconButton
+            {/* <IconButton
               style={{
                 fontWeight: "lighter",
                 justifyContent: "center",
                 color: esteemGreen,
               }}
             >
-              <HomeRoundedIcon />
+              Home
+            </IconButton> */}
+            <IconButton
+              style={{
+                fontWeight: "lighter",
+                justifyContent: "center",
+                color: white,
+                size: "medium",
+              }}
+            >
+              <Typography>Esteem Home</Typography>
             </IconButton>
           </Link>
           <Link to="/team">
