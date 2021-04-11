@@ -199,3 +199,28 @@
   margin: "auto";
   background-color: "transparent";
 }
+
+.custom-shape-divider-top-1618082119 {
+  position: relative;
+  top:0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+  justify-content: flex-end;
+}
+
+.custom-shape-divider-top-1618082119 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1618082119 .shape-fill {
+  fill: "black";
+}
+
+

@@ -20,17 +20,32 @@ import { primaryFont, secondaryFont } from "./fonts";
 import "../index.css";
 
 const Popup = (props) => {
-  return (
-    <div className="popup-box">
-      <div className="box">
-        <span className="close-icon" onClick={props.handleClose}>
-          x
-        </span>
-        {props.content}
+  if (props.tag === "secondary") {
+    return (
+      <div className="popup-box">
+        <div className="box2">
+          <span className="close-icon" onClick={props.handleClose}>
+            x
+          </span>
+          {props.content}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  else{
+    return (
+      <div className="popup-box">
+        <div className="box1">
+          <span className="close-icon" onClick={props.handleClose}>
+            x
+          </span>
+          {props.content}
+        </div>
+      </div>
+    );
+  }
 };
+
 
 export function TimelineElement(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,9 +71,10 @@ export function TimelineElement(props) {
       >
         {isOpen && (
           <Popup
+            tag= {props.tag}
             content={
-              <>
-                <b>Design your Popup</b>
+              <div className = "popUp2">
+                <b>Popup 2</b>
                 <ThemeProvider theme={primaryFont}>
                   <Typography variant="body2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -72,7 +88,7 @@ export function TimelineElement(props) {
                   </Typography>
                 </ThemeProvider>
                 <button>Test button</button>
-              </>
+              </div>
             }
             handleClose={togglePopup}
           />
@@ -113,9 +129,10 @@ export function TimelineElement(props) {
       >
         {isOpen && (
           <Popup
+          tag= {props.tag}
             content={
-              <>
-                <b>Design your Popup</b>
+              <div className = "popUp1">
+                <b>Popup 1</b>
                 <ThemeProvider theme={primaryFont}>
                   <Typography variant="body2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -129,7 +146,7 @@ export function TimelineElement(props) {
                   </Typography>
                 </ThemeProvider>
                 <button>Test button</button>
-              </>
+              </div>
             }
             handleClose={togglePopup}
           />

@@ -21,8 +21,11 @@ function App() {
                 <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
                   <Landing />
                 </Typography>
+                
               </ThemeProvider>
+              
             </div>
+
             <div className="Timeline">
               <ThemeProvider theme={secondaryFont}>
                 <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
