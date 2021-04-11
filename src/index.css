@@ -26,6 +26,7 @@ code {
   height: 100vh;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .box1 {
@@ -36,7 +37,7 @@ code {
   max-height: 70vh;
   margin-top: calc(100vh - 85vh - 20px);
   background: #009B77;
-  color: white;
+  color: black;
   border-radius: 4px;
   padding: 20px;
   border: 1px solid #999;
@@ -58,13 +59,31 @@ code {
   overflow: auto;
 }
 
-.close-icon {
+.close-icon1 {
   content: 'x';
   cursor: pointer;
   position: fixed;
   right: calc(15% - 30px);
   top: calc(100vh - 85vh - 33px);
-  background: #ededed;
+  background: #009B77;
+  color: black;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.close-icon2 {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #202020;
+  color: #34af92;
   width: 25px;
   height: 25px;
   border-radius: 50%;
