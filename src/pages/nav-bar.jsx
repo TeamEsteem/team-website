@@ -77,7 +77,7 @@ const Nav = React.forwardRef((props, ref) => {
                 size: "medium",
               }}
             >
-              <Typography component={'span'} variant={'body2'}>Esteem Home</Typography>
+              <Typography component={'span'} variant={'body2'}>Home</Typography>
             </IconButton>
           </Link>
           <Link to="/team">
@@ -89,7 +89,7 @@ const Nav = React.forwardRef((props, ref) => {
                 size: "medium",
               }}
             >
-              <Typography component={'span'} variant={'body2'}>About Us</Typography>
+              <Typography component={'span'} variant={'body2'}>About</Typography>
             </IconButton>
           </Link>
           <Link to="/sponsors">

@@ -1,17 +1,16 @@
 export const items = [
-  // Photo by ivan Torres on Unsplash
   {
-    id: "team",
-    category: "Pizza",
-    title: "5 Food Apps Delivering the Best of Your City",
+    id: "managers",
+    category: "Managers",
+    title: "Managers",
     pointOfInterest: 80,
     backgroundColor: "#814A0E",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting",
   }, // this one's for when a person clicks on about-us
   {
-    id: "sample",
-    category: "Pizza",
-    title: "5 Food Apps Delivering the Best of Your City",
+    id: "architects",
+    category: "Architecture & Interior Design",
+    title: "Architecture & Interior Design",
     pointOfInterest: 80,
     backgroundColor: "#814A0E",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting",

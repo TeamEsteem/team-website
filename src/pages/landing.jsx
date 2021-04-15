@@ -85,8 +85,7 @@ class Landing extends Component {
                   width: "50%",
                 }}
               >
-                This is where we add the subtitle, a small description of the
-                team, or maybe something about the project.
+                We are Team ESTEEM. 50 students, 5 academic schools, 3 campuses and 1 cohesive vision driving us to build a better world
               </Typography>
             </ThemeProvider>
           </Grid>

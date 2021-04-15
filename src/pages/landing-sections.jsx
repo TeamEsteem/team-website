@@ -95,24 +95,21 @@ class Section1 extends Component {
             <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="h5"
-                style={{ color: "#34af92" }}
+                style={{ color: darkGrey }}
               >
                 <div className="section-block">
-                  <div>
+                  <div className="section-block-text">
                     We are Heriot Watt University’s official entrant to the Solar Decathlon Middle East 2020 competition, a collegiate contest integrated with the 2020 World Expo in Dubai which is expected to attract an estimated 25 million people.
                     Our goal is to design and build a multifunctional solar powered house in collaboration with industry and academia. Our design ethos emphasises sustainability, and our construction will feature wall-to-wall innovation in our efforts to achieve the most eco-friendly build that can withstand the high temperature, high humidity and dusty conditions present in the middle east.
                     Headquartered in Edinburgh, we are proud to represent the Scottish Construction and Building Services sectors on the international stage with our incorporation of materials and designs from several local sponsors.
                   </div>
-                  
+                  <img className="landing-img" style={{}}
+                    src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
+                    height="500px"
+                  ></img>
                 </div>
               </Typography>
             </ThemeProvider>
-          </Grid>
-          <Grid item>
-            <img className="landing-img" style={{}}
-              src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
-              height="500px"
-            ></img>
           </Grid>
         </Grid>
         <br></br>
