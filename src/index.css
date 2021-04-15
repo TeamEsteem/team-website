@@ -117,7 +117,23 @@ code {
 /* Sponsors Page */
 
 .sponsors{
-  background:rgb(73, 71, 71)
+  background-image: url("./assets/images/sponsor-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+  z-index: 1;
+}
+
+.sponsors-body{
+  background-color: rgba(19, 51, 44, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(8px);
 }
 
 .sponsors-heading {
@@ -126,7 +142,8 @@ code {
   font-weight: 700;
 }
 
-.sponsors > hr {
+
+.sponsors-body > hr {
   max-width: 50vw;
   /* border: solid 1px #009877; */
   border: none;

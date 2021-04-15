@@ -11,14 +11,14 @@ import {
 
 class Sponsors extends Component {
   render() {
-    return <div>
+    return <div className="sponsors">
         <div>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />
           </Typography>
         </div>
       <br /><br /><br /><br /><br /><br />
-      <div className="sponsors">
+      <div className="sponsors-body">
 
         {/* Platinum Sponsors */}
 
