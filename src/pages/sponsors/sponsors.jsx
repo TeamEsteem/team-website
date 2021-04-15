@@ -11,20 +11,28 @@ import {
 
 class Sponsors extends Component {
   render() {
-    return <div>
+    return <div className="sponsors">
         <div>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />
           </Typography>
         </div>
       <br /><br /><br /><br /><br /><br />
-      <div className="sponsors">
+      <div className="sponsors-body">
 
         {/* Platinum Sponsors */}
 
         <div className="sponsors-heading" id="sponsors-platinum">Platinum</div>
         <hr />
+
         <div className="sponsors-images">
+        <Grid
+        container
+        direction="row"
+        alignItems="space-evenly"
+        justify="center"
+        className="sponsors-grid"
+      >
           <a href="https://us.arbnco.com/" target="_blank">
             <img className="sponsors-platinum-image" src="/sponsors/platinum/arbnco.png" alt="" />
           </a>
@@ -32,7 +40,7 @@ class Sponsors extends Component {
           <a href="https://www.asgcgroup.com/" target="_blank">
             <img className="sponsors-platinum-image" src="/sponsors/platinum/ASGC.png" alt="" />
           </a>
-
+          </Grid>
           <a href="https://www.cs-ic.org/" target="_blank">
             <img className="sponsors-platinum-image" src="/sponsors/platinum/CSIC.png" alt="" />
           </a>
@@ -44,6 +52,7 @@ class Sponsors extends Component {
           <a href="https://www.thorntontomasetti.com/" target="_blank">
             <img className="sponsors-platinum-image" src="/sponsors/platinum/thornton.png" alt="" />
           </a>
+
         </div>
 
         {/* Gold Sponsors */}
@@ -65,6 +74,13 @@ class Sponsors extends Component {
         <div className="sponsors-heading" id="sponsors-silver">Silver</div>
         <hr />
         <div className="sponsors-images">
+        <Grid
+        container
+        direction="row"
+        alignItems="space-evenly"
+        justify="center"
+        className="sponsors-grid"
+      >
           <a href="https://www.classofyourown.com/" target="_blank">
             <img className="sponsors-silver-image" src="/sponsors/silver/COYO.jpg" alt="" />
           </a>
@@ -76,6 +92,7 @@ class Sponsors extends Component {
           <a href="https://www.paulheatrecovery.co.uk/" target="_blank">
             <img className="sponsors-silver-image" src="/sponsors/silver/Paul.png" alt="" />
           </a>
+          </Grid>
 
           <a href="https://www.seawatersolutions.org/" target="_blank">
             <img className="sponsors-silver-image" src="/sponsors/silver/seawater.jpg" alt="" />
@@ -94,7 +111,15 @@ class Sponsors extends Component {
 
         <div className="sponsors-heading" id="sponsors-bronze">Bronze</div>
         <hr />
+
         <div className="sponsors-images">
+        <Grid
+        container
+        direction="row"
+        alignItems="space-evenly"
+        justify="center"
+        className="sponsors-grid"
+       >
           <a href="https://www.concreative.me/" target="_blank">
             <img className="sponsors-bronze-image" src="/sponsors/bronze/concreative.gif" alt="" />
           </a>
@@ -110,6 +135,7 @@ class Sponsors extends Component {
           <a href="https://www.indinature.co/" target="_blank">
             <img className="sponsors-bronze-image" src="/sponsors/bronze/indinature.webp" alt="" />
           </a>
+          </Grid>
 
           <a href="https://itdotfocus.com/en/" target="_blank">
             <img className="sponsors-bronze-image" src="/sponsors/bronze/itfocus.png" alt="" />
@@ -129,6 +155,13 @@ class Sponsors extends Component {
         <div className="sponsors-heading" id="sponsors-supporters">Supporters</div>
         <hr />
         <div className="sponsors-images">
+        <Grid
+        container
+        direction="row"
+        alignItems="space-evenly"
+        justify="center"
+        className="sponsors-grid"
+       >
           <a href="https://aecom.com/" target="_blank">
             <img className="sponsors-supporters-image" src="/sponsors/supporters/aecom.png" alt="" />
           </a>
@@ -152,7 +185,7 @@ class Sponsors extends Component {
           <a href="https://www.etp-scotland.ac.uk/" target="_blank">
             <img className="sponsors-supporters-image" src="/sponsors/supporters/ETP.gif" alt="" />
           </a>
-
+        </Grid>
           <a href="http://www.kenoteq.co.uk/" target="_blank">
             <img className="sponsors-supporters-image" src="/sponsors/supporters/kenoteq.webp" alt="" />
           </a>

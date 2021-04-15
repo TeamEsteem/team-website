@@ -8,7 +8,7 @@ import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
-import Team from "./pages/team/team";
+import Team from "./pages/team/teamV2";
 
 function App() {
   return (
@@ -21,8 +21,11 @@ function App() {
                 <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
                   <Landing />
                 </Typography>
+                
               </ThemeProvider>
+              
             </div>
+
             <div className="Timeline">
               <ThemeProvider theme={secondaryFont}>
                 <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
