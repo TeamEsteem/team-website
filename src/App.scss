@@ -36,8 +36,8 @@
 }
 
 .Landing-Section1 {
-  background-color: black;
-  padding-top: 100px;
+  background-color: #ffffff;
+  padding-top: 50px;
 }
 
 .Landing-Section2 {
@@ -46,16 +46,19 @@
 }
 
 .Footer {
-  background-color: #000000;
-  padding-top: 100px;
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+.landing-img {
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
 }
 
 .wwd-block {
-  background-color: black;
+  background-color: #ffffff;
   padding: 50px;
-  border-radius: 2em;
-  box-shadow: 0 3px 0 #0c0c0c;
-  border: 2px solid #2e6659;
+  border-radius: 20px;
 }
 
 .mission-block {
@@ -115,7 +118,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-
   line-height: 0;
 }
 
@@ -128,7 +130,7 @@
 }
 
 .timeline-bottom .shape-fill {
-  fill: black;
+  fill: #ffffff;
 }
 
 /** For mobile devices **/

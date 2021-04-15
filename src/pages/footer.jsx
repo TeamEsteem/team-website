@@ -32,9 +32,9 @@ function FormRow2() {
         <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
-            style={{ textAlign: "center", color: lightGreen }}
+            style={{ textAlign: "center", color: lightGreen, paddingBottom: "50px"}}
           >
-            <span style={{ color: grey }}>Get in</span> touch
+            <span style={{ color: darkGrey }}>Get in</span> touch
           </Typography>
         </ThemeProvider>
         <br></br>
@@ -118,10 +118,7 @@ function FormRow1() {
               marginRight: "auto",
               //   position: "relative",
               float: "left",
-              padding: "15px 20px 15px 20px",
-              background: grey,
-              borderRadius: "20px",
-              border: "3px solid" + esteemGreen,
+              padding: "15px 20px 15px 20px"
             }}
           ></img>
         </Grid>
@@ -152,9 +149,6 @@ function FormRow1() {
               marginRight: "-10%",
               float: "right",
               position: "relative",
-              background: grey,
-              borderRadius: "20px",
-              border: "3px solid" + esteemGreen,
             }}
           ></img>
         </Grid>
