@@ -116,6 +116,10 @@ code {
 
 /* Sponsors Page */
 
+.sponsors{
+  background:rgb(73, 71, 71)
+}
+
 .sponsors-heading {
   display: flex;
   justify-content: center;
@@ -133,18 +137,28 @@ code {
 
 #sponsors-platinum {
   font-size: 2.5em;
+  color:rgb(208, 255, 253)
 }
 
 #sponsors-gold {
   font-size: 2em;
+  color:rgb(243, 243, 87)
 }
 
 #sponsors-silver {
+  font-size: 1.75em;
+  color:rgb(167, 168, 168)
+}
+
+#sponsors-bronze {
   font-size: 1.5em;
+  color:rgb(243, 162, 86)
 }
 
-#sponsors-silver {
-  font-size: 1.25em;
+
+#sponsors-supporters {
+  font-size: 1em;
+  color:rgb(218, 230, 229)
 }
 
 .sponsors-images {

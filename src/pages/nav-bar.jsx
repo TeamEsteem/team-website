@@ -54,7 +54,7 @@ const Nav = React.forwardRef((props, ref) => {
             color: white,
           }}
         >
-          <Typography style={{ fontWeight: "lighter" }}>
+          <Typography component={'span'} variant={'body2'} style={{ fontWeight: "lighter" }}>
             <NavDrawer />
           </Typography>
         </IconButton>
@@ -77,7 +77,7 @@ const Nav = React.forwardRef((props, ref) => {
                 size: "medium",
               }}
             >
-              <Typography>Esteem Home</Typography>
+              <Typography component={'span'} variant={'body2'}>Esteem Home</Typography>
             </IconButton>
           </Link>
           <Link to="/team">
@@ -89,7 +89,7 @@ const Nav = React.forwardRef((props, ref) => {
                 size: "medium",
               }}
             >
-              <Typography>About Us</Typography>
+              <Typography component={'span'} variant={'body2'}>About Us</Typography>
             </IconButton>
           </Link>
           <Link to="/sponsors">
@@ -100,7 +100,7 @@ const Nav = React.forwardRef((props, ref) => {
                 color: white,
               }}
             >
-              <Typography>Sponsors</Typography>
+              <Typography component={'span'} variant={'body2'}>Sponsors</Typography>
             </IconButton>
           </Link>
         </ThemeProvider>
@@ -119,6 +119,7 @@ class Header extends Component {
       this.nav.current.style.backgroundColor = black;
       this.nav.current.style.transition = "background-color 0.5s ease";
     } else {
+      console.log(this);
       this.nav.current.style.backgroundColor = "transparent";
     }
   };
