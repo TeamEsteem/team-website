@@ -1,11 +1,11 @@
 export const items = [
   {
-    id: "managers",
+    id: "team",
     category: "Managers",
     title: "Managers",
     pointOfInterest: 80,
     backgroundColor: "#814A0E",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+    desc: "this box appears when the person clicks on about us in the homepage",
   }, // this one's for when a person clicks on about-us
   {
     id: "architects",

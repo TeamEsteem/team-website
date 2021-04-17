@@ -18,23 +18,44 @@ import {
   Button,
 } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "../components/fonts";
-import Header from "../pages/nav-bar";
+import Header from "../pages/nav-barV2";
 import NavDrawer from "../components/drawer";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 import { Link } from "react-scroll";
 
-
-
+function SubtitleInteractive(props) {
+  return (
+    <Grid item>
+      <Typography
+        variant="h4"
+        style={{
+          padding: "20px",
+          textAlign: "center",
+          color: grey,
+          fontWeight: "600",
+        }}
+      >
+        {props.number}
+        <br></br>
+        <ThemeProvider theme={secondaryFont}>
+          <Typography variant="h5" style={{ color: lightGreen }}>
+            {props.subtitle}
+          </Typography>
+        </ThemeProvider>
+      </Typography>
+    </Grid>
+  );
+}
 class Landing extends Component {
-
   render() {
     return (
-      <div style={{ margin: "auto" }}  onScroll={this.handleScroll}>
+      <div style={{ margin: "auto" }} onScroll={this.handleScroll}>
         <div>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />
           </Typography>
         </div>
+        <Box m={5}></Box>
         <Grid
           container
           alignContent="center"
@@ -72,7 +93,7 @@ class Landing extends Component {
           <Box m={2}></Box>
           <Grid item>
             <ThemeProvider theme={primaryFont}>
-              <Typography
+              {/* <Typography
                 variant="body1"
                 style={{
                   paddingLeft: "100px",
@@ -85,8 +106,24 @@ class Landing extends Component {
                   width: "50%",
                 }}
               >
-                We are Team ESTEEM. 50 students, 5 academic schools, 3 campuses and 1 cohesive vision driving us to build a better world
-              </Typography>
+                We are Team ESTEEM. 50 students, 5 academic schools, 3 campuses
+                and 1 cohesive vision driving us to build a better world
+              </Typography> */}
+              <Grid container direction="row">
+                <SubtitleInteractive number="50" subtitle="students" />
+                <SubtitleInteractive number="5" subtitle="academic schools" />
+                <SubtitleInteractive number="3" subtitle="campuses" />
+                <SubtitleInteractive number="1" subtitle="cohesive vision" />
+              </Grid>
+              <ThemeProvider theme={{ secondaryFont }}>
+                <Typography
+                  variant="body1"
+                  style={{ color: grey, textAlign: "center", fontSize: "20px" }}
+                >
+                  driving us to build a better world!{" "}
+                  {"{any better text here?}"}
+                </Typography>
+              </ThemeProvider>
             </ThemeProvider>
           </Grid>
           <Box m={3} />
@@ -120,9 +157,7 @@ class Landing extends Component {
           </Button>
         </Grid>
         {/* <Box m={-1} /> */}
-        
       </div>
-      
     );
   }
 }

@@ -186,7 +186,8 @@ h2 {
 .overlay {
   z-index: 1;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: #fafafa;
+  opacity: 0.2;
   will-change: opacity;
   top: 0;
   bottom: 0;
