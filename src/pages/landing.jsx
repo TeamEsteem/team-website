@@ -16,33 +16,57 @@ import {
   Box,
   ThemeProvider,
   Button,
+  Card,
+  Divider,
 } from "@material-ui/core";
+import { motion } from "framer-motion";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import Header from "../pages/nav-barV2";
 import NavDrawer from "../components/drawer";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 import { Link } from "react-scroll";
+import CountUp from "react-countup";
 
 function SubtitleInteractive(props) {
   return (
+    <>
+      {/* <DividerSpecial color={white} /> */}
+      <Grid item>
+        <Typography
+          variant="h4"
+          style={{
+            padding: "20px",
+            textAlign: "center",
+            color: grey,
+            fontWeight: "600",
+          }}
+        >
+          <CountUp start={0} end={props.number} duration={5} />
+          <br></br>
+          <ThemeProvider theme={secondaryFont}>
+            <Typography variant="h5" style={{ color: lightGreen }}>
+              {props.subtitle}
+            </Typography>
+          </ThemeProvider>
+        </Typography>
+      </Grid>
+    </>
+  );
+}
+
+function DividerSpecial(props) {
+  return (
     <Grid item>
-      <Typography
-        variant="h4"
+      <Divider
+        orientation="vertical"
+        variant="middle"
         style={{
-          padding: "20px",
-          textAlign: "center",
-          color: grey,
-          fontWeight: "600",
+          background: `${props.color}`,
+          borderRadius: "20px",
+          padding: "2px",
+          height: "100px",
         }}
-      >
-        {props.number}
-        <br></br>
-        <ThemeProvider theme={secondaryFont}>
-          <Typography variant="h5" style={{ color: lightGreen }}>
-            {props.subtitle}
-          </Typography>
-        </ThemeProvider>
-      </Typography>
+      ></Divider>
     </Grid>
   );
 }
@@ -111,8 +135,11 @@ class Landing extends Component {
               </Typography> */}
               <Grid container direction="row">
                 <SubtitleInteractive number="50" subtitle="students" />
+                <DividerSpecial color={grey} />
                 <SubtitleInteractive number="5" subtitle="academic schools" />
+                <DividerSpecial color={grey} />
                 <SubtitleInteractive number="3" subtitle="campuses" />
+                <DividerSpecial color={grey} />
                 <SubtitleInteractive number="1" subtitle="cohesive vision" />
               </Grid>
               <ThemeProvider theme={{ secondaryFont }}>

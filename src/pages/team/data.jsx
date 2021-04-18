@@ -1,7 +1,7 @@
 export const items = [
   {
     id: "team",
-    category: "Managers",
+    category: "Manager",
     title: "Managers",
     pointOfInterest: 80,
     backgroundColor: "#814A0E",
