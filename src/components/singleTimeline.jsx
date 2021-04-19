@@ -76,7 +76,7 @@ export function TimelineElement(props) {
               <div>
                 <b>Popup 2</b>
                 <ThemeProvider theme={primaryFont}>
-                  <Typography variant="body2">
+                  <Typography  style={{ color:lightGreen }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -123,7 +123,7 @@ export function TimelineElement(props) {
           borderRadius: "1em",
         }}
         contentArrowStyle={{ borderRight: "7px solid" + black }}
-        date={<Typography style={{ color: grey }}>{props.date}</Typography>}
+        date={<Typography style={{ color: white }}>{props.date}</Typography>}
         iconStyle={{ background: darkGreen, color: esteemGreen }}
         iconOnClick={togglePopup}
       >
@@ -131,10 +131,10 @@ export function TimelineElement(props) {
           <Popup
           tag= {props.tag}
             content={
-              <div>
+              <div >
                 <b>Popup 1</b>
                 <ThemeProvider theme={primaryFont}>
-                  <Typography variant="body2">
+                  <Typography style={{ color:white }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
