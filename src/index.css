@@ -117,7 +117,7 @@ code {
 /* Sponsors Page */
 
 .sponsors{
-  background-image: url("./assets/images/sponsor-background.jpg");
+  background-color: #01614c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,17 +127,18 @@ code {
 }
 
 .sponsors-body{
-  background-color: rgba(99, 170, 155, 0.4); /* Black w/opacity/see-through */
+  background-color: #ffffff;
   font-weight: bold;
   z-index: 2;
   width: 80%;
   padding: 20px;
   text-align: center;
-  backdrop-filter: blur(8px);
+
+  border-radius: 20px;
 }
 
 .sponsors-heading {
-  display: flex;
+  width: 20%;
   justify-content: center;
   font-weight: 700;
 }
@@ -154,12 +155,12 @@ code {
 
 #sponsors-platinum {
   font-size: 2.5em;
-  color:rgb(208, 255, 253)
+  color:rgb(59, 201, 194)
 }
 
 #sponsors-gold {
   font-size: 2em;
-  color:rgb(243, 243, 87)
+  color:rgb(226, 226, 26)
 }
 
 #sponsors-silver {
@@ -175,7 +176,7 @@ code {
 
 #sponsors-supporters {
   font-size: 1em;
-  color:rgb(218, 230, 229)
+  color:rgb(0, 0, 0)
 }
 
 .sponsors-images {

@@ -37,7 +37,7 @@ class Timeline extends Component {
           }}
         >
           {/* <Box m={-3} /> */}
-          <div class="custom-shape-divider-top-1618082119">
+          {/* <div class="custom-shape-divider-top-1618082119">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ class Timeline extends Component {
                 class="shape-fill"
               ></path>
             </svg>
-          </div>
+          </div> */}
           <Typography variant="h1" style={{ color: white }}>
             Timeline
           </Typography>
