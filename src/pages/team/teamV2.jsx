@@ -24,7 +24,7 @@ export default function App() {
   return (
     <div className="container">
       <div>
-        <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+        <Typography style={{ fontSize: "20px", fontWeight: "lighter"}}>
           <Header />
         </Typography>
       </div>

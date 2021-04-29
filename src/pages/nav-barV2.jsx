@@ -117,6 +117,19 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
+            <Link to="/impact">
+              <IconButton
+                style={{
+                  fontWeight: "lighter",
+                  justifyContent: "center",
+                  color: white,
+                }}
+              >
+                <Typography component={"span"} variant={"body2"}>
+                  Impact
+                </Typography>
+              </IconButton>
+            </Link>
           </ThemeProvider>
         </Toolbar>
       </AppBar>
