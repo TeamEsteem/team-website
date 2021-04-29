@@ -9,7 +9,7 @@ import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
 import Team from "./pages/team/teamV2";
-
+import Impact from "./pages/impact/impact";
 function App() {
   return (
     <>
@@ -77,6 +77,9 @@ function App() {
             </Route>
             <Route exact path="/team">
               <Team />
+            </Route>
+            <Route exact path="/impact">
+              <Impact />
             </Route>
           </Switch>
         </Router>
