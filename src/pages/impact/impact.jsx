@@ -35,7 +35,9 @@ class StaggeredList extends React.Component {
                 <ul className="pillar-list">
                     <ReactCSSTransitionGroup transitionName="slide-up" transitionAppear={true}>
                         {items.map((item, i) => {
-                            return <li key={i} className="pillar-item" style={{"transitionDelay": `${ i * .05 }s` }}>{item}</li>;
+                            return <ThemeProvider theme={secondaryFont}>
+                              <li key={i} className="pillar-item" style={{"transitionDelay": `${ i * .05 }s` }}>{item}</li>
+                              </ThemeProvider>
                         })}
                     </ReactCSSTransitionGroup>
                 </ul>
