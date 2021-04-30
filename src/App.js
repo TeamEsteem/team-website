@@ -8,7 +8,7 @@ import "./App.scss";
 import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
-import Team from "./pages/team/teamV2";
+import Team from "./pages/team/teamCard";
 import Impact from "./pages/impact/impact";
 function App() {
   return (
