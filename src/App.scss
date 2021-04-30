@@ -53,7 +53,7 @@
 
 .landing-img {
   border-radius: 20px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .wwd-block {
@@ -103,6 +103,21 @@
   animation: sizeUp 0.6s forwards;
 }
 
+.team-card {
+  border-radius: 20px;
+  width: 500;
+  height: 500;
+  background: "#1b1b1b";
+  transition: 0.1;
+  animation: sizeDown 0.3s backwards;
+}
+
+.team-card:hover {
+  cursor: auto;
+  transition: 0.3;
+  animation: sizeUp 0.7s forwards;
+}
+
 @keyframes sizeUp {
   0% {
     opacity: 1;
@@ -111,6 +126,17 @@
   100% {
     opacity: 1;
     transform: scale(1.1);
+  }
+}
+
+@keyframes sizeDown {
+  0% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -130,7 +156,8 @@
   transform: rotateY(180deg);
 }
 
-.timeline-bottom, .shape-fill {
+.timeline-bottom,
+.shape-fill {
   fill: #e7e3e3;
 }
 
@@ -205,7 +232,7 @@
 
 .custom-shape-divider-top-1618082119 {
   position: relative;
-  top:0;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -225,8 +252,6 @@
 .custom-shape-divider-top-1618082119 .shape-fill {
   fill: "black";
 }
-
-
 
 .section-block {
   display: flex;
