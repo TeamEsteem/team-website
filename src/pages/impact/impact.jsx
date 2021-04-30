@@ -31,8 +31,8 @@ class StaggeredList extends React.Component {
         const items = this.getItems();
         
         return (
-            <div>
-                <ul className="list">
+            <div align="center">
+                <ul className="pillar-list">
                     <ReactCSSTransitionGroup transitionName="slide-up" transitionAppear={true}>
                         {items.map((item, i) => {
                             return <li key={i} className="pillar-item" style={{"transitionDelay": `${ i * .05 }s` }}>{item}</li>;
