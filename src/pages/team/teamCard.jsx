@@ -1,14 +1,14 @@
 import { Box, Card, Grid, Typography } from "@material-ui/core";
 import React, { Component } from "react";
-import { esteemGreen, white } from "../../components/colors";
+import { esteemGreen, white,grey } from "../../components/colors";
 import "../../App.scss";
-// import { members } from "./members";
+import { members } from "./members";
 import Header from "../../pages/nav-barV2";
 
 function TeamCard(props) {
   return (
     <Box>
-      <Grid item container="row" className="team-card">
+      <Grid item container="row" className="team-card" style={{ margin:"auto", position:"relative" }}>
         <Card
           // className="team-card"
           style={{
@@ -16,7 +16,7 @@ function TeamCard(props) {
             width: 250,
             height: 400,
             background: "#1b1b1b",
-            margin: "20px",
+            margin: "25px",
           }}
         >
           <Grid
@@ -25,7 +25,7 @@ function TeamCard(props) {
             xs={12}
             style={{
               justifyContent: "left",
-              padding: "20px",
+              padding: "10px",
               margin: "20px",
             }}
           >
@@ -44,9 +44,9 @@ function TeamCard(props) {
             </Grid>
             <Grid item>
               <Typography
-                variant="h1"
+                variant="h2"
                 style={{
-                  fontSize: "60px",
+                  fontSize: "50px",
                   color: white,
                   textAlign: "left",
                   fontWeight: "600",
@@ -107,7 +107,7 @@ function TeamCard(props) {
             borderRadius: "0px 20px 20px 0px",
             width: 200,
             height: 400,
-            background: "#f56920",
+            background: esteemGreen,
             marginTop: "30px",
             marginLeft: "-30px",
           }}
@@ -127,14 +127,43 @@ function TeamCard(props) {
     </Box>
   );
 }
+
 class TeamMembers extends Component {
   render() {
     return (
-      <Box style={{ padding: "50px" }}>
+      <Box style={{ padding: "50px",background:grey, justifyContent:'center' }}>
         <Header />
         <Box m={3} />
+	<Typography variant="h3" style={{ color:esteemGreen, fontWeight:"bolder",textAlign:"center" }}>
+	ABOUT US
+	</Typography>
         <Grid container>
-          <TeamCard
+          {/* {members.map((id, name, role, team, image) => {
+            return (
+              <TeamCard
+                id={id}
+                name={name}
+                role={role}
+                team={team}
+                image={image}
+                // "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+              />
+            );
+          })} */}
+          {members.map((members) => {
+            return (
+              <TeamCard
+                // id={members.id}
+                name={members.name}
+                role={members.role}
+                team={members.team[0]}
+                image={members.image}
+                // "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+              />
+            );
+          })}
+
+          {/* <TeamCard
             name={"Alakbar"}
             role={"Web Dev"}
             team={"Website"}
@@ -157,7 +186,7 @@ class TeamMembers extends Component {
             image={
               "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
             }
-          />
+          /> */}
         </Grid>
       </Box>
     );
