@@ -135,11 +135,11 @@ class Landing extends Component {
               </Typography> */}
               <Grid container direction="row">
                 <SubtitleInteractive number="50" subtitle="students" />
-                <DividerSpecial color={grey} />
+                {/* <DividerSpecial color={grey} /> */}
                 <SubtitleInteractive number="5" subtitle="academic schools" />
-                <DividerSpecial color={grey} />
+                {/* <DividerSpecial color={grey} /> */}
                 <SubtitleInteractive number="3" subtitle="campuses" />
-                <DividerSpecial color={grey} />
+                {/* <DividerSpecial color={grey} /> */}
                 <SubtitleInteractive number="1" subtitle="cohesive vision" />
               </Grid>
               <ThemeProvider theme={{ secondaryFont }}>

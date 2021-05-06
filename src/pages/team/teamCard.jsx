@@ -1,14 +1,28 @@
-import { Box, Card, Grid, Typography } from "@material-ui/core";
+import {
+  Avatar,
+  Box,
+  Card,
+  Grid,
+  IconButton,
+  Typography,
+} from "@material-ui/core";
 import React, { Component } from "react";
-import { esteemGreen, white,grey } from "../../components/colors";
+import { esteemGreen, white, grey, black } from "../../components/colors";
 import "../../App.scss";
 import { members } from "./members";
 import Header from "../../pages/nav-barV2";
-
+import { primaryFont } from "../../components/fonts";
+import { ThemeProvider } from "styled-components";
+import LinkedinImage from "../../assets/images/linkedin.png";
 function TeamCard(props) {
   return (
     <Box>
-      <Grid item container="row" className="team-card" style={{ margin:"auto", position:"relative" }}>
+      <Grid
+        item
+        container="row"
+        className="team-card"
+        style={{ margin: "auto", position: "relative" }}
+      >
         <Card
           // className="team-card"
           style={{
@@ -94,7 +108,12 @@ function TeamCard(props) {
                   fontWeight: "500",
                 }}
               >
-                Find me on LinkedIn.
+                Find me on
+                <IconButton
+                  src="linkedin.png"
+                  onClick={`${props.linkedin}`}
+                  target="_blank"
+                ></IconButton>
               </Typography>
             </Grid>
             <Box m={3} />
@@ -128,67 +147,131 @@ function TeamCard(props) {
   );
 }
 
+function TeamCardSmall(props) {
+  return (
+    <Box
+      style={{
+        borderRadius: "50px",
+        width: 280,
+        height: "auto", //or 320
+        background: black,
+        padding: "20px",
+        margin: "45px 15px 15px 15px",
+        textAlign: "center",
+      }}
+    >
+      <Avatar
+        style={{
+          margin: "auto",
+          position: "relative",
+          top: -50,
+          height: 100,
+          width: 100,
+          border: "4px solid" + esteemGreen,
+        }}
+        src={props.image}
+      />
+      <Box m={-5} />
+      <Typography
+        variant="h2"
+        style={{
+          color: white,
+          textAlign: "center",
+          fontWeight: "600",
+          fontSize: "30px",
+          padding: "0px 10px 0px 10px",
+        }}
+      >
+        {props.name}
+      </Typography>
+      <Typography
+        variant="caption"
+        style={{
+          color: grey,
+        }}
+      >
+        {`${props.role}`.toUpperCase()}
+        {/* WEBSITE DEVELOPER */}
+      </Typography>
+      <Box m={2} />
+      <Typography
+        variant="body1"
+        style={{
+          color: white,
+          // textAlign: "ce",
+          paddingRight: "10px",
+          fontWeight: "300",
+        }}
+      >
+        Something about the person! let’s not keep an opening animation and
+        let’s just keep plain text!
+      </Typography>
+      <Box m={6} />
+      <Typography variant="body2" style={{ fontWeight: "500", color: white }}>
+        Find me on {"   "}
+        <IconButton
+          src={LinkedinImage}
+          style={{ background: white }}
+          onClick={props.linkedin}
+          target="_blank"
+        ></IconButton>
+      </Typography>
+      <Box m={2} />
+      <Card
+        style={{
+          background: esteemGreen,
+          color: white,
+          borderRadius: "50px",
+          padding: "2px 10px 2px 10px",
+          width: "fit-content",
+          margin: "auto",
+        }}
+      >
+        {`${props.team}`.toUpperCase()}
+      </Card>
+    </Box>
+  );
+}
 class TeamMembers extends Component {
   render() {
     return (
-      <Box style={{ padding: "50px",background:grey, justifyContent:'center' }}>
-        <Header />
-        <Box m={3} />
-	<Typography variant="h3" style={{ color:esteemGreen, fontWeight:"bolder",textAlign:"center" }}>
-	ABOUT US
-	</Typography>
-        <Grid container>
-          {/* {members.map((id, name, role, team, image) => {
-            return (
-              <TeamCard
-                id={id}
-                name={name}
-                role={role}
-                team={team}
-                image={image}
-                // "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-              />
-            );
-          })} */}
-          {members.map((members) => {
-            return (
-              <TeamCard
-                // id={members.id}
-                name={members.name}
-                role={members.role}
-                team={members.team[0]}
-                image={members.image}
-                // "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-              />
-            );
-          })}
-
-          {/* <TeamCard
-            name={"Alakbar"}
-            role={"Web Dev"}
-            team={"Website"}
-            image={
-              "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-            }
-          />
-          <TeamCard
-            name={"Mohit"}
-            role={"Web Dev"}
-            team={"Website"}
-            image={
-              "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-            }
-          />
-          <TeamCard
-            name={"Pranav"}
-            role={"Web Dev"}
-            team={"Website"}
-            image={
-              "https://images.unsplash.com/photo-1612492175848-3af2f7e8dd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-            }
-          /> */}
-        </Grid>
-      </Box>
+      <ThemeProvider theme={primaryFont}>
+        <Box
+          style={{
+            padding: "50px",
+            background: grey,
+            justifyContent: "center",
+          }}
+        >
+          <Header />
+          <Box m={3} />
+          <Typography
+            variant="h3"
+            style={{
+              color: esteemGreen,
+              fontWeight: "bolder",
+              textAlign: "center",
+            }}
+          >
+            ABOUT US
+          </Typography>
+          <Grid container>
+            {/* <TeamCardSmall /> */}
+            {members.map((members) => {
+              return (
+                <TeamCardSmall
+                  // id={members.id}
+                  name={members.name}
+                  role={members.role}
+                  team={members.team[0]}
+                  image={members.image}
+                  linkedin={members.linkedin}
+                />
+              );
+            })}
+          </Grid>
+        </Box>
+      </ThemeProvider>
     );
   }
 }
