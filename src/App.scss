@@ -5,20 +5,363 @@
 // }
 
 // @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
-* {
-  overflow: hidden;
+
+$white: "#ffffff";
+$grey: "#DDDDDD";
+$lightGreen: "#22AD87";
+$esteemGreen: "#009B77";
+$darkGreen: "#008264";
+$darkGrey: "#202020";
+$black: "#000000";
+
+.Body {
+  // position: relative;
+  height: 100vh;
+  flex-grow: 1;
 }
+
 .App-header {
   background-image: url("./assets/images/landing-background.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: 100%;
-  height: 700px;
+  background-attachment: fixed;
+  height: 95%;
   width: auto;
   //   height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.Timeline {
+  background-color: #2e6659;
+}
+
+.Nav-button {
+  size: large;
+}
+
+.Landing-Section1 {
+  background-color: #e7e3e3;
+  padding-top: 50px;
+}
+
+.Landing-Section2 {
+  background-color: #2e6659;
+  padding-top: 100px;
+}
+
+.Footer {
+  background-color: #e7e3e3;
+  padding-top: 50px;
+}
+
+.landing-img {
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wwd-block {
+  background-color: #e7e3e3;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.mission-block {
+  background-color: #202020;
+  padding: 50px;
+  border-radius: 1em;
+  box-shadow: 0 3px 0 #0c0c0c;
+}
+
+.team-block {
+  background-color: #202020;
+  padding: 50px;
+  border-radius: 3em;
+  box-shadow: 0 3px 0 #0c0c0c;
+  margin: 30px;
+  align-items: center;
+  min-width: 200px;
+}
+
+.team-block-1 {
+  background-color: #202020;
+  padding: 30px;
+  border-radius: 1em;
+  box-shadow: 0 3px 0 #0c0c0c;
+  margin: 30px;
+}
+
+.team-block-2 {
+  margin: 20px;
+}
+
+.team-block:hover {
+  cursor: pointer;
+  transition: 0.6;
+  animation: sizeUp 0.6s forwards;
+}
+
+.team-block-1:hover {
+  cursor: pointer;
+  transition: 0.6;
+  animation: sizeUp 0.6s forwards;
+}
+
+.team-card {
+  border-radius: 20px;
+  width: 500;
+  height: 500;
+  background: "#1b1b1b";
+  transition: 0.1;
+  animation: sizeDown 0.3s backwards;
+}
+
+.team-card:hover {
+  cursor: auto;
+  transition: 0.3;
+  animation: sizeUp 0.7s forwards;
+}
+.team-image {
+  filter: esteemgreen;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  transition: all 300ms ease;
+  width: 200;
+  height: 200;
+  display: flex;
+  object-fit: cover;
+}
+
+.team-image:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}
+
+@keyframes sizeUp {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes sizeDown {
+  0% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.timeline-bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.timeline-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.timeline-bottom,
+.shape-fill {
+  fill: #e7e3e3;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .timeline-bottom svg {
+    width: calc(118% + 1.3px);
+    height: 83px;
+  }
+}
+
+.impact {
+  background-color: #e7e3e3;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.pillar-list{
+  margin: 0px;
+  padding: 0px;
+}
+
+.pillar-item {
+  padding-top: 100px;
+  text-align: center;
+  justify-content: center;
+  width: 14.25vw;
+  height: 45vh;
+  display:inline-block;
+  transition: all 0.5s ease;
+  font-size: 1.25vw;
+  color: white;
+}
+
+.pillar-item:hover {
+  transition: all 0.5s ease;
+  font-size: 1.75vw;
+  width: 15vw;
+  cursor: pointer;
+}
+
+#pillar-0{
+  background-color: rgb(0, 113, 128);
+}
+
+#pillar-1{
+  background-color: rgb(128, 109, 0);
+}
+
+#pillar-2{
+  background-color: rgb(0, 128, 38);
+}
+
+#pillar-3{
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/clean-energy.jpg");
+
+}
+
+#pillar-4{
+  background-color: rgb(128, 0, 100);
+}
+
+#pillar-5{
+  background-color: rgb(0, 128, 32);
+}
+
+#pillar-6{
+  background-color: rgb(128, 109, 0);
+}
+
+
+/* Transition */
+.slide-up-appear {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+
+  &.slide-up-appear-active {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.impact-head {
+  margin: 100px;
+}
+
+.team {
+  background-color: black;
+  padding-top: 100px;
+}
+
+.sections-bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.sections-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.sections-bottom .shape-fill {
+  fill: #2e6659;
+}
+
+.custom-shape-divider-top-1617567759 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1617567759 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1617567759 .shape-fill {
+  fill: #2e6659;
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .sections-bottom svg {
+    width: calc(118% + 1.3px);
+    height: 83px;
+  }
+}
+
+.navbar {
+  box-shadow: "none";
+  padding: 30;
+  position: "absolute";
+  margin: "auto";
+  background-color: "transparent";
+}
+
+.custom-shape-divider-top-1618082119 {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+  justify-content: flex-end;
+}
+
+.custom-shape-divider-top-1618082119 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1618082119 .shape-fill {
+  fill: "black";
+}
+
+.section-block {
+  display: flex;
+}
+
+.section-block-text {
+  width: 50%;
 }

@@ -16,13 +16,70 @@ import {
   Box,
   ThemeProvider,
   Button,
+  Card,
+  Divider,
 } from "@material-ui/core";
-import { primaryFont } from "../components/fonts";
+import { motion } from "framer-motion";
+import { primaryFont, secondaryFont } from "../components/fonts";
+import Header from "../pages/nav-barV2";
+import NavDrawer from "../components/drawer";
+import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
+import { Link } from "react-scroll";
+import CountUp from "react-countup";
+
+function SubtitleInteractive(props) {
+  return (
+    <>
+      {/* <DividerSpecial color={white} /> */}
+      <Grid item>
+        <Typography
+          variant="h4"
+          style={{
+            padding: "20px",
+            textAlign: "center",
+            color: grey,
+            fontWeight: "600",
+          }}
+        >
+          <CountUp start={0} end={props.number} duration={5} />
+          <br></br>
+          <ThemeProvider theme={secondaryFont}>
+            <Typography variant="h5" style={{ color: lightGreen }}>
+              {props.subtitle}
+            </Typography>
+          </ThemeProvider>
+        </Typography>
+      </Grid>
+    </>
+  );
+}
+
+function DividerSpecial(props) {
+  return (
+    <Grid item>
+      <Divider
+        orientation="vertical"
+        variant="middle"
+        style={{
+          background: `${props.color}`,
+          borderRadius: "20px",
+          padding: "2px",
+          height: "100px",
+        }}
+      ></Divider>
+    </Grid>
+  );
+}
 class Landing extends Component {
   render() {
     return (
-      <div style={{ margin: "auto" }}>
-        {/* <Box m={2}></Box> */}
+      <div style={{ margin: "auto" }} onScroll={this.handleScroll}>
+        <div>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Header />
+          </Typography>
+        </div>
+        <Box m={5}></Box>
         <Grid
           container
           alignContent="center"
@@ -34,7 +91,7 @@ class Landing extends Component {
             <img
               src={EsteemLogo}
               alt="logos"
-              width="130em"
+              width="300em"
               style={{
                 alignContent: "center",
                 display: "block",
@@ -43,19 +100,24 @@ class Landing extends Component {
                 position: "relative",
               }}
             ></img>
+            <br></br>
           </Grid>
           <Grid item>
-            <Typography
-              variant="h1"
-              style={{ textAlign: "center", color: esteemGreen }}
-            >
-              The Landing<br></br> <Box m={-2}></Box>page.
-            </Typography>
+            <ThemeProvider theme={secondaryFont}>
+              <Typography
+                variant="h2"
+                style={{ textAlign: "center", color: esteemGreen }}
+              >
+                PRIDE IN <span style={{ color: grey }}>WHERE</span> <br></br>{" "}
+                <Box m={-2}></Box> AND <span style={{ color: grey }}>HOW</span>{" "}
+                WE LIVE
+              </Typography>
+            </ThemeProvider>
           </Grid>
           <Box m={2}></Box>
           <Grid item>
             <ThemeProvider theme={primaryFont}>
-              <Typography
+              {/* <Typography
                 variant="body1"
                 style={{
                   paddingLeft: "100px",
@@ -68,23 +130,57 @@ class Landing extends Component {
                   width: "50%",
                 }}
               >
-                This is where we add the subtitle, a small description of the
-                team, or maybe something about the project.
-              </Typography>
+                We are Team ESTEEM. 50 students, 5 academic schools, 3 campuses
+                and 1 cohesive vision driving us to build a better world
+              </Typography> */}
+              <Grid container direction="row">
+                <SubtitleInteractive number="50" subtitle="students" />
+                {/* <DividerSpecial color={grey} /> */}
+                <SubtitleInteractive number="5" subtitle="academic schools" />
+                {/* <DividerSpecial color={grey} /> */}
+                <SubtitleInteractive number="3" subtitle="campuses" />
+                {/* <DividerSpecial color={grey} /> */}
+                <SubtitleInteractive number="1" subtitle="cohesive vision" />
+              </Grid>
+              <ThemeProvider theme={{ secondaryFont }}>
+                <Typography
+                  variant="body1"
+                  style={{ color: grey, textAlign: "center", fontSize: "20px" }}
+                >
+                  driving us to build a better world!{" "}
+                  {"{any better text here?}"}
+                </Typography>
+              </ThemeProvider>
             </ThemeProvider>
           </Grid>
           <Box m={3} />
+
           <Button
             variant="outlined"
             size="large"
             style={{
-              width: "20%",
+              padding: "5px 30px 5px 30px",
               color: white,
               margin: "auto",
               border: "3px solid" + esteemGreen,
+              borderRadius: "20px",
             }}
+            startIcon={<ExpandMoreRoundedIcon />}
           >
-            Call to action
+            <Link
+              activeClass="active"
+              to="timeline"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                position: "relative",
+              }}
+            >
+              Learn More!
+            </Link>
           </Button>
         </Grid>
         {/* <Box m={-1} /> */}
