@@ -228,34 +228,46 @@ $black: "#000000";
 }
 
 #pillar-0{
-  background-color: rgb(0, 113, 128);
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/sustainability.png");
 }
 
 #pillar-1{
-  background-color: rgb(128, 109, 0);
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/future.jpeg");
 }
 
 #pillar-2{
-  background-color: rgb(0, 128, 38);
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/innovation.png");
+  background-repeat: no-repeat;
 }
 
 #pillar-3{
   background-image: url();
   background-size: auto;
   background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/clean-energy.jpg");
-
 }
 
 #pillar-4{
-  background-color: rgb(128, 0, 100);
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/mobility.jpg");
 }
 
 #pillar-5{
-  background-color: rgb(0, 128, 32);
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/smart-solutions.jpg");
 }
 
 #pillar-6{
-  background-color: rgb(128, 109, 0);
+  background-image: url();
+  background-size: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/happiness.jpg");
 }
 
 

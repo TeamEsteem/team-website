@@ -53,7 +53,7 @@ export default class Impact extends Component {
     return (
 
       <div className="impact">
-        <div>
+        <div style={{backgroundColor:"#e7e3e3"}}>
           <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Header />
           </Typography>
