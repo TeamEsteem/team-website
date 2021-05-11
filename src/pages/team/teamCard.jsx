@@ -19,22 +19,22 @@ import { members } from "./members";
 import Header from "../../pages/nav-barV2";
 import { primaryFont, secondaryFont } from "../../components/fonts";
 import { ThemeProvider } from "styled-components";
-import LinkedinImage from "../../assets/images/linkedin.png";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Rotate90DegreesCcw } from "@material-ui/icons";
 
 const teams = [
   "marketing",
   "architecture",
-  "renewables",
   "website",
+  "renewables",
   "sensors",
-  "building_services",
+  "building services",
   "sponsorship",
   "landscaping",
   "quantity",
   "structural",
   "health",
-  "building_modelling",
+  "building modelling",
   "construction",
   "windcatcher",
 ];
@@ -102,15 +102,18 @@ function TeamCardSmall(props) {
         </Typography>
         <Box m={6} />
         <Typography variant="body2" style={{ fontWeight: "500", color: white }}>
-          Find me on {"   "}
+          Find me on {"  "}
           <IconButton
-            src={LinkedinImage}
-            style={{ background: esteemGreen }}
-            onClick={props.linkedin}
+            style={{ color: white, padding: "0px 0px 3px 0px" }}
+            href={props.linkedin}
             target="_blank"
-          ></IconButton>
+          >
+            <LinkedInIcon />
+          </IconButton>
         </Typography>
-        <Box m={2} />
+        {/* <LinkedInIcon style={{ fontSize: 50 }} /> */}
+
+        {/* <Box m={2} /> */}
         {/* <Card
           style={{
             background: esteemGreen,

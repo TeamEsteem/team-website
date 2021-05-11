@@ -13,7 +13,7 @@ export const members = [
     image: "/members/alakbar.jpg",
   },
   {
-    team: ["marketing", "building_services"],
+    team: ["marketing", "building services"],
     name: "Adam",
     role: "Videographer & Radiant Cooling System Technician",
     image: "/members/adam.jpg",
@@ -180,7 +180,7 @@ export const members = [
     image: "/members/elisa.jpg",
   },
   {
-    team: ["renewables", "building_services"],
+    team: ["renewables", "building services"],
     name: "Luke C.",
     role: "Mechanical Systems & Radiant Cooling System Designer",
     image: "/members/luke_c.jpg",
@@ -400,19 +400,19 @@ export const members = [
 
   // Building Services
   {
-    team: ["building_services"],
+    team: ["building services"],
     name: "Gabriela",
     role: "Water Management",
     image: "/members/gabriela.jpg",
   },
   {
-    team: ["building_services"],
+    team: ["building services"],
     name: "Duncan",
     role: "Ventilation Systems",
     image: "/members/duncan.jpg",
   },
   {
-    team: ["building_services"],
+    team: ["building services"],
     name: "Bruno",
     role: "Water Storage Lead",
     image: "/members/bruno.jpg",
@@ -420,49 +420,49 @@ export const members = [
 
   // Building Modelling
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Priyankadevi",
     role: "IES & Building Modelling Team Lead",
     image: "/members/priyankadevi.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Mahnoor",
     role: "IES Model",
     image: "/members/mahnoor.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Vinuki",
     role: "IES Model",
     image: "/members/vinuki.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Nathan",
     role: "Computational Fluid Dyanmics",
     image: "/members/nathan.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Jane",
     role: "Revit Model",
     image: "/members/jane.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Emilia",
     role: "Revit Model",
     image: "/members/emilia.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Serrah",
     role: "AutoCAD & IES",
     image: "/members/serrah.jpg",
   },
   {
-    team: ["building_modelling"],
+    team: ["building modelling"],
     name: "Eshiet",
     role: "AutoCAD Model",
     image: "/members/eshiet_akpan.jpg",
