@@ -203,9 +203,25 @@ $black: "#000000";
   white-space: nowrap;
 }
 
+.impact-block-1 {
+  background-color: #e7e3e3;
+  padding: 50px;
+  border-radius: 20px;
+}
+
 .pillar-list{
   margin: 0px;
   padding: 0px;
+}
+
+.pillar-details-1 {
+  padding:130px;
+  background-color: #e7e3e3;
+}
+
+.pillar-details-2 {
+  padding:130px;
+  background-color: #2e6659;
 }
 
 .pillar-item {
@@ -311,6 +327,52 @@ $black: "#000000";
   fill: #2e6659;
 }
 
+.pillar-divider-1 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  background-color: #e7e3e3;
+}
+
+.pillar-divider-1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.pillar-divider-1 .shape-fill {
+  fill: #2e6659;
+}
+
+
+.pillar-divider-2 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  padding: 0px;
+  background-color: #2e6659;
+}
+
+.pillar-divider-2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.pillar-divider-2 .shape-fill {
+  fill: #e7e3e3;
+}
+
+
+
 .custom-shape-divider-top-1617567759 {
   position: relative;
   top: 0;
@@ -373,6 +435,7 @@ $black: "#000000";
 .section-block {
   display: flex;
 }
+
 
 .section-block-text {
   width: 50%;

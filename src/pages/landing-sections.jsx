@@ -12,7 +12,7 @@ import { Grid, Typography, ThemeProvider } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
 
-function FormRow() {
+function FormColumn() {
   return (
     <React.Fragment>
       <Grid
@@ -173,7 +173,7 @@ class Section2 extends Component {
           <br></br>
           <br></br>
           <Grid>
-            <FormRow />
+            <FormColumn />
           </Grid>
         </Grid>
         <br></br>
