@@ -19,6 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.2",
+    "react-three-fbx-viewer": "^1.0.0",
     "react-vertical-timeline-component": "^3.3.3",
     "reactjs-popup": "^2.0.4",
     "sass": "^1.32.7",

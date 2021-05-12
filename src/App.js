@@ -10,6 +10,7 @@ import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
 import Team from "./pages/team/teamCard";
 import Impact from "./pages/impact/impact";
+import HomeModel from "./pages/about-home/home-model";
 function App() {
   return (
     <>
@@ -80,6 +81,9 @@ function App() {
             </Route>
             <Route exact path="/impact">
               <Impact />
+            </Route>
+            <Route exact path="/home-model">
+              <HomeModel />
             </Route>
           </Switch>
         </Router>

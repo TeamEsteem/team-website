@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import { white, esteemGreen, black } from "../components/colors";
+import { white, esteemGreen, black, lightGreen } from "../components/colors";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { ThemeProvider } from "styled-components";
@@ -129,6 +129,24 @@ export default function ButtonAppBar() {
                   Impact
                 </Typography>
               </IconButton>
+            </Link>
+            <Link to="/home-model">
+              <Button
+                style={{
+                  fontWeight: "lighter",
+                  justifyContent: "center",
+                  color: white,
+                  background: lightGreen,
+                  // right: "-90%",
+                  position: "absolute",
+                  right: "25px",
+                  bottom: "15px",
+                }}
+              >
+                <Typography component={"span"} variant={"body2"}>
+                  Our Home
+                </Typography>
+              </Button>
             </Link>
           </ThemeProvider>
         </Toolbar>
