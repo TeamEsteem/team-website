@@ -9584,6 +9584,15 @@ react-scroll@^1.8.2:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
+react-three-fbx-viewer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-three-fbx-viewer/-/react-three-fbx-viewer-1.0.0.tgz#30378a9216ca1f6b504e12eaa584def43061f253"
+  integrity sha512-966uaGEv0P0uNobCa8GRKiABciEZ6uMI0UNtzUo4cF+9dgFEoRQD75AwsMPGTcWSM4I6iXYw3n80tgH5OLFzWQ==
+  dependencies:
+    three "^0.94.0"
+    three-fbxloader-offical "^1.0.0"
+    three-orbit-controls "^82.1.0"
+
 react-transition-group@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
@@ -11037,6 +11046,21 @@ text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+three-fbxloader-offical@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/three-fbxloader-offical/-/three-fbxloader-offical-1.0.0.tgz#db7d684ee65174b3044dd96e479519952520f4d7"
+  integrity sha512-MPEznEBZzJA2PMNPRGJzZ95BjDcZ75FQurAjsQeZuEErA1qbSLpQM/n1jceJUAOGASbeQ7V/ABS3zx6tOTtXKQ==
+
+three-orbit-controls@^82.1.0:
+  version "82.1.0"
+  resolved "https://registry.yarnpkg.com/three-orbit-controls/-/three-orbit-controls-82.1.0.tgz#11a7f33d0a20ecec98f098b37780f6537374fab4"
+  integrity sha1-EafzPQog7OyY8Jizd4D2U3N0+rQ=
+
+three@^0.94.0:
+  version "0.94.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.94.0.tgz#4ce6db7f2bfbf79c2d73444aa6e3cfc08a32d762"
+  integrity sha1-TObbfyv795wtc0RKpuPPwIoy12I=
 
 throat@^5.0.0:
   version "5.0.0"
