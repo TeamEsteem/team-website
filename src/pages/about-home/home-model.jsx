@@ -2,7 +2,7 @@ import { Box } from "@material-ui/core";
 import React, { Component } from "react";
 import ReactThreeFbxViewer from "react-three-fbx-viewer";
 import { esteemGreen } from "../../components/colors";
-import fbxUrl from "./Dragon 2.5_fbx.fbx";
+import fbxUrl from "./sdmehouse-architecture 1.fbx";
 // let fbxUrl = require("./Dragon 2.5_fbx.fbx");
 
 export default class App extends Component {
@@ -15,19 +15,23 @@ export default class App extends Component {
   }
   render() {
     let cameraPosition = {
-      x: 500,
-      y: 400,
-      z: 100,
+      x: 0,
+      y: -150,
+      z: 80,
     };
     return (
       <Box>
-        Hey
-        <div style={{ background: esteemGreen }}>
+        <div
+          style={{ background: esteemGreen, width: "600px", height: "500px" }}
+        >
+          Hey
           <ReactThreeFbxViewer
             cameraPosition={cameraPosition}
+            backgroundColor={esteemGreen}
             url={fbxUrl}
             onLoading={this.onLoad}
             onError={this.onError}
+            style={{ width: "600px", height: "500px" }}
           />
         </div>
       </Box>
