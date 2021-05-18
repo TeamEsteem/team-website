@@ -14,13 +14,12 @@ import {
   black,
   lightGreen,
 } from "../../components/colors";
-import "../../App.scss";
+import "./styles.css";
 import { members } from "./members";
 import Header from "../../pages/nav-barV2";
 import { primaryFont, secondaryFont } from "../../components/fonts";
 import { ThemeProvider } from "styled-components";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { Rotate90DegreesCcw } from "@material-ui/icons";
 
 const teams = [
   "marketing",
@@ -131,7 +130,7 @@ function TeamCardSmall(props) {
   );
 }
 
-function TeamCardMain(props) {
+function BackgroundTeamCard(props) {
   return (
     <Box
       style={{
@@ -154,7 +153,10 @@ function TeamCardMain(props) {
             textAlign: "center",
             padding: "5px 20px 5px 20px",
             width: "fit-content",
+            display: "flex",
+            justifyContent: "center",
           }}
+          // className="card-background-title"
         >
           <Typography
             variant="h4"
@@ -215,7 +217,7 @@ class TeamMembers extends Component {
             ABOUT US
           </Typography>
           {teams.map((team) => (
-            <TeamCardMain team={team} />
+            <BackgroundTeamCard team={team} />
           ))}
           {/* <TeamCardMain team="marketing" /> */}
         </Box>

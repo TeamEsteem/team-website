@@ -56,7 +56,7 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="fixed" className={classes[navRef.current]}>
-        <Toolbar>
+        <Toolbar style={{ left: "-30%" }}>
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -76,13 +76,14 @@ export default function ButtonAppBar() {
           </Typography>
           <Button color="black">Login</Button> */}
           <ThemeProvider theme={primaryFont}>
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
                   fontWeight: "lighter",
                   justifyContent: "center",
                   color: white,
                   size: "medium",
+                  // left: "-110%",
                 }}
               >
                 <Typography component={"span"} variant={"body2"}>
@@ -90,7 +91,7 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
-            <Link to="/team">
+            <Link to="/team" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
                   fontWeight: "lighter",
@@ -104,7 +105,7 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
-            <Link to="/sponsors">
+            <Link to="/sponsors" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
                   fontWeight: "lighter",
@@ -117,7 +118,7 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
-            <Link to="/impact">
+            <Link to="/impact" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
                   fontWeight: "lighter",
@@ -130,18 +131,20 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
-            <Link to="/home-model">
+            <Link to="/home-model" style={{ textDecoration: "none" }}>
               <Button
                 style={{
                   fontWeight: "lighter",
                   justifyContent: "center",
                   color: white,
                   background: lightGreen,
-                  // right: "-90%",
-                  position: "absolute",
-                  right: "25px",
-                  bottom: "15px",
+                  // right: "-265%",
+                  position: "relative",
+                  marginLeft: 10,
+                  // bottom: "15px",
+                  borderRadius: "20px",
                 }}
+                edge="end"
               >
                 <Typography component={"span"} variant={"body2"}>
                   Our Home
