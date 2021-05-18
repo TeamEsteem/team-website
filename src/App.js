@@ -10,7 +10,7 @@ import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
 import Team from "./pages/team/teamCard";
 import Impact from "./pages/impact/impact";
-import HomeModel from "./pages/about-home/home-model";
+import HomeModel from "./pages/about-home/home-modelV2";
 function App() {
   return (
     <>

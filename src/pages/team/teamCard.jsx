@@ -135,8 +135,9 @@ function BackgroundTeamCard(props) {
     <Box
       style={{
         borderRadius: "0px 50px 50px 50px",
-        // padding: "5px",
-        marginTop: "15px",
+        // paddingTop: "5px",
+        // display: "flex",
+        margin: "15px 0px 0px 0px",
         border: "5px solid " + white,
         // background: esteemGreen,
         background:
