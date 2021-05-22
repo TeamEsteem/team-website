@@ -6,10 +6,20 @@
 
 // @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
 
+:root {
+  --white: #fff;
+  --light-grey: #f5f5f5;
+  --light-green: #22ad87;
+  --esteem-green: #009877;
+  --dark-green: #008264;
+  --dark-grey: #202020;
+  --black: #000;
+}
+
 $white: "#ffffff";
-$grey: "#DDDDDD";
+$grey: "#eeeeee";
 $lightGreen: "#22AD87";
-$esteemGreen: "#009B77";
+$esteemGreen: "#009877";
 $darkGreen: "#008264";
 $darkGrey: "#202020";
 $black: "#000000";
@@ -21,13 +31,15 @@ $black: "#000000";
 }
 
 .App-header {
-  background-image: url("./assets/images/landing-background.png");
+  // background-image: url("./assets/images/landing-background.png");
+  // background-image: url("https://www.youtube.com/watch?v=PT8aveu2Asg");
+  background-color: var(--esteem-green);
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: scroll;
   background-position: 100%;
   background-attachment: fixed;
-  height: 95%;
+  height: 75vh;
   width: auto;
   //   height: max-content;
   display: flex;
@@ -36,8 +48,18 @@ $black: "#000000";
   justify-content: center;
 }
 
+.landing-bottom {
+  background-color: var(--esteem-green);
+  display: flex;
+}
+
+.landing-bottom .shape-fill {
+  fill: var(--white);
+}
+
 .Timeline {
-  background-color: #2e6659;
+  background-color: var(--light-grey);
+  padding: 100px 0 150px 0;
 }
 
 .Nav-button {
@@ -45,18 +67,34 @@ $black: "#000000";
 }
 
 .Landing-Section1 {
-  background-color: #e7e3e3;
-  padding-top: 50px;
+  background-color: var(--white);
+  padding: 100px 0 150px 0;
 }
 
 .Landing-Section2 {
-  background-color: #2e6659;
-  padding-top: 100px;
+  background-color: var(--white);
+  padding: 100px 0 150px 0;
+
+}
+
+.Landing-Section3 {
+  background-color: var(--light-grey);
+  padding: 100px 0 150px 0;
+}
+
+.footer-top .shape-fill {
+  fill: var(--dark-grey);
+}
+
+.footer-top {
+  // height: 52px;
+  display: flex;
+  background-color: var(--light-grey);
 }
 
 .Footer {
-  background-color: #e7e3e3;
-  padding-top: 50px;
+  background-color: var(--dark-grey);
+  padding: 0 0 100px 0;
 }
 
 .landing-img {
@@ -65,8 +103,8 @@ $black: "#000000";
 }
 
 .wwd-block {
-  background-color: #e7e3e3;
-  padding: 50px;
+  // background-color: #e7e3e3;
+  // padding: 50px;
   border-radius: 20px;
 }
 
@@ -186,7 +224,8 @@ $black: "#000000";
 
 .timeline-bottom,
 .shape-fill {
-  fill: #e7e3e3;
+  fill: var(--white);
+  background-color: var(--light-grey);
 }
 
 /** For mobile devices **/
@@ -324,7 +363,7 @@ $black: "#000000";
 }
 
 .sections-bottom .shape-fill {
-  fill: #2e6659;
+  fill: var(--light-grey);
 }
 
 .pillar-divider-1 {

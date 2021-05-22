@@ -32,9 +32,9 @@ function FormRow2() {
         <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
-            style={{ textAlign: "center", color: lightGreen, paddingBottom: "50px"}}
+            style={{ textAlign: "center", color: grey, paddingBottom: "50px"}}
           >
-            <span style={{ color: darkGrey }}>Get in</span> touch
+            Get in touch
           </Typography>
         </ThemeProvider>
         <br></br>

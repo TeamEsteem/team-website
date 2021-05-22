@@ -103,14 +103,14 @@ class Landing extends Component {
             <br></br>
           </Grid>
           <Grid item>
-            <ThemeProvider theme={secondaryFont}>
+            <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="h2"
-                style={{ textAlign: "center", color: esteemGreen }}
+                style={{ textAlign: "center", color: white }}
               >
-                PRIDE IN <span style={{ color: grey }}>WHERE</span> <br></br>{" "}
-                <Box m={-2}></Box> AND <span style={{ color: grey }}>HOW</span>{" "}
-                WE LIVE
+                Pride in <span style={{ color: white }}> where</span> <br></br>{" "}
+                <Box m={-2}></Box> and <span style={{ color: white }}>how</span>{" "}
+                we live
               </Typography>
             </ThemeProvider>
           </Grid>
@@ -142,15 +142,6 @@ class Landing extends Component {
                 {/* <DividerSpecial color={grey} /> */}
                 <SubtitleInteractive number="1" subtitle="cohesive vision" />
               </Grid>
-              <ThemeProvider theme={{ secondaryFont }}>
-                <Typography
-                  variant="body1"
-                  style={{ color: grey, textAlign: "center", fontSize: "20px" }}
-                >
-                  driving us to build a better world!{" "}
-                  {"{any better text here?}"}
-                </Typography>
-              </ThemeProvider>
             </ThemeProvider>
           </Grid>
           <Box m={3} />
@@ -169,7 +160,7 @@ class Landing extends Component {
           >
             <Link
               activeClass="active"
-              to="timeline"
+              to="landing-bottom"
               spy={true}
               smooth={true}
               duration={1000}

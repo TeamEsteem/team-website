@@ -1,7 +1,7 @@
 import Landing from "./pages/landing";
 import Header from "./pages/nav-barV2";
 import Timeline from "./pages/timeline";
-import { Section1, Section2 } from "./pages/landing-sections";
+import { Section1, Section2, Section3 } from "./pages/landing-sections";
 import Footer from "./pages/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
@@ -20,7 +20,7 @@ function App() {
           <Switch>
             <Route exact path="/">
               <div className="App-header">
-                <ThemeProvider theme={secondaryFont}>
+                <ThemeProvider theme={primaryFont}>
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
@@ -28,18 +28,21 @@ function App() {
                   </Typography>
                 </ThemeProvider>
               </div>
-
-              <div className="Timeline">
-                <ThemeProvider theme={secondaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Timeline />
-                  </Typography>
-                </ThemeProvider>
+              <div class="landing-bottom">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
               </div>
               <div className="Landing-Section1">
-                <ThemeProvider theme={secondaryFont}>
+                <ThemeProvider theme={primaryFont}>
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
@@ -47,8 +50,43 @@ function App() {
                   </Typography>
                 </ThemeProvider>
               </div>
+              <div class="sections-bottom">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
+              </div>
+              <div className="Timeline">
+                <ThemeProvider theme={primaryFont}>
+                  <Typography
+                    style={{ fontSize: "20px", fontWeight: "lighter" }}
+                  >
+                    <Timeline />
+                  </Typography>
+                </ThemeProvider>
+              </div>
+              <div class="timeline-bottom">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
+              </div>
               <div className="Landing-Section2">
-                <ThemeProvider theme={secondaryFont}>
+                <ThemeProvider theme={primaryFont}>
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
@@ -56,15 +94,50 @@ function App() {
                   </Typography>
                 </ThemeProvider>
               </div>
+              <div class="sections-bottom">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
+              </div>
+              <div className="Landing-Section3">
+                <ThemeProvider theme={primaryFont}>
+                  <Typography
+                    style={{ fontSize: "20px", fontWeight: "lighter" }}
+                  >
+                    <Section3 />
+                  </Typography>
+                </ThemeProvider>
+              </div>
 
-              {/* 
+              {/*               
 <div class="custom-shape-divider-top-1617567759" style={{ backgroundColor: "black"}}>
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
     </svg>
 </div> */}
+              <div class="footer-top">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
+              </div>
               <div className="Footer">
-                <ThemeProvider theme={secondaryFont}>
+                <ThemeProvider theme={primaryFont}>
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
