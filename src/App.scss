@@ -16,6 +16,10 @@
   --black: #000;
 }
 
+* {
+  font-family: "Inter" !important;
+}
+
 $white: "#ffffff";
 $grey: "#eeeeee";
 $lightGreen: "#22AD87";
@@ -133,14 +137,14 @@ $black: "#000000";
 .mission-block {
   background-color: #202020;
   padding: 50px;
-  border-radius: 1em;
+  border-radius: 20px;
   box-shadow: 0 3px 0 #0c0c0c;
 }
 
 .team-block {
   background-color: #202020;
   padding: 50px;
-  border-radius: 3em;
+  border-radius: 20px;
   box-shadow: 0 3px 0 #0c0c0c;
   margin: 30px;
   align-items: center;
@@ -150,7 +154,7 @@ $black: "#000000";
 .team-block-1 {
   background-color: #202020;
   padding: 30px;
-  border-radius: 1em;
+  border-radius: 20px;
   box-shadow: 0 3px 0 #0c0c0c;
   margin: 30px;
 }

@@ -54,7 +54,6 @@ header {
 
 .avatar {
   background: var(--divider);
-  border-radius: 50%;
   position: absolute;
   bottom: 12px;
   right: 0;

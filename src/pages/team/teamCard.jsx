@@ -14,7 +14,7 @@ import {
   black,
   lightGreen,
 } from "../../components/colors";
-import "./styles.css";
+// import "./styles.css";
 import { members } from "./members";
 import Header from "../../pages/nav-barV2";
 import { primaryFont, secondaryFont } from "../../components/fonts";
@@ -27,13 +27,13 @@ const teams = [
   "website",
   "renewables",
   "sensors",
-  "building services",
+  "building Services",
   "sponsorship",
   "landscaping",
   "quantity",
   "structural",
   "health",
-  "building modelling",
+  "building Modelling",
   "construction",
   "windcatcher",
 ];
@@ -43,10 +43,11 @@ function TeamCardSmall(props) {
     <Grid item>
       <Box
         style={{
-          borderRadius: "50px",
+          borderRadius: "25px",
           width: 280,
           height: "auto", //or 320
-          background: black,
+          background: white,
+          boxShadow: "0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.15)",
           padding: "20px",
           margin: "45px 15px 15px 15px",
           textAlign: "center",
@@ -60,7 +61,8 @@ function TeamCardSmall(props) {
             top: -50,
             height: 100,
             width: 100,
-            border: "4px solid" + esteemGreen,
+            // boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+            boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
           }}
           src={props.image}
         />
@@ -68,7 +70,7 @@ function TeamCardSmall(props) {
         <Typography
           variant="h2"
           style={{
-            color: white,
+            color: "#202020",
             textAlign: "center",
             fontWeight: "600",
             fontSize: "30px",
@@ -80,7 +82,7 @@ function TeamCardSmall(props) {
         <Typography
           variant="caption"
           style={{
-            color: grey,
+            color: "#505050",
           }}
         >
           {`${props.role}`.toUpperCase()}
@@ -90,26 +92,24 @@ function TeamCardSmall(props) {
         <Typography
           variant="body1"
           style={{
-            color: white,
+            color: "#202020",
             // textAlign: "ce",
             paddingRight: "10px",
             fontWeight: "300",
           }}
         >
-          Something about the person! let’s not keep an opening animation and
-          let’s just keep plain text!
         </Typography>
-        <Box m={6} />
-        <Typography variant="body2" style={{ fontWeight: "500", color: white }}>
-          Find me on {"  "}
-          <IconButton
-            style={{ color: white, padding: "0px 0px 3px 0px" }}
-            href={props.linkedin}
-            target="_blank"
-          >
-            <LinkedInIcon />
-          </IconButton>
-        </Typography>
+        <Box m={2} />
+        {/* <Typography variant="body2" style={{ fontWeight: "500", color: "#505050" }}>
+          Find me on {"  "} */}
+        <IconButton
+          style={{ color: "202020", padding: "0px 0px 3px 0px" }}
+          href={props.linkedin}
+          target="_blank"
+        >
+          <LinkedInIcon />
+        </IconButton>
+        {/* </Typography> */}
         {/* <LinkedInIcon style={{ fontSize: 50 }} /> */}
 
         {/* <Box m={2} /> */}
@@ -134,22 +134,15 @@ function BackgroundTeamCard(props) {
   return (
     <Box
       style={{
-        borderRadius: "0px 50px 50px 50px",
         // paddingTop: "5px",
         // display: "flex",
-        margin: "15px 0px 0px 0px",
-        border: "5px solid " + white,
-        // background: esteemGreen,
-        background:
-          "linear-gradient(49deg, rgba(34,173,135,1) 21%, rgba(0,130,100,1) 100%)",
+        // background: "linear-gradient(49deg, rgba(34,173,135,1) 21%, rgba(0,130,100,1) 100%)",
       }}
     >
       <ThemeProvider theme={primaryFont}>
         <Box
           style={{
-            borderRadius: "0px 20px 20px 20px",
-            background: lightGreen,
-            marginTop: "-5px",
+            marginTop: "100px",
             marginLeft: "-5px",
             textAlign: "center",
             padding: "5px 20px 5px 20px",
@@ -157,21 +150,20 @@ function BackgroundTeamCard(props) {
             display: "flex",
             justifyContent: "center",
           }}
-          // className="card-background-title"
+        // className="card-background-title"
         >
           <Typography
             variant="h4"
             style={{
               fontSize: "30px",
-              fontWeight: "lighter",
               color: white,
             }}
           >
-            <span style={{ fontWeight: "500" }}>
-              {props.team.toUpperCase()}
+            <span style={{ fontWeight: "700" }}>
+              {props.team.charAt(0).toUpperCase() + props.team.slice(1)}
               {"  "}
+            Team
             </span>
-            TEAM
           </Typography>
         </Box>
       </ThemeProvider>
@@ -201,7 +193,7 @@ class TeamMembers extends Component {
         <Box
           style={{
             padding: "50px",
-            background: grey,
+            background: esteemGreen,
             justifyContent: "center",
           }}
         >
@@ -210,17 +202,36 @@ class TeamMembers extends Component {
           <Typography
             variant="h3"
             style={{
-              color: lightGreen,
+              color: white,
               fontWeight: "bolder",
               textAlign: "center",
             }}
           >
-            ABOUT US
+            About Us
           </Typography>
-          {teams.map((team) => (
-            <BackgroundTeamCard team={team} />
-          ))}
-          {/* <TeamCardMain team="marketing" /> */}
+          <Box m={3} />
+          <Typography
+            style={{ color: white }}
+          >
+            <div className="section-block">
+              <div className="section-block-text">
+                <p>
+                  Diverse student involvement across the whole university has been essential to the successful creation of a team of student engineers (architectural, structural, mechanical and electrical), computer scientists, energy specialists and business undergraduates. This diversity has been instrumental in the first phase of design.
+                </p>
+                <br></br>
+                <p>
+                  If you would like to be a part of the team then get in touch with us!
+                </p>
+              </div>
+            </div>
+          </Typography>
+          <Box m={3} />
+          <div className="teamcard-wrapper" style={{ maxWidth: "1250px" }}>
+            {teams.map((team) => (
+              <BackgroundTeamCard team={team} />
+            ))}
+            {/* <TeamCardMain team="marketing" /> */}
+          </div>
         </Box>
       </ThemeProvider>
     );

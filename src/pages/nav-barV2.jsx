@@ -62,7 +62,7 @@ export default function ButtonAppBar() {
         <Toolbar style={{ left: "-30%" }}>
           <ThemeProvider theme={primaryFont}>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <img
+              {/* <img
                 className="footer-logos"
                 id="esteem-square-logo"
                 src={EsteemLogo}
@@ -71,18 +71,27 @@ export default function ButtonAppBar() {
                   height: "40px",
                   margin: "8px 5px 0px 5px"
                 }}
-              ></img>
+              ></img> */}
+              <IconButton
+                style={{
+                  justifyContent: "center",
+                  color: white,
+                }}
+              >
+                <Typography component={"span"} variant={"body1"}>
+                  Home
+                </Typography>
+              </IconButton>
             </Link>
             <Link to="/team" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
-                  fontWeight: "lighter",
                   justifyContent: "center",
                   color: white,
                   size: "medium",
                 }}
               >
-                <Typography component={"span"} variant={"body2"}>
+                <Typography component={"span"} variant={"body1"}>
                   About
                 </Typography>
               </IconButton>
@@ -90,12 +99,11 @@ export default function ButtonAppBar() {
             <Link to="/sponsors" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
-                  fontWeight: "lighter",
                   justifyContent: "center",
                   color: white,
                 }}
               >
-                <Typography component={"span"} variant={"body2"}>
+                <Typography component={"span"} variant={"body1"}>
                   Sponsors
                 </Typography>
               </IconButton>
@@ -103,12 +111,11 @@ export default function ButtonAppBar() {
             <Link to="/impact" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
-                  fontWeight: "lighter",
                   justifyContent: "center",
                   color: white,
                 }}
               >
-                <Typography component={"span"} variant={"body2"}>
+                <Typography component={"span"} variant={"body1"}>
                   Impact
                 </Typography>
               </IconButton>
@@ -116,10 +123,9 @@ export default function ButtonAppBar() {
             <Link to="/home-model" style={{ textDecoration: "none" }}>
               <Button
                 style={{
-                  fontWeight: "lighter",
                   justifyContent: "center",
                   color: white,
-                  background: lightGreen,
+                  background: "#202020",
                   // right: "-265%",
                   position: "relative",
                   marginLeft: 10,
@@ -128,7 +134,7 @@ export default function ButtonAppBar() {
                 }}
                 edge="end"
               >
-                <Typography component={"span"} variant={"body2"}>
+                <Typography component={"span"} variant={"body1"}>
                   Our Home
                 </Typography>
               </Button>
@@ -136,6 +142,6 @@ export default function ButtonAppBar() {
           </ThemeProvider>
         </Toolbar>
       </AppBar>
-    </div>
+    </div >
   );
 }
