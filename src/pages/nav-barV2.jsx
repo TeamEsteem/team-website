@@ -4,12 +4,13 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import { white, esteemGreen, black, lightGreen } from "../components/colors";
+import { white, esteemGreen, black, lightGreen, darkGrey } from "../components/colors";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { ThemeProvider } from "styled-components";
 import { Link } from "react-router-dom";
 import { primaryFont } from "../components/fonts";
+import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -18,17 +19,19 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color: white,
   },
   title: {
-    flexGrow: 1,
-    color: "black",
+    // flexGrow: 1,
   },
   appBarTransparent: {
-    backgroundColor: "rgba(0, 0, 0,0.5)",
+    backgroundColor: "rgba(255, 255, 255, 0.0)",
+    boxShadow: "none",
+    border: "none"
   },
   appBarSolid: {
-    backgroundColor: black,
+    backgroundColor: "#202020",
+    border: "none",
+    boxShadow: "none"
   },
 }));
 
@@ -40,7 +43,7 @@ export default function ButtonAppBar() {
   navRef.current = navBackground;
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 400;
+      const show = window.scrollY > 175;
       if (show) {
         setNavBackground("appBarSolid");
       } else {
@@ -57,39 +60,18 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="fixed" className={classes[navRef.current]}>
         <Toolbar style={{ left: "-30%" }}>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          {/* <Typography variant="h6" className={classes.title}>
-            Home
-          </Typography>
-          <Typography variant="h6" className={classes.title}>
-            About
-          </Typography>
-          <Typography variant="h6" className={classes.title}>
-            Sponsors
-          </Typography>
-          <Button color="black">Login</Button> */}
           <ThemeProvider theme={primaryFont}>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <IconButton
+              <img
+                className="footer-logos"
+                id="esteem-square-logo"
+                src={EsteemLogo}
+                alt="ESTEEM"
                 style={{
-                  fontWeight: "lighter",
-                  justifyContent: "center",
-                  color: white,
-                  size: "medium",
-                  // left: "-110%",
+                  height: "40px",
+                  margin: "8px 5px 0px 5px"
                 }}
-              >
-                <Typography component={"span"} variant={"body2"}>
-                  Home
-                </Typography>
-              </IconButton>
+              ></img>
             </Link>
             <Link to="/team" style={{ textDecoration: "none" }}>
               <IconButton

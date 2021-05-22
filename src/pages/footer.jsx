@@ -16,9 +16,9 @@ import Facebook from "@material-ui/icons/Facebook";
 import Instagram from "@material-ui/icons/Instagram";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
-import EsteemLogo from "../assets/images/logos.svg";
-import SDMELogo from "../assets/images/SDMELogo.svg";
-import Blank from "../assets/images/blank.png";
+import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full.png";
+import SDMELogo from "../assets/images/SDME/SDME2021_logo_En_Hor_W.png";
+import HWLogo from "../assets/images/HW Logo.png";
 
 function FormRow2() {
   return (
@@ -32,7 +32,7 @@ function FormRow2() {
         <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
-            style={{ textAlign: "center", color: grey, paddingBottom: "50px"}}
+            style={{ textAlign: "center", color: grey, paddingBottom: "50px" }}
           >
             Get in touch
           </Typography>
@@ -108,47 +108,23 @@ function FormRow1() {
       >
         <Grid item>
           <img
-            src={EsteemLogo}
+            className="footer-logos"
+            id="hw-logo"
+            src={HWLogo}
             alt="logos"
-            width="195em"
             style={{
-              //   alignContent: "center",
-              //   display: "block",
-              marginLeft: "-10%",
-              marginRight: "auto",
-              //   position: "relative",
-              float: "left",
-              padding: "15px 20px 15px 20px"
+              filter: "brightness(0) invert(1) contrast(50%)"
             }}
           ></img>
         </Grid>
-        {/* <Grid item>
-          <img
-            src={Blank}
-            alt="logos"
-            width="550em"
-            height="50em"
-            style={{
-              alignContent: "center",
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-              position: "relative",
-            }}
-          ></img>
-        </Grid> */}
         <Grid item>
           <img
+            className="footer-logos"
+            id="sdme-logo"
             src={SDMELogo}
             alt="logos"
-            width="250em"
             style={{
-              //   alignContent: "center",
-              //   display: "block",
-              marginLeft: "auto",
-              marginRight: "-10%",
-              float: "right",
-              position: "relative",
+              filter: "contrast(50%)"
             }}
           ></img>
         </Grid>
