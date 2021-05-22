@@ -1,7 +1,23 @@
+/* // $white: "#ffffff";
+// $grey: "#DDDDDD";
+// $lightGreen: "#22AD87";
+// $esteemGreen: "#009B77";
+// $darkGreen: "#008264";
+// $darkGrey: "#202020";
+// $black: "#000000"; */
+
 model-viewer {
+  background-color: #22ad87;
   width: 800px;
-  height: 600px;
+  height: 500px;
   display: flex;
-  position: static;
-  right: 0%;
+  border-radius: 20px;
+  /* transform: scale(1.2);
+  z-index: 0; */
+  /* position: absolute; */
+  /* margin-left: 0px; */
+}
+
+.BackgroundWeb {
+  background-color: #22ad87;
 }
