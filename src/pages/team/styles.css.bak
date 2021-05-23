@@ -11,13 +11,13 @@ body {
   --divider: #343434;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   font-family: ".SFNSText", "SFProText-Regular", "SFUIText-Regular", ".SFUIText",
     Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: auto;
-}
+} */
 
 #root {
   display: flex;
@@ -54,7 +54,6 @@ header {
 
 .avatar {
   background: var(--divider);
-  border-radius: 50%;
   position: absolute;
   bottom: 12px;
   right: 0;
@@ -215,7 +214,6 @@ h2 {
 }
 
 p {
-  color: #9d9ca1;
   font-size: 20px;
   line-height: 28px;
 }

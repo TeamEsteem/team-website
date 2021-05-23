@@ -2,36 +2,107 @@ import React, { Component } from "react";
 import "../../index.css";
 import Header from "../nav-barV2";
 import {
+  white,
+  grey,
+  lightGreen,
+  esteemGreen,
+  darkGreen,
+  darkGrey,
+  black,
+} from "../../components/colors";
+import { primaryFont, secondaryFont } from "../../components/fonts";
+import {
   Grid,
   Typography,
   Box,
   ThemeProvider,
   Button,
 } from "@material-ui/core";
+import Footer from "../footer";
 
 export default class Sponsors extends Component {
   render() {
     return (
-      <div className="sponsors">
+
+      <div style={{ width: "100%" }} onScroll={this.handleScroll}>
         <div>
-          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+          <Typography style={{ fontSize: "20px" }}>
             <Header />
           </Typography>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className="sponsors-body">
+        <Grid
+          container
+          alignContent="center"
+          direction="column"
+          justify="center"
+          style={{ backgroundColor: "#009877" }}
+        >
+          <Grid item>
+            <ThemeProvider theme={primaryFont}>
+              <Typography
+                variant="h3"
+                style={{ textAlign: "center", color: white, margin: "150px 0 0 0", fontWeight: "bold" }}
+              >
+                Our Sponsors
+            </Typography>
+              <Typography
+                variant="body1"
+                style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+              >
+                We are proud to have the support of so many inspirational partners in our journey to World Expo 2021. Below you will see some of the cutting-edge companies and organisations that have worked with us so far.
+            </Typography>
+            </ThemeProvider>
+          </Grid>
+        </Grid>
+        <div class="landing-bottom" style={{ backgroundColor: esteemGreen }}>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              style={{ fill: white }}
+            ></path>
+          </svg>
+        </div>
+
+        <div className="sponsors">
+          {/* <div>
+            <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+              <Header />
+            </Typography>
+          </div> */}
+          {/* <div className="sponsors-body"> */}
           {/* Platinum Sponsors */}
+          {/* 
+          <div style={{ backgroundColor: "#009877", height: "500px", position: "relative", display: "flex" }}>
+            <h3>
+              Our Sponsors
+          </h3>
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              style={{ position: "absolute", bottom: "0" }}
+            >
+              <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                style={{ fill: "#fff" }}
+              ></path>
+            </svg>
+          </div> */}
 
-          <div className="sponsors-heading" id="sponsors-platinum">
-            Platinum
-          </div>
-          <hr />
-
+          <ThemeProvider>
+            <Typography
+              variant="h4"
+              style={{ textAlign: "center", color: darkGrey, fontWeight: "bold" }}
+            >
+              Platinum
+            </Typography>
+          </ThemeProvider>
           <div className="sponsors-images">
             <Grid
               container
@@ -80,13 +151,21 @@ export default class Sponsors extends Component {
               />
             </a>
           </div>
+          {/* <div class="sections-bottom"> */}
+
+          {/* </div> */}
 
           {/* Gold Sponsors */}
 
-          <div className="sponsors-heading" id="sponsors-gold">
-            Gold
-          </div>
-          <hr />
+          <ThemeProvider>
+            <Typography
+              variant="h4"
+              style={{ textAlign: "center", color: darkGrey, fontWeight: "bold" }}
+            >
+              Gold
+            </Typography>
+          </ThemeProvider>
+
           <div className="sponsors-images">
             <a href="https://www.norrsken.co.uk/" target="_blank">
               <img
@@ -103,14 +182,27 @@ export default class Sponsors extends Component {
                 alt=""
               />
             </a>
+
+            <a href="https://www.vrcraftworks.com/" target="_blank">
+              <img
+                className="sponsors-gold-image"
+                src="/sponsors/gold/vrcraftworks.png"
+                alt=""
+              />
+            </a>
           </div>
 
           {/* Silver Sponsors */}
 
-          <div className="sponsors-heading" id="sponsors-silver">
-            Silver
-          </div>
-          <hr />
+          <ThemeProvider>
+            <Typography
+              variant="h4"
+              style={{ textAlign: "center", color: darkGrey, fontWeight: "bold" }}
+            >
+              Silver
+            </Typography>
+          </ThemeProvider>
+
           <div className="sponsors-images">
             <Grid
               container
@@ -167,14 +259,26 @@ export default class Sponsors extends Component {
                 alt=""
               />
             </a>
+
+            <a href="https://www.lucecoplc.com/" target="_blank">
+              <img
+                className="sponsors-silver-image"
+                src="/sponsors/silver/luceco.png"
+                alt=""
+              />
+            </a>
           </div>
 
           {/* Bronze Sponsors */}
 
-          <div className="sponsors-heading" id="sponsors-bronze">
-            Bronze
-          </div>
-          <hr />
+          <ThemeProvider>
+            <Typography
+              variant="h4"
+              style={{ textAlign: "center", color: darkGrey, fontWeight: "bold" }}
+            >
+              Bronze
+            </Typography>
+          </ThemeProvider>
 
           <div className="sponsors-images">
             <Grid
@@ -240,14 +344,42 @@ export default class Sponsors extends Component {
                 alt=""
               />
             </a>
+
+            <a href="https://www.tala.co.uk/" target="_blank">
+              <img
+                className="sponsors-bronze-image"
+                src="/sponsors/bronze/tala.webp"
+                alt=""
+              />
+            </a>
+
+            <a href="https://www.proctorgroup.com/" target="_blank">
+              <img
+                className="sponsors-bronze-image"
+                src="/sponsors/bronze/proctorgroup.jpeg"
+                alt=""
+              />
+            </a>
+
+            <a href="https://www.treedom.net/en/" target="_blank">
+              <img
+                className="sponsors-bronze-image"
+                src="/sponsors/bronze/treedom.png"
+                alt=""
+              />
+            </a>
           </div>
 
           {/* Supporters */}
 
-          <div className="sponsors-heading" id="sponsors-supporters">
-            Supporters
-          </div>
-          <hr />
+          <ThemeProvider>
+            <Typography
+              variant="h4"
+              style={{ textAlign: "center", color: darkGrey, fontWeight: "bold" }}
+            >
+              Supporters
+            </Typography>
+          </ThemeProvider>
           <div className="sponsors-images">
             <Grid
               container
@@ -358,17 +490,33 @@ export default class Sponsors extends Component {
                 alt=""
               />
             </a>
-
-            <a href="https://www.tala.co.uk/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/tala.webp"
-                alt=""
-              />
-            </a>
           </div>
         </div>
+        <div class="footer-top">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            style={{backgroundColor:"#fff"}}
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div className="Footer">
+          <ThemeProvider theme={primaryFont}>
+            <Typography
+              style={{ fontSize: "20px", fontWeight: "lighter" }}
+            >
+              <Footer />
+            </Typography>
+          </ThemeProvider>
+        </div>
       </div>
+
     );
   }
 }

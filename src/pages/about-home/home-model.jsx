@@ -1,40 +1,27 @@
-import { Box } from "@material-ui/core";
-import React, { Component } from "react";
-import ReactThreeFbxViewer from "react-three-fbx-viewer";
-import { esteemGreen } from "../../components/colors";
-import fbxUrl from "./sdmehouse-architecture 1.fbx";
-// let fbxUrl = require("./Dragon 2.5_fbx.fbx");
+// import { OBJModel } from "react-3d-viewer";
+// import React, { Component } from "react";
+// import DragonOBJ from "./Dragon 2.5_OBJ.obj";
+// import { Box } from "@material-ui/core";
+// class HomeModel extends Component {
+//   render() {
+//     return (
+//       <Box style={{ background: "#000000" }}>
+//         <OBJModel
+//           width="500"
+//           height="400"
+//           position={{ x: 50, y: 0, z: 10 }}
+//           src={DragonOBJ}
+//           onLoad={() => {
+//             //...
+//           }}
+//           onProgress={(xhr) => {
+//             console.log(xhr);
+//             //...
+//           }}
+//         />
+//       </Box>
+//     );
+//   }
+// }
 
-export default class App extends Component {
-  onLoad(e) {
-    console.log(e);
-  }
-
-  onError(e) {
-    console.log(e);
-  }
-  render() {
-    let cameraPosition = {
-      x: 0,
-      y: -150,
-      z: 80,
-    };
-    return (
-      <Box>
-        <div
-          style={{ background: esteemGreen, width: "600px", height: "500px" }}
-        >
-          Hey
-          <ReactThreeFbxViewer
-            cameraPosition={cameraPosition}
-            backgroundColor={esteemGreen}
-            url={fbxUrl}
-            onLoading={this.onLoad}
-            onError={this.onError}
-            style={{ width: "600px", height: "500px" }}
-          />
-        </div>
-      </Box>
-    );
-  }
-}
+// export default HomeModel;

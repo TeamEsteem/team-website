@@ -73,85 +73,41 @@ function DividerSpecial(props) {
 class Landing extends Component {
   render() {
     return (
-      <div style={{ margin: "auto" }} onScroll={this.handleScroll}>
+      <div style={{ width: "100%" }} onScroll={this.handleScroll}>
         <div>
-          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+          <Typography style={{ fontSize: "20px" }}>
             <Header />
           </Typography>
         </div>
-        <Box m={5}></Box>
         <Grid
           container
           alignContent="center"
           direction="column"
           justify="center"
-          spacing={1}
         >
           <Grid item>
-            <img
-              src={EsteemLogo}
-              alt="logos"
-              width="300em"
-              style={{
-                alignContent: "center",
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto",
-                position: "relative",
-              }}
-            ></img>
-            <br></br>
-          </Grid>
-          <Grid item>
-            <ThemeProvider theme={secondaryFont}>
+            <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="h2"
-                style={{ textAlign: "center", color: esteemGreen }}
+                style={{ textAlign: "center", color: white, marginTop: "200px" }}
               >
-                PRIDE IN <span style={{ color: grey }}>WHERE</span> <br></br>{" "}
-                <Box m={-2}></Box> AND <span style={{ color: grey }}>HOW</span>{" "}
-                WE LIVE
+                Pride in <span style={{ color: white }}> where</span> <br></br>{" "}
+                <Box m={-2}></Box> and <span style={{ color: white }}>how</span>{" "}
+                we live
               </Typography>
             </ThemeProvider>
           </Grid>
           <Box m={2}></Box>
           <Grid item>
-            <ThemeProvider theme={primaryFont}>
-              {/* <Typography
-                variant="body1"
-                style={{
-                  paddingLeft: "100px",
-                  paddingRight: "100px",
-                  color: "white",
-                  fontWeight: "lighter",
-                  fontSize: "20px",
-                  textAlign: "center",
-                  margin: "auto",
-                  width: "50%",
-                }}
-              >
-                We are Team ESTEEM. 50 students, 5 academic schools, 3 campuses
-                and 1 cohesive vision driving us to build a better world
-              </Typography> */}
-              <Grid container direction="row">
-                <SubtitleInteractive number="50" subtitle="students" />
-                {/* <DividerSpecial color={grey} /> */}
-                <SubtitleInteractive number="5" subtitle="academic schools" />
-                {/* <DividerSpecial color={grey} /> */}
-                <SubtitleInteractive number="3" subtitle="campuses" />
-                {/* <DividerSpecial color={grey} /> */}
-                <SubtitleInteractive number="1" subtitle="cohesive vision" />
-              </Grid>
-              <ThemeProvider theme={{ secondaryFont }}>
-                <Typography
-                  variant="body1"
-                  style={{ color: grey, textAlign: "center", fontSize: "20px" }}
-                >
-                  driving us to build a better world!{" "}
-                  {"{any better text here?}"}
-                </Typography>
-              </ThemeProvider>
-            </ThemeProvider>
+            <Grid container direction="row">
+              <SubtitleInteractive number="50" subtitle="students" />
+              {/* <DividerSpecial color={grey} /> */}
+              <SubtitleInteractive number="5" subtitle="academic schools" />
+              {/* <DividerSpecial color={grey} /> */}
+              <SubtitleInteractive number="3" subtitle="campuses" />
+              {/* <DividerSpecial color={grey} /> */}
+              <SubtitleInteractive number="1" subtitle="cohesive vision" />
+            </Grid>
           </Grid>
           <Box m={3} />
 
@@ -162,14 +118,15 @@ class Landing extends Component {
               padding: "5px 30px 5px 30px",
               color: white,
               margin: "auto",
-              border: "3px solid" + esteemGreen,
+              marginBottom: "150px",
+              border: "2px solid" + white,
               borderRadius: "20px",
             }}
             startIcon={<ExpandMoreRoundedIcon />}
           >
             <Link
               activeClass="active"
-              to="timeline"
+              to="landing-bottom"
               spy={true}
               smooth={true}
               duration={1000}
@@ -179,11 +136,24 @@ class Landing extends Component {
                 position: "relative",
               }}
             >
-              Learn More!
+              See More
             </Link>
           </Button>
         </Grid>
         {/* <Box m={-1} /> */}
+        <div class="landing-bottom">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </div>
     );
   }
