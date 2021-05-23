@@ -43,7 +43,6 @@ function FormRow2() {
           direction="row"
           justify="space-evenly"
           alignItems="baseline"
-          spacing={4}
         >
           <IconButton
             style={{
@@ -142,7 +141,6 @@ class Footer extends Component {
           direction="column"
           justify="flex-start"
           alignItems="center"
-          spacing={2}
         >
           <Grid>
             <FormRow2 />

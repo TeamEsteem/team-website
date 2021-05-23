@@ -19,7 +19,7 @@ export const members = [
     image: "/members/adam.jpg",
   },
   {
-    team: ["renewables"],
+    team: ["marketing"],
     name: "Jonathan",
     role: "Content Creator & Writer",
     image: "/members/jonathan_naftalin.jpg",

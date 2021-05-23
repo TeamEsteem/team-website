@@ -243,7 +243,8 @@ $black: "#000000";
 .timeline-bottom svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  // width: calc(100% + 1.3px);
+  width: 100%;
   height: 100px;
   transform: rotateY(180deg);
 }
@@ -413,7 +414,8 @@ $black: "#000000";
 .sections-bottom svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  // width: calc(100% + 1.3px);
+  width: 100%;
   height: 100px;
   transform: rotateY(180deg);
 }
@@ -534,4 +536,142 @@ $black: "#000000";
 
 .section-block-text {
   width: 50%;
+}
+
+.MuiButtonBase-root {
+  border-radius: 50px !important;
+}
+
+
+/* Sponsors Page */
+
+.sponsors{
+  background-color: var(--white);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+  z-index: 1;
+}
+
+.sponsors-body{
+  background-color: #ffffff;
+  font-weight: bold;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+
+  border-radius: 20px;
+}
+
+.sponsors-heading {
+  width: 20%;
+  justify-content: center;
+  font-weight: 700;
+}
+
+
+.sponsors-body > hr {
+  max-width: 50vw;
+  /* border: solid 1px #009877; */
+  border: none;
+  margin-bottom: 20px;
+  background: linear-gradient(to left, #00987700, #009877 25%, #009877 75%, #00987700 100%);
+  height: 3px;
+}
+
+#sponsors-platinum {
+  font-size: 2.5em;
+  color:rgb(59, 201, 194)
+}
+
+#sponsors-gold {
+  font-size: 2em;
+  color:rgb(226, 226, 26)
+}
+
+#sponsors-silver {
+  font-size: 1.75em;
+  color:rgb(167, 168, 168)
+}
+
+#sponsors-bronze {
+  font-size: 1.5em;
+  color:rgb(243, 162, 86)
+}
+
+
+#sponsors-supporters {
+  font-size: 1em;
+  color:rgb(0, 0, 0)
+}
+
+.sponsors-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 1000px;
+}
+
+.sponsors-images > a {
+  display: flex;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  transform: scale(1);
+}
+
+.sponsors-grid > a {
+  display: flex;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  transform: scale(1);
+}
+
+.sponsors-grid > a:hover{
+  display: flex;
+  transform: scale(1.1);
+}
+
+.sponsors-images > a:hover {
+  display: flex;
+  transform: scale(1.1);
+}
+
+.sponsors-platinum-image {
+  max-height: 175px;
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
+}
+
+.sponsors-gold-image {
+  max-height: 150px;
+  max-width: 350px;
+  // padding: 20px;
+  margin: auto;
+}
+
+.sponsors-silver-image {
+  // max-height: 100px;
+  max-width: 250px;
+  padding: 20px;
+  margin: auto;
+}
+
+.sponsors-bronze-image {
+  max-height: 100px;
+  max-width: 200px;
+  padding: 15px;
+  margin: auto;
+}
+
+.sponsors-supporters-image {
+  max-height: 100px;
+  max-width: 150px;
+  padding: 10px;
+  margin: auto;
 }

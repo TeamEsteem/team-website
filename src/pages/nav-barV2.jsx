@@ -10,15 +10,12 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { ThemeProvider } from "styled-components";
 import { Link } from "react-router-dom";
 import { primaryFont } from "../components/fonts";
-import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo.png";
+import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full White.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     // marginLeft: "0px",
     // justifyContent: "space-evenly"
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
   },
   title: {
     // flexGrow: 1,
@@ -62,25 +59,25 @@ export default function ButtonAppBar() {
         <Toolbar style={{ left: "-30%" }}>
           <ThemeProvider theme={primaryFont}>
             <Link to="/" style={{ textDecoration: "none" }}>
-              {/* <img
+              <img
                 className="footer-logos"
                 id="esteem-square-logo"
                 src={EsteemLogo}
                 alt="ESTEEM"
                 style={{
                   height: "40px",
-                  margin: "8px 5px 0px 5px"
+                  margin: "8px 0 0 5px"
                 }}
-              ></img> */}
+              ></img>
               <IconButton
                 style={{
                   justifyContent: "center",
                   color: white,
                 }}
               >
-                <Typography component={"span"} variant={"body1"}>
+                {/* <Typography component={"span"} variant={"body1"}>
                   Home
-                </Typography>
+                </Typography> */}
               </IconButton>
             </Link>
             <Link to="/team" style={{ textDecoration: "none" }}>

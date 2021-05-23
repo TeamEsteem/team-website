@@ -84,7 +84,6 @@ class Landing extends Component {
           alignContent="center"
           direction="column"
           justify="center"
-          spacing={1}
         >
           <Grid item>
             <ThemeProvider theme={primaryFont}>

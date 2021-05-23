@@ -94,7 +94,8 @@ class Section1 extends Component {
             <br></br>
             <ThemeProvider theme={primaryFont}>
               <Typography
-
+                variant="body1"
+                style={{fontSize:"1em", textAlign:"right"}}
               >
                 <div className="section-block">
                   <div className="section-block-text">
@@ -148,8 +149,8 @@ class Section2 extends Component {
             <br></br>
             <ThemeProvider theme={primaryFont}>
               <Typography
-                variant="h5"
-                style={{ color: darkGrey }}
+                variant="body1"
+                style={{ color: darkGrey, fontSize: "1em" }}
               >
                 <div className="section-block">
                   <img className="landing-img" style={{}}
@@ -188,7 +189,6 @@ class Section3 extends Component {
           direction="row"
           justify="space-evenly"
           alignItems="baseline"
-          spacing={4}
         >
           <Grid class="mission-block">
             <ThemeProvider theme={primaryFont}>
