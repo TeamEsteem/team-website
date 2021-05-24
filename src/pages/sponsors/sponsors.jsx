@@ -490,6 +490,14 @@ export default class Sponsors extends Component {
                 alt=""
               />
             </a>
+
+            <a href="https://www.facebook.com/alphaarquitectos507/" target="_blank">
+              <img
+                className="sponsors-supporters-image"
+                src="/sponsors/supporters/alpha.jpg"
+                alt=""
+              />
+            </a>
           </div>
         </div>
         <div class="footer-top">
