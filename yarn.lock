@@ -1260,10 +1260,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@google/model-viewer@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@google/model-viewer/-/model-viewer-1.7.0.tgz#4297b4e0ef1212e1c451233e378d0399329290fd"
-  integrity sha512-Ucchet2BgXfgfL/MjNjbZIyyXOf8iQN18PkhUHEhrdbLQmMpgUrpyh3hPWQPoIbPSlg0ygqUDtGv6mTUd48uJA==
+"@google/model-viewer@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@google/model-viewer/-/model-viewer-1.7.1.tgz#c89552a499a9b9c01ff4fa2b5b6b0454d9d50cb1"
+  integrity sha512-4G/Y2Ue26lteCS9if6C6jVwXcKX8UDP3DKAWbHAd2Ig3TQgmWVd7SiV0QnFwuWa1GivC4CCRoHPnSfBb/VehkA==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -12094,6 +12094,11 @@ yargs@^15.4.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
+
+yarn@^1.22.10:
+  version "1.22.10"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.10.tgz#c99daa06257c80f8fa2c3f1490724e394c26b18c"
+  integrity sha512-IanQGI9RRPAN87VGTF7zs2uxkSyQSrSPsju0COgbsKQOOXr5LtcVPeyXWgwVa0ywG3d8dg6kSYKGBuYK021qeA==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
