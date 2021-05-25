@@ -44,7 +44,11 @@ $black: "#000000";
   // background-image: url("./assets/images/landing-background.png");
   // background-image: url("https://www.youtube.com/watch?v=PT8aveu2Asg");
   // background-color: var(--esteem-green);
-  background: linear-gradient(45deg, rgba(0,152,119,1) 0%, rgba(34,173,135,1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 152, 119, 1) 0%,
+    rgba(34, 173, 135, 1) 100%
+  );
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: scroll;
@@ -142,7 +146,6 @@ $black: "#000000";
   box-shadow: 0 3px 0 #0c0c0c;
 }
 
-
 .pillar-block-1 {
   background-color: #202020;
   padding: 50px;
@@ -156,7 +159,6 @@ $black: "#000000";
   border-radius: 1em;
   box-shadow: 0 3px 0 #0c0c0c;
 }
-
 
 .team-block {
   background-color: #202020;
@@ -273,14 +275,20 @@ $black: "#000000";
 }
 
 .vertical-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 18px;
   height: 100%;
   width: 5px;
   // background: var(--esteem-green);
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,152,119,1) 5%, rgba(0,152,119,1) 95%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 152, 119, 1) 5%,
+    rgba(0, 152, 119, 1) 95%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .vertical-timeline-element-content {
@@ -322,17 +330,16 @@ $black: "#000000";
   border-radius: 20px;
 }
 
-.pillar-list{
+.pillar-list {
   margin: 0px;
   padding: 0px;
 }
 
 .pillar-details-1 {
-  padding:130px;
+  padding: 130px;
   background-color: #e7e3e3;
   max-width: 1250px;
 }
-
 
 .pillar-item {
   padding-top: 100px;
@@ -340,7 +347,7 @@ $black: "#000000";
   justify-content: center;
   width: 14.25vw;
   height: 45vh;
-  display:inline-block;
+  display: inline-block;
   transition: all 0.5s ease;
   font-size: 1.25vw;
   color: white;
@@ -353,49 +360,55 @@ $black: "#000000";
   cursor: pointer;
 }
 
-#pillar-0{
+#pillar-0 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/sustainability.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/sustainability.png");
 }
 
-#pillar-1{
+#pillar-1 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/future.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/future.jpeg");
 }
 
-#pillar-2{
+#pillar-2 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/innovation.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/innovation.png");
   background-repeat: no-repeat;
 }
 
-#pillar-3{
+#pillar-3 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/clean-energy.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/clean-energy.jpg");
 }
 
-#pillar-4{
+#pillar-4 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/mobility.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/mobility.jpg");
 }
 
-#pillar-5{
+#pillar-5 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/smart-solutions.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/smart-solutions.jpg");
 }
 
-#pillar-6{
+#pillar-6 {
   background-image: url();
   background-size: auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("./assets/images/happiness.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/happiness.jpg");
 }
-
 
 /* Transition */
 .slide-up-appear {
@@ -437,7 +450,6 @@ $black: "#000000";
 .sections-bottom .shape-fill {
   fill: var(--light-grey);
 }
-
 
 .custom-shape-divider-top-1617567759 {
   position: relative;
@@ -500,8 +512,8 @@ $black: "#000000";
 
 .section-block {
   display: flex;
+  text-align: left;
 }
-
 
 .section-block-text {
   width: 50%;
@@ -511,20 +523,19 @@ $black: "#000000";
   border-radius: 50px !important;
 }
 
-
 /* Sponsors Page */
 
-.sponsors{
+.sponsors {
   background-color: var(--white);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
- 
+
   z-index: 1;
 }
 
-.sponsors-body{
+.sponsors-body {
   background-color: #ffffff;
   font-weight: bold;
   z-index: 2;
@@ -541,40 +552,44 @@ $black: "#000000";
   font-weight: 700;
 }
 
-
 .sponsors-body > hr {
   max-width: 50vw;
   /* border: solid 1px #009877; */
   border: none;
   margin-bottom: 20px;
-  background: linear-gradient(to left, #00987700, #009877 25%, #009877 75%, #00987700 100%);
+  background: linear-gradient(
+    to left,
+    #00987700,
+    #009877 25%,
+    #009877 75%,
+    #00987700 100%
+  );
   height: 3px;
 }
 
 #sponsors-platinum {
   font-size: 2.5em;
-  color:rgb(59, 201, 194)
+  color: rgb(59, 201, 194);
 }
 
 #sponsors-gold {
   font-size: 2em;
-  color:rgb(226, 226, 26)
+  color: rgb(226, 226, 26);
 }
 
 #sponsors-silver {
   font-size: 1.75em;
-  color:rgb(167, 168, 168)
+  color: rgb(167, 168, 168);
 }
 
 #sponsors-bronze {
   font-size: 1.5em;
-  color:rgb(243, 162, 86)
+  color: rgb(243, 162, 86);
 }
-
 
 #sponsors-supporters {
   font-size: 1em;
-  color:rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 
 .sponsors-images {
@@ -600,7 +615,7 @@ $black: "#000000";
   transform: scale(1);
 }
 
-.sponsors-grid > a:hover{
+.sponsors-grid > a:hover {
   display: flex;
   transform: scale(1.1);
 }

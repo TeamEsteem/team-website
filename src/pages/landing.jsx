@@ -89,7 +89,11 @@ class Landing extends Component {
             <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="h2"
-                style={{ textAlign: "center", color: white, marginTop: "200px" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  marginTop: "200px",
+                }}
               >
                 Pride in <span style={{ color: white }}> where</span> <br></br>{" "}
                 <Box m={-2}></Box> and <span style={{ color: white }}>how</span>{" "}
@@ -100,7 +104,7 @@ class Landing extends Component {
           <Box m={2}></Box>
           <Grid item>
             <Grid container direction="row">
-              <SubtitleInteractive number="50" subtitle="students" />
+              <SubtitleInteractive number="130" subtitle="students" />
               {/* <DividerSpecial color={grey} /> */}
               <SubtitleInteractive number="5" subtitle="academic schools" />
               {/* <DividerSpecial color={grey} /> */}

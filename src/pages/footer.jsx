@@ -10,10 +10,11 @@ import {
 } from "../components/colors";
 import { Grid, Typography, ThemeProvider, IconButton } from "@material-ui/core";
 import MailOutline from "@material-ui/icons/MailOutline";
-import Business from "@material-ui/icons/Business";
+// import Business from "@material-ui/icons/Business";
 import Twitter from "@material-ui/icons/Twitter";
 import Facebook from "@material-ui/icons/Facebook";
 import Instagram from "@material-ui/icons/Instagram";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
 import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full.png";
@@ -53,7 +54,7 @@ function FormRow2() {
           >
             <MailOutline />
           </IconButton>
-          <IconButton
+          {/* <IconButton
             style={{
               fontWeight: "lighter",
               justifyContent: "center",
@@ -61,7 +62,7 @@ function FormRow2() {
             }}
           >
             <Business />
-          </IconButton>
+          </IconButton> */}
           <IconButton
             style={{
               fontWeight: "lighter",
@@ -89,6 +90,15 @@ function FormRow2() {
           >
             <Instagram />
           </IconButton>
+          <IconButton
+            style={{
+              fontWeight: "lighter",
+              justifyContent: "center",
+              color: esteemGreen,
+            }}
+          >
+            <YouTubeIcon />
+          </IconButton>
         </Grid>
         <br></br>
       </Grid>
@@ -112,7 +122,7 @@ function FormRow1() {
             src={HWLogo}
             alt="logos"
             style={{
-              filter: "brightness(0) invert(1) contrast(50%)"
+              filter: "brightness(0) invert(1) contrast(50%)",
             }}
           ></img>
         </Grid>
@@ -123,7 +133,7 @@ function FormRow1() {
             src={SDMELogo}
             alt="logos"
             style={{
-              filter: "contrast(50%)"
+              filter: "contrast(50%)",
             }}
           ></img>
         </Grid>

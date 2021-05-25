@@ -50,8 +50,8 @@ class HomeModelV2 extends Component {
                   // camera-orbit="180deg 0deg -50m"
                   camera-orbit="0rad 2.748893571891069rad auto"
                   // min-camera-orbit="0rad 1.74 auto"
-                  max-camera-orbit="0rad 3.74 auto"
-                  // field-of-view="90"
+                  // max-camera-orbit="0rad 3.74 auto"
+                  field-of-view="180"
                 >
                   <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>

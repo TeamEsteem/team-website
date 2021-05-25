@@ -95,23 +95,33 @@ class Section1 extends Component {
             <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="body1"
-                style={{fontSize:"1em", textAlign:"right"}}
+                style={{ fontSize: "1em", textAlign: "right" }}
               >
                 <div className="section-block">
                   <div className="section-block-text">
                     <p>
-                      We are Team ESTEEM from Heriot Watt University. 50 students, 5 academic schools, 3 campuses and 1 cohesive vision driving us to build a better world.
+                      We are Team ESTEEM from Heriot Watt University. 130
+                      students, 5 academic schools, 3 campuses and 1 cohesive
+                      vision driving us to build a better world.
                     </p>
                     <br></br>
                     <p>
-                      Our members stem from a broad range of academic disciplines – Architectural, Structural, Electrical, Mechanical, Civil, Chemical Engineering; Computer Science, Data Science, Marketing and Business Management; Urban Planning, Construction Project Management.
+                      Our members stem from a broad range of academic
+                      disciplines – Architectural, Structural, Electrical,
+                      Mechanical, Civil, Chemical Engineering; Computer Science,
+                      Data Science, Marketing and Business Management; Urban
+                      Planning, Construction Project Management.
                     </p>
                     <br></br>
                     <p>
-                      We are as diverse as we are creative, and it is drawing from this international pool of passion and talent that drives our success.
+                      We are as diverse as we are creative, and it is drawing
+                      from this international pool of passion and talent that
+                      drives our success.
                     </p>
                   </div>
-                  <img className="landing-img" style={{}}
+                  <img
+                    className="landing-img"
+                    style={{}}
                     src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
                     height="500px"
                   ></img>
@@ -153,21 +163,35 @@ class Section2 extends Component {
                 style={{ color: darkGrey, fontSize: "1em" }}
               >
                 <div className="section-block">
-                  <img className="landing-img" style={{}}
+                  <img
+                    className="landing-img"
+                    style={{}}
                     src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
                     height="500px"
                   ></img>
                   <div className="section-block-text">
                     <p>
-                      We are Heriot Watt University’s official entrant to the Solar Decathlon Middle East 2020 competition, a collegiate contest integrated with the 2020 World Expo in Dubai which is expected to attract an estimated 25 million people.
+                      We are Heriot Watt University’s official entrant to the
+                      Solar Decathlon Middle East 2020 competition, a collegiate
+                      contest integrated with the 2020 World Expo in Dubai which
+                      is expected to attract an estimated 25 million people.
                     </p>
                     <br></br>
                     <p>
-                      Our goal is to design and build a multifunctional solar powered house in collaboration with industry and academia. Our design ethos emphasises sustainability, and our construction will feature wall-to-wall innovation in our efforts to achieve the most eco-friendly build that can withstand the high temperature, high humidity and dusty conditions present in the Middle East.
+                      Our goal is to design and build a multifunctional solar
+                      powered house in collaboration with industry and academia.
+                      Our design ethos emphasises sustainability, and our
+                      construction will feature wall-to-wall innovation in our
+                      efforts to achieve the most eco-friendly build that can
+                      withstand the high temperature, high humidity and dusty
+                      conditions present in the Middle East.
                     </p>
                     <br></br>
                     <p>
-                      Headquartered in Edinburgh, we are proud to represent the Scottish Construction and Building Services sectors on the international stage with our incorporation of materials and designs from several local sponsors.
+                      Headquartered in Edinburgh, we are proud to represent the
+                      Scottish Construction and Building Services sectors on the
+                      international stage with our incorporation of materials
+                      and designs from several local sponsors.
                     </p>
                   </div>
                 </div>

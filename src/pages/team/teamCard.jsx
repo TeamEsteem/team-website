@@ -24,6 +24,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Footer from "../footer";
 
 const teams = [
+  "management",
   "marketing",
   "architecture",
   "website",
@@ -64,7 +65,8 @@ function TeamCardSmall(props) {
             height: 100,
             width: 100,
             // boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
-            boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
+            boxShadow:
+              "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
           }}
           src={props.image}
         />
@@ -98,8 +100,7 @@ function TeamCardSmall(props) {
             paddingRight: "10px",
             fontWeight: "300",
           }}
-        >
-        </Typography>
+        ></Typography>
         <Box m={2} />
         {/* <Typography variant="body2" style={{ fontWeight: "500", color: "#505050" }}>
           Find me on {"  "} */}
@@ -134,11 +135,13 @@ function TeamCardSmall(props) {
 function BackgroundTeamCard(props) {
   return (
     <Box
-      style={{
-        // paddingTop: "5px",
-        // display: "flex",
-        // background: "linear-gradient(49deg, rgba(34,173,135,1) 21%, rgba(0,130,100,1) 100%)",
-      }}
+      style={
+        {
+          // paddingTop: "5px",
+          // display: "flex",
+          // background: "linear-gradient(49deg, rgba(34,173,135,1) 21%, rgba(0,130,100,1) 100%)",
+        }
+      }
     >
       <ThemeProvider theme={primaryFont}>
         <Box
@@ -151,7 +154,7 @@ function BackgroundTeamCard(props) {
             display: "flex",
             justifyContent: "center",
           }}
-        // className="card-background-title"
+          // className="card-background-title"
         >
           <Typography
             variant="h4"
@@ -163,7 +166,7 @@ function BackgroundTeamCard(props) {
             <span style={{ fontWeight: "700" }}>
               {props.team.charAt(0).toUpperCase() + props.team.slice(1)}
               {"  "}
-            Team
+              Team
             </span>
           </Typography>
         </Box>
@@ -208,15 +211,29 @@ class TeamMembers extends Component {
             <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="h3"
-                style={{ textAlign: "center", color: white, margin: "150px 0 0 0", fontWeight: "bold" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "150px 0 0 0",
+                  fontWeight: "bold",
+                }}
               >
                 Our Team
-            </Typography>
+              </Typography>
               <Typography
                 variant="body1"
-                style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "25px 0 100px 0",
+                  maxWidth: "1000px",
+                  fontSize: "1.5em",
+                }}
               >
-                Diverse student involvement across the whole university has been essential to the successful creation of a team of student engineers, computer scientists, energy specialists, and business undergraduates.
+                Diverse student involvement across the whole university has been
+                essential to the successful creation of a team of student
+                engineers, computer scientists, energy specialists, and business
+                undergraduates.
               </Typography>
             </ThemeProvider>
           </Grid>
@@ -259,9 +276,7 @@ class TeamMembers extends Component {
         </div>
         <div className="Footer">
           <ThemeProvider theme={primaryFont}>
-            <Typography
-              style={{ fontSize: "20px", fontWeight: "lighter" }}
-            >
+            <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
               <Footer />
             </Typography>
           </ThemeProvider>

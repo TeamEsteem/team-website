@@ -18,7 +18,7 @@ import {
 } from "../components/colors";
 import { primaryFont, secondaryFont } from "./fonts";
 import "../index.css";
-
+import { Button, Box } from "@material-ui/core";
 const Popup = (props) => {
   if (props.tag === "secondary") {
     return (
@@ -31,8 +31,7 @@ const Popup = (props) => {
         </div>
       </div>
     );
-  }
-  else{
+  } else {
     return (
       <div className="popup-box">
         <div className="box1">
@@ -46,7 +45,6 @@ const Popup = (props) => {
   }
 };
 
-
 export function TimelineElement(props) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -57,7 +55,9 @@ export function TimelineElement(props) {
     return (
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date={<Typography style={{ color: darkGreen }}>{props.date}</Typography>}
+        date={
+          <Typography style={{ color: darkGreen }}>{props.date}</Typography>
+        }
         contentArrowStyle={{ borderRight: "7px solid" + esteemGreen }}
         iconStyle={{ background: grey, color: lightGreen }}
         iconOnClick={togglePopup}
@@ -71,12 +71,12 @@ export function TimelineElement(props) {
       >
         {isOpen && (
           <Popup
-            tag= {props.tag}
+            tag={props.tag}
             content={
               <div>
                 <b>Popup 2</b>
                 <ThemeProvider theme={primaryFont}>
-                  <Typography  style={{ color:lightGreen }}>
+                  <Typography style={{ color: lightGreen }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -87,7 +87,13 @@ export function TimelineElement(props) {
                     deserunt mollit anim id est laborum.
                   </Typography>
                 </ThemeProvider>
-                <button>Test button</button>
+                <Box m={1} />
+                <Button
+                  variant="contained"
+                  style={{ background: lightGreen, color: white }}
+                >
+                  Test button
+                </Button>
               </div>
             }
             handleClose={togglePopup}
@@ -106,7 +112,7 @@ export function TimelineElement(props) {
           </Typography>
         </ThemeProvider>
         {/* <ThemeProvider theme={primaryFont}> */}
-        <Typography variant="body1" style={{ fontWeight: "100", color: lightGreen }}>
+        <Typography variant="body1" style={{ fontWeight: "300", color: grey }}>
           {props.desc}
         </Typography>
         {/* </ThemeProvider> */}
@@ -129,12 +135,12 @@ export function TimelineElement(props) {
       >
         {isOpen && (
           <Popup
-          tag= {props.tag}
+            tag={props.tag}
             content={
-              <div >
+              <div>
                 <b>Popup 1</b>
                 <ThemeProvider theme={primaryFont}>
-                  <Typography style={{ color:white }}>
+                  <Typography style={{ color: white }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -142,23 +148,22 @@ export function TimelineElement(props) {
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                   </Typography>
                 </ThemeProvider>
                 <button>Test button</button>
