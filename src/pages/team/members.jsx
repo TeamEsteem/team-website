@@ -1,4 +1,18 @@
 export const members = [
+  //management
+  {
+    team: ["management"],
+    name: "Sonia Piórek",
+    role: "Student Team Lead",
+    image: "/members/soniaP.jpg",
+  },
+  {
+    team: ["management"],
+    name: "Alex Maclaren",
+    role: "management team",
+    image: "/members/alexM.jpg",
+  },
+
   // Marketing
   {
     team: ["marketing", "architecture"],
@@ -46,7 +60,7 @@ export const members = [
   // Website
   {
     team: ["website"],
-    name: "Mohit K",
+    name: "Mohit Katta",
     role: "Website Developer",
     image: "/members/mohitKatta.png",
     linkedin: "https://www.linkedin.com/in/mohit-katta/",
@@ -55,7 +69,8 @@ export const members = [
     team: ["website"],
     name: "Pranav C",
     role: "Website Developer",
-    image: "",
+    image: "/members/pranav.png",
+    linkedin: "https://www.linkedin.com/in/pranav-chachara/",
   },
 
   // Software & Sensors

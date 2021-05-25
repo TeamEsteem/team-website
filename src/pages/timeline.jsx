@@ -1,9 +1,9 @@
-import { Typography, Box } from "@material-ui/core";
+import { Typography, Box, Button } from "@material-ui/core";
 import React, { Component } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { TimelineElement } from "../components/singleTimeline";
 import PopUp from "../components/singlePopUp";
-
+import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 import "../App.scss";
 import {
   white,
@@ -50,7 +50,10 @@ class Timeline extends Component {
               ></path>
             </svg>
           </div> */}
-          <Typography variant="h3" style={{ color: "#202020" }}>
+          <Typography
+            variant="h3"
+            style={{ color: "#202020", marginTop: "-60px" }}
+          >
             <span style={{ color: "#009877" }}>Our</span> Timeline
           </Typography>
           <Box m={-1}></Box>
@@ -76,6 +79,37 @@ class Timeline extends Component {
             tag="secondary"
           ></TimelineElement>
         </VerticalTimeline>
+        <Button
+          variant="outlined"
+          size="large"
+          style={{
+            padding: "5px 30px 5px 30px",
+            color: esteemGreen,
+            margin: "auto",
+            display: "flex",
+            marginTop: "50px",
+            marginBottom: "-70px",
+            border: "2px solid" + esteemGreen,
+            borderRadius: "20px",
+          }}
+          startIcon={<ExpandMoreRoundedIcon />}
+        >
+          See More
+          {/* <Link
+              activeClass="active"
+              to="landing-bottom"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                position: "relative",
+              }}
+            >
+              
+            </Link> */}
+        </Button>
       </div>
     );
   }
