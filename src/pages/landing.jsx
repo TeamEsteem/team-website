@@ -100,7 +100,7 @@ class Landing extends Component {
           <Box m={2}></Box>
           <Grid item>
             <Grid container direction="row">
-              <SubtitleInteractive number="50" subtitle="students" />
+              <SubtitleInteractive number="130" subtitle="students" />
               {/* <DividerSpecial color={grey} /> */}
               <SubtitleInteractive number="5" subtitle="academic schools" />
               {/* <DividerSpecial color={grey} /> */}
