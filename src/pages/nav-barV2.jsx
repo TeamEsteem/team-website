@@ -20,8 +20,9 @@ import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full White.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    // marginLeft: "0px",
-    // justifyContent: "space-evenly"
+    // display: "flex",
+    // marginLeft: "10px",
+    // justifyContent: "start",
   },
   title: {
     // flexGrow: 1,
@@ -46,8 +47,8 @@ export default function ButtonAppBar() {
   navRef.current = navBackground;
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 175;
-      if (show) {
+      // const show = ;
+      if (window.scrollY >= 175) {
         setNavBackground("appBarSolid");
       } else {
         setNavBackground("appBarTransparent");
@@ -62,7 +63,7 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="fixed" className={classes[navRef.current]}>
-        <Toolbar style={{ left: "-30%" }}>
+        <Toolbar>
           <ThemeProvider theme={primaryFont}>
             <Link to="/" style={{ textDecoration: "none" }}>
               <img
@@ -75,16 +76,6 @@ export default function ButtonAppBar() {
                   margin: "8px 0 0 5px",
                 }}
               ></img>
-              <IconButton
-                style={{
-                  justifyContent: "center",
-                  color: white,
-                }}
-              >
-                {/* <Typography component={"span"} variant={"body1"}>
-                  Home
-                </Typography> */}
-              </IconButton>
             </Link>
             <Link to="/team" style={{ textDecoration: "none" }}>
               <IconButton
@@ -133,6 +124,7 @@ export default function ButtonAppBar() {
                   position: "relative",
                   marginLeft: 10,
                   // bottom: "15px",
+                  padding: "5px 15px 5px 15px",
                   borderRadius: "20px",
                 }}
                 edge="end"

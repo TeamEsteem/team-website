@@ -69,7 +69,7 @@ export function TimelineElement(props) {
         }}
         // icon={<WorkIcon />}
       >
-        {isOpen && (
+        {/* {isOpen && (
           <Popup
             tag={props.tag}
             content={
@@ -98,7 +98,7 @@ export function TimelineElement(props) {
             }
             handleClose={togglePopup}
           />
-        )}
+        )} */}
 
         <ThemeProvider theme={secondaryFont}>
           <Typography variant="h3" className="vertical-timeline-element-title">
@@ -133,7 +133,7 @@ export function TimelineElement(props) {
         iconStyle={{ background: darkGreen, color: esteemGreen }}
         iconOnClick={togglePopup}
       >
-        {isOpen && (
+        {/* {isOpen && (
           <Popup
             tag={props.tag}
             content={
@@ -171,7 +171,7 @@ export function TimelineElement(props) {
             }
             handleClose={togglePopup}
           />
-        )}
+        )} */}
 
         <ThemeProvider theme={secondaryFont}>
           <Typography variant="h3" className="vertical-timeline-element-title">
