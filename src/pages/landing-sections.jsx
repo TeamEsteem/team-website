@@ -96,7 +96,7 @@ class Section1 extends Component {
               <ThemeProvider theme={primaryFont}>
                 <Typography
                   variant="body1"
-                  style={{ fontSize: "1em", textAlign: "right" }}
+                  style={{ fontSize: "1em" }}
                 >
                   <div className="section-block">
                     <div className="section-block-text">
@@ -210,44 +210,48 @@ class Section2 extends Component {
 class Section3 extends Component {
   render() {
     return (
-      <div style={{ margin: "auto" }}>
+      <div style={{ margin: "auto" }} id="section3">
         <Grid
           container
           direction="row"
           justify="space-evenly"
-          alignItems="baseline"
+          alignItems="center"
         >
-          <Grid class="mission-block">
-            <ThemeProvider theme={primaryFont}>
-              <Typography
-                variant="h3"
-                style={{ textAlign: "center", color: lightGreen }}
-              >
-                OUR MISSION
-              </Typography>
-            </ThemeProvider>
-            <br></br>
+          <Grid item class="wwd-block" id="landing-bottom">
             <ThemeProvider theme={secondaryFont}>
               <Typography
-                variant="h5"
-                style={{ textAlign: "center", color: white }}
+                variant="h3"
+                style={{ textAlign: "center", color: "#202020" }}
               >
-                Lorem ipsum dolor sit amet, consectetur <br></br>
-                adipiscing elit, sed do eiusmod tempor <br></br>
-                incididunt ut labore et dolore magna aliqua. <br></br>
-              </Typography>
+                <span style={{ color: "#009877" }}>Our</span> Mission
+
+                </Typography>
             </ThemeProvider>
             <br></br>
-            <img
-              src="https://cdn.benzinga.com/files/imagecache/1024x768xUP/images/story/2012/ramiz-dedakovic-jerh2nj1xwy-unsplash.jpg"
-              height="300px"
-              align="centre"
-            ></img>
-          </Grid>
-          <br></br>
-          <br></br>
-          <Grid>
-            <FormColumn />
+            <ThemeProvider theme={primaryFont}>
+              <Typography
+                variant="body1"
+                style={{ fontSize: "1em" }}
+              >
+                <div className="section-block">
+                  <div className="section-block-text">
+                    <p>
+                      At Team ESTEEM we draw from a range of academic backgrounds and our members aspire to apply their years of classroom learning to an interdisciplinary project that will change the world. We are the generation that will live to see the consequences of climate change. Motivated, eager and ready to act, each of us is committed to bringing together science, technology, architecture and innovative thinking to develop ourselves as professionals and bring about positive ecological change.
+                </p>
+                    <br></br>
+                    <p>
+                      With the SDME, we are ready to take on the biggest challenge of all – becoming thought leaders in the green recovery and building the better, greener world of tomorrow.
+                </p>
+                  </div>
+                  <img
+                    className="landing-img"
+                    style={{}}
+                    src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
+                    height="500px"
+                  ></img>
+                </div>
+              </Typography>
+            </ThemeProvider>
           </Grid>
         </Grid>
         <br></br>

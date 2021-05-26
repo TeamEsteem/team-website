@@ -96,7 +96,7 @@ class Timeline extends Component {
               border: "2px solid" + esteemGreen,
               borderRadius: "20px",
             }}
-            startIcon={<HouseIcon />}
+            // startIcon={<HouseIcon />}
           >
             <Typography component={"span"} variant={"body1"}>
               View the ESTEEM journey

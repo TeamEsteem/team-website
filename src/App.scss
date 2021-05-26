@@ -18,6 +18,7 @@
 
 * {
   font-family: "Inter" !important;
+  scroll-behavior: smooth;
 }
 
 $white: "#ffffff";
@@ -285,15 +286,15 @@ $black: "#000000";
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(0, 152, 119, 1) 5%,
-    rgba(0, 152, 119, 1) 95%,
+    rgba(0, 152, 119, 1) 1%,
+    rgba(0, 152, 119, 1) 99%,
     rgba(255, 255, 255, 0) 100%
-  );
+  ) !important;
 }
 
 .vertical-timeline-element-content {
   background-color: var(--esteem-green) !important;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
 .vertical-timeline-element-title {
@@ -307,7 +308,7 @@ $black: "#000000";
 
 .vertical-timeline-element-icon {
   background-color: var(--esteem-green) !important;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 /** For mobile devices **/

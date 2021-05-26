@@ -21,6 +21,7 @@ import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full.png";
 import SDMELogo from "../assets/images/SDME/SDME2021_logo_En_Hor_W.png";
 import HWLogo from "../assets/images/HW Logo.png";
 
+
 function FormRow2() {
   return (
     <React.Fragment>
@@ -52,7 +53,15 @@ function FormRow2() {
               color: esteemGreen,
             }}
           >
-            <MailOutline />
+            <a
+              href="mailto:sdme2020@hw.ac.uk"
+              style={{
+                textDecoration: "none",
+                color: white
+              }}
+            >
+              <MailOutline />
+            </a>
           </IconButton>
           {/* <IconButton
             style={{
@@ -70,7 +79,14 @@ function FormRow2() {
               color: esteemGreen,
             }}
           >
-            <Twitter />
+            <a
+              href="https://twitter.com/teamesteem2020"
+              style={{
+                textDecoration: "none",
+                color: white
+              }}>
+              <Twitter />
+            </a>
           </IconButton>
           <IconButton
             style={{
@@ -79,7 +95,15 @@ function FormRow2() {
               color: esteemGreen,
             }}
           >
-            <Facebook />
+            <a
+              href="https://www.facebook.com/teamesteem2020"
+              style={{
+                textDecoration: "none",
+                color: white
+              }}
+            >
+              <Facebook />
+            </a>
           </IconButton>
           <IconButton
             style={{
@@ -88,7 +112,15 @@ function FormRow2() {
               color: esteemGreen,
             }}
           >
-            <Instagram />
+            <a
+              href="https://www.instagram.com/teamesteem2020/"
+              style={{
+                textDecoration: "none",
+                color: white
+              }}
+            >
+              <Instagram />
+            </a>
           </IconButton>
           <IconButton
             style={{
@@ -97,12 +129,20 @@ function FormRow2() {
               color: esteemGreen,
             }}
           >
-            <YouTubeIcon />
+            <a
+              href="https://www.youtube.com/channel/UC55Q10-DHmFwC7NWNMXcpfg"
+              style={{
+                textDecoration: "none",
+                color: white
+              }}
+            >
+              <YouTubeIcon />
+            </a>
           </IconButton>
         </Grid>
         <br></br>
       </Grid>
-    </React.Fragment>
+    </React.Fragment >
   );
 }
 
