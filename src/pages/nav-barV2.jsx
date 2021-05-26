@@ -42,11 +42,12 @@ const useStyles = makeStyles((theme) => ({
 export default function ButtonAppBar() {
   const classes = useStyles();
 
-  const [navBackground, setNavBackground] = useState("appBarTransparent");
+  const [navBackground, setNavBackground] = useState("appBarSolid");
   const navRef = React.useRef();
   navRef.current = navBackground;
   useEffect(() => {
     const handleScroll = () => {
+      alert(window.scrollY)
       if (window.scrollY > 175) {
         setNavBackground("appBarSolid");
       } else {
@@ -59,9 +60,10 @@ export default function ButtonAppBar() {
     };
   }, []);
 
+
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed" className={classes[navRef.current]}>
+    <div className={classes.root} >
+      <AppBar position="fixed" className={classes[navRef.current]} >
         <Toolbar>
           <ThemeProvider theme={primaryFont}>
             <Link to="/" style={{ textDecoration: "none" }}>

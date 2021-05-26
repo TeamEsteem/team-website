@@ -146,9 +146,16 @@ export default class Impact extends Component {
               </Typography>
               <Typography
                 variant="body1"
+                style={{ textAlign: "center", color: white, margin: "25px 0 25px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+              >
+
+                These are the seven pillars of the SDME competition, highlighted by the Dubai Electricity and Water Authority (DEWA) as integral to the future of building services across the globe, but what do these words mean to Team  ESTEEM?
+              </Typography>
+              <Typography
+                variant="body1"
                 style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
               >
-                These are the seven pillars of the SDME competition, highlighted by the Dubai Electricity and Water Authority (DEWA) as integral to the future of building services across the globe, but what do these words mean to Team ESTEEM?
+                (Click to find out more!)
               </Typography>
             </ThemeProvider>
           </Grid>
