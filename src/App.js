@@ -1,6 +1,6 @@
 import Landing from "./pages/landing";
 import Header from "./pages/nav-barV2";
-import Timeline from "./pages/timeline";
+import Timeline from "./pages/timeline/timeline";
 import { Section1, Section2, Section3 } from "./pages/landing-sections";
 import Footer from "./pages/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -11,6 +11,8 @@ import Sponsors from "./pages/sponsors/sponsors";
 import Team from "./pages/team/teamCard";
 import Impact from "./pages/impact/impact";
 import HomeModel from "./pages/about-home/home-modelV2";
+import TimelinePage from "./pages/timeline/timeline-page.jsx";
+
 function App() {
   return (
     <>
@@ -144,6 +146,9 @@ function App() {
             </Route>
             <Route exact path="/home-model">
               <HomeModel />
+            </Route>
+            <Route exact path="/timeline">
+              <TimelinePage />
             </Route>
           </Switch>
         </Router>

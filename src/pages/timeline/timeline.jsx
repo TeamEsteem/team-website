@@ -1,10 +1,10 @@
 import { Typography, Box, Button } from "@material-ui/core";
 import React, { Component } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
-import { TimelineElement } from "../components/singleTimeline";
-import PopUp from "../components/singlePopUp";
+import { TimelineElement } from "../../components/singleTimeline";
+import PopUp from "../../components/singlePopUp";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
-import "../App.scss";
+import "../../App.scss";
 import {
   white,
   grey,
@@ -13,7 +13,9 @@ import {
   darkGreen,
   darkGrey,
   black,
-} from "../components/colors";
+} from "../../components/colors";
+import { Link } from "react-router-dom";
+import HouseIcon from "@material-ui/icons/House";
 
 class Timeline extends Component {
   state = {
@@ -79,37 +81,28 @@ class Timeline extends Component {
             tag="secondary"
           ></TimelineElement>
         </VerticalTimeline>
-        <Button
-          variant="outlined"
-          size="large"
-          style={{
-            padding: "5px 30px 5px 30px",
-            color: esteemGreen,
-            margin: "auto",
-            display: "flex",
-            marginTop: "50px",
-            marginBottom: "-70px",
-            border: "2px solid" + esteemGreen,
-            borderRadius: "20px",
-          }}
-          startIcon={<ExpandMoreRoundedIcon />}
-        >
-          See More
-          {/* <Link
-              activeClass="active"
-              to="landing-bottom"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              style={{
-                marginLeft: "auto",
-                marginRight: "auto",
-                position: "relative",
-              }}
-            >
-              
-            </Link> */}
-        </Button>
+
+        <Link to="/timeline" style={{ textDecoration: "none" }}>
+          <Button
+            variant="outlined"
+            size="large"
+            style={{
+              padding: "5px 30px 5px 30px",
+              color: esteemGreen,
+              margin: "auto",
+              display: "flex",
+              marginTop: "50px",
+              marginBottom: "-70px",
+              border: "2px solid" + esteemGreen,
+              borderRadius: "20px",
+            }}
+            startIcon={<HouseIcon />}
+          >
+            <Typography component={"span"} variant={"body1"}>
+              View the ESTEEM journey
+            </Typography>
+          </Button>
+        </Link>
       </div>
     );
   }

@@ -75,63 +75,66 @@ function FormColumn() {
 class Section1 extends Component {
   render() {
     return (
-      <div style={{ margin: "auto" }} id="section1">
-        <Grid
-          container
-          direction="row"
-          justify="space-evenly"
-          alignItems="center"
-        >
-          <Grid item class="wwd-block">
-            <ThemeProvider theme={secondaryFont}>
-              <Typography
-                variant="h3"
-                style={{ textAlign: "center", color: "#202020" }}
-              >
-                Who are <span style={{ color: "#009877" }}>ESTEEM</span>?
-              </Typography>
-            </ThemeProvider>
-            <br></br>
-            <ThemeProvider theme={primaryFont}>
-              <Typography
-                variant="body1"
-                style={{ fontSize: "1em", textAlign: "right" }}
-              >
-                <div className="section-block">
-                  <div className="section-block-text">
-                    <p>
-                      We are Team ESTEEM from Heriot Watt University. 130
-                      students, 5 academic schools, 3 campuses and 1 cohesive
-                      vision driving us to build a better world.
-                    </p>
-                    <br></br>
-                    <p>
-                      Our members stem from a broad range of academic
-                      disciplines – Architectural, Structural, Electrical,
-                      Mechanical, Civil, Chemical Engineering; Computer Science,
-                      Data Science, Marketing and Business Management; Urban
-                      Planning, Construction Project Management.
-                    </p>
-                    <br></br>
-                    <p>
-                      We are as diverse as we are creative, and it is drawing
-                      from this international pool of passion and talent that
-                      drives our success.
-                    </p>
+      <div id="xyz">
+        <div style={{ margin: "auto" }} id="section1">
+          <Grid
+            container
+            direction="row"
+            justify="space-evenly"
+            alignItems="center"
+          >
+            <Grid item class="wwd-block" id="landing-bottom">
+              <ThemeProvider theme={secondaryFont}>
+                <Typography
+                  variant="h3"
+                  style={{ textAlign: "center", color: "#202020" }}
+                >
+                  Who are <span style={{ color: "#009877" }}>ESTEEM</span>?
+                </Typography>
+              </ThemeProvider>
+              <br></br>
+              <ThemeProvider theme={primaryFont}>
+                <Typography
+                  variant="body1"
+                  style={{ fontSize: "1em", textAlign: "right" }}
+                >
+                  <div className="section-block">
+                    <div className="section-block-text">
+                      <p>
+                        We are Team ESTEEM from Heriot Watt University. 130
+                        students, 5 academic schools, 3 campuses and 1 cohesive
+                        vision driving us to build a better world.
+                      </p>
+                      <br></br>
+                      <p>
+                        Our members stem from a broad range of academic
+                        disciplines – Architectural, Structural, Electrical,
+                        Mechanical, Civil, Chemical Engineering; Computer
+                        Science, Data Science, Marketing and Business
+                        Management; Urban Planning, Construction Project
+                        Management.
+                      </p>
+                      <br></br>
+                      <p>
+                        We are as diverse as we are creative, and it is drawing
+                        from this international pool of passion and talent that
+                        drives our success.
+                      </p>
+                    </div>
+                    <img
+                      className="landing-img"
+                      style={{}}
+                      src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
+                      height="500px"
+                    ></img>
                   </div>
-                  <img
-                    className="landing-img"
-                    style={{}}
-                    src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
-                    height="500px"
-                  ></img>
-                </div>
-              </Typography>
-            </ThemeProvider>
+                </Typography>
+              </ThemeProvider>
+            </Grid>
           </Grid>
-        </Grid>
-        <br></br>
-        <br></br>
+          <br></br>
+          <br></br>
+        </div>
       </div>
     );
   }

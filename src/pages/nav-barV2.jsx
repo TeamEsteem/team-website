@@ -4,7 +4,13 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import { white, esteemGreen, black, lightGreen, darkGrey } from "../components/colors";
+import {
+  white,
+  esteemGreen,
+  black,
+  lightGreen,
+  darkGrey,
+} from "../components/colors";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { ThemeProvider } from "styled-components";
@@ -23,12 +29,12 @@ const useStyles = makeStyles((theme) => ({
   appBarTransparent: {
     backgroundColor: "rgba(255, 255, 255, 0.0)",
     boxShadow: "none",
-    border: "none"
+    border: "none",
   },
   appBarSolid: {
     backgroundColor: "#202020",
     border: "none",
-    boxShadow: "none"
+    boxShadow: "none",
   },
 }));
 
@@ -66,7 +72,7 @@ export default function ButtonAppBar() {
                 alt="ESTEEM"
                 style={{
                   height: "40px",
-                  margin: "8px 0 0 5px"
+                  margin: "8px 0 0 5px",
                 }}
               ></img>
               <IconButton
@@ -139,6 +145,6 @@ export default function ButtonAppBar() {
           </ThemeProvider>
         </Toolbar>
       </AppBar>
-    </div >
+    </div>
   );
 }

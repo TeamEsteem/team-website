@@ -26,6 +26,7 @@ import NavDrawer from "../components/drawer";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 import { Link } from "react-scroll";
 import CountUp from "react-countup";
+import "./landing-sections";
 
 function SubtitleInteractive(props) {
   return (
@@ -128,24 +129,27 @@ class Landing extends Component {
             }}
             startIcon={<ExpandMoreRoundedIcon />}
           >
-            <Link
-              activeClass="active"
-              to="landing-bottom"
-              spy={true}
-              smooth={true}
-              duration={1000}
+            <a
+              // activeClass="active"
+              // to="section1"
+              // spy={true}
+              // smooth={true}
+              // duration={1000}
+              href="#landingBottom"
               style={{
                 marginLeft: "auto",
                 marginRight: "auto",
                 position: "relative",
+                textDecoration: "none",
+                color: white,
               }}
             >
-              See More
-            </Link>
+              See more
+            </a>
           </Button>
         </Grid>
         {/* <Box m={-1} /> */}
-        <div class="landing-bottom">
+        <div class="landing-bottom" id="landingBottom">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
