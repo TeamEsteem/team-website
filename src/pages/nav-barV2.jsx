@@ -47,7 +47,6 @@ export default function ButtonAppBar() {
   navRef.current = navBackground;
   useEffect(() => {
     const handleScroll = () => {
-      alert(window.scrollY)
       if (window.scrollY > 175) {
         setNavBackground("appBarSolid");
       } else {
