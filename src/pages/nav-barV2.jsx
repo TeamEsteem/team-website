@@ -59,10 +59,9 @@ export default function ButtonAppBar() {
     };
   }, []);
 
-
   return (
-    <div className={classes.root} >
-      <AppBar position="fixed" className={classes[navRef.current]} >
+    <div className={classes.root}>
+      <AppBar position="fixed" className={classes[navRef.current]}>
         <Toolbar>
           <ThemeProvider theme={primaryFont}>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -119,7 +118,7 @@ export default function ButtonAppBar() {
                 style={{
                   justifyContent: "center",
                   color: white,
-                  background: "#202020",
+                  background: lightGreen,
                   // right: "-265%",
                   position: "relative",
                   marginLeft: 10,

@@ -21,7 +21,6 @@ import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full.png";
 import SDMELogo from "../assets/images/SDME/SDME2021_logo_En_Hor_W.png";
 import HWLogo from "../assets/images/HW Logo.png";
 
-
 function FormRow2() {
   return (
     <React.Fragment>
@@ -36,7 +35,7 @@ function FormRow2() {
             variant="h3"
             style={{ textAlign: "center", color: grey, paddingBottom: "50px" }}
           >
-            Get in touch
+            Get in <span style={{ color: lightGreen }}>touch</span>
           </Typography>
         </ThemeProvider>
         <br></br>
@@ -57,7 +56,7 @@ function FormRow2() {
               href="mailto:sdme2020@hw.ac.uk"
               style={{
                 textDecoration: "none",
-                color: white
+                color: white,
               }}
             >
               <MailOutline />
@@ -83,8 +82,9 @@ function FormRow2() {
               href="https://twitter.com/teamesteem2020"
               style={{
                 textDecoration: "none",
-                color: white
-              }}>
+                color: white,
+              }}
+            >
               <Twitter />
             </a>
           </IconButton>
@@ -99,7 +99,7 @@ function FormRow2() {
               href="https://www.facebook.com/teamesteem2020"
               style={{
                 textDecoration: "none",
-                color: white
+                color: white,
               }}
             >
               <Facebook />
@@ -116,7 +116,7 @@ function FormRow2() {
               href="https://www.instagram.com/teamesteem2020/"
               style={{
                 textDecoration: "none",
-                color: white
+                color: white,
               }}
             >
               <Instagram />
@@ -133,7 +133,7 @@ function FormRow2() {
               href="https://www.youtube.com/channel/UC55Q10-DHmFwC7NWNMXcpfg"
               style={{
                 textDecoration: "none",
-                color: white
+                color: white,
               }}
             >
               <YouTubeIcon />
@@ -142,7 +142,7 @@ function FormRow2() {
         </Grid>
         <br></br>
       </Grid>
-    </React.Fragment >
+    </React.Fragment>
   );
 }
 

@@ -45,7 +45,7 @@ function SubtitleInteractive(props) {
           <CountUp start={0} end={props.number} duration={5} />
           <br></br>
           <ThemeProvider theme={secondaryFont}>
-            <Typography variant="h5" style={{ color: lightGreen }}>
+            <Typography variant="h6" style={{ color: "#f5f5f5" }}>
               {props.subtitle}
             </Typography>
           </ThemeProvider>
@@ -96,9 +96,11 @@ class Landing extends Component {
                   marginTop: "200px",
                 }}
               >
-                Pride in <span style={{ color: white }}> where</span> <br></br>{" "}
-                <Box m={-2}></Box> and <span style={{ color: white }}>how</span>{" "}
-                we live
+                Pride in{" "}
+                <span style={{ color: white, fontWeight: 500 }}> where</span>{" "}
+                <br></br> <Box m={-2}></Box> and{" "}
+                <span style={{ color: white, fontWeight: 500 }}>how</span> we
+                live
               </Typography>
             </ThemeProvider>
           </Grid>
@@ -123,7 +125,7 @@ class Landing extends Component {
               padding: "5px 30px 5px 30px",
               color: white,
               margin: "auto",
-              marginBottom: "150px",
+              marginBottom: "90px",
               border: "2px solid" + white,
               borderRadius: "20px",
             }}
@@ -153,7 +155,7 @@ class Landing extends Component {
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
+            viewBox="0 0 1100 120"
             preserveAspectRatio="none"
           >
             <path
