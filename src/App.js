@@ -1,7 +1,13 @@
 import Landing from "./pages/landing";
 import Header from "./pages/nav-barV2";
 import Timeline from "./pages/timeline/timeline";
-import { Section1, Section2, Section3 } from "./pages/landing-sections";
+import {
+  Section1V2,
+  Section2,
+  Section3,
+  Section3V2,
+  Section2V2,
+} from "./pages/landing-sections";
 import Footer from "./pages/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
@@ -35,7 +41,7 @@ function App() {
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
-                    <Section1 />
+                    <Section1V2 />
                   </Typography>
                 </ThemeProvider>
               </div>
@@ -79,7 +85,7 @@ function App() {
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
-                    <Section2 />
+                    <Section2V2 />
                   </Typography>
                 </ThemeProvider>
               </div>
@@ -101,7 +107,7 @@ function App() {
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
                   >
-                    <Section3 />
+                    <Section3V2 />
                   </Typography>
                 </ThemeProvider>
               </div>

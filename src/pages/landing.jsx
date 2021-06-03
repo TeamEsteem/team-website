@@ -32,7 +32,15 @@ function SubtitleInteractive(props) {
   return (
     <>
       {/* <DividerSpecial color={white} /> */}
-      <Grid item>
+      <Grid
+        item
+        style={{
+          justifyContent: "center",
+          alignContent: "center",
+          display: "flex",
+          margin: "auto",
+        }}
+      >
         <Typography
           variant="h4"
           style={{

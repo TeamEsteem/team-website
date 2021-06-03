@@ -8,7 +8,13 @@ import {
   darkGrey,
   black,
 } from "../components/colors";
-import { Grid, Typography, ThemeProvider, IconButton } from "@material-ui/core";
+import {
+  Grid,
+  Typography,
+  ThemeProvider,
+  IconButton,
+  Box,
+} from "@material-ui/core";
 import MailOutline from "@material-ui/icons/MailOutline";
 // import Business from "@material-ui/icons/Business";
 import Twitter from "@material-ui/icons/Twitter";
@@ -23,7 +29,7 @@ import HWLogo from "../assets/images/HW Logo.png";
 
 function FormRow2() {
   return (
-    <React.Fragment>
+    <>
       <Grid
         container
         direction="column"
@@ -142,18 +148,19 @@ function FormRow2() {
         </Grid>
         <br></br>
       </Grid>
-    </React.Fragment>
+    </>
   );
 }
 
 function FormRow1() {
   return (
-    <React.Fragment>
+    <>
       <Grid
         container
         direction="row"
         justify="space-between"
         alignItems="center"
+        style={{ margin: "auto", display: "flex" }}
       >
         <Grid item>
           <img
@@ -163,6 +170,7 @@ function FormRow1() {
             alt="logos"
             style={{
               filter: "brightness(0) invert(1) contrast(50%)",
+              width: "90%",
             }}
           ></img>
         </Grid>
@@ -174,34 +182,72 @@ function FormRow1() {
             alt="logos"
             style={{
               filter: "contrast(50%)",
+              width: "90%",
             }}
           ></img>
         </Grid>
       </Grid>
-    </React.Fragment>
+    </>
   );
 }
-
+class FormRow1V2 extends Component {
+  render() {
+    return (
+      <>
+        <Grid container direction="row" style={{ justifyContent: "center" }}>
+          <Grid item>
+            <div>
+              <img
+                className="footer-logos"
+                id="hw-logo"
+                src={HWLogo}
+                alt="logos"
+                style={{
+                  filter: "brightness(0) invert(1) contrast(50%)",
+                  // width: "90%",
+                }}
+              ></img>
+            </div>
+          </Grid>
+          <Grid item>
+            <div>
+              <img
+                className="footer-logos"
+                id="sdme-logo"
+                src={SDMELogo}
+                alt="logos"
+                style={{
+                  filter: "contrast(50%)",
+                  // width: "90%",
+                }}
+              ></img>
+            </div>
+          </Grid>
+        </Grid>
+      </>
+    );
+  }
+}
 class Footer extends Component {
   render() {
     return (
-      <div style={{ margin: "auto" }}>
+      <Box style={{ margin: "auto" }}>
         <Grid
           container
           direction="column"
-          justify="flex-start"
+          // justify="flex-start"
           alignItems="center"
         >
-          <Grid>
+          <Grid item>
             <FormRow2 />
           </Grid>
           <div style={{ margin: "10px" }}></div>
-          <Grid>
-            <FormRow1 />
+          <Grid item>
+            <FormRow1V2 />
           </Grid>
           <div style={{ margin: "10px" }}></div>
         </Grid>
-      </div>
+      </Box>
     );
   }
 }

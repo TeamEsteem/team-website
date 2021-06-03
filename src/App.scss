@@ -346,7 +346,7 @@ $black: "#000000";
   padding-top: 100px;
   text-align: center;
   justify-content: center;
-  width: calc(100vw/7);
+  width: calc(100vw / 7);
   height: 45vh;
   display: inline-block;
   transition: all 0.5s ease;
@@ -659,4 +659,31 @@ $black: "#000000";
   max-width: 150px;
   padding: 10px;
   margin: auto;
+}
+
+.one {
+  border: 1px solid green;
+  width: 29%;
+  float: left;
+  height: 100px;
+}
+
+.two {
+  border: 1px solid blue;
+  width: 69%;
+  float: right;
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .one {
+    position: relative;
+    top: 110px;
+    width: 100%;
+  }
+  .two {
+    position: relative;
+    top: -100px;
+    width: 100%;
+  }
 }
