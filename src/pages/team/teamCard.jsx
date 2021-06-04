@@ -171,7 +171,7 @@ function BackgroundTeamCard(props) {
           </Typography>
         </Box>
       </ThemeProvider>
-      <Grid container direction="row">
+      <Grid container direction="row" justify="space-evenly">
         {members.map((members) => {
           if (members.team[0] === props.team) {
             return (
