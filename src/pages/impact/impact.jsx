@@ -20,9 +20,8 @@ import {
 } from "../../components/colors";
 import { primaryFont, secondaryFont } from "../../components/fonts";
 import Footer from "../footer";
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import { PinDropSharp } from "@material-ui/icons";
-
 
 // class CardContainer extends React.Component{
 //   render() {
@@ -63,9 +62,16 @@ import { PinDropSharp } from "@material-ui/icons";
 
 class StaggeredList extends React.Component {
   getItems() {
-    return ["Sustainability", "Future", "Innovation", " Clean Energy", "Mobility", "Smart Solutions", "Happiness"]
+    return [
+      "Sustainability",
+      "Future",
+      "Innovation",
+      " Clean Energy",
+      "Mobility",
+      "Smart Solutions",
+      "Happiness",
+    ];
   }
-
 
   render() {
     const items = this.getItems();
@@ -73,14 +79,27 @@ class StaggeredList extends React.Component {
     return (
       <div align="left">
         <ul className="pillar-list">
-          <ReactCSSTransitionGroup transitionName="slide-up" transitionAppear={true}>
+          <ReactCSSTransitionGroup
+            transitionName="slide-up"
+            transitionAppear={true}
+          >
             {items.map((item, i) => {
-              return <ThemeProvider theme={primaryFont}>
-                {/* <li key={i} className="pillar-item" id={`pillar-${i}`} style={{ "transitionDelay": `${i * .05}s` }} onClick={() => { this.props.renderDetails(i) }}> */}
-                <li key={i} className="pillar-item" id={`pillar-${i}`} style={{ "transitionDelay": `${i * .05}s` }} onClick={() => { this.props.renderDetails(i) }}>
-                  {item}
-                </li>
-              </ThemeProvider>
+              return (
+                <ThemeProvider theme={primaryFont}>
+                  {/* <li key={i} className="pillar-item" id={`pillar-${i}`} style={{ "transitionDelay": `${i * .05}s` }} onClick={() => { this.props.renderDetails(i) }}> */}
+                  <li
+                    key={i}
+                    className="pillar-item"
+                    id={`pillar-${i}`}
+                    style={{ transitionDelay: `${i * 0.05}s` }}
+                    onClick={() => {
+                      this.props.renderDetails(i);
+                    }}
+                  >
+                    {item}
+                  </li>
+                </ThemeProvider>
+              );
             })}
           </ReactCSSTransitionGroup>
         </ul>
@@ -89,89 +108,71 @@ class StaggeredList extends React.Component {
   }
 }
 
-
-
-
 class Impact extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       title: "Sustainability",
       para: "our house will be built from a broad range of environmentally friendly construction materials. From cross-laminated timber to  woodfibre insulation, every element of the design is designed to minimise energy and water consumption, helping to downsize the carbon footprint of the house occupants. ",
-    
-      data:[
-        {id: '1', name: "Red", color: "#f44336", span: 1},
-        {id: '2', name: "Pink", color: "#E91E63", span: 2},
-        {id: '3', name: "Purple", color: "#9C27B0", span: 3},
-        {id: '4', name: "Deep Purple", color: "#673AB7", span: 1},
-        {id: '5', name: "Indigo", color: "#3F51B5", span: 1},
-        {id: '6', name: "Blue", color: "#2196F3", span: 1},
-        {id: '7', name: "Light Blue", color: "#03A9F4", span: 3},
-        {id: '8', name: "Cyan", color: "#00BCD4", span: 2},
-        {id: '9', name: "Teal", color: "#009688", span: 1},
-        {id: '10', name: "Green", color: "#4CAF50", span: 1},
-        {id: '11', name: "Light Green", color: "#8BC34A", span: 2},
-        {id: '12', name: "Lime", color: "#CDDC39", span: 3},
-        {id: '13', name: "Yellow", color: "#FFEB3B", span: 2},
-        {id: '14', name: "Amber", color: "#FFC107", span: 1},
-        {id: '15', name: "Orange", color: "#FF5722", span: 3},
-      ],
 
-    }
+      data: [
+        { id: "1", name: "Red", color: "#f44336", span: 1 },
+        { id: "2", name: "Pink", color: "#E91E63", span: 2 },
+        { id: "3", name: "Purple", color: "#9C27B0", span: 3 },
+        { id: "4", name: "Deep Purple", color: "#673AB7", span: 1 },
+        { id: "5", name: "Indigo", color: "#3F51B5", span: 1 },
+        { id: "6", name: "Blue", color: "#2196F3", span: 1 },
+        { id: "7", name: "Light Blue", color: "#03A9F4", span: 3 },
+        { id: "8", name: "Cyan", color: "#00BCD4", span: 2 },
+        { id: "9", name: "Teal", color: "#009688", span: 1 },
+        { id: "10", name: "Green", color: "#4CAF50", span: 1 },
+        { id: "11", name: "Light Green", color: "#8BC34A", span: 2 },
+        { id: "12", name: "Lime", color: "#CDDC39", span: 3 },
+        { id: "13", name: "Yellow", color: "#FFEB3B", span: 2 },
+        { id: "14", name: "Amber", color: "#FFC107", span: 1 },
+        { id: "15", name: "Orange", color: "#FF5722", span: 3 },
+      ],
+    };
   }
 
   renderDetails = (id) => {
     if (id == 0) {
       this.setState({
         title: "Sustainability",
-        para: "our house will be built from a broad range of environmentally friendly construction materials. From cross-laminated timber to  woodfibre insulation, every element of the design is designed to minimise energy and water consumption, helping to downsize the carbon footprint of the house occupants. "
+        para: "our house will be built from a broad range of environmentally friendly construction materials. From cross-laminated timber to  woodfibre insulation, every element of the design is designed to minimise energy and water consumption, helping to downsize the carbon footprint of the house occupants. ",
       });
-    }
-
-    else if (id == 1) {
+    } else if (id == 1) {
       this.setState({
         title: "Future",
-        para: "with building services developing along several exciting technological frontiers, we are eager to incorporate as much futuristic tech into our design as possible. From voice activated appliances to a windcatcher made from 3D printed concrete, Team ESTEEM are not afraid to think outside the box when it comes to embracing the technology of tomorrow."
+        para: "with building services developing along several exciting technological frontiers, we are eager to incorporate as much futuristic tech into our design as possible. From voice activated appliances to a windcatcher made from 3D printed concrete, Team ESTEEM are not afraid to think outside the box when it comes to embracing the technology of tomorrow.",
       });
-    }
-
-    else if (id == 2) {
+    } else if (id == 2) {
       this.setState({
         title: "Innovation",
-        para: "at the heart of our home lies our steadfast commitment to innovation in architectural design. Through our collaboration with industry and academic partners, we have equipped our building with cutting-edge renewable energy technology such as bifacial solar panels and bespoke water heating systems. "
+        para: "at the heart of our home lies our steadfast commitment to innovation in architectural design. Through our collaboration with industry and academic partners, we have equipped our building with cutting-edge renewable energy technology such as bifacial solar panels and bespoke water heating systems. ",
       });
-    }
-
-    else if (id == 3) {
+    } else if (id == 3) {
       this.setState({
         title: "Clean Energy",
-        para: "our dedicated renewables sub-team have worked tirelessly to develop the electrical generation systems that will power our competition build. Photovoltaic panels and solar-thermal devices are expertly woven into the design of the house, ensuring that our submission achieves the critical net zero carbon output. "
+        para: "our dedicated renewables sub-team have worked tirelessly to develop the electrical generation systems that will power our competition build. Photovoltaic panels and solar-thermal devices are expertly woven into the design of the house, ensuring that our submission achieves the critical net zero carbon output. ",
       });
-    }
-
-    else if (id == 4) {
+    } else if (id == 4) {
       this.setState({
         title: "Mobility",
-        para: "our home has been designed to facilitate sustainable travel using electric vehicles, an essential feature of any nation’s efforts to achieve decarbonisation. Our house itself is characterised by its mobility, designed for rapid assembly and disassembly with a minimal resultant impact on its structural integrity. "
+        para: "our home has been designed to facilitate sustainable travel using electric vehicles, an essential feature of any nation’s efforts to achieve decarbonisation. Our house itself is characterised by its mobility, designed for rapid assembly and disassembly with a minimal resultant impact on its structural integrity. ",
       });
-    }
-
-    else if (id == 5) {
+    } else if (id == 5) {
       this.setState({
         title: "Smart Solutions",
-        para: "fit with an intelligent and intuitive energy management system that allows users to fine-tune essential parameters of the interior environment, our house exemplifies “smart”. Interactive panels and voice-controlled systems provide a high-tech solution to the question of customisability, maximising user comfort in the home. "
+        para: "fit with an intelligent and intuitive energy management system that allows users to fine-tune essential parameters of the interior environment, our house exemplifies “smart”. Interactive panels and voice-controlled systems provide a high-tech solution to the question of customisability, maximising user comfort in the home. ",
       });
-    }
-
-    else if (id == 6) {
+    } else if (id == 6) {
       this.setState({
         title: "Happiness",
-        para: "most importantly, our house is designed to be a home. Our blend of technology and artistic interior design ensures the user experience is at the heart of our build, with each room, feature and space designed for holistic integration with the Team ESTEEM ethos of comfort and homeliness.” "
+        para: "most importantly, our house is designed to be a home. Our blend of technology and artistic interior design ensures the user experience is at the heart of our build, with each room, feature and space designed for holistic integration with the Team ESTEEM ethos of comfort and homeliness.” ",
       });
     }
-  }
-
+  };
 
   render() {
     return (
@@ -192,26 +193,52 @@ class Impact extends Component {
             <ThemeProvider theme={primaryFont}>
               <Typography
                 variant="h3"
-                style={{ textAlign: "center", color: white, margin: "150px 0 0 0", fontWeight: "bold" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "150px 0 0 0",
+                  fontWeight: "bold",
+                }}
               >
                 Pillars of ESTEEM
               </Typography>
               <Typography
                 variant="body1"
-                style={{ textAlign: "center", color: white, margin: "25px 0 25px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "25px 0 25px 0",
+                  maxWidth: "1000px",
+                  fontSize: "1.5em",
+                }}
               >
-                Sustainability, Future, Innovation, Clean Energy, Mobility, Smart Solutions, and Happiness.
+                Sustainability, Future, Innovation, Clean Energy, Mobility,
+                Smart Solutions, and Happiness.
               </Typography>
               <Typography
                 variant="body1"
-                style={{ textAlign: "center", color: white, margin: "25px 0 25px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "25px 0 25px 0",
+                  maxWidth: "1000px",
+                  fontSize: "1.5em",
+                }}
               >
-
-                These are the seven pillars of the SDME competition, highlighted by the Dubai Electricity and Water Authority (DEWA) as integral to the future of building services across the globe, but what do these words mean to Team  ESTEEM?
+                These are the seven pillars of the SDME competition, highlighted
+                by the Dubai Electricity and Water Authority (DEWA) as integral
+                to the future of building services across the globe, but what do
+                these words mean to Team ESTEEM?
               </Typography>
               <Typography
                 variant="body1"
-                style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "25px 0 100px 0",
+                  maxWidth: "1000px",
+                  fontSize: "1.5em",
+                }}
               >
                 (Click to find out more!)
               </Typography>
@@ -219,7 +246,6 @@ class Impact extends Component {
           </Grid>
         </Grid>
         <div className="impact">
-
           <StaggeredList renderDetails={this.renderDetails} />
         </div>
 
@@ -244,7 +270,6 @@ class Impact extends Component {
           alignItems="centre"
         >
           <div className="pillar-details-1">
-
             <div style={{ margin: "auto" }}>
               <Grid class="pillar-block-1">
                 <ThemeProvider theme={primaryFont}>
@@ -264,12 +289,11 @@ class Impact extends Component {
                     {this.state.para}
                   </Typography>
                 </ThemeProvider>
-
               </Grid>
             </div>
           </div>
         </Grid>
-         <div class="footer-top">
+        <div class="footer-top">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -284,14 +308,11 @@ class Impact extends Component {
         </div>
         <div className="Footer">
           <ThemeProvider theme={primaryFont}>
-            <Typography
-              style={{ fontSize: "20px", fontWeight: "lighter" }}
-            >
+            <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
               <Footer />
             </Typography>
           </ThemeProvider>
         </div>
-
       </div>
     );
   }
