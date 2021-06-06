@@ -7,6 +7,7 @@ import {
   Box,
   ThemeProvider,
   Button,
+  Card,
 } from "@material-ui/core";
 import {
   white,
@@ -18,10 +19,47 @@ import {
   black,
 } from "../../components/colors";
 import { primaryFont, secondaryFont } from "../../components/fonts";
-
+import Footer from "../footer";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { PinDropSharp } from "@material-ui/icons";
 
+
+// class CardContainer extends React.Component{
+//   render() {
+//     var cards = [];
+//     for(var i = 1; i <= this.props.numCards; i += 1){
+//         cards.push(<CardItem idNum={i}  />);
+//     }
+//     return (
+//         <div className="card-flex">{cards}</div>
+//     );
+//   }
+// }
+
+// class CardItem extends React.Component{
+//   render() {
+//     return(
+//         <div id={'card-' + this.props.idNum} className="card-flex-item"></div>
+//     );
+// }
+// }
+
+// class CardContent extends React.Component{
+//   render(){
+//       return(
+//           <div className="card-flex-wrapper">
+//               <div className="card-flex-image">
+//                   <img src={this.props.imgSrc} alt="img placeholder" />
+//               </div>
+//               <div className="card-flex-content">
+//                   <h3>{this.props.headerText}</h3>
+//                   <p>{this.props.description}</p>
+//                   <a href={this.props.url} className="card-flex-button btn-block">Button</a>
+//               </div>
+//           </div>
+//       );
+//   }
+// }
 
 class StaggeredList extends React.Component {
   getItems() {
@@ -39,7 +77,7 @@ class StaggeredList extends React.Component {
             {items.map((item, i) => {
               return <ThemeProvider theme={primaryFont}>
                 {/* <li key={i} className="pillar-item" id={`pillar-${i}`} style={{ "transitionDelay": `${i * .05}s` }} onClick={() => { this.props.renderDetails(i) }}> */}
-                <li key={i} className="pillar-item" id={`pillar-${i}`} onClick={() => { this.props.renderDetails(i) }}>
+                <li key={i} className="pillar-item" id={`pillar-${i}`} style={{ "transitionDelay": `${i * .05}s` }} onClick={() => { this.props.renderDetails(i) }}>
                   {item}
                 </li>
               </ThemeProvider>
@@ -54,13 +92,32 @@ class StaggeredList extends React.Component {
 
 
 
-export default class Impact extends Component {
+class Impact extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
       title: "Sustainability",
-      para: "our house will be built from a broad range of environmentally friendly construction materials. From cross-laminated timber to  woodfibre insulation, every element of the design is designed to minimise energy and water consumption, helping to downsize the carbon footprint of the house occupants. "
+      para: "our house will be built from a broad range of environmentally friendly construction materials. From cross-laminated timber to  woodfibre insulation, every element of the design is designed to minimise energy and water consumption, helping to downsize the carbon footprint of the house occupants. ",
+    
+      data:[
+        {id: '1', name: "Red", color: "#f44336", span: 1},
+        {id: '2', name: "Pink", color: "#E91E63", span: 2},
+        {id: '3', name: "Purple", color: "#9C27B0", span: 3},
+        {id: '4', name: "Deep Purple", color: "#673AB7", span: 1},
+        {id: '5', name: "Indigo", color: "#3F51B5", span: 1},
+        {id: '6', name: "Blue", color: "#2196F3", span: 1},
+        {id: '7', name: "Light Blue", color: "#03A9F4", span: 3},
+        {id: '8', name: "Cyan", color: "#00BCD4", span: 2},
+        {id: '9', name: "Teal", color: "#009688", span: 1},
+        {id: '10', name: "Green", color: "#4CAF50", span: 1},
+        {id: '11', name: "Light Green", color: "#8BC34A", span: 2},
+        {id: '12', name: "Lime", color: "#CDDC39", span: 3},
+        {id: '13', name: "Yellow", color: "#FFEB3B", span: 2},
+        {id: '14', name: "Amber", color: "#FFC107", span: 1},
+        {id: '15', name: "Orange", color: "#FF5722", span: 3},
+      ],
+
     }
   }
 
@@ -115,6 +172,7 @@ export default class Impact extends Component {
     }
   }
 
+
   render() {
     return (
       <div style={{ width: "100%" }} onScroll={this.handleScroll}>
@@ -161,23 +219,23 @@ export default class Impact extends Component {
           </Grid>
         </Grid>
         <div className="impact">
-          {/* <div style={{ backgroundColor: "#e7e3e3" }}>
-            <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
-              <Header />
-            </Typography>
-          </div>
-          <div className="impact-head">
-            <ThemeProvider theme={secondaryFont}>
-              <Typography
-                variant="h2"
-                style={{ textAlign: "center", color: esteemGreen }}
-              >
-                THE PILLARS OF ESTEEM
-                </Typography>
-            </ThemeProvider>
-          </div> */}
+
           <StaggeredList renderDetails={this.renderDetails} />
         </div>
+
+        {/* <CardContent 
+          imgSrc= "../../assets/images/sustainability.png"
+          headerText="One"
+          description="I'm a card and I'm first"
+          url="https://chriswrightdesign.com/experiments/using-flexbox-today/#card-layout" 
+        />
+
+        <CardContent 
+          imgSrc="https://placeimg.com/640/480/nature"
+          headerText="One"
+          description="I'm a card and I'm first"
+          url="https://chriswrightdesign.com/experiments/using-flexbox-today/#card-layout" 
+        /> */}
 
         <Grid
           container
@@ -211,11 +269,32 @@ export default class Impact extends Component {
             </div>
           </div>
         </Grid>
-
+         <div class="footer-top">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1100 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div className="Footer">
+          <ThemeProvider theme={primaryFont}>
+            <Typography
+              style={{ fontSize: "20px", fontWeight: "lighter" }}
+            >
+              <Footer />
+            </Typography>
+          </ThemeProvider>
+        </div>
 
       </div>
     );
   }
 }
 
-// export default Impact;
+export default Impact;
