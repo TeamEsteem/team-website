@@ -46,7 +46,7 @@ export default class Sponsors extends Component {
                 Our Sponsors
             </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
               >
                 We are proud to have the support of so many inspirational partners in our journey to World Expo 2021. Below you will see some of the cutting-edge companies and organisations that have worked with us so far.

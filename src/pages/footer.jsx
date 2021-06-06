@@ -40,6 +40,7 @@ function FormRow2() {
           <Typography
             variant="h3"
             style={{ textAlign: "center", color: grey, paddingBottom: "50px" }}
+            id="footer"
           >
             Get in <span style={{ color: lightGreen }}>touch</span>
           </Typography>

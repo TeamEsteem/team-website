@@ -93,14 +93,14 @@ function TeamCardSmall(props) {
           {/* WEBSITE DEVELOPER */}
         </Typography>
         <Box m={2} />
-        <Typography
+        {/* <Typography
           variant="body1"
           style={{
             color: grey,
             paddingRight: "10px",
             fontWeight: "300",
           }}
-        ></Typography>
+        ></Typography> */}
         <Box m={2} />
         {/* <Typography variant="body2" style={{ fontWeight: "500", color: "#505050" }}>
           Find me on {"  "} */}
@@ -221,7 +221,7 @@ class TeamMembers extends Component {
                 Our Team
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 style={{
                   textAlign: "center",
                   color: white,
