@@ -370,11 +370,12 @@ $black: "#000000";
 .pillar-list {
   margin: 0px;
   padding: 0px;
+  overflow: scroll;
 }
 
 .pillar-details-1 {
   padding: 130px;
-  background-color: #e7e3e3;
+  background-color: light-grey;
   max-width: 1250px;
 }
 
@@ -382,11 +383,11 @@ $black: "#000000";
   padding-top: 100px;
   text-align: center;
   justify-content: center;
-  width: calc(100vw / 7);
-  height: 45vh;
+  width: 300px;
+  height: 400px;
   display: inline-block;
   transition: all 0.5s ease;
-  font-size: 1.25vw;
+  font-size: 25px;
   color: white;
 }
 
@@ -445,6 +446,107 @@ $black: "#000000";
   background-size: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("./assets/images/happiness.jpg");
+}
+
+
+/* Custom page CSS - MOBILE first */
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 15px 0;
+  text-align: start;
+}
+
+.card-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: block;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: min-content;
+}
+.card-flex-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex; 
+	width: min-content;
+	padding-right: 0;
+}
+.card-flex-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+  height:min-content;
+
+	  background-color: #FFFFCC;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    margin-right: 0;
+    padding: 1em;
+}
+.card-flex-image img {
+	opacity: 1;
+}
+.card-flex-button {
+	background-color: white;
+	border: 1px solid #333; 
+	padding: 0.5rem;
+	color: #333;
+	text-align: center;
+	text-decoration: none; 
+}
+.card-flex-button:hover {
+	color: #333;
+	text-decoration: none; 
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+
+/* Custom page CSS - iPad/Desktop  */
+
+@media (min-width: 768px) {
+	.container .text-muted {
+		text-align: end;
+	} 
+	.card-flex-item {
+		width: 33.33%;
+		padding-right: 1em; 
+	} 
+	.card-flex-item:nth-child(3n) {
+		padding-right: 0;
+	} 
+	.card-flex-image img {
+		opacity: 0.8; 
+	}
+	.card-flex-wrapper:hover {
+		cursor: pointer;
+		background-color: white;
+		box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+	}
+	.card-flex-wrapper:hover .card-flex-image img {
+		opacity: 1;
+		transition: opacity 0.5s cubic-bezier(.43,.41,.22,.91);
+	}
+	.card-flex-wrapper:hover .card-flex-button {
+		background-color: #FFFFCC; 
+	}
 }
 
 /* Transition */
