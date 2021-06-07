@@ -16,7 +16,7 @@ import { ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
 import Team from "./pages/team/teamCard";
-import Impact from "./pages/impact/impact";
+import Impactv2 from "./pages/impact/impactV2";
 import HomeModel from "./pages/about-home/home-modelV2";
 import TimelinePage from "./pages/timeline/timeline-page.jsx";
 
@@ -149,7 +149,7 @@ function App() {
               <Team />
             </Route>
             <Route exact path="/impact">
-              <Impact />
+              <Impactv2 />
             </Route>
             <Route exact path="/home-model">
               <HomeModel />
