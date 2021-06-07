@@ -21,7 +21,7 @@
   scroll-behavior: smooth;
 }
 
-nothing {
+.Body {
   -webkit-animation: fadein 0.5s ease; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 0.5s ease; /* Firefox < 16 */
       -ms-animation: fadein 0.5s ease; /* Internet Explorer */
@@ -66,11 +66,15 @@ $black: "#000000";
   margin: auto;
 }
 
+header img {
+  height: 70px;
+}
+
 .Body {
   position: relative;
-  height: 100vh;
-  flex-grow: 1;
-  overflow-x: hidden;
+  // height: 100vh;
+  // flex-grow: 1;
+  // overflow-x: hidden;
 }
 
 .App-header {
@@ -738,6 +742,11 @@ body > .container {
   margin: auto;
   margin-bottom: 100px;
   max-width: 1000px;
+}
+
+.sponsors-images img {
+  width: auto;
+  height: auto;
 }
 
 .sponsors-images > a {

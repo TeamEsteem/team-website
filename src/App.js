@@ -1,5 +1,6 @@
 import Landing from "./pages/landing";
-import Header from "./pages/nav-barV2";
+// import Header from "./pages/nav-barV2";
+import Header from './pages/header';
 import Timeline from "./pages/timeline/timeline";
 import {
   Section1V2,
@@ -22,9 +23,9 @@ import TimelinePage from "./pages/timeline/timeline-page.jsx";
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      <div className="Body">
-        <Router>
+      <Router>
+        <Header />
+        <div className="Body">
           <Switch>
             <Route exact path="/">
               <div className="App-header">
@@ -157,8 +158,8 @@ function App() {
               <TimelinePage />
             </Route>
           </Switch>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </>
   );
 }

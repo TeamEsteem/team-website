@@ -138,7 +138,7 @@ class Section1 extends Component {
                       <img
                         className="landing-img"
                         style={{}}
-                        src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
+                        src=""
                         height="500px"
                       ></img>
                       {/* </Grid> */}
@@ -161,7 +161,7 @@ class Section1V2 extends Component {
   render() {
     return (
       <>
-        <Box m={-2} />
+        <Box m={-2} style={{maxWidth: "1250px"}}/>
         <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
@@ -211,8 +211,8 @@ class Section1V2 extends Component {
               borderRadius: "20px",
               maxWidth: "500px",
               maxHeight: "600px",
-              // padding: "20px",
-              padding: "2%",
+              padding: "10px",
+              // padding: "2%",
             }}
           >
             <img
@@ -222,7 +222,7 @@ class Section1V2 extends Component {
                 maxHeight: "600px",
                 borderRadius: "20px",
               }}
-              src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
+              src="/images/solariskit - kelvin points.jpg"
               alt=""
               // height="500px"
             ></img>
@@ -394,7 +394,7 @@ class Section2V2 extends Component {
                 maxHeight: "600px",
                 borderRadius: "20px",
               }}
-              src="https://i.pinimg.com/564x/9a/be/5f/9abe5f0ad84b083a1a52dac183c7bc89.jpg"
+              src="/images/team.jpg"
               alt=""
               // height="500px"
             ></img>

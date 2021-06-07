@@ -60,7 +60,7 @@ export default function ButtonAppBar() {
   }, []);
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="navbar">
       <AppBar position="fixed" className={classes[navRef.current]}>
         <Toolbar>
           <ThemeProvider theme={primaryFont}>

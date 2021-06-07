@@ -195,11 +195,6 @@ class TeamMembers extends Component {
   render() {
     return (
       <div style={{}} onScroll={this.handleScroll}>
-        <div>
-          <Typography style={{ fontSize: "20px" }}>
-            <Header />
-          </Typography>
-        </div>
         <Grid
           container
           alignContent="center"

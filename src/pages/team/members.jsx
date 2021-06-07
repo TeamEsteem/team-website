@@ -285,7 +285,7 @@ export const members = [
   {
     team: ["architecture", "quantity"],
     name: "Martin",
-    role: "Architecture Team Lead & Water Systems Engineer",
+    role: "Architecture Team Lead",
     image: "/members/martinj.jpg",
   },
   {

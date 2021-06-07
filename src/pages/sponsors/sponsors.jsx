@@ -23,13 +23,7 @@ import Footer from "../footer";
 export default class Sponsors extends Component {
   render() {
     return (
-
-      <div style={{ width: "100%" }} onScroll={this.handleScroll}>
-        <div>
-          <Typography style={{ fontSize: "20px" }}>
-            <Header />
-          </Typography>
-        </div>
+      <div>
         <Grid
           container
           alignContent="center"

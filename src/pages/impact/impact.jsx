@@ -176,11 +176,6 @@ class Impact extends Component {
   render() {
     return (
       <div style={{ width: "100%" }} onScroll={this.handleScroll}>
-        <div>
-          <Typography style={{ fontSize: "20px" }}>
-            <Header />
-          </Typography>
-        </div>
         <Grid
           container
           alignContent="center"
