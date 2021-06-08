@@ -2,15 +2,21 @@ export const members = [
   //management
   {
     team: ["management"],
-    name: "Sonia Piórek",
-    role: "Student Team Lead",
-    image: "/members/soniaP.jpg",
+    name: "Alex Maclaren",
+    role: "Faculty Lead",
+    image: "/members/alexM.jpg",
   },
   {
     team: ["management"],
-    name: "Alex Maclaren",
-    role: "management team",
-    image: "/members/alexM.jpg",
+    name: "Sonia Piórek",
+    role: "Team Advisor",
+    image: "/members/sonia p.jpg",
+  },
+  {
+    team: ["management"],
+    name: "Ayman",
+    role: "Team Advisor",
+    image: "/members/ayman.jpg",
   },
 
   // Marketing
@@ -155,12 +161,6 @@ export const members = [
     name: "Madihah",
     role: "Plant & Vegetation Coordinator",
     image: "/members/madihah_anaum.jpg",
-  },
-  {
-    team: ["landscaping", "newsletter"],
-    name: "Ayman",
-    role: "Landscaping Team Member",
-    image: "/members/ayman.jpg",
   },
   {
     team: ["landscaping", "windcatcher"],
