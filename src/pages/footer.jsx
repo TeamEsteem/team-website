@@ -21,6 +21,7 @@ import Twitter from "@material-ui/icons/Twitter";
 import Facebook from "@material-ui/icons/Facebook";
 import Instagram from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
 import EsteemLogo from "../assets/images/ESTEEM/Esteem Logo Full.png";
@@ -52,13 +53,7 @@ function FormRow2() {
           justify="space-evenly"
           alignItems="baseline"
         >
-          <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: esteemGreen,
-            }}
-          >
+          <IconButton>
             <a
               href="mailto:sdme2020@hw.ac.uk"
               style={{
@@ -69,22 +64,12 @@ function FormRow2() {
               <MailOutline />
             </a>
           </IconButton>
-          {/* <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: esteemGreen,
-            }}
-          >
-            <Business />
-          </IconButton> */}
-          <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: esteemGreen,
-            }}
-          >
+          <IconButton>
+            <a href="https://www.linkedin.com/company/team-esteem-2020">
+              <LinkedInIcon />
+            </a>
+          </IconButton>
+          <IconButton>
             <a
               href="https://twitter.com/teamesteem2020"
               style={{
@@ -95,13 +80,7 @@ function FormRow2() {
               <Twitter />
             </a>
           </IconButton>
-          <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: esteemGreen,
-            }}
-          >
+          <IconButton>
             <a
               href="https://www.facebook.com/teamesteem2020"
               style={{
@@ -112,13 +91,7 @@ function FormRow2() {
               <Facebook />
             </a>
           </IconButton>
-          <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: esteemGreen,
-            }}
-          >
+          <IconButton>
             <a
               href="https://www.instagram.com/teamesteem2020/"
               style={{
@@ -129,13 +102,7 @@ function FormRow2() {
               <Instagram />
             </a>
           </IconButton>
-          <IconButton
-            style={{
-              fontWeight: "lighter",
-              justifyContent: "center",
-              color: esteemGreen,
-            }}
-          >
+          <IconButton>
             <a
               href="https://www.youtube.com/channel/UC55Q10-DHmFwC7NWNMXcpfg"
               style={{

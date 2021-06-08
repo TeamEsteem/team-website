@@ -20,7 +20,7 @@ const headersData = [
   //   href: "/",
   // },
   {
-    label: "About",
+    label: "Team",
     href: "/team",
   },
   {

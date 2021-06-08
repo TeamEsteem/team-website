@@ -73,6 +73,239 @@ function FormColumn() {
   );
 }
 
+class Section1V2 extends Component {
+  render() {
+    return (
+      <>
+        <Box m={-10} />
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="h3"
+            style={{ textAlign: "center", color: "#202020" }}
+          >
+            What do <span style={{ color: "#009877" }}>ESTEEM</span> do?
+          </Typography>
+        </ThemeProvider>
+        <br></br>
+        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
+          <Box m={2} />
+          <Box
+            style={{
+              // background: white,
+              borderRadius: "20px",
+              // maxWidth: "75%",
+              padding: "20px",
+              margin: "auto",
+            }}
+          >
+            <ThemeProvider theme={primaryFont}>
+              <Typography variant="body1" style={{ fontSize: "1em" }}>
+                <div className="justify">
+                  <p>
+                    We are Heriot Watt University’s official entrant to the Solar
+                    Decathlon Middle East 2020 competition, a collegiate contest
+                    integrated with the 2020 World Expo in Dubai which is expected
+                    to attract an estimated 25 million people.
+                </p>
+                  <br />
+                  <Box>
+                    <img
+                      // className="landing-img"
+                      style={{
+                        display: "flex",
+                        maxWidth: "100%",
+                        maxHeight: "600px",
+                        borderRadius: "20px",
+                      }}
+                      src="/images/team.jpg"
+                      alt=""
+                    // height="500px"
+                    ></img>
+                  </Box>
+                  <br></br>
+                  <p>
+                    Our goal is to design and build a multifunctional solar
+                    powered house in collaboration with industry and academia. Our
+                    design ethos emphasises sustainability, and our construction
+                    will feature wall-to-wall innovation in our efforts to achieve
+                    the most eco-friendly build that can withstand the high
+                    temperature, high humidity and dusty conditions present in the
+                    Middle East.
+                  </p>
+                  <br></br>
+                  <p>
+                    Headquartered in Edinburgh, we are proud to represent the
+                    Scottish Construction and Building Services sectors on the
+                    international stage with our incorporation of materials and
+                    designs from several local sponsors.
+                  </p>
+                </div>
+              </Typography>
+            </ThemeProvider>
+          </Box>
+        </Grid>
+        <Box m={-10} />
+      </>
+    );
+  }
+}
+
+class Section2V2 extends Component {
+  render() {
+    return (
+      <>
+        <Box m={-2} />
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="h3"
+            style={{ textAlign: "center", color: "#202020" }}
+          >
+            Who are <span style={{ color: "#009877" }}>ESTEEM</span>?
+          </Typography>
+        </ThemeProvider>
+        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
+          <Box
+            style={{
+              background: white,
+              borderRadius: "20px",
+              maxWidth: "35em",
+              padding: "30px",
+              margin: "auto",
+            }}
+          >
+            <ThemeProvider theme={primaryFont}>
+              <Typography variant="body1" style={{ fontSize: "1em" }}>
+                <div className="justify">
+                  <p>
+                    We are Team ESTEEM from Heriot Watt University. 130 students,
+                    5 academic schools, 3 campuses and 1 cohesive vision driving
+                    us to build a better world.
+                  </p>
+                  <br></br>
+                  <p>
+                    Our members stem from a broad range of academic disciplines –
+                    Architectural, Structural, Electrical, Mechanical, Civil,
+                    Chemical Engineering; Computer Science, Data Science,
+                    Marketing and Business Management; Urban Planning,
+                    Construction Project Management.
+                  </p>
+                  <br></br>
+                  <p>
+                    We are as diverse as we are creative and it is drawing from
+                    this international pool of passion and talent that drives our
+                    success.
+                  </p>
+                </div>
+              </Typography>
+            </ThemeProvider>
+          </Box>
+          <Box m={2} />
+          <Box
+            style={{
+              background: white,
+              borderRadius: "20px",
+              maxWidth: "500px",
+              maxHeight: "600px",
+              padding: "10px",
+              // padding: "2%",
+            }}
+          >
+            <img
+              // className="landing-img"
+              style={{
+                maxWidth: "100%",
+                maxHeight: "600px",
+                borderRadius: "20px",
+              }}
+              src="/images/solariskit - kelvin points.jpg"
+              alt=""
+            // height="500px"
+            ></img>
+          </Box>
+        </Grid>
+      </>
+    );
+  }
+}
+
+class Section3V2 extends Component {
+  render() {
+    return (
+      <>
+        <Box m={-8} />
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="h3"
+            style={{ textAlign: "center", color: "#202020" }}
+          >
+            <span style={{ color: "#009877" }}>Our</span> Mission
+          </Typography>
+        </ThemeProvider>
+        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
+          <Box
+            style={{
+              // background: white,
+              borderRadius: "20px",
+              maxWidth: "35em",
+              padding: "30px",
+              margin: "auto",
+            }}
+          >
+            <ThemeProvider theme={primaryFont}>
+              <Typography variant="body1" style={{ fontSize: "1em" }}>
+                <div className="justify">
+                  <p>
+                    At Team ESTEEM we draw from a range of academic backgrounds
+                    and our members aspire to apply their years of classroom
+                    learning to an interdisciplinary project that will change the
+                    world. We are the generation that will live to see the
+                    consequences of climate change. Motivated, eager and ready to
+                    act, each of us is committed to bringing together science,
+                    technology, architecture and innovative thinking to develop
+                    ourselves as professionals and bring about positive ecological
+                    change.
+                  </p>
+                  <br></br>
+                  <p>
+                    With the SDME, we are ready to take on the biggest challenge
+                    of all – becoming thought leaders in the green recovery and
+                    building the better, greener world of tomorrow.
+                  </p>
+                </div>
+              </Typography>
+            </ThemeProvider>
+          </Box>
+          <Box m={2} />
+          <Box
+            style={{
+              // background: grey,
+              borderRadius: "20px",
+              maxWidth: "500px",
+              maxHeight: "600px",
+              // padding: "20px",
+              padding: "2%",
+            }}
+          >
+            <img
+              // className="landing-img"
+              style={{
+                maxWidth: "100%",
+                maxHeight: "600px",
+                borderRadius: "20px",
+              }}
+              src="/images/csic - scott wood wide cropped.jpg"
+              alt=""
+            // height="500px"
+            ></img>
+          </Box>
+        </Grid>
+      </>
+    );
+  }
+}
+
+export { Section1V2, Section3V2, Section2V2 };
+
 // class Section1 extends Component {
 //   render() {
 //     return (
@@ -156,84 +389,6 @@ function FormColumn() {
 //     );
 //   }
 // }
-
-class Section1V2 extends Component {
-  render() {
-    return (
-      <>
-        <Box m={-2} />
-        <ThemeProvider theme={secondaryFont}>
-          <Typography
-            variant="h3"
-            style={{ textAlign: "center", color: "#202020" }}
-          >
-            Who are <span style={{ color: "#009877" }}>ESTEEM</span>?
-          </Typography>
-        </ThemeProvider>
-        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
-          <Box
-            style={{
-              background: white,
-              borderRadius: "20px",
-              maxWidth: "35em",
-              padding: "30px",
-              margin: "auto",
-            }}
-          >
-            <ThemeProvider theme={primaryFont}>
-              <Typography variant="body1" style={{ fontSize: "1em" }}>
-                <div className="justify">
-                  <p>
-                    We are Team ESTEEM from Heriot Watt University. 130 students,
-                    5 academic schools, 3 campuses and 1 cohesive vision driving
-                    us to build a better world.
-                  </p>
-                  <br></br>
-                  <p>
-                    Our members stem from a broad range of academic disciplines –
-                    Architectural, Structural, Electrical, Mechanical, Civil,
-                    Chemical Engineering; Computer Science, Data Science,
-                    Marketing and Business Management; Urban Planning,
-                    Construction Project Management.
-                  </p>
-                  <br></br>
-                  <p>
-                    We are as diverse as we are creative and it is drawing from
-                    this international pool of passion and talent that drives our
-                    success.
-                  </p>
-                </div>
-              </Typography>
-            </ThemeProvider>
-          </Box>
-          <Box m={2} />
-          <Box
-            style={{
-              background: white,
-              borderRadius: "20px",
-              maxWidth: "500px",
-              maxHeight: "600px",
-              padding: "10px",
-              // padding: "2%",
-            }}
-          >
-            <img
-              // className="landing-img"
-              style={{
-                maxWidth: "100%",
-                maxHeight: "600px",
-                borderRadius: "20px",
-              }}
-              src="/images/solariskit - kelvin points.jpg"
-              alt=""
-            // height="500px"
-            ></img>
-          </Box>
-        </Grid>
-      </>
-    );
-  }
-}
 
 // export default Section1V2;
 // class Section2 extends Component {
@@ -363,158 +518,3 @@ class Section1V2 extends Component {
 //     );
 //   }
 // }
-
-class Section2V2 extends Component {
-  render() {
-    return (
-      <>
-        <Box m={-10} />
-        <ThemeProvider theme={secondaryFont}>
-          <Typography
-            variant="h3"
-            style={{ textAlign: "center", color: "#202020" }}
-          >
-            What do <span style={{ color: "#009877" }}>ESTEEM</span> do?
-          </Typography>
-        </ThemeProvider>
-        <br></br>
-        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
-          <Box m={2} />
-          <Box
-            style={{
-              // background: white,
-              borderRadius: "20px",
-              // maxWidth: "75%",
-              padding: "20px",
-              margin: "auto",
-            }}
-          >
-            <ThemeProvider theme={primaryFont}>
-              <Typography variant="body1" style={{ fontSize: "1em" }}>
-                <div className="justify">
-                  <p>
-                    We are Heriot Watt University’s official entrant to the Solar
-                    Decathlon Middle East 2020 competition, a collegiate contest
-                    integrated with the 2020 World Expo in Dubai which is expected
-                    to attract an estimated 25 million people.
-                </p>
-                  <br />
-                  <Box>
-                    <img
-                      // className="landing-img"
-                      style={{
-                        display: "flex",
-                        maxWidth: "100%",
-                        maxHeight: "600px",
-                        borderRadius: "20px",
-                      }}
-                      src="/images/team.jpg"
-                      alt=""
-                    // height="500px"
-                    ></img>
-                  </Box>
-                  <br></br>
-                  <p>
-                    Our goal is to design and build a multifunctional solar
-                    powered house in collaboration with industry and academia. Our
-                    design ethos emphasises sustainability, and our construction
-                    will feature wall-to-wall innovation in our efforts to achieve
-                    the most eco-friendly build that can withstand the high
-                    temperature, high humidity and dusty conditions present in the
-                    Middle East.
-                  </p>
-                  <br></br>
-                  <p>
-                    Headquartered in Edinburgh, we are proud to represent the
-                    Scottish Construction and Building Services sectors on the
-                    international stage with our incorporation of materials and
-                    designs from several local sponsors.
-                  </p>
-                </div>
-              </Typography>
-            </ThemeProvider>
-          </Box>
-        </Grid>
-        <Box m={-10} />
-      </>
-    );
-  }
-}
-
-class Section3V2 extends Component {
-  render() {
-    return (
-      <>
-        <Box m={-8} />
-        <ThemeProvider theme={secondaryFont}>
-          <Typography
-            variant="h3"
-            style={{ textAlign: "center", color: "#202020" }}
-          >
-            <span style={{ color: "#009877" }}>Our</span> Mission
-          </Typography>
-        </ThemeProvider>
-        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
-          <Box
-            style={{
-              // background: white,
-              borderRadius: "20px",
-              maxWidth: "35em",
-              padding: "30px",
-              margin: "auto",
-            }}
-          >
-            <ThemeProvider theme={primaryFont}>
-              <Typography variant="body1" style={{ fontSize: "1em" }}>
-                <div className="justify">
-                  <p>
-                    At Team ESTEEM we draw from a range of academic backgrounds
-                    and our members aspire to apply their years of classroom
-                    learning to an interdisciplinary project that will change the
-                    world. We are the generation that will live to see the
-                    consequences of climate change. Motivated, eager and ready to
-                    act, each of us is committed to bringing together science,
-                    technology, architecture and innovative thinking to develop
-                    ourselves as professionals and bring about positive ecological
-                    change.
-                  </p>
-                  <br></br>
-                  <p>
-                    With the SDME, we are ready to take on the biggest challenge
-                    of all – becoming thought leaders in the green recovery and
-                    building the better, greener world of tomorrow.
-                  </p>
-                </div>
-              </Typography>
-            </ThemeProvider>
-          </Box>
-          <Box m={2} />
-          <Box
-            style={{
-              // background: grey,
-              borderRadius: "20px",
-              maxWidth: "500px",
-              maxHeight: "600px",
-              // padding: "20px",
-              padding: "2%",
-            }}
-          >
-            <img
-              // className="landing-img"
-              style={{
-                maxWidth: "100%",
-                maxHeight: "600px",
-                borderRadius: "20px",
-              }}
-              src="/images/csic - scott wood wide cropped.jpg"
-              alt=""
-            // height="500px"
-            ></img>
-          </Box>
-        </Grid>
-      </>
-    );
-  }
-}
-
-export { Section1V2, Section3V2, Section2V2 };
