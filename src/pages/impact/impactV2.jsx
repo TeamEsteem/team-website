@@ -57,7 +57,7 @@ const images = [
     key: 5,
     url: "https://images.unsplash.com/photo-1598958574774-a38471f4f216?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
     title: "Mobility",
-    width: "20.285714285714285714285714285714%",
+    width: "14.285714285714285714285714285714%",
     desc: "Our home has been designed to facilitate sustainable travel using electric vehicles, an essential feature of any nation’s efforts to achieve decarbonisation. Our house itself is characterised by its mobility, designed for rapid assembly and disassembly with a minimal resultant impact on its structural integrity. ",
   },
   {
@@ -85,7 +85,9 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     position: "relative",
-    height: 500,
+    height: 200,
+    display: "flex",
+    flexWrap: "wrap",
     [theme.breakpoints.down("xs")]: {
       width: "100% !important", // Overrides inline-style
       height: 100,
@@ -167,76 +169,70 @@ function ImpactButtons() {
   const handleClose = () => {
     setOpen(false);
   };
-
   return (
     <div className={classes.root}>
       {images.map((image) => (
-        <ButtonBase
-          focusRipple
-          key={image.title}
-          onClick={handleClickOpen}
-          className={classes.image}
-          focusVisibleClassName={classes.focusVisible}
-          style={{
-            width: image.width,
-            display: "flex",
-            margin: "auto",
-            // width: "100%",
-          }}
-        >
-          <span
-            className={classes.imageSrc}
+        <>
+          <ButtonBase
+            focusRipple
+            key={image.title}
+            onClick={handleClickOpen}
+            className={classes.image}
+            focusVisibleClassName={classes.focusVisible}
             style={{
-              backgroundImage: `url(${image.url})`,
+              width: image.width,
+              display: "flex",
+              margin: "auto",
+              // width: "100%",
             }}
-          />
-          <span className={classes.imageBackdrop} />
-          <span className={classes.imageButton}>
-            <ThemeProvider theme={primaryFont}>
-              <Typography
-                component="span"
-                variant="body1"
-                // style={{ fontSize: "20px" }}
-                color="inherit"
-                className={classes.imageTitle}
-              >
-                {image.title}
-                <span className={classes.imageMarked} />
-              </Typography>
-            </ThemeProvider>
-          </span>
-        </ButtonBase>
-      ))}
-      <div>
-        {/* <Button onClick={handleClickOpen}>Hello</Button> */}
-        {images.map((image) => {
-          if (image.key === 2) {
-            return (
-              <Dialog
-                // fullScreen={fullScreen}
-                open={open}
-                key={image.key}
-                onClose={handleClose}
-                aria-labelledby="responsive-dialog-title"
-              >
-                <DialogTitle id="responsive-dialog-title">
+          >
+            <span
+              className={classes.imageSrc}
+              style={{
+                backgroundImage: `url(${image.url})`,
+              }}
+            />
+            <span className={classes.imageBackdrop} />
+            <span className={classes.imageButton}>
+              <ThemeProvider theme={primaryFont}>
+                <Typography
+                  component="span"
+                  variant="body1"
+                  // style={{ fontSize: "20px" }}
+                  color="inherit"
+                  className={classes.imageTitle}
+                >
                   {image.title}
-                </DialogTitle>
-                <Divider />
+                  <span className={classes.imageMarked} />
+                </Typography>
+              </ThemeProvider>
+            </span>
+          </ButtonBase>
+        </>
+      ))}
+      {images.map((image) => (
+        <Dialog
+          // fullScreen={fullScreen}
+          open={open}
+          key={image.key}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <DialogTitle id="responsive-dialog-title">{image.title}</DialogTitle>
+          <Divider />
 
-                <DialogContent>
-                  <DialogContentText>{image.desc}</DialogContentText>
-                </DialogContent>
-                <DialogActions>
-                  <Button onClick={handleClose} autoFocus>
-                    CLOSE
-                  </Button>
-                </DialogActions>
-              </Dialog>
-            );
-          }
-        })}
-      </div>
+          <DialogContent>
+            <DialogContentText>{image.desc}</DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} autoFocus>
+              CLOSE
+            </Button>
+          </DialogActions>
+        </Dialog>
+      ))}
+
+      <div>{/* <Button onClick={handleClickOpen}>Hello</Button> */}</div>
     </div>
   );
 }
@@ -254,64 +250,64 @@ function ImpactButtonsV2(props) {
   const handleClose = () => {
     setOpen(false);
   };
-
   return (
     <div className={classes.root}>
-      <ButtonBase
-        focusRipple
-        key={props.title}
-        onClick={handleClickOpen}
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: props.width,
-          // width: "100%",
-        }}
-      >
-        <span
-          className={classes.imageSrc}
+      <>
+        <ButtonBase
+          focusRipple
+          key={props.title}
+          onClick={handleClickOpen}
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
           style={{
-            backgroundImage: `url(${props.url})`,
+            width: "100%",
+            // width: "100%",
           }}
-        />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton}>
-          <ThemeProvider theme={primaryFont}>
-            <Typography
-              component="span"
-              variant="body1"
-              // style={{ fontSize: "20px" }}
-              color="inherit"
-              className={classes.imageTitle}
-            >
-              {props.title}
-              <span className={classes.imageMarked} />
-            </Typography>
-          </ThemeProvider>
-        </span>
-      </ButtonBase>
-      <div>
-        <Dialog
-          // fullScreen={fullScreen}
-          open={open}
-          key={props.key}
-          onClose={handleClose}
-          aria-labelledby="responsive-dialog-title"
         >
-          <DialogTitle id="responsive-dialog-title">{props.title}</DialogTitle>
-          <Divider />
+          <span
+            className={classes.imageSrc}
+            style={{
+              backgroundImage: `url(${props.url})`,
+            }}
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton}>
+            <ThemeProvider theme={primaryFont}>
+              <Typography
+                component="span"
+                variant="body1"
+                // style={{ fontSize: "20px" }}
+                color="inherit"
+                className={classes.imageTitle}
+              >
+                {props.title}
+                <span className={classes.imageMarked} />
+              </Typography>
+            </ThemeProvider>
+          </span>
+        </ButtonBase>
+      </>
+      <Dialog
+        // fullScreen={fullScreen}
+        open={open}
+        key={props.key}
+        onClose={handleClose}
+        aria-labelledby="responsive-dialog-title"
+      >
+        <DialogTitle id="responsive-dialog-title">{props.title}</DialogTitle>
+        <Divider />
 
-          <DialogContent>
-            <DialogContentText>{props.desc}</DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={handleClose} autoFocus>
-              CLOSE
-            </Button>
-          </DialogActions>
-        </Dialog>
-        {/* ); */}
-      </div>
+        <DialogContent>
+          <DialogContentText>{props.desc}</DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} autoFocus>
+            CLOSE
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      <div>{/* <Button onClick={handleClickOpen}>Hello</Button> */}</div>
     </div>
   );
 }
@@ -336,7 +332,7 @@ class ImpactV2 extends Component {
                   color: white,
                   margin: "150px 0 0 0",
                   fontWeight: "bold",
-                  padding: "0 20px"
+                  padding: "0 20px",
                 }}
               >
                 Pillars of ESTEEM
@@ -362,7 +358,7 @@ class ImpactV2 extends Component {
                   margin: "25px 0 25px 0",
                   maxWidth: "1000px",
                   fontSize: "1.5em",
-                  padding: "0 20px"
+                  padding: "0 20px",
                 }}
               >
                 These are the seven pillars of the SDME competition, highlighted
@@ -378,7 +374,7 @@ class ImpactV2 extends Component {
                   margin: "25px 0 100px 0",
                   maxWidth: "1000px",
                   fontSize: "1.5em",
-                  padding: "0 20px"
+                  padding: "0 20px",
                 }}
               >
                 (Click to find out more!)
@@ -386,6 +382,7 @@ class ImpactV2 extends Component {
             </ThemeProvider>
           </Grid>
         </Grid>
+        {/* <ImpactButtons /> */}
         {images.map((image) => (
           <ImpactButtonsV2
             // key={image.key}
