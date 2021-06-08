@@ -39,6 +39,8 @@ const teams = [
   "building Modelling",
   "construction",
   "windcatcher",
+  "interior Design",
+  "newsletter"
 ];
 
 function TeamCardSmall(props) {

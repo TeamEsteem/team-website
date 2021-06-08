@@ -4,20 +4,33 @@ export const members = [
     team: ["management"],
     name: "Alex Maclaren",
     role: "Faculty Lead",
-    image: "/members/alexM.jpg",
+    image: "/members/alex m.jpg",
     linkedin: "https://www.linkedin.com/in/alexmaclaren/",
   },
   {
     team: ["management"],
+    name: "Scott",
+    role: "Student Lead & Sponsorship/Procurement",
+    image: "/members/scott.jpg",
+    linkedin: "https://www.linkedin.com/in/scott-calder-534b9716b/",
+  },
+  {
+    team: ["management"],
+    name: "Sana",
+    role: "Vice-Student Lead (Previous Head of Building Services)",
+    image: "/members/sana.jpg",
+  },
+  {
+    team: ["management"],
     name: "Sonia Piórek",
-    role: "Team Advisor",
+    role: "Team Advisor (Previous Student Lead)",
     image: "/members/sonia p.jpg",
     linkedin: "https://www.linkedin.com/in/sonia-pi%C3%B3rek-802577164/",
   },
   {
     team: ["management"],
     name: "Ayman",
-    role: "Team Advisor",
+    role: "Team Advisor (Previous Vice-Student Lead)",
     image: "/members/ayman.jpg",
     linkedin: "https://www.linkedin.com/in/ayman-darve-587448194/",
   },
@@ -26,18 +39,18 @@ export const members = [
   {
     team: ["marketing", "architecture"],
     name: "Jairis",
-    role: "Communications, Marketing and Events team lead / Render Designer",
+    role: "Head of Marketing & Render Designer",
     image: "/members/jairis.jpg",
     linkedin: "https://www.linkedin.com/in/jairis-alvarez-119a94112/",
   },
   {
     team: ["marketing", "website", "sensors"],
     name: "Alakbar",
-    role: "Audio/Visual & Website Team Lead",
+    role: "Head of Audio/Visual & Website",
     image: "/members/alakbar.jpg",
   },
   {
-    team: ["marketing", "building Services"],
+    team: ["building Services"],
     name: "Adam",
     role: "Videographer & Radiant Cooling System Technician",
     image: "/members/adam.jpg",
@@ -64,9 +77,9 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/yashodhara-bose-096684183/",
   },
   {
-    team: ["marketing", "architecture"],
+    team: ["interior Design"],
     name: "Sonia B.",
-    role: "Podcast Lead/Host",
+    role: "Head of Interior Deisgn & Podcast Lead/Host",
     image: "/members/sonia_b.jpg",
     linkedin: "https://www.linkedin.com/in/sonia-buzza-24518b1a3/",
   },
@@ -91,22 +104,9 @@ export const members = [
   {
     team: ["sensors"],
     name: "Elliot",
-    role: "Software & Sensors Team Lead",
+    role: "Previous Head of Software & Sensors",
     image: "/members/elliot_whitehouse.jpg",
     linkedin: "https://www.linkedin.com/in/elliot-whitehouse-259913147/",
-  },
-  {
-    team: [
-      "sensors",
-      "sponsorship",
-      "landscaping",
-      "architecture",
-      "windcatcher",
-    ],
-    name: "Scott",
-    role: "Sponsorship & Procurement",
-    image: "/members/scott.jpg",
-    linkedin: "https://www.linkedin.com/in/scott-calder-534b9716b/",
   },
   {
     team: ["sensors"],
@@ -171,31 +171,30 @@ export const members = [
   // Landscaping
   {
     team: ["landscaping"],
+    name: "Joe H.",
+    role: "Head of Landscaping",
+    image: "/members/joe h.jpg",
+  },
+  {
+    team: ["landscaping"],
     name: "Madihah",
     role: "Plant & Vegetation Coordinator",
     image: "/members/madihah_anaum.jpg",
     linkedin: "https://www.linkedin.com/in/madihah-anaum-87b6a6203/",
-  },
-  {
-    team: ["landscaping", "windcatcher"],
-    name: "Joe",
-    role: "Landscaping Team Lead",
-    image: "/members/joe.jpg",
-    linkedin: "",
   },
 
   // Renewables
   {
     team: ["renewables"],
     name: "Kelvin",
-    role: "Renewables Team Lead",
+    role: "Head of Renewables",
     image: "/members/kelvin.jpg",
     linkedin: "https://www.linkedin.com/in/kelvinshilinglaw/",
   },
   {
     team: ["renewables"],
     name: "Marta",
-    role: "Renewables Team Lead",
+    role: "Head of Renewables",
     image: "/members/marta.jpg",
     linkedin: "https://www.linkedin.com/in/marta-g%C3%B3recka-a6743a17b/",
   },
@@ -225,9 +224,9 @@ export const members = [
     image: "/members/luke_o.jpg",
   },
   {
-    team: ["renewables", "marketing"],
+    team: ["building Services"],
     name: "Ruschane",
-    role: "Electromechanical Design & Podcast Lead/Host",
+    role: "Head of Building Services & Podcast Lead/Host",
     image: "/members/ruschane.jpg",
     linkedin: "https://www.linkedin.com/in/ruschane-joginder-2907831b0/",
   },
@@ -291,7 +290,7 @@ export const members = [
   {
     team: ["quantity Surveying"],
     name: "Callum",
-    role: "Quantity Surveying Team Lead",
+    role: "Head of Quantity Surveying",
     image: "/members/callum_lewington.jpg",
   },
   {
@@ -305,14 +304,14 @@ export const members = [
   {
     team: ["architecture", "quantity Surveying"],
     name: "Martin",
-    role: "Architecture Team Lead",
+    role: "Head of Architecture",
     image: "/members/martinj.jpg",
     linkedin: "https://www.linkedin.com/in/martin-purnell",
   },
   {
-    team: ["architecture", "windcatcher"],
+    team: ["interior Design"],
     name: "Kinga",
-    role: "Interior Design Team Lead",
+    role: "Previous Head of Interior Design",
     image: "/members/kinga.jpg",
     linkedin: "https://www.linkedin.com/in/kinga-pakozdi-a6b8561b7/",
   },
@@ -346,8 +345,15 @@ export const members = [
   {
     team: ["structural"],
     name: "Ellie",
-    role: "Structural Team Lead",
+    role: "Head of Structural",
     image: "/members/ellie.jpg",
+  },
+  {
+    team: ["structural"],
+    name: "Chloe",
+    role: "Structural & Solar Catcher Team Member",
+    image: "/members/chloejc.jpg",
+    linkedin: "https://www.linkedin.com/in/chloejchandler",
   },
   {
     team: ["structural"],
@@ -361,13 +367,6 @@ export const members = [
     name: "Siddheshwar",
     role: "Structural Team Member",
     image: "/members/siddheshwar.jpg",
-  },
-  {
-    team: ["structural", "construction"],
-    name: "Chloe",
-    role: "Structural & Second Skin Team Member",
-    image: "/members/chloejc.jpg",
-    linkedin: "https://www.linkedin.com/in/chloejchandler",
   },
   {
     team: ["structural", "windcatcher"],
@@ -398,14 +397,14 @@ export const members = [
   {
     team: ["health"],
     name: "Zuhair",
-    role: "Health & Safety Team Lead",
+    role: "Head of Health & Safety",
     image: "/members/zuhair.jpg",
     linkedin: "https://www.linkedin.com/in/zuhair-a-raouf-ahmed-4348b562/",
   },
   {
     team: ["health", "renewables"],
     name: "Ryan",
-    role: "Health & Safety Co-Team Lead & Electrical Systems",
+    role: "Head of Health & Safety & Electrical Systems",
     image: "/members/ryan.jpg",
   },
   {
@@ -425,12 +424,6 @@ export const members = [
     name: "Oke",
     role: "Health & Safety Officer",
     image: "/members/oke.jpg",
-  },
-  {
-    team: ["health"],
-    name: "Priyanka",
-    role: "Health & Safety Officer",
-    image: "/members/priyanka.jpg",
   },
   {
     team: ["health"],
@@ -462,21 +455,21 @@ export const members = [
   // Building Modelling
   {
     team: ["building Modelling"],
-    name: "Priyankadevi",
-    role: "IES & Building Modelling Team Lead",
-    image: "/members/priyankadevi.jpg",
+    name: "Priyanka",
+    role: "Head of IES & Building Modelling",
+    image: "/members/priyanka.jpg",
     linkedin: "https://www.linkedin.com/in/priyankadevi-murugappan-7839721a0/",
   },
   {
     team: ["building Modelling"],
     name: "Mahnoor",
-    role: "IES Model",
+    role: "IES Modeller",
     image: "/members/mahnoor.jpg",
   },
   {
     team: ["building Modelling"],
     name: "Vinuki",
-    role: "IES Model",
+    role: "IES Modeller",
     image: "/members/vinuki.jpg",
   },
   {
@@ -489,25 +482,25 @@ export const members = [
   {
     team: ["building Modelling"],
     name: "Jane",
-    role: "Revit Model",
+    role: "Revit Modeller",
     image: "/members/jane.jpg",
   },
   {
     team: ["building Modelling"],
     name: "Emilia",
-    role: "Revit Model",
+    role: "Revit Modeller",
     image: "/members/emilia.jpg",
   },
   {
     team: ["building Modelling"],
     name: "Serrah",
-    role: "AutoCAD & IES",
+    role: "AutoCAD & IES Modeller",
     image: "/members/serrah.jpg",
   },
   {
     team: ["building Modelling"],
     name: "Eshiet",
-    role: "AutoCAD Model",
+    role: "AutoCAD Modeller",
     image: "/members/eshiet_akpan.jpg",
   },
 
@@ -515,7 +508,7 @@ export const members = [
   {
     team: ["construction", "windcatcher"],
     name: "Jessica",
-    role: "Construction & Windcatcher Team Leads",
+    role: "Head of Construction & Windcatcher",
     image: "/members/jessica_haskett.jpg",
   },
   {
@@ -538,8 +531,8 @@ export const members = [
   },
   {
     team: ["construction"],
-    name: "Devarsi",
-    role: "Second Skin Team Member",
+    name: "Devasri",
+    role: "Solar Catcher Team Member",
     image: "/members/devasri.jpg",
   },
   {
@@ -571,7 +564,7 @@ export const members = [
   {
     team: ["windcatcher"],
     name: "Erik",
-    role: "Windcatcher Co-Team Lead",
+    role: "Head of Windcatcher",
     image: "/members/erik.jpg",
   },
   {
@@ -585,5 +578,11 @@ export const members = [
     name: "Pelle",
     role: "Windcatcher Team Member",
     image: "/members/pelle.jpg",
+  },
+  {
+    team: ["newsletter"],
+    name: "Angie",
+    role: "Head of Newsletters",
+    image: "/members/angie.jpg",
   },
 ];
