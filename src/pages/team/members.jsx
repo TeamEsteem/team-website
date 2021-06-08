@@ -350,6 +350,13 @@ export const members = [
   },
   {
     team: ["structural"],
+    name: "Chloe",
+    role: "Structural & Solar Catcher Team Member",
+    image: "/members/chloejc.jpg",
+    linkedin: "https://www.linkedin.com/in/chloejchandler",
+  },
+  {
+    team: ["structural"],
     name: "Lucas",
     role: "Model Creator",
     image: "/members/lucas.jpg",
@@ -360,13 +367,6 @@ export const members = [
     name: "Siddheshwar",
     role: "Structural Team Member",
     image: "/members/siddheshwar.jpg",
-  },
-  {
-    team: ["structural", "construction"],
-    name: "Chloe",
-    role: "Structural & Second Skin Team Member",
-    image: "/members/chloejc.jpg",
-    linkedin: "https://www.linkedin.com/in/chloejchandler",
   },
   {
     team: ["structural", "windcatcher"],
@@ -528,12 +528,6 @@ export const members = [
     name: "Shilpan",
     role: "Site Operations Coordinator",
     image: "/members/shilpan.jpg",
-  },
-  {
-    team: ["structural"],
-    name: "Chloe",
-    role: "Structural & Solar Catcher Team Member",
-    image: "/members/chloejc.jpg",
   },
   {
     team: ["construction"],
