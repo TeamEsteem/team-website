@@ -28,11 +28,6 @@ class TimelinePage extends Component {
   render() {
     return (
       <Box style={{ background: white }}>
-        <div>
-          <Typography style={{ fontSize: "20px" }}>
-            <Header />
-          </Typography>
-        </div>
         <Grid
           container
           alignContent="center"
@@ -54,7 +49,7 @@ class TimelinePage extends Component {
                 Our Timeline
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 style={{
                   textAlign: "center",
                   color: white,

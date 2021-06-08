@@ -62,7 +62,7 @@ export const members = [
     team: ["website"],
     name: "Mohit Katta",
     role: "Website Developer",
-    image: "/members/mohitKatta.png",
+    image: "/members/mohitKatta.jpg",
     linkedin: "https://www.linkedin.com/in/mohit-katta/",
   },
   {
@@ -108,7 +108,7 @@ export const members = [
     team: ["sensors"],
     name: "Oluwasanmi",
     role: "AR Developer",
-    image: "/members/oluwasanmi.jpg",
+    image: "/members/sanmi.jpg",
   },
   {
     team: ["sensors"],
@@ -269,13 +269,13 @@ export const members = [
 
   // Quantity Surveying
   {
-    team: ["quantity"],
+    team: ["quantity Surveying"],
     name: "Callum",
     role: "Quantity Surveying Team Lead",
     image: "/members/callum_lewington.jpg",
   },
   {
-    team: ["quantity"],
+    team: ["quantity Surveying"],
     name: "Liam",
     role: "Quantity Surveying Team Member",
     image: "/members/liam_gordon.jpg",
@@ -283,7 +283,7 @@ export const members = [
 
   // Architecture
   {
-    team: ["architecture", "quantity"],
+    team: ["architecture", "quantity Surveying"],
     name: "Martin",
     role: "Architecture Team Lead",
     image: "/members/martinj.jpg",
@@ -310,7 +310,7 @@ export const members = [
     team: ["architecture"],
     name: "Bailey",
     role: "Architecture Team Member",
-    image: "/members/Bailey.jpg",
+    image: "/members/bailey_d.jpg",
   },
   {
     team: ["architecture"],

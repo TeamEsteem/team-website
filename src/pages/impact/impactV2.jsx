@@ -320,11 +320,6 @@ class ImpactV2 extends Component {
     return (
       <Box>
         {/* <ImpactButtons /> */}
-        <div>
-          <Typography style={{ fontSize: "20px" }}>
-            <Header />
-          </Typography>
-        </div>
         <Grid
           container
           alignContent="center"
@@ -341,12 +336,13 @@ class ImpactV2 extends Component {
                   color: white,
                   margin: "150px 0 0 0",
                   fontWeight: "bold",
+                  padding: "0 20px"
                 }}
               >
                 Pillars of ESTEEM
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 style={{
                   textAlign: "center",
                   color: white,
@@ -366,6 +362,7 @@ class ImpactV2 extends Component {
                   margin: "25px 0 25px 0",
                   maxWidth: "1000px",
                   fontSize: "1.5em",
+                  padding: "0 20px"
                 }}
               >
                 These are the seven pillars of the SDME competition, highlighted
@@ -381,6 +378,7 @@ class ImpactV2 extends Component {
                   margin: "25px 0 100px 0",
                   maxWidth: "1000px",
                   fontSize: "1.5em",
+                  padding: "0 20px"
                 }}
               >
                 (Click to find out more!)

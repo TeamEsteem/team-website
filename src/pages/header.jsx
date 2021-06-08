@@ -15,10 +15,10 @@ import React, { useState, useEffect } from "react";
 import { Link as RouterLink, Router } from "react-router-dom";
 
 const headersData = [
-  {
-    label: "Home",
-    href: "/",
-  },
+  // {
+  //   label: "Home",
+  //   href: "/",
+  // },
   {
     label: "About",
     href: "/team",
@@ -89,7 +89,9 @@ export default function Header() {
   const displayDesktop = () => {
     return (
       <Toolbar className={toolbar}>
-        <img src={EsteemLogo} alt="" />
+        <a href="/">
+          <img src={EsteemLogo} alt="" />
+        </a>
         <div>{getMenuButtons()}</div>
       </Toolbar>
     );
@@ -126,7 +128,9 @@ export default function Header() {
         </Drawer>
 
         <div>
-          <img src={EsteemLogo} id="esteem-logo" alt="" />
+          <a href="/">
+            <img src={EsteemLogo} id="esteem-logo" alt="" />
+          </a>
         </div>
       </Toolbar>
     );
@@ -170,9 +174,9 @@ export default function Header() {
 
   return (
     <header>
-        <AppBar className={header}>
-          {mobileView ? displayMobile() : displayDesktop()}
-        </AppBar>
+      <AppBar className={header}>
+        {mobileView ? displayMobile() : displayDesktop()}
+      </AppBar>
     </header>
   );
 }

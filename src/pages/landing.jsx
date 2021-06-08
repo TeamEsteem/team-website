@@ -101,14 +101,13 @@ class Landing extends Component {
                 style={{
                   textAlign: "center",
                   color: white,
-                  marginTop: "200px",
+                  marginTop: "150px",
                 }}
               >
-                Pride in{" "}
-                <span style={{ color: white, fontWeight: 500 }}> where</span>{" "}
-                <br></br> <Box m={-2}></Box> and{" "}
-                <span style={{ color: white, fontWeight: 500 }}>how</span> we
-                live
+                Pride in
+                <span style={{ color: white, fontWeight: 500 }}> where</span>
+                <br></br> and
+                <span style={{ color: white, fontWeight: 500 }}> how</span> we live
               </Typography>
             </ThemeProvider>
           </Grid>

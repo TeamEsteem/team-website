@@ -19,6 +19,7 @@
 * {
   font-family: "Inter", sans-serif !important;
   scroll-behavior: smooth;
+  box-shadow: none !important;
 }
 
 .Body {
@@ -70,22 +71,42 @@ header img {
   height: 70px;
 }
 
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #750599;
+}
+
+h2 {
+  padding: 0 10px;
+}
+
+.width1250 {
+  max-width: 1250px !important;
+}
+
 .Body {
   position: relative;
   // height: 100vh;
   // flex-grow: 1;
-  // overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .App-header {
   // background-image: url("./assets/images/landing-background.png");
   // background-image: url("https://www.youtube.com/watch?v=PT8aveu2Asg");
   // background-color: var(--esteem-green);
-  background: linear-gradient(
-    45deg,
-    rgba(0, 152, 119, 1) 0%,
-    rgba(34, 173, 135, 1) 100%
-  );
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(0, 152, 119, 1) 0%,
+  //   rgba(34, 173, 135, 1) 100%
+  // );
+  background-color: #009877;
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: scroll;
@@ -100,7 +121,7 @@ header img {
 }
 
 .MuiTypography-body2 {
-  padding: 15px;
+  padding: 0 25px;
 }
 
 .landing-bottom {
@@ -334,7 +355,7 @@ header img {
 
 .vertical-timeline-element-content {
   background-color: var(--esteem-green) !important;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
 }
 
 .vertical-timeline-element-title {

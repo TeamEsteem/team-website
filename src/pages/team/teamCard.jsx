@@ -33,7 +33,7 @@ const teams = [
   "building Services",
   "sponsorship",
   "landscaping",
-  "quantity",
+  "quantity Surveying",
   "structural",
   "health",
   "building Modelling",
@@ -147,7 +147,6 @@ function BackgroundTeamCard(props) {
         <Box
           style={{
             // marginTop: "100px",
-            marginLeft: "-5px",
             textAlign: "center",
             padding: "5px 20px 5px 20px",
             width: "fit-content",
