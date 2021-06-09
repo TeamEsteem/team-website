@@ -35,7 +35,7 @@ const teams = [
   "landscaping",
   "quantity Surveying",
   "structural",
-  "health",
+  "health & Safety",
   "building Modelling",
   "construction",
   "windcatcher",

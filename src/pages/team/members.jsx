@@ -77,6 +77,27 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/yashodhara-bose-096684183/",
   },
   {
+    team: ["marketing"],
+    name: "Dhruv",
+    role: "",
+    image: "/members/dhruv.jpg",
+    linkedin: "",
+  },
+  {
+    team: ["marketing"],
+    name: "Aditya",
+    role: "",
+    image: "/members/aditya.jpg",
+    linkedin: "",
+  },
+  {
+    team: ["marketing"],
+    name: "Alex B.",
+    role: "Marketing Strategist",
+    image: "/members/alex b.jpg",
+    linkedin: "https://www.linkedin.com/in/alexander-burton-527904156/",
+  },
+  {
     team: ["interior Design"],
     name: "Sonia B.",
     role: "Head of Interior Deisgn & Podcast Lead/Host",
@@ -382,9 +403,10 @@ export const members = [
   },
   {
     team: ["structural"],
-    name: "Moustapha",
+    name: "Mostafa",
     role: "Structural Team Member",
-    image: "/members/moustapha.jpg",
+    image: "/members/mostafa.jpg",
+    linkedin: "https://www.linkedin.com/in/mostafa-helmy-hassan",
   },
   {
     team: ["structural"],
@@ -395,41 +417,48 @@ export const members = [
 
   // Health & Safety
   {
-    team: ["health"],
+    team: ["health & Safety"],
     name: "Zuhair",
     role: "Head of Health & Safety",
     image: "/members/zuhair.jpg",
     linkedin: "https://www.linkedin.com/in/zuhair-a-raouf-ahmed-4348b562/",
   },
   {
-    team: ["health", "renewables"],
+    team: ["health & Safety", "renewables"],
     name: "Ryan",
     role: "Head of Health & Safety & Electrical Systems",
     image: "/members/ryan.jpg",
   },
   {
-    team: ["health"],
+    team: ["health & Safety"],
     name: "Aashni",
     role: "Health & Safety Officer",
     image: "/members/aashni.jpg",
+    linkedin: "https://www.linkedin.com/in/aashni-ujra",
   },
   {
-    team: ["health"],
+    team: ["health & Safety"],
     name: "Abdulrahman",
     role: "Health & Safety Officer",
     image: "/members/abdulrahman.jpg",
   },
   {
-    team: ["health"],
+    team: ["health & Safety"],
     name: "Oke",
     role: "Health & Safety Officer",
     image: "/members/oke.jpg",
   },
   {
-    team: ["health"],
+    team: ["health & Safety"],
     name: "Deepangika",
     role: "Health & Safety Officer",
     image: "/members/deepangika.jpg",
+  },
+  {
+    team: ["health & Safety"],
+    name: "Safa",
+    role: "Health & Safety Officer",
+    image: "/members/safa.jpg",
   },
 
   // Building Services
@@ -475,7 +504,7 @@ export const members = [
   {
     team: ["building Modelling"],
     name: "Nathan",
-    role: "Computational Fluid Dyanmics",
+    role: "Computational Fluid Dyanmics & Graphic Designer",
     image: "/members/nathan.jpg",
     linkedin: "https://www.linkedin.com/in/nathan-britto-19977519b/",
   },
@@ -496,6 +525,7 @@ export const members = [
     name: "Serrah",
     role: "AutoCAD & IES Modeller",
     image: "/members/serrah.jpg",
+    linkedin: "https://www.linkedin.com/in/serrah-jacob/",
   },
   {
     team: ["building Modelling"],
@@ -514,7 +544,7 @@ export const members = [
   {
     team: ["construction"],
     name: "Marco",
-    role: "Site Operations Lead",
+    role: "Head of Site Operations",
     image: "/members/marco.jpg",
   },
   {
@@ -544,20 +574,22 @@ export const members = [
   {
     team: ["construction"],
     name: "David",
-    role: "Construction Detailing Lead",
+    role: "Head of Construction Detailing",
     image: "/members/david.jpg",
   },
   {
     team: ["construction"],
-    name: "Ili",
+    name: "Ilitoli",
     role: "Construction Detailing",
     image: "/members/ili.jpg",
+    linkedin: "https://www.linkedin.com/in/ilitoli-n-16154b10a",
   },
   {
     team: ["construction"],
-    name: "Ahmed",
+    name: "Ahmed U.",
     role: "Construction Detailing",
-    image: "/members/ahmed.jpg",
+    image: "/members/ahmed u.jpg",
+    linkedin: "https://www.linkedin.com/in/ahmed-u-733a8898",
   },
   {
     team: ["construction"],
@@ -568,12 +600,6 @@ export const members = [
   },
 
   // Windcatcher
-  {
-    team: ["windcatcher"],
-    name: "Erik",
-    role: "Head of Windcatcher",
-    image: "/members/erik.jpg",
-  },
   {
     team: ["windcatcher"],
     name: "Carlos",
