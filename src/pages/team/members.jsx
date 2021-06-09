@@ -17,20 +17,20 @@ export const members = [
   {
     team: ["management"],
     name: "Sana",
-    role: "Vice-Student Lead (Previous Head of Building Services)",
+    role: "Vice-Student Lead (Former Head of Building Services)",
     image: "/members/sana.jpg",
   },
   {
     team: ["management"],
     name: "Sonia Piórek",
-    role: "Team Advisor (Previous Student Lead)",
+    role: "Team Advisor (Former Student Lead)",
     image: "/members/sonia p.jpg",
     linkedin: "https://www.linkedin.com/in/sonia-pi%C3%B3rek-802577164/",
   },
   {
     team: ["management"],
     name: "Ayman",
-    role: "Team Advisor (Previous Vice-Student Lead)",
+    role: "Team Advisor (Former Vice-Student Lead)",
     image: "/members/ayman.jpg",
     linkedin: "https://www.linkedin.com/in/ayman-darve-587448194/",
   },
@@ -104,7 +104,7 @@ export const members = [
   {
     team: ["sensors"],
     name: "Elliot",
-    role: "Previous Head of Software & Sensors",
+    role: "Former Head of Software & Sensors",
     image: "/members/elliot_whitehouse.jpg",
     linkedin: "https://www.linkedin.com/in/elliot-whitehouse-259913147/",
   },
@@ -311,7 +311,7 @@ export const members = [
   {
     team: ["interior Design"],
     name: "Kinga",
-    role: "Previous Head of Interior Design",
+    role: "Former Head of Interior Design",
     image: "/members/kinga.jpg",
     linkedin: "https://www.linkedin.com/in/kinga-pakozdi-a6b8561b7/",
   },
@@ -558,6 +558,13 @@ export const members = [
     name: "Ahmed",
     role: "Construction Detailing",
     image: "/members/ahmed.jpg",
+  },
+  {
+    team: ["construction"],
+    name: "Pashmeen",
+    role: "Logistics",
+    image: "/members/pashmeen.jpg",
+    linkedin: "https://www.linkedin.com/in/pashmeensingh"
   },
 
   // Windcatcher
