@@ -48,6 +48,7 @@ export const members = [
     name: "Alakbar",
     role: "Head of Audio/Visual & Website",
     image: "/members/alakbar.jpg",
+    linkedin: "https://alak.bar"
   },
   {
     team: ["building Services"],
@@ -79,9 +80,9 @@ export const members = [
   {
     team: ["marketing"],
     name: "Dhruv",
-    role: "",
+    role: "Podcast Editor",
     image: "/members/dhruv.jpg",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/dhruv-raghu-2b17331bb/",
   },
   {
     team: ["marketing"],
@@ -233,7 +234,7 @@ export const members = [
     image: "/members/elisa.jpg",
   },
   {
-    team: ["renewables", "building Services"],
+    team: ["building Services"],
     name: "Luke C.",
     role: "Mechanical Systems & Radiant Cooling System Designer",
     image: "/members/luke_c.jpg",

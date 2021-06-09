@@ -75,6 +75,11 @@ a {
   font-weight: bold;
   text-decoration: underline ;
   color: #fff;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #770098;
 }
 
 h2 {
