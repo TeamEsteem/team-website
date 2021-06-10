@@ -25,22 +25,22 @@ import Footer from "../footer";
 
 const teams = [
   "management",
-  "marketing",
   "architecture",
-  "website",
+  "building Modelling",
+  "building Services",
+  "construction",
+  "health & Safety",
+  "interior Design",
+  "landscaping",
+  "marketing",
+  "newsletter",
+  "quantity Surveying",
   "renewables",
   "sensors",
-  "building Services",
-  "sponsorship",
-  "landscaping",
-  "quantity Surveying",
+  // "sponsorship",
   "structural",
-  "health & Safety",
-  "building Modelling",
-  "construction",
+  "website",
   "windcatcher",
-  "interior Design",
-  "newsletter"
 ];
 
 function TeamCardSmall(props) {
