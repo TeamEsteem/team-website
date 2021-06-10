@@ -255,6 +255,13 @@ export const members = [
   },
   {
     team: ["renewables"],
+    name: "Luke O.",
+    role: "Electrical Systems",
+    image: "/members/luke o.jpg",
+    linkedin: "http://www.linkedin.com/in/luke-ormston-9705921a4",
+  },
+  {
+    team: ["renewables"],
     name: "Shehan",
     role: "PVT Modeller",
     image: "/members/shehan.jpg",
@@ -277,12 +284,6 @@ export const members = [
   //   name: "Elisa",
   //   role: "Cables Management & Equipment's Internal Head Gains",
   //   image: "/members/elisa.jpg",
-  // },
-  // {
-  //   team: ["renewables"],
-  //   name: "Luke O.",
-  //   role: "Electrical Systems",
-  //   image: "/members/luke_o.jpg",
   // },
   // {
   //   team: ["renewables"],
