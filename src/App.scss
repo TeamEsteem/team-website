@@ -78,9 +78,9 @@ a {
   transition: color 0.2s ease;
 }
 
-a:hover {
-  color: #770098;
-}
+// a:hover {
+  // color: #770098;
+// }
 
 h2 {
   padding: 0 10px;
@@ -100,6 +100,10 @@ h2 {
 .justify {
   text-align: justify;
   text-justify: inter-word;
+}
+
+li {
+  text-align: left;
 }
 
 .App-header {

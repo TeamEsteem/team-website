@@ -24,13 +24,14 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Footer from "../footer";
 
 const teams = [
+  "faculty",
   "management",
-  "architecture",
+  "architecture & Interior Design",
   "building Modelling",
   "building Services",
   "construction",
   "health & Safety",
-  "interior Design",
+  // "interior Design",
   "landscaping",
   "marketing",
   "newsletter",
@@ -228,8 +229,8 @@ class TeamMembers extends Component {
               >
                 Diverse student involvement across the whole university has been
                 essential to the successful creation of a team of student
-                engineers, computer scientists, energy specialists, and business
-                undergraduates.
+                Engineers, Computer Scientists, Energy Specialists, and Business
+                Undergraduates.
               </Typography>
             </ThemeProvider>
           </Grid>

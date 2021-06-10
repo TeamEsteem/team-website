@@ -1,23 +1,8 @@
 export const members = [
 
-  // interior design
-  {
-    team: ["interior Design"],
-    name: "Sonia B.",
-    role: "Head of Interior Deisgn & Podcast Lead/Host",
-    image: "/members/sonia_b.jpg",
-    linkedin: "https://www.linkedin.com/in/sonia-buzza-24518b1a3/",
-  },
-  {
-    team: ["interior Design"],
-    name: "Kinga",
-    role: "Former Head of Interior Design",
-    image: "/members/kinga.jpg",
-    linkedin: "https://www.linkedin.com/in/kinga-pakozdi-a6b8561b7/",
-  },
   //management
   {
-    team: ["management"],
+    team: ["faculty"],
     name: "Alex Maclaren",
     role: "Faculty Lead",
     image: "/members/alex m.jpg",
@@ -38,7 +23,7 @@ export const members = [
   },
   {
     team: ["management"],
-    name: "Sonia Piórek",
+    name: "Sonia P.",
     role: "Team Advisor (Former Student Lead)",
     image: "/members/sonia p.jpg",
     linkedin: "https://www.linkedin.com/in/sonia-pi%C3%B3rek-802577164/",
@@ -81,13 +66,6 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/dhruv-raghu-2b17331bb/",
   },
   {
-    team: ["building Services"],
-    name: "Adam",
-    role: "Videographer & Radiant Cooling System Technician",
-    image: "/members/adam.jpg",
-    linkedin: "https://www.linkedin.com/in/adam-wolski-671100b4/",
-  },
-  {
     team: ["marketing"],
     name: "Jonathan",
     role: "Content Creator & Writer",
@@ -103,15 +81,14 @@ export const members = [
   {
     team: ["marketing"],
     name: "Yashodhara",
-    role: "Event Coordinator",
+    role: "Events Coordinator Lead",
     image: "/members/yashodhara.jpg",
     linkedin: "https://www.linkedin.com/in/yashodhara-bose-096684183/",
   },
-
   // {
   //   team: ["marketing"],
   //   name: "Aditya",
-  //   role: "",
+  //   role: "Events Coordinator",
   //   image: "/members/aditya.jpg",
   //   linkedin: "",
   // },
@@ -206,7 +183,7 @@ export const members = [
   // Landscaping
   {
     team: ["landscaping"],
-    name: "Joe H.",
+    name: "Joe",
     role: "Head of Landscaping",
     image: "/members/joe h.jpg",
   },
@@ -217,6 +194,13 @@ export const members = [
     image: "/members/madihah_anaum.jpg",
     linkedin: "https://www.linkedin.com/in/madihah-anaum-87b6a6203/",
   },
+  // {
+  //   team: ["landscaping"],
+  //   name: "Martin P.",
+  //   role: "Something with lourvres",
+  //   image: "/members/martin p.jpg",
+  //   linkedin: "",
+  // },
 
   // Renewables
   {
@@ -326,32 +310,47 @@ export const members = [
 
   // Architecture
   {
-    team: ["architecture", "quantity Surveying"],
-    name: "Martin",
+    team: ["architecture & Interior Design", "quantity Surveying"],
+    name: "Martin J.",
     role: "Head of Architecture",
     image: "/members/martinj.jpg",
     linkedin: "https://www.linkedin.com/in/martin-purnell",
   },
+  // interior design
   {
-    team: ["architecture"],
+    team: ["architecture & Interior Design", "interior Design"],
+    name: "Sonia B.",
+    role: "Head of Interior Deisgn & Podcast Lead/Host",
+    image: "/members/sonia_b.jpg",
+    linkedin: "https://www.linkedin.com/in/sonia-buzza-24518b1a3/",
+  },
+  {
+    team: ["architecture & Interior Design", "interior Design"],
+    name: "Kinga",
+    role: "Former Head of Interior Design",
+    image: "/members/kinga.jpg",
+    linkedin: "https://www.linkedin.com/in/kinga-pakozdi-a6b8561b7/",
+  },
+  {
+    team: ["architecture & Interior Design"],
     name: "Alix",
     role: "Architecture Team Member",
     image: "/members/alix.jpg",
   },
   // {
-  //   team: ["architecture"],
+  //   team: ["architecture & Interior Design"],
   //   name: "Aurelia",
   //   role: "Render Designer",
   //   image: "/members/aurelia.jpg",
   // },
   {
-    team: ["architecture"],
+    team: ["architecture & Interior Design"],
     name: "Bailey",
     role: "Architecture Team Member",
     image: "/members/bailey_d.jpg",
   },
   {
-    team: ["architecture"],
+    team: ["architecture & Interior Design"],
     name: "Jil",
     role: "Architecture Team Member",
     image: "/members/jil_sheth.jpg",
@@ -466,6 +465,13 @@ export const members = [
     role: "Head of Building Services & Podcast Lead/Host",
     image: "/members/ruschane.jpg",
     linkedin: "https://www.linkedin.com/in/ruschane-joginder-2907831b0/",
+  },
+  {
+    team: ["building Services"],
+    name: "Adam",
+    role: "Videographer & Radiant Cooling System Technician",
+    image: "/members/adam.jpg",
+    linkedin: "https://www.linkedin.com/in/adam-wolski-671100b4/",
   },
   {
     team: ["building Services"],
@@ -635,5 +641,11 @@ export const members = [
     name: "Angie",
     role: "Head of Newsletters",
     image: "/members/angie.jpg",
+  },
+  {
+    team: ["newsletter"],
+    name: "Hanin",
+    role: "Newsletter Editor",
+    image: "/members/hanin.jpg",
   },
 ];

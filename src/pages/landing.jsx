@@ -114,13 +114,13 @@ class Landing extends Component {
           <Box m={2}></Box>
           <Grid item>
             <Grid container direction="row">
-              <SubtitleInteractive number="120" subtitle="students" />
+              <SubtitleInteractive number="120" subtitle="Students" />
               {/* <DividerSpecial color={grey} /> */}
-              <SubtitleInteractive number="5" subtitle="academic schools" />
+              <SubtitleInteractive number="5" subtitle="Academic Schools" />
               {/* <DividerSpecial color={grey} /> */}
-              <SubtitleInteractive number="3" subtitle="campuses" />
+              <SubtitleInteractive number="3" subtitle="Campuses" />
               {/* <DividerSpecial color={grey} /> */}
-              <SubtitleInteractive number="1" subtitle="cohesive vision" />
+              <SubtitleInteractive number="1" subtitle="Cohesive Vision" />
             </Grid>
           </Grid>
           <Box m={3} />

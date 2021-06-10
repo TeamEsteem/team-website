@@ -32,11 +32,11 @@ class HomeModelV2 extends Component {
                 style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
               >
                 <p>
-                  It has taken nearly 3 years of effort, but we are nearly there! We are currently building the prototype of our future home!
+                  It has taken nearly 3 years of effort, but we are nearly there; the prototype construction is underway!
                 </p>
                 <br />
                 <p>
-                  We post updates on our <a href="https://www.instagram.com/teamesteem2020/">Instagram</a> and <a href="https://www.linkedin.com/company/team-esteem-2020">LinkedIn</a>  if you're interested in seeing our progress.
+                  We post updates on our <a href="https://www.instagram.com/teamesteem2020/">Instagram</a> and <a href="https://www.linkedin.com/company/team-esteem-2020">LinkedIn</a> if you're interested in seeing our progress.
                 </p>
               </Typography>
             </ThemeProvider>
@@ -78,7 +78,7 @@ class HomeModelV2 extends Component {
               <Typography variant="body1" style={{ fontSize: "1em" }}>
                 <div className="justify">
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem omnis esse maxime? Aliquam, neque? Corrupti, dolorum fugit. Itaque ea obcaecati deleniti accusamus odio quo provident dolore vero, hic expedita et?
+                    Throughout the project, we've been using building modelling software to produce renders of the home. This enables our team to refine design strategies and future decisions.
                   </p>
                   <br />
                   <Box>
@@ -97,7 +97,7 @@ class HomeModelV2 extends Component {
                   </Box>
                   <br></br>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officia ipsum qui iste id ab! Consectetur soluta nostrum recusandae quo incidunt provident dignissimos deleniti, quibusdam consequuntur eos perferendis enim consequatur.
+                    Each design iteration has been a clear indicator of our progress. Our partnership with Alpha Arquitectos has facilitated the production of these realistic renders, bringing our collective vision to life.
                   </p>
                   <br />
                   <Box>
@@ -114,10 +114,6 @@ class HomeModelV2 extends Component {
                     // height="500px"
                     ></img>
                   </Box>
-                  <br></br>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim dignissimos ratione odit hic rem aliquid atque dolorum excepturi iusto ducimus harum deleniti temporibus, explicabo, vel sit natus minima ex.
-                  </p>
                 </div>
               </Typography>
             </ThemeProvider>
@@ -137,7 +133,7 @@ class HomeModelV2 extends Component {
           </Typography>
             </ThemeProvider>
             <ThemeProvider theme={primaryFont}>
-              <Typography variant="body1" style={{ fontSize: "1em", textAlign: "center" }}>
+              <Typography variant="body1" style={{ fontSize: "1em", textAlign: "center", marginTop: "20px" }}>
                 <p>
                   Use your cursor or finger to rotate around the 3D model of our house.
                 </p>

@@ -77,7 +77,7 @@ class Section1V2 extends Component {
   render() {
     return (
       <>
-        <Box m={-10} />
+        {/* <Box m={-10} /> */}
         <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
@@ -102,10 +102,7 @@ class Section1V2 extends Component {
               <Typography variant="body1" style={{ fontSize: "1em" }}>
                 <div className="justify">
                   <p>
-                    We are Heriot Watt University’s official entrant to the Solar
-                    Decathlon Middle East 2020 competition, a collegiate contest
-                    integrated with the 2020 World Expo in Dubai which is expected
-                    to attract an estimated 25 million people.
+                    We are, not only, Heriot-Watt University’s official entrant into the Solar Decathlon Middle East 2020 competition, but also the sole UK finalist! This contest is integrated with the World Expo in Dubai which envisions an estimated 25 million visitors.
                 </p>
                   <br />
                   <Box>
@@ -124,27 +121,17 @@ class Section1V2 extends Component {
                   </Box>
                   <br></br>
                   <p>
-                    Our goal is to design and build a multifunctional solar
-                    powered house in collaboration with industry and academia. Our
-                    design ethos emphasises sustainability, and our construction
-                    will feature wall-to-wall innovation in our efforts to achieve
-                    the most eco-friendly build that can withstand the high
-                    temperature, high humidity and dusty conditions present in the
-                    Middle East.
+                    Our goal is to design &#38; build a multifunctional solar powered house in collaboration with industry and academia. Thus, the design ethos emphasises sustainability &#38; innovative wall-to-wall constructional elements with the aspiration to achieve the most eco-friendly build. Our smart home aims to withstand the high temperatures, humidity &#38; dusty conditions prevalent in the Middle East.
                   </p>
                   <br></br>
                   <p>
-                    Headquartered in Edinburgh, we are proud to represent the
-                    Scottish Construction and Building Services sectors on the
-                    international stage with our incorporation of materials and
-                    designs from several local sponsors.
+                    Headquartered in Edinburgh, we are proud to represent the Scottish Construction and Building Services sectors on the international stage with our incorporation of materials and designs from several sponsors; local & worldwide.
                   </p>
                 </div>
               </Typography>
             </ThemeProvider>
           </Box>
         </Grid>
-        <Box m={-10} />
       </>
     );
   }
@@ -183,15 +170,22 @@ class Section2V2 extends Component {
                   </p>
                   <br></br>
                   <p>
-                    Our members stem from a broad range of academic disciplines –
-                    Architectural, Structural, Electrical, Mechanical, Civil,
-                    Chemical Engineering; Computer Science, Data Science,
-                    Marketing and Business Management; Urban Planning,
-                    Construction Project Management.
+                    Our members stem from a broad range of academic disciplines:
+                    <br /><br />
+                    <ul>
+                      <li>Architectural Engineering</li>
+                      <li>Civil/Structural Engineering</li>
+                      <li>Mechanical Engineering</li>
+                      <li>Computer Science</li>
+                      <li>Data Science</li>
+                      <li>Marketing &#38; Business Management</li>
+                      <li>Urban Planning</li>
+                      <li>Construction Porject Management</li>
+                    </ul>
                   </p>
                   <br></br>
                   <p>
-                    We are as diverse as we are creative and it is drawing from
+                    We are as diverse as we are creative and it's drawing from
                     this international pool of passion and talent that drives our
                     success.
                   </p>

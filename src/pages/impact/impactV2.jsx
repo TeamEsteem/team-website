@@ -348,7 +348,7 @@ class ImpactV2 extends Component {
                 }}
               >
                 Sustainability, Future, Innovation, Clean Energy, Mobility,
-                Smart Solutions, and Happiness.
+                Smart Solutions &#38; Happiness.
               </Typography>
               <Typography
                 variant="body1"
@@ -377,7 +377,7 @@ class ImpactV2 extends Component {
                   padding: "0 20px",
                 }}
               >
-                (Click to find out more!)
+                <b>Click to find out more!</b>
               </Typography>
             </ThemeProvider>
           </Grid>

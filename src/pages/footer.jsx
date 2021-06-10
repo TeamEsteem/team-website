@@ -43,7 +43,7 @@ function FormRow2() {
             style={{ textAlign: "center", color: grey, paddingBottom: "50px" }}
             id="footer"
           >
-            Get in <span style={{ color: lightGreen }}>touch</span>
+            Get in <span style={{ color: lightGreen }}>Touch</span>
           </Typography>
         </ThemeProvider>
         <br></br>
