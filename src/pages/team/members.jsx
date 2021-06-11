@@ -233,6 +233,12 @@ export const members = [
   },
   {
     team: ["renewables"],
+    name: "Claudia",
+    role: "Rainwater Systems",
+    image: "/members/claudia.jpg",
+  },
+  {
+    team: ["renewables"],
     name: "Czarina",
     role: "Lighting Lead & Wiring Consultant",
     image: "/members/czarina.jpg",
@@ -293,12 +299,6 @@ export const members = [
   //   name: "Joao",
   //   role: "SCADA & Sensors Lead",
   //   image: "/members/joao.jpg",
-  // },
-  // {
-  //   team: ["renewables"],
-  //   name: "Claudia",
-  //   role: "Rainwater Systems",
-  //   image: "/members/claudia.jpg",
   // },
 
   // Quantity Surveying
