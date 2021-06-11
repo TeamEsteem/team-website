@@ -35,6 +35,13 @@ export const members = [
     image: "/members/ayman.jpg",
     linkedin: "https://www.linkedin.com/in/ayman-darve-587448194/",
   },
+  {
+    team: ["management"],
+    name: "Simon",
+    role: "Head of HR",
+    image: "/members/simon.jpg",
+    linkedin: "www.linkedin.com/in/simon-klekot-49a3a018a",
+  },
 
   // Marketing
   {
@@ -85,13 +92,13 @@ export const members = [
     image: "/members/yashodhara.jpg",
     linkedin: "https://www.linkedin.com/in/yashodhara-bose-096684183/",
   },
-  // {
-  //   team: ["marketing"],
-  //   name: "Aditya",
-  //   role: "Events Coordinator",
-  //   image: "/members/aditya.jpg",
-  //   linkedin: "",
-  // },
+  {
+    team: ["marketing"],
+    name: "Aditya",
+    role: "Events Coordinator",
+    image: "/members/aditya.jpg",
+    linkedin: "https://www.linkedin.com/in/aditya-krishnan-78661b177",
+  },
 
 
 
@@ -114,6 +121,12 @@ export const members = [
   // Software & Sensors
   {
     team: ["sensors"],
+    name: "Ghazi",
+    role: "Head of Software & Sensors",
+    image: "/members/ghazi.jpg",
+  },
+  {
+    team: ["sensors"],
     name: "Elliot",
     role: "Former Head of Software & Sensors",
     image: "/members/elliot_whitehouse.jpg",
@@ -124,12 +137,6 @@ export const members = [
     name: "Geraldine",
     role: "Systems Lead",
     image: "/members/geraldine.jpg",
-  },
-  {
-    team: ["sensors"],
-    name: "Ghazi",
-    role: "AR/AI Lead",
-    image: "/members/ghazi.jpg",
   },
   {
     team: ["sensors"],
