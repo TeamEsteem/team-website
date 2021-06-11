@@ -87,13 +87,6 @@ export const members = [
   },
   {
     team: ["marketing"],
-    name: "Yashodhara",
-    role: "Events Coordinator Lead",
-    image: "/members/yashodhara.jpg",
-    linkedin: "https://www.linkedin.com/in/yashodhara-bose-096684183/",
-  },
-  {
-    team: ["marketing"],
     name: "Aditya",
     role: "Events Coordinator",
     image: "/members/aditya.jpg",
@@ -300,20 +293,6 @@ export const members = [
   //   role: "SCADA & Sensors Lead",
   //   image: "/members/joao.jpg",
   // },
-
-  // Quantity Surveying
-  {
-    team: ["quantity Surveying"],
-    name: "Callum",
-    role: "Head of Quantity Surveying",
-    image: "/members/callum_lewington.jpg",
-  },
-  {
-    team: ["quantity Surveying"],
-    name: "Liam",
-    role: "Quantity Surveying Team Member",
-    image: "/members/liam_gordon.jpg",
-  },
 
   // Architecture
   {
@@ -531,7 +510,8 @@ export const members = [
     team: ["building Modelling"],
     name: "Eshiet",
     role: "AutoCAD Modeller",
-    image: "/members/eshiet_akpan.jpg",
+    image: "/members/eshiet.jpg",
+    linkedin: "https://www.linkedin.com/in/eshiet-akpan-648948160",
   },
   {
     team: ["building Modelling"],
@@ -614,6 +594,18 @@ export const members = [
     image: "/members/pashmeen.jpg",
     linkedin: "https://www.linkedin.com/in/pashmeensingh"
   },
+  {
+    team: ["construction"],
+    name: "Callum",
+    role: "Head of Quantity Surveying",
+    image: "/members/callum_lewington.jpg",
+  },
+  {
+    team: ["construction"],
+    name: "Liam",
+    role: "Quantity Surveying Team Member",
+    image: "/members/liam_gordon.jpg",
+  },
 
   // {
   //   team: ["construction"],
@@ -661,10 +653,26 @@ export const members = [
     role: "Head of Newsletters",
     image: "/members/angie.jpg",
   },
+  // {
+  //   team: ["newsletter"],
+  //   name: "Hanin",
+  //   role: "Newsletter Editor",
+  //   image: "/members/hanin.jpg",
+  // },
+
+  // Uniform Design
   {
-    team: ["newsletter"],
-    name: "Hanin",
-    role: "Newsletter Editor",
-    image: "/members/hanin.jpg",
+    team: ["uniform Design"],
+    name: "Yashodhara",
+    role: "Head of Uniform Design & Events",
+    image: "/members/yashodhara.jpg",
+    linkedin: "https://www.linkedin.com/in/yashodhara-bose-096684183/",
+  },
+  {
+    team: ["uniform Design"],
+    name: "Aysha",
+    role: "Uniform Design",
+    image: "/members/aysha.jpg",
+    linkedin: "https://www.linkedin.com/in/aysha-mukhtar-b08589172",
   },
 ];

@@ -35,11 +35,12 @@ const teams = [
   "landscaping",
   "marketing",
   "newsletter",
-  "quantity Surveying",
+  // "quantity Surveying",
   "renewables",
   "sensors",
   // "sponsorship",
   "structural",
+  "uniform Design",
   "website",
   "windcatcher",
 ];
