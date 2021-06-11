@@ -38,13 +38,13 @@ export default class Sponsors extends Component {
                 style={{ textAlign: "center", color: white, margin: "150px 0 0 0", fontWeight: "bold" }}
               >
                 Our Sponsors
-            </Typography>
+              </Typography>
               <Typography
                 variant="body2"
                 style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
               >
                 We are proud to have the support of so many inspirational partners in our journey to World Expo 2021. Below you will see some of the cutting-edge companies and organisations that have worked with us so far.
-            </Typography>
+              </Typography>
             </ThemeProvider>
           </Grid>
         </Grid>
@@ -238,13 +238,13 @@ export default class Sponsors extends Component {
               />
             </a>
 
-            <a href="http://terratonics.ie/" target="_blank">
+            {/* <a href="http://terratonics.ie/" target="_blank">
               <img
                 className="sponsors-silver-image"
                 src="/sponsors/silver/Terratonics.jpg"
                 alt=""
               />
-            </a>
+            </a> */}
 
             <a href="https://www.uponor.co.uk/" target="_blank">
               <img
@@ -390,6 +390,14 @@ export default class Sponsors extends Component {
                 />
               </a>
 
+              <a href="https://www.facebook.com/alphaarquitectos507/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/alpha.jpg"
+                  alt=""
+                />
+              </a>
+
               <a href="https://www.amazon.co.uk/" target="_blank">
                 <img
                   className="sponsors-supporters-image"
@@ -402,6 +410,14 @@ export default class Sponsors extends Component {
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/bareconductive.webp"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.bauder.co.uk/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/bauder.png"
                   alt=""
                 />
               </a>
@@ -432,66 +448,79 @@ export default class Sponsors extends Component {
                   alt=""
                 />
               </a>
+
+              <a href="https://www.fgould.com/uk-europe/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/faithfulgould.jpg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.gecurrent.com/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/gecurrent.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://isgltd.com/en" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/isg.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="http://www.kenoteq.co.uk/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/kenoteq.webp"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.rainbird.com/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/rainbird.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.rbge.org.uk/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/RBG.jpeg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.sdi.co.uk/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/SDI.jpeg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.scottish-enterprise.com/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/SE.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.soltropy.com/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/soltropy.png"
+                  alt=""
+                />
+              </a>
             </Grid>
-            <a href="http://www.kenoteq.co.uk/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/kenoteq.webp"
-                alt=""
-              />
-            </a>
-
-            {/* <a href="" target="_blank">
-            <img className="sponsors-supporters-image" src="/sponsors/supporters/alpha" alt="" />
-          </a> */}
-
-            <a href="https://www.rainbird.com/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/rainbird.png"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.rbge.org.uk/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/RBG.jpeg"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.sdi.co.uk/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/SDI.jpeg"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.scottish-enterprise.com/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/SE.png"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.soltropy.com/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/soltropy.png"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.facebook.com/alphaarquitectos507/" target="_blank">
-              <img
-                className="sponsors-supporters-image"
-                src="/sponsors/supporters/alpha.jpg"
-                alt=""
-              />
-            </a>
           </div>
         </div>
         <div class="footer-top">

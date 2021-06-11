@@ -346,7 +346,7 @@ export const members = [
   {
     team: ["architecture & Interior Design"],
     name: "Bailey",
-    role: "Architecture Team Member",
+    role: "Head of Furniture Construction",
     image: "/members/bailey_d.jpg",
   },
   {
@@ -484,10 +484,11 @@ export const members = [
     name: "Duncan",
     role: "Ventilation Systems",
     image: "/members/duncan.jpg",
+    linkedin: "https://www.linkedin.com/in/duncan-hill-b557b9175/",
   },
   {
     team: ["building Services"],
-    name: "Gabriela",
+    name: "Gabbi",
     role: "Water Management",
     image: "/members/gabriela.jpg",
   },
@@ -497,6 +498,12 @@ export const members = [
     role: "Mechanical Systems & Radiant Cooling System Designer",
     image: "/members/luke_c.jpg",
   },
+  // {
+  //   team: ["building Services"],
+  //   name: "Rebecca",
+  //   role: "Former Stormwater & Guttering Engineer",
+  //   image: "/members/rebecca.jpg",
+  // },
 
 
   // Building Modelling
@@ -531,11 +538,16 @@ export const members = [
     role: "IES Modeller",
     image: "/members/mahnoor.jpg",
   },
-
+  {
+    team: ["building Modelling"],
+    name: "Niamh",
+    role: "Building Modelling & Interior Design Coordinator",
+    image: "/members/niamh.jpg",
+  },
   {
     team: ["building Modelling"],
     name: "Nathan",
-    role: "Computational Fluid Dyanmics & Graphic Designer",
+    role: "Computational Fluid Dynamics & Graphic Designer",
     image: "/members/nathan.jpg",
     linkedin: "https://www.linkedin.com/in/nathan-britto-19977519b/",
   },
