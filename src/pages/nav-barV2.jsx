@@ -133,6 +133,18 @@ export default function ButtonAppBar() {
                 </Typography>
               </Button>
             </Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <IconButton
+                style={{
+                  justifyContent: "center",
+                  color: white,
+                }}
+              >
+                <Typography component={"span"} variant={"body1"}>
+                  Contact Us
+                </Typography>
+              </IconButton>
+            </Link>
           </ThemeProvider>
         </Toolbar>
       </AppBar>

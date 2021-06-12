@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import { black, esteemGreen, white } from "../../components/colors";
+import {
+  black,
+  esteemGreen,
+  grey,
+  lightGreen,
+  white,
+} from "../../components/colors";
 import Header from "../nav-barV2";
 import {
   Box,
@@ -17,12 +23,14 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 
-function ImpactButtonClick() {
-  console.log("heylo");
-}
+const theme = createMuiTheme({
+  shape: {
+    borderRadius: 20,
+    backgroundColor: grey,
+  },
+});
 
 const images = [
   {
@@ -287,26 +295,42 @@ function ImpactButtonsV2(props) {
           </span>
         </ButtonBase>
       </>
-      <Dialog
-        // fullScreen={fullScreen}
-        open={open}
-        key={props.key}
-        onClose={handleClose}
-        aria-labelledby="responsive-dialog-title"
-      >
-        <DialogTitle id="responsive-dialog-title">{props.title}</DialogTitle>
-        <Divider />
+      <ThemeProvider theme={theme}>
+        <Dialog
+          // fullScreen={fullScreen}
+          open={open}
+          key={props.key}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <DialogTitle id="responsive-dialog-title">
+            <ThemeProvider theme={primaryFont}>
+              <Typography
+                variant="h4"
+                style={{ fontWeight: "bolder", color: lightGreen }}
+              >
+                {props.title}
+              </Typography>
+            </ThemeProvider>
+          </DialogTitle>
+          <Divider light variant="middle" />
 
-        <DialogContent>
-          <DialogContentText>{props.desc}</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} autoFocus>
-            CLOSE
-          </Button>
-        </DialogActions>
-      </Dialog>
-
+          <DialogContent>
+            <DialogContentText>
+              <ThemeProvider theme={primaryFont}>
+                <Typography variant="body1" style={{ fontWeight: "normal" }}>
+                  {props.desc}
+                </Typography>
+              </ThemeProvider>
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} autoFocus>
+              CLOSE
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </ThemeProvider>
       <div>{/* <Button onClick={handleClickOpen}>Hello</Button> */}</div>
     </div>
   );

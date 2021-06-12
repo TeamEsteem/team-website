@@ -8,7 +8,7 @@ import {
   IconButton,
   Drawer,
   Link,
-  MenuItem
+  MenuItem,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
@@ -30,6 +30,10 @@ const headersData = [
   {
     label: "Sponsors",
     href: "/sponsors",
+  },
+  {
+    label: "Contact Us",
+    href: "/contact",
   },
   {
     label: "Our Home",

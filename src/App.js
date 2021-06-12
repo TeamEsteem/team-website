@@ -1,6 +1,6 @@
 import Landing from "./pages/landing";
 // import Header from "./pages/nav-barV2";
-import Header from './pages/header';
+import Header from "./pages/header";
 import Timeline from "./pages/timeline/timeline";
 import {
   Section1V2,
@@ -19,6 +19,7 @@ import Team from "./pages/team/teamCard";
 import Impactv2 from "./pages/impact/impactV2";
 import HomeModel from "./pages/about-home/home-modelV2";
 import TimelinePage from "./pages/timeline/timeline-page.jsx";
+import Contact from "./pages/contact/contact";
 
 function App() {
   return (
@@ -156,6 +157,9 @@ function App() {
             </Route>
             <Route exact path="/timeline">
               <TimelinePage />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
             </Route>
           </Switch>
         </div>
