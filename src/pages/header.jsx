@@ -13,6 +13,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink, Router } from "react-router-dom";
+import { esteemGreen, white } from "../components/colors";
 
 const headersData = [
   // {
@@ -22,22 +23,32 @@ const headersData = [
   {
     label: "Team",
     href: "/team",
+    color: white,
+    bgColor: esteemGreen,
   },
   {
     label: "Impact",
     href: "/impact",
+    color: white,
+    bgColor: esteemGreen,
   },
   {
     label: "Sponsors",
     href: "/sponsors",
+    color: white,
+    bgColor: esteemGreen,
   },
   {
     label: "Contact",
     href: "/contact",
+    color: white,
+    bgColor: esteemGreen,
   },
   {
     label: "Our Home",
     href: "/home-model",
+    color: esteemGreen,
+    bgColor: white,
   },
 ];
 
@@ -159,16 +170,17 @@ export default function Header() {
   };
 
   const getMenuButtons = () => {
-    return headersData.map(({ label, href }) => {
+    return headersData.map(({ label, href, color, bgColor }) => {
       return (
         <Button
           {...{
             key: label,
-            color: "inherit",
+            // color: "#f56920",
             to: href,
             component: RouterLink,
             className: menuButton,
           }}
+          style={{ color: color, background: bgColor }}
         >
           {label}
         </Button>
