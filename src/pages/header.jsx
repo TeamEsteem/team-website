@@ -31,10 +31,10 @@ const headersData = [
     label: "Sponsors",
     href: "/sponsors",
   },
-  {
-    label: "Contact Us",
-    href: "/contact",
-  },
+  // {
+  //   label: "Contact",
+  //   href: "/contact",
+  // },
   {
     label: "Our Home",
     href: "/home-model",

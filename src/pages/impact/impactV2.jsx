@@ -375,7 +375,7 @@ class ImpactV2 extends Component {
                 Smart Solutions &#38; Happiness.
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 style={{
                   textAlign: "center",
                   color: white,
@@ -391,7 +391,7 @@ class ImpactV2 extends Component {
                 these words mean to Team ESTEEM?
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 style={{
                   textAlign: "center",
                   color: white,

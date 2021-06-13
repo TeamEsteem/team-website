@@ -62,7 +62,19 @@ class ContactUs extends Component {
                   fontWeight: "bold",
                 }}
               >
-                Contact us!
+                Contact Us!
+              </Typography>
+              <Typography
+                variant="body2"
+                style={{
+                  textAlign: "center",
+                  color: white,
+                  margin: "25px 0 25px 0",
+                  maxWidth: "1000px",
+                  fontSize: "1.5em",
+                }}
+              >
+                Feel free to get in touch with us if you have any questions about our project.
               </Typography>
               <Typography
                 variant="body2"
@@ -72,10 +84,10 @@ class ContactUs extends Component {
                   margin: "25px 0 100px 0",
                   maxWidth: "1000px",
                   fontSize: "1.5em",
+                  padding: "0 20px",
                 }}
               >
-                We would to hear your valuable feedback and "
-                {"Something else here!"}"
+                We are especially interested in talking with companies looking to support our mission and students from Heriot-Watt wanting to take part.
               </Typography>
             </ThemeProvider>
           </Grid>

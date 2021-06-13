@@ -199,7 +199,7 @@ export const members = [
   //   name: "Martin P.",
   //   role: "Something with lourvres",
   //   image: "/members/martin p.jpg",
-  //   linkedin: "",
+  //   linkedin: "https://www.linkedin.com/in/martin-purnell",
   // },
 
   // Renewables
@@ -262,6 +262,12 @@ export const members = [
     role: "Energy Storage Systems Lead",
     image: "/members/stephen.jpg",
   },
+  // {
+  //   team: ["renewables"],
+  //   name: "Tilda",
+  //   role: "Unknown",
+  //   image: "/members/tilda.jpg",
+  // },
   {
     team: ["renewables"],
     name: "Willis",
@@ -300,7 +306,7 @@ export const members = [
     name: "Martin J.",
     role: "Head of Architecture",
     image: "/members/martinj.jpg",
-    linkedin: "https://www.linkedin.com/in/martin-purnell",
+    linkedin: "https://www.linkedin.com/in/martin-juricek-548b8b145/",
   },
   // interior design
   {
@@ -562,6 +568,12 @@ export const members = [
   },
   {
     team: ["construction"],
+    name: "David",
+    role: "Head of Construction Detailing",
+    image: "/members/david.jpg",
+  },
+  {
+    team: ["construction"],
     name: "Marco",
     role: "Head of Site Operations",
     image: "/members/marco.jpg",
@@ -579,6 +591,13 @@ export const members = [
     name: "Devasri",
     role: "Solar Catcher Team Member",
     image: "/members/devasri.jpg",
+  },
+  {
+    team: ["construction"],
+    name: "Harsha",
+    role: "Logistics",
+    image: "/members/harsha.jpg",
+    linkedin: "http://www.linkedin.com/in/harshanalluri",
   },
   {
     team: ["construction"],
@@ -620,18 +639,8 @@ export const members = [
   //   image: "/members/shilpan.jpg",
   // },
 
-  // {
-  //   team: ["construction"],
-  //   name: "Harsha",
-  //   role: "Logistics",
-  //   image: "/members/harsha.jpg",
-  // },
-  // {
-  //   team: ["construction"],
-  //   name: "David",
-  //   role: "Head of Construction Detailing",
-  //   image: "/members/david.jpg",
-  // },
+
+
 
 
   // Windcatcher
