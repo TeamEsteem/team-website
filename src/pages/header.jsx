@@ -13,7 +13,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink, Router } from "react-router-dom";
-import { esteemGreen, white } from "../components/colors";
+import { esteemGreen, white, lightGreen } from "../components/colors";
 
 const headersData = [
   // {
@@ -24,37 +24,38 @@ const headersData = [
     label: "Team",
     href: "/team",
     color: white,
-    bgColor: esteemGreen,
+    bgColor: "#111111",
   },
   {
     label: "Impact",
     href: "/impact",
     color: white,
-    bgColor: esteemGreen,
+    bgColor: "#111111",
   },
   {
     label: "Sponsors",
     href: "/sponsors",
     color: white,
-    bgColor: esteemGreen,
+    bgColor: "#111111",
   },
   {
     label: "Contact",
     href: "/contact",
     color: white,
-    bgColor: esteemGreen,
+    bgColor: "#111111",
   },
   {
     label: "Our Home",
     href: "/home-model",
-    color: esteemGreen,
-    bgColor: white,
+    color: lightGreen,
+    bgColor: "#fff",
   },
 ];
 
 const useStyles = makeStyles(() => ({
   header: {
-    backgroundColor: "#009877",
+    backgroundColor: "#111111",
+    // backgroundColor: "#000",
     boxShadow: "none",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
