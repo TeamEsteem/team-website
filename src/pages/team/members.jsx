@@ -9,6 +9,13 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/alexmaclaren/",
   },
   {
+    team: ["faculty"],
+    name: "Sam",
+    role: "Former Faculty Lead",
+    image: "/members/sam.jpg",
+    linkedin: "",
+  },
+  {
     team: ["management"],
     name: "Scott",
     role: "Student Lead & Sponsorship/Procurement",
@@ -47,7 +54,7 @@ export const members = [
   {
     team: ["marketing"],
     name: "Jairis",
-    role: "Head of Marketing & Render Designer",
+    role: "Head of Communications, PR, Events & Render Designer",
     image: "/members/jairis.jpg",
     linkedin: "https://www.linkedin.com/in/jairis-alvarez-119a94112/",
   },
