@@ -615,6 +615,12 @@ export const members = [
   },
   {
     team: ["construction"],
+    name: "Umma",
+    role: "Site Operations Coordinator",
+    image: "/members/umma.jpg",
+  },
+  {
+    team: ["construction"],
     name: "Callum",
     role: "Head of Quantity Surveying",
     image: "/members/callum_lewington.jpg",
@@ -626,12 +632,7 @@ export const members = [
     image: "/members/liam_gordon.jpg",
   },
 
-  // {
-  //   team: ["construction"],
-  //   name: "Umma",
-  //   role: "Site Operations Coordinator",
-  //   image: "/members/umma.jpg",
-  // },
+
   // {
   //   team: ["construction"],
   //   name: "Shilpan",
