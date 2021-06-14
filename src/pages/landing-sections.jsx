@@ -164,7 +164,7 @@ class Section2V2 extends Component {
               <Typography variant="body1" style={{ fontSize: "1em" }}>
                 <div className="justify">
                   <p>
-                    We are Team ESTEEM from Heriot Watt University. 130 students,
+                    We are Team ESTEEM from Heriot Watt University. 120 students,
                     5 academic schools, 3 campuses and 1 cohesive vision driving
                     us to build a better world.
                   </p>
