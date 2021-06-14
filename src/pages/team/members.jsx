@@ -10,10 +10,10 @@ export const members = [
   },
   {
     team: ["faculty"],
-    name: "Sam",
+    name: "Sam Foster",
     role: "Former Faculty Lead",
     image: "/members/sam.jpg",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/sam-foster-975203171",
   },
   {
     team: ["management"],
@@ -229,7 +229,7 @@ export const members = [
     name: "Alexander",
     role: "Solar Systems Engineer",
     image: "/members/alexander.jpg",
-    linkedin: "https://www.linkedin.com/in/alexander-burton-527904156/",
+    linkedin: "https://www.linkedin.com/in/alexander-hewstone-6310911a1/",
   },
   {
     team: ["renewables"],
