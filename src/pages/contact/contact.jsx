@@ -144,29 +144,43 @@ class ContactUs extends Component {
               background: grey,
               borderRadius: "20px",
               margin: "20px",
-              maxWidth: "30em",
+              maxWidth: "20em",
               // minWidth: "20em",
               padding: "20px 30px 20px 20px",
               // position: "relative",
               border: "3px solid" + lightGreen,
             }}
           >
-            <form
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit="submit"
-            >
-              <TextFields hint="Name" />
-              <TextFields hint="Email ID" />
-              <TextFields hint="Description" size="multiline" />
+            <form name="contacts" method="post" netlify onSubmit="submit">
+              <input
+                type="text"
+                name="first-name"
+                placeholder="First name"
+                disableUnderline
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                disableUnderline
+              />
+              <textarea
+                name="Comments"
+                placeholder="Comments"
+                disableUnderline
+                multiline
+                rowsMin={3}
+                rows={5}
+                rowsMax={6}
+                cols={30}
+                required
+              />
               <Button
-                variant="contained"
                 style={{
-                  background: esteemGreen,
                   color: white,
-                  padding: "7px 20px 7px 20px",
+                  background: esteemGreen,
+                  padding: "5px 10px 5px 10px",
                   borderRadius: "20px",
                 }}
                 type="submit"

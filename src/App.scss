@@ -160,7 +160,22 @@ video#bgVideo {
 .MuiTypography-body2 {
   padding: 0 25px;
 }
-
+input {
+  padding: 10px;
+  border: 2px solid var(--esteem-green);
+  border-radius: 20px;
+  margin: 5px;
+  outline: none;
+}
+textarea {
+  padding: 10px;
+  border: 2px solid var(--esteem-green);
+  border-radius: 20px;
+  margin: 5px;
+  outline: none;
+  max-width: 25em;
+  min-width: none;
+}
 .landing-bottom {
   // background-color: var(--esteem-green);
   display: flex;
