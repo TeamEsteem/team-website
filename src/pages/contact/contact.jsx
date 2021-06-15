@@ -178,17 +178,21 @@ class ContactUs extends Component {
                 cols={30}
                 required
               />
-              <Button
+              <button
                 style={{
                   color: white,
                   background: esteemGreen,
                   padding: "5px 10px 5px 10px",
                   borderRadius: "20px",
+                  outline: "none",
+                  border: "2px solid" + esteemGreen,
+                  cursor: "pointer",
+                  boxShadow: "0 9px #999",
                 }}
                 type="submit"
               >
                 Submit
-              </Button>
+              </button>
               <input type="hidden" name="form-name" value="contact" />
             </form>
           </Box>
