@@ -153,10 +153,10 @@ class ContactUs extends Component {
           >
             <form
               name="contact"
-              method="get"
+              method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              action="/"
+              onSubmit="submit"
             >
               <TextFields hint="Name" />
               <TextFields hint="Email ID" />
