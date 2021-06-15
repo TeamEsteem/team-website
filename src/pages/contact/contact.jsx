@@ -147,7 +147,7 @@ class ContactUs extends Component {
               border: "3px solid" + lightGreen,
             }}
           >
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field>
               <TextFields hint="Name" />
               <TextFields hint="Email ID" />
               <TextFields hint="Description" size="multiline" />
@@ -163,6 +163,7 @@ class ContactUs extends Component {
               >
                 Submit
               </Button>
+              <input type="hidden" name="form-name" value="contact" />
             </form>
           </Box>
         </Grid>
