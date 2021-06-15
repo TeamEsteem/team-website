@@ -17,7 +17,7 @@ function TextFields(props) {
   if (props.size === "multiline") {
     return (
       <Grid item>
-        <Input
+        <textarea
           style={{
             borderRadius: "20px",
             border: "2px solid" + esteemGreen,
@@ -35,13 +35,15 @@ function TextFields(props) {
           rowsMin={3}
           rows={5}
           rowsMax={6}
-        ></Input>
+          type="text"
+          required
+        ></textarea>
       </Grid>
     );
   } else {
     return (
       <Grid item>
-        <Input
+        <input
           style={{
             borderRadius: "20px",
             border: "2px solid" + esteemGreen,
@@ -55,7 +57,9 @@ function TextFields(props) {
           disableUnderline
           placeholder={props.hint}
           rowsMax={2}
-        ></Input>
+          type="text"
+          required
+        ></input>
       </Grid>
     );
   }
@@ -149,9 +153,10 @@ class ContactUs extends Component {
           >
             <form
               name="contact"
-              method="post"
+              method="get"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              action="/"
             >
               <TextFields hint="Name" />
               <TextFields hint="Email ID" />
