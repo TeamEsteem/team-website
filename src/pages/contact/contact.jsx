@@ -151,12 +151,13 @@ class ContactUs extends Component {
               border: "3px solid" + lightGreen,
             }}
           >
-            <form name="contact" method="post" onSubmit="submit" netlify>
+            <form name="contact" method="post" action="/contact">
               <input
                 type="text"
                 name="first-name"
                 placeholder="First name"
                 disableUnderline
+                required
               />
               <input
                 id="email"
@@ -164,6 +165,7 @@ class ContactUs extends Component {
                 name="email"
                 placeholder="Email"
                 disableUnderline
+                required
               />
               <textarea
                 name="Comments"
