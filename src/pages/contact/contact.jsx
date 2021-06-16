@@ -154,8 +154,8 @@ class ContactUs extends Component {
             <form name="contact" method="POST" data-netlify="true">
               <input
                 type="text"
-                name="first-name"
-                placeholder="First name"
+                name="name"
+                placeholder="Name"
                 disableUnderline
                 required
               />
@@ -168,8 +168,8 @@ class ContactUs extends Component {
                 required
               />
               <textarea
-                name="Comments"
-                placeholder="Comments"
+                name="message"
+                placeholder="Message"
                 disableUnderline
                 multiline
                 rowsMin={3}
@@ -193,7 +193,6 @@ class ContactUs extends Component {
               >
                 Submit
               </button>
-              <input type="hidden" name="form-name" value="contact" />
             </form>
           </Box>
         </Grid>
