@@ -64,44 +64,37 @@ export function TimelineElement(props) {
         contentStyle={{
           background: grey,
           color: darkGreen,
-          paddingTop: 20,
+          paddingTop: 15,
           borderRadius: "1em",
         }}
         // icon={<WorkIcon />}
       >
-        {/* {isOpen && (
-          <Popup
-            tag={props.tag}
-            content={
-              <div>
-                <b>Popup 2</b>
-                <ThemeProvider theme={primaryFont}>
-                  <Typography style={{ color: lightGreen }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </Typography>
-                </ThemeProvider>
-                <Box m={1} />
-                <Button
-                  variant="contained"
-                  style={{ background: lightGreen, color: white }}
-                >
-                  Test button
-                </Button>
-              </div>
-            }
-            handleClose={togglePopup}
+        <Box
+          margin="10px 0px 20px 0px"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            overflow: "hidden",
+            borderRadius: "10px",
+            // filter: "grayscale(80%)",
+          }}
+        >
+          <img
+            src={props.image}
+            alt={props.title}
+            width={"250em"}
+            height={"300em"}
+            style={{
+              flexShrink: "0",
+              minWidth: "100%",
+              minHeight: "100%",
+              objectFit: "cover",
+            }}
           />
-        )} */}
-
+        </Box>
         <ThemeProvider theme={secondaryFont}>
-          <Typography variant="h3" className="vertical-timeline-element-title">
+          <Typography variant="h3" style={{fontWeight:"bold"}} className="vertical-timeline-element-title">
             {props.title}
           </Typography>
           <Typography
@@ -111,6 +104,7 @@ export function TimelineElement(props) {
             {props.subtitle}
           </Typography>
         </ThemeProvider>
+
         {/* <ThemeProvider theme={primaryFont}> */}
         <Typography variant="body1" style={{ fontWeight: "300", color: grey }}>
           {props.desc}
@@ -125,7 +119,7 @@ export function TimelineElement(props) {
         contentStyle={{
           background: esteemGreen,
           color: black,
-          paddingTop: 20,
+          paddingTop: 15,
           borderRadius: "1em",
         }}
         contentArrowStyle={{ borderRight: "7px solid" + black }}

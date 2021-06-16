@@ -1,10 +1,11 @@
-import {} from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import {
   Box,
   TextField,
   Grid,
   Typography,
   ThemeProvider,
+  Input,
 } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
 import { Textarea } from "@mobiscroll/react-lite";
@@ -16,26 +17,49 @@ function TextFields(props) {
   if (props.size === "multiline") {
     return (
       <Grid item>
-        <TextField
-          label={props.label}
-          variant="outlined"
-          required
+        <textarea
+          style={{
+            borderRadius: "20px",
+            border: "2px solid" + esteemGreen,
+            padding: "10px",
+            maxWidth: "30em",
+            minWidth: "20em",
+            margin: "5px 0px 10px 0px ",
+            position: "relative",
+          }}
+          // defaultValue={props.label}
+          margin="dense"
+          disableUnderline
           multiline
+          placeholder={props.hint}
+          rowsMin={3}
           rows={5}
-          cols={30}
-          style={{ margin: "10px", marginLeft: "auto" }}
-        ></TextField>
+          rowsMax={6}
+          type="text"
+          required
+        ></textarea>
       </Grid>
     );
   } else {
     return (
       <Grid item>
-        <TextField
-          label={props.label}
-          variant="filled"
+        <input
+          style={{
+            borderRadius: "20px",
+            border: "2px solid" + esteemGreen,
+            padding: "10px",
+            maxWidth: "30em",
+            minWidth: "20em",
+            margin: "5px 0px 10px 0px ",
+            position: "relative",
+          }}
+          margin="dense"
+          disableUnderline
+          placeholder={props.hint}
+          rowsMax={2}
+          type="text"
           required
-          style={{ margin: "10px", marginLeft: "auto", position: "relative" }}
-        ></TextField>
+        ></input>
       </Grid>
     );
   }
@@ -74,7 +98,8 @@ class ContactUs extends Component {
                   fontSize: "1.5em",
                 }}
               >
-                Feel free to get in touch with us if you have any questions about our project.
+                Feel free to get in touch with us if you have any questions
+                about our project.
               </Typography>
               <Typography
                 variant="body2"
@@ -87,7 +112,9 @@ class ContactUs extends Component {
                   padding: "0 20px",
                 }}
               >
-                We are especially interested in talking with companies looking to support our mission and students from Heriot-Watt wanting to take part.
+                We are especially interested in talking with companies looking
+                to support our mission and students from Heriot-Watt wanting to
+                take part.
               </Typography>
             </ThemeProvider>
           </Grid>
@@ -105,23 +132,71 @@ class ContactUs extends Component {
             ></path>
           </svg>
         </div>
-        <Box
-          style={{
-            background: grey,
-            borderRadius: "20px",
-            margin: "20px",
-            display: "flow",
-            padding: "20px 30px 20px 30px",
-            // position: "relative",
-            border: "3px solid" + lightGreen,
-          }}
+        <Box m={-1} />
+        <Grid
+          container
+          alignContent="center"
+          direction="column"
+          justify="center"
         >
-          {/* <Grid container direction="column"> */}
-          <TextFields label="name" />
-          <TextFields label="Email ID" />
-          <TextFields label="Description" size="multiline" />
-          {/* </Grid> */}
-        </Box>
+          <Box
+            style={{
+              background: grey,
+              borderRadius: "20px",
+              margin: "20px",
+              maxWidth: "20em",
+              // minWidth: "20em",
+              padding: "20px 30px 20px 20px",
+              // position: "relative",
+              border: "3px solid" + lightGreen,
+            }}
+          >
+            <form name="contact" method="post" action="/contact">
+              <input
+                type="text"
+                name="first-name"
+                placeholder="First name"
+                disableUnderline
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                disableUnderline
+                required
+              />
+              <textarea
+                name="Comments"
+                placeholder="Comments"
+                disableUnderline
+                multiline
+                rowsMin={3}
+                rows={5}
+                rowsMax={6}
+                cols={30}
+                required
+              />
+              <button
+                style={{
+                  color: white,
+                  background: esteemGreen,
+                  padding: "5px 10px 5px 10px",
+                  borderRadius: "20px",
+                  outline: "none",
+                  border: "2px solid" + esteemGreen,
+                  cursor: "pointer",
+                  boxShadow: "0 9px #999",
+                }}
+                type="submit"
+              >
+                Submit
+              </button>
+              <input type="hidden" name="form-name" value="contact" />
+            </form>
+          </Box>
+        </Grid>
       </Box>
     );
   }

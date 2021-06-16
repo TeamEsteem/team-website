@@ -66,12 +66,14 @@ class Timeline extends Component {
             subtitle="April 2021"
             desc="Thanks to CSIC, we are building the cross-laminated timber (CLT) panels locally ourselves in Glasgow!"
             tag="secondary"
+            image="images/csic - scott wood wide cropped.jpg"
           ></TimelineElement>
           <TimelineElement
             title="Building the Prototype in Edinburgh"
             subtitle="June 2021"
             desc="The house will be built in Edinburgh first in order to test our prototype, after which it will be disassembled and shipped to Dubai!"
             tag="secondary"
+            image="images/hwu - simon 7.jpg"
           ></TimelineElement>
 
           <TimelineElement
@@ -79,6 +81,7 @@ class Timeline extends Component {
             subtitle="October 2021"
             desc="The final stage of this project! We'll be showcasing everything that we've been working on at the Dubai World Expo."
             tag="secondary"
+            image="images/Jairis Render 1.jpg"
           ></TimelineElement>
         </VerticalTimeline>
 

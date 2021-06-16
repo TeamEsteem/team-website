@@ -30,6 +30,17 @@ function App() {
           <Switch>
             <Route exact path="/">
               <div className="App-header">
+                {/* <video
+                  id="bgVideo"
+                  autoplay
+                  loop
+                  poster="./assets/images/landing-background.png"
+                >
+                  <source
+                    src="/images/landing_banner_video.mp4"
+                    type="video/mp4"
+                  />
+                </video> */}
                 <ThemeProvider theme={primaryFont}>
                   <Typography
                     style={{ fontSize: "20px", fontWeight: "lighter" }}
