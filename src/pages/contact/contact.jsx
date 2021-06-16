@@ -151,7 +151,7 @@ class ContactUs extends Component {
               border: "3px solid" + lightGreen,
             }}
           >
-            <form name="contact" netlify>
+            <form name="contact" method="POST" data-netlify="true">
               <input
                 type="text"
                 name="first-name"
