@@ -66,14 +66,14 @@ class Timeline extends Component {
             subtitle="April 2021"
             desc="Thanks to CSIC, we are building the cross-laminated timber (CLT) panels locally ourselves in Glasgow!"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/csic - scott wood wide cropped.jpg"
           ></TimelineElement>
           <TimelineElement
             title="Building the Prototype in Edinburgh"
             subtitle="June 2021"
             desc="The house will be built in Edinburgh first in order to test our prototype, after which it will be disassembled and shipped to Dubai!"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/hwu - simon 7.jpg"
           ></TimelineElement>
 
           <TimelineElement
@@ -81,7 +81,7 @@ class Timeline extends Component {
             subtitle="October 2021"
             desc="The final stage of this project! We'll be showcasing everything that we've been working on at the Dubai World Expo."
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/Jairis Render 1.jpg"
           ></TimelineElement>
         </VerticalTimeline>
 

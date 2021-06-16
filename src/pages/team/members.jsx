@@ -1,5 +1,9 @@
 export const members = [
 
+  // Asked To Be Removed
+  // - Erik
+  // - Hanin
+
   //management
   {
     team: ["faculty"],
@@ -146,8 +150,8 @@ export const members = [
   },
   {
     team: ["sensors"],
-    name: "Oluwasanmi",
-    role: "AR Developer",
+    name: "Sanmi",
+    role: "AR/VR Lead",
     image: "/members/sanmi.jpg",
     linkedin: "https://www.linkedin.com/in/sanmiadaramoye/",
   },
@@ -355,13 +359,6 @@ export const members = [
     name: "Ellie",
     role: "Head of Structural",
     image: "/members/ellie.jpg",
-  },
-  {
-    team: ["structural"],
-    name: "Chloe",
-    role: "Structural & Solar Catcher Team Member",
-    image: "/members/chloejc.jpg",
-    linkedin: "https://www.linkedin.com/in/chloejchandler",
   },
   {
     team: ["structural"],
@@ -588,8 +585,15 @@ export const members = [
   },
   {
     team: ["construction"],
+    name: "Chloe",
+    role: "Solar Catcher & Structural",
+    image: "/members/chloejc.jpg",
+    linkedin: "https://www.linkedin.com/in/chloejchandler",
+  },
+  {
+    team: ["construction"],
     name: "Devasri",
-    role: "Solar Catcher Team Member",
+    role: "Solar Catcher",
     image: "/members/devasri.jpg",
   },
   {
@@ -662,12 +666,6 @@ export const members = [
     role: "Head of Newsletters",
     image: "/members/angie.jpg",
   },
-  // {
-  //   team: ["newsletter"],
-  //   name: "Hanin",
-  //   role: "Newsletter Editor",
-  //   image: "/members/hanin.jpg",
-  // },
 
   // Uniform Design
   {

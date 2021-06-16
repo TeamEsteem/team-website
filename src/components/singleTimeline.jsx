@@ -64,7 +64,7 @@ export function TimelineElement(props) {
         contentStyle={{
           background: grey,
           color: darkGreen,
-          paddingTop: 20,
+          paddingTop: 15,
           borderRadius: "1em",
         }}
         // icon={<WorkIcon />}
@@ -76,8 +76,8 @@ export function TimelineElement(props) {
             justifyContent: "center",
             alignItems: "center",
             overflow: "hidden",
-            borderRadius: "20px",
-            filter: "grayscale(80%)",
+            borderRadius: "10px",
+            // filter: "grayscale(80%)",
           }}
         >
           <img
@@ -94,7 +94,7 @@ export function TimelineElement(props) {
           />
         </Box>
         <ThemeProvider theme={secondaryFont}>
-          <Typography variant="h3" className="vertical-timeline-element-title">
+          <Typography variant="h3" style={{fontWeight:"bold"}} className="vertical-timeline-element-title">
             {props.title}
           </Typography>
           <Typography
@@ -119,7 +119,7 @@ export function TimelineElement(props) {
         contentStyle={{
           background: esteemGreen,
           color: black,
-          paddingTop: 20,
+          paddingTop: 15,
           borderRadius: "1em",
         }}
         contentArrowStyle={{ borderRight: "7px solid" + black }}

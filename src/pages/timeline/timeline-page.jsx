@@ -83,70 +83,70 @@ class TimelinePage extends Component {
             subtitle="August 2018"
             desc="With SDME 2018 just around the corner, the Edinburgh campus decides to start planning its entry for the 2020 competition.​"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/Esteem Logo Full.png"
           ></TimelineElement>
           <TimelineElement
             title="Our First Hackathon!"
             subtitle="February 2019"
             desc="Our first Hackathon took place in the university’s new GRID building. We worked on basic principles of the house and what we wanted to integrate within the design.​"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/Esteem Logo Full.png"
           ></TimelineElement>
           <TimelineElement
             title="Expanding ESTEEM"
             subtitle="March 2019"
             desc="We started to recruit and create Team ESTEEM branding scheme, name, subteams and organize collaboration with potential sponsors."
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/team.jpg"
           ></TimelineElement>
           <TimelineElement
             title="Joining Forces with CSIC"
             subtitle="June 2019"
             desc="Working with CSIC, we held another two hackathons at their premises during the summer. Here, aspects of the house started to take shape.​"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/CSIC.png"
           ></TimelineElement>
           <TimelineElement
             title="SDME Opening Ceremony"
             subtitle="October 2019"
             desc="Several students travelled to Dubai for the SDME opening ceremony. While there, they were able to visit the Solar Hai, where construction of our house will take place!​"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/SDME 2020 Jessica.jpg"
           ></TimelineElement>
           <TimelineElement
             title="Handing in Deliverable 2"
             subtitle="December 2019"
             desc="We completed Deliverable 2, a big milestone in project, as the Christmas holidays started. We now have a design, engineering concepts, and a media strategy."
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/Esteem Logo Full.png"
           ></TimelineElement>
           <TimelineElement
             title="New Year, New ESTEEM!"
             subtitle="January 2021"
             desc="We gave ESTEEM a new look with improved colours and a design guideline to make sure that we stand out from the rest of the competition!"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/esteem rebrand.png"
           ></TimelineElement>
           <TimelineElement
             title="3D Printed Concrete"
             subtitle="January 2020"
             desc="Back from the festive break, we start with an informative and constructive workshop with Thornton Thomasetti and Concreative in concrete 3D printing!​"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/Esteem Logo Full.png"
           ></TimelineElement>
           <TimelineElement
             title="Building the CLT panels at CSIC"
             subtitle="April 2021"
             desc="Thanks to CSIC, we are building the cross-laminated timber (CLT) panels locally ourselves in Glasgow!"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/csic - scott wood wide cropped.jpg"
           ></TimelineElement>
           <TimelineElement
             title="Building the Prototype in Edinburgh"
             subtitle="June 2021"
             desc="The house will be built in Edinburgh first in order to test our prototype, after which it will be disassembled and shipped to Dubai!"
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/hwu - simon 7.jpg"
           ></TimelineElement>
 
           <TimelineElement
@@ -154,7 +154,7 @@ class TimelinePage extends Component {
             subtitle="October 2021"
             desc="The final stage of this project! We'll be showcasing everything that we've been working on at the Dubai World Expo."
             tag="secondary"
-            image="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=30"
+            image="images/Jairis Render 1.jpg"
           ></TimelineElement>
         </VerticalTimeline>
         <Box m={10}></Box>
