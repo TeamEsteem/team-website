@@ -13,6 +13,13 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/alexmaclaren/",
   },
   {
+    team: ["faculty"],
+    name: "Sam Foster",
+    role: "Former Faculty Lead",
+    image: "/members/sam.jpg",
+    linkedin: "https://www.linkedin.com/in/sam-foster-975203171",
+  },
+  {
     team: ["management"],
     name: "Scott",
     role: "Student Lead & Sponsorship/Procurement",
@@ -51,7 +58,7 @@ export const members = [
   {
     team: ["marketing"],
     name: "Jairis",
-    role: "Head of Marketing & Render Designer",
+    role: "Head of Communications, PR, Events & Render Designer",
     image: "/members/jairis.jpg",
     linkedin: "https://www.linkedin.com/in/jairis-alvarez-119a94112/",
   },
@@ -117,32 +124,32 @@ export const members = [
 
   // Software & Sensors
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Ghazi",
     role: "Head of Software & Sensors",
     image: "/members/ghazi.jpg",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Elliot",
     role: "Former Head of Software & Sensors",
     image: "/members/elliot_whitehouse.jpg",
     linkedin: "https://www.linkedin.com/in/elliot-whitehouse-259913147/",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Geraldine",
     role: "Systems Lead",
     image: "/members/geraldine.jpg",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Lukasz",
     role: "ARBNCO Sensors Lead",
     image: "/members/lukasz.jpg",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Navya",
     role: "Smart Screen Developer",
     image: "/members/navya.jpg",
@@ -156,14 +163,14 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/sanmiadaramoye/",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Vishnu",
     role: "Alexa Lead",
     image: "/members/vishnu.jpg",
     linkedin: "https://www.linkedin.com/in/vishnu-kausik-401103172/",
   },
   // {
-  //   team: ["sensors"],
+  //   team: ["software & Sensors"],
   //   name: "Petar",
   //   role: "OpenHAB Lead",
   //   image: "/members/petar.jpg",
@@ -226,7 +233,7 @@ export const members = [
     name: "Alexander",
     role: "Solar Systems Engineer",
     image: "/members/alexander.jpg",
-    linkedin: "https://www.linkedin.com/in/alexander-burton-527904156/",
+    linkedin: "https://www.linkedin.com/in/alexander-hewstone-6310911a1/",
   },
   {
     team: ["renewables"],
@@ -619,6 +626,12 @@ export const members = [
   },
   {
     team: ["construction"],
+    name: "Umma",
+    role: "Site Operations Coordinator",
+    image: "/members/umma.jpg",
+  },
+  {
+    team: ["construction"],
     name: "Callum",
     role: "Head of Quantity Surveying",
     image: "/members/callum_lewington.jpg",
@@ -630,12 +643,7 @@ export const members = [
     image: "/members/liam_gordon.jpg",
   },
 
-  // {
-  //   team: ["construction"],
-  //   name: "Umma",
-  //   role: "Site Operations Coordinator",
-  //   image: "/members/umma.jpg",
-  // },
+
   // {
   //   team: ["construction"],
   //   name: "Shilpan",
