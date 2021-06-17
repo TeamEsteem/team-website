@@ -20,6 +20,7 @@ import Impactv2 from "./pages/impact/impactV2";
 import HomeModel from "./pages/about-home/home-modelV2";
 import TimelinePage from "./pages/timeline/timeline-page.jsx";
 import Contact from "./pages/contact/contact";
+import Campaign from "./pages/campaigns/campaign";
 
 function App() {
   return (
@@ -162,6 +163,9 @@ function App() {
             </Route>
             <Route exact path="/impact">
               <Impactv2 />
+            </Route>
+            <Route exact path="/campaign">
+              <Campaign />
             </Route>
             <Route exact path="/home-model">
               <HomeModel />
