@@ -113,6 +113,18 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
+            <Link to="/campaign" style={{ textDecoration: "none" }}>
+              <IconButton
+                style={{
+                  justifyContent: "center",
+                  color: white,
+                }}
+              >
+                <Typography component={"span"} variant={"body1"}>
+                  Campaigns
+                </Typography>
+              </IconButton>
+            </Link>
             <Link to="/home-model" style={{ textDecoration: "none" }}>
               <Button
                 style={{
@@ -127,7 +139,7 @@ export default function ButtonAppBar() {
                   borderRadius: "20px",
                 }}
                 edge="end"
-              >
+              > 
                 <Typography component={"span"} variant={"body1"}>
                   Our Home
                 </Typography>
