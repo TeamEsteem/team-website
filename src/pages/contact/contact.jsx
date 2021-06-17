@@ -12,59 +12,10 @@ import { Textarea } from "@mobiscroll/react-lite";
 import React, { Component } from "react";
 import { esteemGreen, lightGreen, white } from "../../components/colors";
 import { primaryFont } from "../../components/fonts";
-
-function TextFields(props) {
-  if (props.size === "multiline") {
-    return (
-      <Grid item>
-        <textarea
-          style={{
-            borderRadius: "20px",
-            border: "2px solid" + esteemGreen,
-            padding: "10px",
-            maxWidth: "30em",
-            minWidth: "20em",
-            margin: "5px 0px 10px 0px ",
-            position: "relative",
-          }}
-          // defaultValue={props.label}
-          margin="dense"
-          disableUnderline
-          multiline
-          placeholder={props.hint}
-          rowsMin={3}
-          rows={5}
-          rowsMax={6}
-          type="text"
-          required
-        ></textarea>
-      </Grid>
-    );
-  } else {
-    return (
-      <Grid item>
-        <input
-          style={{
-            borderRadius: "20px",
-            border: "2px solid" + esteemGreen,
-            padding: "10px",
-            maxWidth: "30em",
-            minWidth: "20em",
-            margin: "5px 0px 10px 0px ",
-            position: "relative",
-          }}
-          margin="dense"
-          disableUnderline
-          placeholder={props.hint}
-          rowsMax={2}
-          type="text"
-          required
-        ></input>
-      </Grid>
-    );
-  }
-}
 class ContactUs extends Component {
+  state = {
+    success: false,
+  };
   render() {
     return (
       <Box>
