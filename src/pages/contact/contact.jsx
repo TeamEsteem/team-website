@@ -151,11 +151,12 @@ class ContactUs extends Component {
               border: "3px solid" + lightGreen,
             }}
           >
-            <form name="contact" method="post" action="/contact">
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 type="text"
-                name="first-name"
-                placeholder="First name"
+                name="name"
+                placeholder="name"
                 disableUnderline
                 required
               />
@@ -163,13 +164,13 @@ class ContactUs extends Component {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="email"
                 disableUnderline
                 required
               />
               <textarea
-                name="Comments"
-                placeholder="Comments"
+                name="comments"
+                placeholder="comments"
                 disableUnderline
                 multiline
                 rowsMin={3}
@@ -193,7 +194,6 @@ class ContactUs extends Component {
               >
                 Submit
               </button>
-              <input type="hidden" name="form-name" value="contact" />
             </form>
           </Box>
         </Grid>
