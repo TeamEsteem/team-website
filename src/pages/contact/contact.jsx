@@ -193,6 +193,7 @@ class ContactUs extends Component {
               >
                 Submit
               </button>
+              <input type="hidden" name="form-name" value="contact" />
             </form>
           </Box>
         </Grid>
