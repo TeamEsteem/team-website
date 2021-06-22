@@ -280,12 +280,12 @@ export const members = [
     role: "Energy Storage Systems Lead",
     image: "/members/stephen.jpg",
   },
-  // {
-  //   team: ["renewables"],
-  //   name: "Tilda",
-  //   role: "Unknown",
-  //   image: "/members/tilda.jpg",
-  // },
+  {
+    team: ["renewables"],
+    name: "Tilda",
+    role: "SCADA & Sensors Lead",
+    image: "/members/tilda.jpg",
+  },
   {
     team: ["renewables"],
     name: "Willis",
