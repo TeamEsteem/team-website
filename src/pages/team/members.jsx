@@ -178,6 +178,12 @@ export const members = [
 
 
   // Sponsorship
+  {
+    team: ["sponsorship"],
+    name: "Ali",
+    role: "Small Finances",
+    image: "/members/ali.jpg",
+  },
   // {
   //   team: ["sponsorship"],
   //   name: "Fatima",
