@@ -183,6 +183,7 @@ export const members = [
     name: "Ali",
     role: "Small Finances",
     image: "/members/ali.jpg",
+    linkedin: "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
   },
   // {
   //   team: ["sponsorship"],
