@@ -31,6 +31,7 @@ export const members = [
     name: "Sana",
     role: "Vice-Student Lead (Former Head of Building Services)",
     image: "/members/sana.jpg",
+    linkedin: "https://www.linkedin.com/in/sana-hafsa/",
   },
   {
     team: ["management"],
