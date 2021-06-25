@@ -180,7 +180,7 @@ class Section2V2 extends Component {
                       <li>Data Science</li>
                       <li>Marketing &#38; Business Management</li>
                       <li>Urban Planning</li>
-                      <li>Construction Porject Management</li>
+                      <li>Construction Project Management</li>
                     </ul>
                   </p>
                   <br></br>
