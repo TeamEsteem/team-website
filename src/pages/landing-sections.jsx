@@ -8,9 +8,10 @@ import {
   darkGrey,
   black,
 } from "../components/colors";
-import { Grid, Typography, ThemeProvider, Box, Card } from "@material-ui/core";
+import { Grid, Typography, ThemeProvider, Box, Card, Button } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
+import LaunchIcon from '@material-ui/icons/Launch';
 import { transform } from "framer-motion";
 
 function FormColumn() {
@@ -103,7 +104,7 @@ class Section1V2 extends Component {
                 <div className="justify">
                   <p>
                     We are, not only, Heriot-Watt University’s official entrant into the Solar Decathlon Middle East 2020 competition, but also the sole UK finalist! This contest is integrated with the World Expo in Dubai which envisions an estimated 25 million visitors.
-                </p>
+                  </p>
                   <br />
                   <Box>
                     <img
@@ -298,7 +299,98 @@ class Section3V2 extends Component {
   }
 }
 
-export { Section1V2, Section3V2, Section2V2 };
+class Section4 extends Component {
+  render() {
+    return (
+      <>
+        <Box m={-2} />
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="h3"
+            style={{ textAlign: "center", color: "#202020" }}
+          >
+            Support <span style={{ color: "#009877" }}>Our</span> Journey!
+          </Typography>
+        </ThemeProvider>
+        <Grid container direction="row" style={{ maxWidth: "1250px" }}>
+          <Box
+            style={{
+              background: white,
+              borderRadius: "20px",
+              maxWidth: "35em",
+              padding: "30px",
+              margin: "auto",
+            }}
+          >
+            <ThemeProvider theme={primaryFont}>
+              <Typography variant="body1" style={{ fontSize: "1em" }}>
+                <div className="justify">
+                  <p>
+                    We're counting on the community to support us in our journey to the World Expo in Dubai. In return for your contributions we are offering exclusive perks ranging from your name on our website to visiting our house in Dubai!
+                  </p>
+                  <br></br>
+                  <p>
+                    If you would like to be a part of this journey, please consider donating to our IndieGoGo campaign!
+                  </p>
+                  <br></br>
+
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    style={{
+                      padding: "5px 30px 5px 30px",
+                      color: esteemGreen,
+                      margin: "auto",
+                      marginBottom: "90px",
+                      border: "2px solid" + esteemGreen,
+                      borderRadius: "20px",
+                    }}
+                    startIcon={<LaunchIcon />}
+                  >
+                    <a
+                      // activeClass="active"
+                      // to="section1"
+                      // spy={true}
+                      // smooth={true}
+                      // duration={1000}
+                      href="https://www.indiegogo.com/projects/team-esteem-solar-powered-timber-home"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      style={{
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        position: "relative",
+                        textDecoration: "none",
+                        color: esteemGreen,
+                      }}
+                    >
+                      Contribute
+                    </a>
+                  </Button>
+                </div>
+              </Typography>
+            </ThemeProvider>
+          </Box>
+          <Box m={2} />
+          <Box
+            style={{
+              background: white,
+              borderRadius: "20px",
+              maxWidth: "500px",
+              maxHeight: "600px",
+              padding: "10px",
+              // padding: "2%",
+            }}
+          >
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PT8aveu2Asg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Box>
+        </Grid>
+      </>
+    );
+  }
+}
+
+export { Section1V2, Section3V2, Section2V2, Section4 };
 
 // class Section1 extends Component {
 //   render() {
