@@ -4032,6 +4032,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+create-react-nav@^2.6.5:
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/create-react-nav/-/create-react-nav-2.6.5.tgz#b4b50d279f9076148c3778b9969a0977eab52ad0"
+  integrity sha512-nbfAdnoCBRMHeokMbA9kjMAZ8SUD/dJAXaWNQqV0UQoQcm7owXbaxGFm02aSjGlfgj+w8xjC8Ks/C/6uOG5rhA==
+  dependencies:
+    react-router-dom "^5.1.2"
+
 cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
@@ -9889,6 +9896,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-card-flip@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-card-flip/-/react-card-flip-1.1.1.tgz#4df665d706e58032c9059a99814f29e99dd964a7"
+  integrity sha512-viH05bvFl3jfy75ibZhvubq6VV4Sla2GuN0hGFMuqLRIkM6qW21WswoFC7qhntY0+PMFqu0WSY5mBKneR0HL3Q==
+
 react-countup@^4.3.3:
   version "4.3.3"
   resolved "https://registry.npmjs.org/react-countup/-/react-countup-4.3.3.tgz"
@@ -9967,7 +9979,7 @@ react-refresh@^0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-router-dom@^5.2.0:
+react-router-dom@^5.1.2, react-router-dom@^5.2.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.2.0.tgz"
   integrity sha512-gxAmfylo2QUjcwxI63RhQ5G85Qqt4voZpUXSEqCwykV0baaOTQDR1f0PmY8AELqIyVc0NEZUj0Gov5lNGcXgsA==

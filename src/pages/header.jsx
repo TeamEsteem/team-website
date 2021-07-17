@@ -24,25 +24,25 @@ const headersData = [
     label: "Team",
     href: "/team",
     color: white,
-    bgColor: "#111111",
+    bgColor: esteemGreen,
   },
   {
     label: "Impact",
     href: "/impact",
     color: white,
-    bgColor: "#111111",
+    bgColor: esteemGreen,
   },
   {
     label: "Sponsors",
     href: "/sponsors",
     color: white,
-    bgColor: "#111111",
+    bgColor: esteemGreen,
   },
   {
     label: "Contact",
     href: "/contact",
     color: white,
-    bgColor: "#111111",
+    bgColor: esteemGreen,
   },
   {
     label: "Our Home",
@@ -54,8 +54,7 @@ const headersData = [
 
 const useStyles = makeStyles(() => ({
   header: {
-    backgroundColor: "#111111",
-    // backgroundColor: "#000",
+    backgroundColor: esteemGreen,
     boxShadow: "none",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
@@ -74,6 +73,16 @@ const useStyles = makeStyles(() => ({
   drawerContainer: {
     padding: "20px",
   },
+  appBarTransparent: {
+    backgroundColor: "rgba(255, 255, 255, 0.0)",
+    boxShadow: "none",
+    border: "none",
+  },
+  appBarSolid: {
+    backgroundColor: "#202020",
+    border: "none",
+    boxShadow: "none",
+  },
 }));
 
 export default function Header() {
@@ -88,9 +97,16 @@ export default function Header() {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 900
-        ? setState((prevState) => ({ ...prevState, mobileView: true }))
-        : setState((prevState) => ({ ...prevState, mobileView: false }));
+      if (window.innerWidth < 900) {
+        setState((prevState) => ({ ...prevState, mobileView: true }));
+      } else {
+        setState((prevState) => ({ ...prevState, mobileView: false }));
+      }
+      if (window.scrollY > 175) {
+        setNavBackground("appBarSolid");
+      } else {
+        setNavBackground("appBarTransparent");
+      }
     };
 
     setResponsiveness();
@@ -99,6 +115,23 @@ export default function Header() {
 
     return () => {
       window.removeEventListener("resize", () => setResponsiveness());
+    };
+  }, []);
+
+  const [navBackground, setNavBackground] = useState("appBarTransparent");
+  const navRef = React.useRef();
+  navRef.current = navBackground;
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 175) {
+        setNavBackground("appBarSolid");
+      } else {
+        setNavBackground("appBarTransparent");
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

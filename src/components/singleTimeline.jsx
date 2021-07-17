@@ -70,7 +70,7 @@ export function TimelineElement(props) {
         // icon={<WorkIcon />}
       >
         <Box
-          margin="10px 0px 20px 0px"
+          margin="18px 0px 20px 0px"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -94,7 +94,11 @@ export function TimelineElement(props) {
           />
         </Box>
         <ThemeProvider theme={secondaryFont}>
-          <Typography variant="h3" style={{fontWeight:"bold"}} className="vertical-timeline-element-title">
+          <Typography
+            variant="h3"
+            style={{ fontWeight: "bold" }}
+            className="vertical-timeline-element-title"
+          >
             {props.title}
           </Typography>
           <Typography
