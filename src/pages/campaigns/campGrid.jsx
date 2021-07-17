@@ -63,10 +63,13 @@ class FlipCamp extends React.Component {
                 // className="landing-img"
                 style={{
                 display: "flex",
-                maxWidth: "100%",
+                width: "500px",
                 height: "600px",
                 borderRadius: "40px",
-                padding: "30px"
+                marginRight: "40px",
+                borderColor: darkGrey,
+                borderStyle: "solid",
+                marginLeft: "40px"
                 }}
                 src="https://bloximages.chicago2.vip.townnews.com/napavalleyregister.com/content/tncms/assets/v3/editorial/f/3d/f3d48270-229d-5ddd-b143-7311d5728379/609e0e65c66b3.image.jpg?resize=500%2C612"
                 alt=""
@@ -74,19 +77,30 @@ class FlipCamp extends React.Component {
                 ></img>
             </Box>
 
-            <Box onClick={this.handleClick}  
-            style={{
+            <Box onClick={this.handleClick}  >
+              <p style={{
                 display: "flex",
-                maxWidth: "100%",
+                width: "500px",
                 height: "600px",
                 borderRadius: "40px",
-                padding: "30px"
+                padding: "30px",
+                borderColor: darkGrey,
+                alignItems: "center",
+                borderStyle: "solid",
+                marginRight: "40px",
+                marginLeft: "40px"
             }}>
-            <p>
-              meow
-            </p>
+               <ThemeProvider theme={secondaryFont}>
+                <Typography
+                  variant="h5"
+                  style={{ textAlign: "center", color: "#202020" }}
+                >
+                  mew mew mew mew mew mew mew mew mew mew
+                </Typography>
+              </ThemeProvider>
+            
+              </p>
             </Box>
-
         </ReactCardFlip>
       )
     }
