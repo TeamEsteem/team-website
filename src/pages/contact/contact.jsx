@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import { Button, CardContent, IconButton, SvgIcon } from "@material-ui/core";
 import {
   Box,
   TextField,
@@ -6,13 +6,18 @@ import {
   Typography,
   ThemeProvider,
   Input,
+  Checkbox,
+  FormControlLabel,
+  Card,
 } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors";
+import { grey, red } from "@material-ui/core/colors";
 import { Textarea } from "@mobiscroll/react-lite";
 import React, { Component } from "react";
-import { esteemGreen, lightGreen, white } from "../../components/colors";
+import { black, esteemGreen, lightGreen, white } from "../../components/colors";
 import { primaryFont } from "../../components/fonts";
-
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import InstagramIcon from "@material-ui/icons/Instagram";
 function TextFields(props) {
   if (props.size === "multiline") {
     return (
@@ -63,6 +68,94 @@ function TextFields(props) {
       </Grid>
     );
   }
+}
+
+function SocialMediaCard(props) {
+  return (
+    <Grid item>
+      <Card
+        style={{
+          color: white,
+          backgroundColor: `${props.bgcolor}`,
+          width: "20em",
+          height: "20em",
+          borderRadius: "50px",
+          padding: "10px",
+          margin: "10px",
+          marginLeft: "auto",
+        }}
+      >
+        {props.icon}
+        <br />
+        <br />
+        <br />
+        <br />
+        <CardContent>
+          <Typography
+            variant="body1"
+            style={{ textAlign: "center", fontFamily: "Inter, sans-serif" }}
+          >
+            {props.label}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+  );
+}
+
+function TheForm() {
+  return (
+    <form name="contact" method="post" action="/contact">
+      <input
+        type="text"
+        name="first-name"
+        placeholder="First name"
+        disableUnderline
+        required
+      />
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Email"
+        disableUnderline
+        required
+      />
+      <textarea
+        name="Comments"
+        placeholder="Comments"
+        disableUnderline
+        multiline
+        rowsMin={3}
+        rows={10}
+        // rowsMax={6}
+        cols={30}
+        required
+      />
+      <Box m={2} />
+      <FormControlLabel
+        control={<Checkbox name="" required style={{ color: esteemGreen }} />}
+        label="I understand that it can take a day or two for a response."
+      />
+      <Box m={2} />
+      <button
+        style={{
+          color: white,
+          background: esteemGreen,
+          padding: "5px 10px 5px 10px",
+          borderRadius: "20px",
+          outline: "none",
+          border: "2px solid" + esteemGreen,
+          cursor: "pointer",
+          boxShadow: "0 9px #999",
+        }}
+        type="submit"
+      >
+        Submit
+      </button>
+      <input type="hidden" name="form-name" value="contact" />
+    </form>
+  );
 }
 class ContactUs extends Component {
   render() {
@@ -132,7 +225,7 @@ class ContactUs extends Component {
             ></path>
           </svg>
         </div>
-        <Box m={-1} />
+        <Box m={-3} />
         <Grid
           container
           alignContent="center"
@@ -147,55 +240,97 @@ class ContactUs extends Component {
               maxWidth: "20em",
               // minWidth: "20em",
               padding: "20px 30px 20px 20px",
-              // position: "relative",
-              border: "3px solid" + lightGreen,
+              position: "relative",
+              // border: "3px solid" + lightGreen,
             }}
           >
-            <form name="contact" method="post" action="/contact">
-              <input
-                type="text"
-                name="first-name"
-                placeholder="First name"
-                disableUnderline
-                required
+            <TheForm />
+          </Box>
+        </Grid>
+        <Grid
+          container
+          direction="row"
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto",
+            display: "flex",
+            position: "relative",
+          }}
+        >
+          <SocialMediaCard
+            label="Check out our LinkedIn to see updates about our project"
+            icon={
+              <LinkedInIcon
+                style={{
+                  backgroundColor: grey,
+                  marginLeft: "auto",
+                  marginTop: "100px",
+                  marginRight: "auto",
+                  display: "flex",
+                  transform: "scale(8)",
+                }}
               />
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Email"
-                disableUnderline
-                required
+            }
+            bgcolor="#202020"
+          />
+          <SocialMediaCard
+            label="Watch out videos on YouTube"
+            icon={
+              <YouTubeIcon
+                style={{
+                  backgroundColor: grey,
+                  marginLeft: "auto",
+                  marginTop: "100px",
+                  marginRight: "auto",
+                  display: "flex",
+                  transform: "scale(8)",
+                }}
               />
-              <textarea
-                name="Comments"
-                placeholder="Comments"
-                disableUnderline
-                multiline
-                rowsMin={3}
-                rows={5}
-                rowsMax={6}
-                cols={30}
-                required
-              />
-              <button
+            }
+            bgcolor={red[600]}
+          />
+          <SocialMediaCard
+            label="See images of our progess on Instagram!"
+            icon={
+              <InstagramIcon
                 style={{
                   color: white,
-                  background: esteemGreen,
-                  padding: "5px 10px 5px 10px",
-                  borderRadius: "20px",
-                  outline: "none",
-                  border: "2px solid" + esteemGreen,
-                  cursor: "pointer",
-                  boxShadow: "0 9px #999",
+                  marginLeft: "auto",
+                  marginTop: "100px",
+                  marginRight: "auto",
+                  display: "flex",
+                  transform: "scale(8)",
                 }}
-                type="submit"
+              />
+            }
+            bgcolor={"#202020"}
+          />
+          <SocialMediaCard
+            label="Listen to our podcasts on Spotify!"
+            icon={
+              <SvgIcon
+                style={{
+                  color: white,
+                  marginLeft: "auto",
+                  marginTop: "100px",
+                  marginRight: "auto",
+                  display: "flex",
+                  transform: "scale(7)",
+                }}
               >
-                Submit
-              </button>
-              <input type="hidden" name="form-name" value="contact" />
-            </form>
-          </Box>
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z" />
+                </svg>
+              </SvgIcon>
+            }
+            bgcolor={"#1DB954"}
+          />
         </Grid>
       </Box>
     );
