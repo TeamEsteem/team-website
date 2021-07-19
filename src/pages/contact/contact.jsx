@@ -1,4 +1,10 @@
-import { Button, CardContent, IconButton, SvgIcon } from "@material-ui/core";
+import {
+  Button,
+  CardActions,
+  CardContent,
+  IconButton,
+  SvgIcon,
+} from "@material-ui/core";
 import {
   Box,
   TextField,
@@ -14,7 +20,7 @@ import { grey, red } from "@material-ui/core/colors";
 import { Textarea } from "@mobiscroll/react-lite";
 import React, { Component } from "react";
 import { black, esteemGreen, lightGreen, white } from "../../components/colors";
-import { primaryFont } from "../../components/fonts";
+import { primaryFont, secondaryFont } from "../../components/fonts";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -72,34 +78,51 @@ function TextFields(props) {
 
 function SocialMediaCard(props) {
   return (
-    <Grid item>
-      <Card
-        style={{
-          color: white,
-          backgroundColor: `${props.bgcolor}`,
-          width: "20em",
-          height: "20em",
-          borderRadius: "50px",
-          padding: "10px",
-          margin: "10px",
-          marginLeft: "auto",
-        }}
+    // <Grid item>
+    <Card
+      style={{
+        color: white,
+        backgroundColor: `${props.bgcolor}`,
+        width: "20em",
+        height: "20em",
+        borderRadius: "50px",
+        padding: "10px",
+        // margin: "10px",
+        marginBottom: "10px",
+        // marginLeft: "auto",
+      }}
+    >
+      {props.icon}
+      <br />
+      <br />
+      <br />
+      <br />
+      <CardContent>
+        <Typography
+          variant="body1"
+          style={{ textAlign: "center", fontFamily: "Inter, sans-serif" }}
+        >
+          {props.label}
+        </Typography>
+      </CardContent>
+      <Box m={-1} />
+      <Typography
+        variant="button"
+        style={{ textAlign: "center", fontFamily: "Inter, sans-serif" }}
       >
-        {props.icon}
-        <br />
-        <br />
-        <br />
-        <br />
-        <CardContent>
-          <Typography
-            variant="body1"
-            style={{ textAlign: "center", fontFamily: "Inter, sans-serif" }}
+        <CardActions>
+          <Button
+            size="small"
+            href={props.href}
+            target="_blank"
+            style={{ color: white, marginLeft: "auto", marginRight: "auto" }}
           >
-            {props.label}
-          </Typography>
-        </CardContent>
-      </Card>
-    </Grid>
+            Learn More
+          </Button>
+        </CardActions>
+      </Typography>
+    </Card>
+    // </Grid>
   );
 }
 
@@ -247,6 +270,17 @@ class ContactUs extends Component {
             <TheForm />
           </Box>
         </Grid>
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="h4"
+            style={{
+              margin: "20px 20px 20px 30px",
+              // fontFamily: "Omnes Semibold, sans-serif",
+            }}
+          >
+            Be sure to check out...
+          </Typography>
+        </ThemeProvider>
         <Grid
           container
           direction="row"
@@ -258,7 +292,7 @@ class ContactUs extends Component {
           }}
         >
           <SocialMediaCard
-            label="Check out our LinkedIn to see updates about our project"
+            label="See timely updates of our project"
             icon={
               <LinkedInIcon
                 style={{
@@ -272,9 +306,10 @@ class ContactUs extends Component {
               />
             }
             bgcolor="#202020"
+            href="https://www.linkedin.com/company/team-esteem-2020"
           />
           <SocialMediaCard
-            label="Watch out videos on YouTube"
+            label="Watch our videos on YouTube"
             icon={
               <YouTubeIcon
                 style={{
@@ -288,9 +323,10 @@ class ContactUs extends Component {
               />
             }
             bgcolor={red[600]}
+            href="https://www.youtube.com/channel/UC55Q10-DHmFwC7NWNMXcpfg"
           />
           <SocialMediaCard
-            label="See images of our progess on Instagram!"
+            label="See images of our progess!"
             icon={
               <InstagramIcon
                 style={{
@@ -304,9 +340,10 @@ class ContactUs extends Component {
               />
             }
             bgcolor={"#202020"}
+            href="https://www.instagram.com/teamesteem2020/"
           />
           <SocialMediaCard
-            label="Listen to our podcasts on Spotify!"
+            label="Listen to our VISION podcasts"
             icon={
               <SvgIcon
                 style={{
@@ -330,6 +367,7 @@ class ContactUs extends Component {
               </SvgIcon>
             }
             bgcolor={"#1DB954"}
+            href="https://open.spotify.com/show/572g2QVpSZRh1QEXVdZ6rq"
           />
         </Grid>
       </Box>
