@@ -24,6 +24,7 @@ import Campaign from "./pages/campaigns/campaign";
 import Navbar from "create-react-nav";
 import EsteemLogo from "./assets/images/ESTEEM/Esteem Logo Full White.png";
 import { esteemGreen, white } from "./components/colors";
+import ScrollToTop from "./pages/scroll-to-top";
 function TheHomePage() {
   return (
     <>
@@ -154,6 +155,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         {/* <Navbar logoImg={EsteemLogo} yToggle="true" routes={links} /> */}
         <Header />
         <div className="Body">
