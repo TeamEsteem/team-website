@@ -31,6 +31,7 @@ export const members = [
     name: "Sana",
     role: "Vice-Student Lead (Former Head of Building Services)",
     image: "/members/sana.jpg",
+    linkedin: "https://www.linkedin.com/in/sana-hafsa/",
   },
   {
     team: ["management"],
@@ -178,6 +179,13 @@ export const members = [
 
 
   // Sponsorship
+  {
+    team: ["sponsorship"],
+    name: "Ali",
+    role: "Small Finances",
+    image: "/members/ali.jpg",
+    linkedin: "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
+  },
   // {
   //   team: ["sponsorship"],
   //   name: "Fatima",
@@ -273,12 +281,12 @@ export const members = [
     role: "Energy Storage Systems Lead",
     image: "/members/stephen.jpg",
   },
-  // {
-  //   team: ["renewables"],
-  //   name: "Tilda",
-  //   role: "Unknown",
-  //   image: "/members/tilda.jpg",
-  // },
+  {
+    team: ["renewables"],
+    name: "Tilda",
+    role: "SCADA & Sensors Lead",
+    image: "/members/tilda.jpg",
+  },
   {
     team: ["renewables"],
     name: "Willis",
