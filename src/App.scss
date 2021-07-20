@@ -127,7 +127,7 @@ li {
 }
 
 .App-header {
-  background-image: url("./assets/images/landing-background.png");
+  background-image: url("./assets/images/IMG_7641.jpg");
   // background-image: url("https://www.youtube.com/watch?v=PT8aveu2Asg");
   // background-color: var(--esteem-green);
   // background: linear-gradient(
@@ -139,7 +139,8 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  background-position: 50%;
+  background-position-y: 75%;
+  background-position-x: 50%;
   background-attachment: fixed;
 
   // height: 75vh;
