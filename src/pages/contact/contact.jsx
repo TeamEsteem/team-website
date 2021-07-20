@@ -187,11 +187,7 @@ function TheForm() {
     </form>
   );
 }
-
 class ContactUs extends Component {
-  state = {
-    success: false,
-  };
   render() {
     return (
       <Box>

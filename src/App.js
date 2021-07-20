@@ -4,9 +4,10 @@ import Header from "./pages/header";
 import Timeline from "./pages/timeline/timeline";
 import {
   Section1V2,
+  Section2,
+  Section3,
   Section3V2,
   Section2V2,
-  Section4,
 } from "./pages/landing-sections";
 import Footer from "./pages/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -39,128 +40,157 @@ function TheHomePage() {
                     type="video/mp4"
                   />
                 </video> */}
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Landing />
-                  </Typography>
-                </ThemeProvider>
-              </div>
-              <div className="Landing-Section1">
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Section1V2 />
-                  </Typography>
-                </ThemeProvider>
-              </div>
-              <div class="sections-bottom">
-                <svg
-                  data-name="Layer 1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1200 120"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"
-                  ></path>
-                </svg>
-              </div>
-              <div className="Timeline">
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Timeline />
-                  </Typography>
-                </ThemeProvider>
-              </div>
-              <div class="timeline-bottom">
-                <svg
-                  data-name="Layer 1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1200 120"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"
-                  ></path>
-                </svg>
-              </div>
-              <div className="Landing-Section2">
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Section2V2 />
-                  </Typography>
-                </ThemeProvider>
-              </div>
-              <div class="sections-bottom">
-                <svg
-                  data-name="Layer 1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1200 120"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"
-                  ></path>
-                </svg>
-              </div>
-              <div className="Landing-Section3">
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Section3V2 />
-                  </Typography>
-                </ThemeProvider>
-              </div>
-
-              <div class="sections-bottom">
-                <svg
-                  data-name="Layer 1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1200 120"
-                  preserveAspectRatio="none"
-                  style={{ background: "#f5f5f5" }}
-                >
-                  <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"
-                    style={{ fill: "#ffffff" }}
-                  ></path>
-                </svg>
-              </div>
-              <div className="Landing-Section2">
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Section4 />
-                  </Typography>
-                </ThemeProvider>
-              </div>
-
-              {/*               
-<div class="custom-shape-divider-top-1617567759" style={{ backgroundColor: "black"}}>
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-    </svg>
-</div> */}
+        <ThemeProvider theme={primaryFont}>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Landing />
+          </Typography>
+        </ThemeProvider>
+      </div>
+      <div className="Landing-Section1">
+        <ThemeProvider theme={primaryFont}>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Section1V2 />
+          </Typography>
+        </ThemeProvider>
+      </div>
+      <div class="sections-bottom">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div className="Timeline">
+        <ThemeProvider theme={primaryFont}>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Timeline />
+          </Typography>
+        </ThemeProvider>
+      </div>
+      <div class="timeline-bottom">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div className="Landing-Section2">
+        <ThemeProvider theme={primaryFont}>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Section2V2 />
+          </Typography>
+        </ThemeProvider>
+      </div>
+      <div class="sections-bottom">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div className="Landing-Section3">
+        <ThemeProvider theme={primaryFont}>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Section3V2 />
+          </Typography>
+        </ThemeProvider>
+      </div>
+      <div class="footer-top">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div className="Footer">
+        <ThemeProvider theme={primaryFont}>
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+            <Footer />
+          </Typography>
+        </ThemeProvider>
+      </div>
+    </>
+  );
+}
+function App() {
+  const links = [
+    ["/", "Home", TheHomePage],
+    ["/sponsors", "Sponsors", Sponsors],
+    ["/team", "Team", Team],
+    ["/impact", "Impact", Impactv2],
+    ["/campaign", "Campaign", Campaign],
+    ["/contact", "Contact", Contact],
+    [
+      "/home-model",
+      <Button style={{ color: esteemGreen, backgroundColor: white }}>
+        Our Home
+      </Button>,
+      HomeModel,
+    ],
+  ];
+  return (
+    <>
+      <Router>
+        <ScrollToTop />
+        {/* <Navbar logoImg={EsteemLogo} yToggle="true" routes={links} /> */}
+        <Header />
+        <div className="Body">
+          <Switch>
+            <Route exact path="/">
+              <TheHomePage />
+            </Route>
+            <Route exact path="/sponsors">
+              <Sponsors />
+            </Route>
+            <Route exact path="/team">
+              <Team />
+            </Route>
+            <Route exact path="/impact">
+              <Impactv2 />
+            </Route>
+            <Route exact path="/campaign">
+              <Campaign />
+            </Route>
+            <Route exact path="/home-model">
+              <HomeModel />
+            </Route>
+            <Route exact path="/timeline">
+              <TimelinePage />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+              <Box m={2} />
               <div class="footer-top">
                 <svg
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1100 120"
                   preserveAspectRatio="none"
-                  style={{ background: "#ffffff" }}
+                  style={{ backgroundColor: "#fff" }}
                 >
                   <path
                     d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"

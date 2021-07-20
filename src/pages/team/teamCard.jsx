@@ -38,7 +38,7 @@ const teams = [
   // "quantity Surveying",
   "renewables",
   "software & Sensors",
-  "sponsorship",
+  // "sponsorship",
   "structural",
   "uniform Design",
   "website",
