@@ -166,6 +166,7 @@ input {
   border-radius: 20px;
   margin: 5px;
   outline: none;
+  width: 100%;
 }
 textarea {
   padding: 10px;
@@ -173,8 +174,8 @@ textarea {
   border-radius: 20px;
   margin: 5px;
   outline: none;
-  max-width: 25em;
-  min-width: none;
+  min-height: 10em;
+  width: 100%;
 }
 .landing-bottom {
   // background-color: var(--esteem-green);
@@ -226,6 +227,7 @@ textarea {
 .footer-logos {
   margin: 0 25px;
   height: 100px;
+  // max-height: 100px;
   width: auto;
 }
 
@@ -239,7 +241,7 @@ textarea {
 
 .Footer {
   background-color: var(--dark-grey);
-  padding: 0 0 100px 0;
+  padding: 0 0 10px 0;
 }
 
 .landing-img {

@@ -24,6 +24,11 @@ import { primaryFont, secondaryFont } from "../../components/fonts";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
+
+const iconScale = 3;
+const iconMarginTop = 50
+const iconMarginBottom = 30
+
 function TextFields(props) {
   if (props.size === "multiline") {
     return (
@@ -82,21 +87,21 @@ function SocialMediaCard(props) {
     <Card
       style={{
         color: white,
-        backgroundColor: `${props.bgcolor}`,
-        width: "20em",
-        height: "20em",
-        borderRadius: "50px",
-        padding: "10px",
+        background: `${props.bgcolor}`,
+        width: "15em",
+        height: "15em",
+        borderRadius: "15px",
+        // padding: "10px",
         // margin: "10px",
-        marginBottom: "10px",
+        marginBottom: "25px",
         // marginLeft: "auto",
       }}
     >
       {props.icon}
+      {/* <br />
       <br />
       <br />
-      <br />
-      <br />
+      <br /> */}
       <CardContent>
         <Typography
           variant="body1"
@@ -129,6 +134,8 @@ function SocialMediaCard(props) {
 function TheForm() {
   return (
     <form name="contact" method="post" action="/contact">
+      <p>We'll try and get back to you as quickly as possible, but it can take up to 3 days to get a response.</p>
+      <br />
       <input
         type="text"
         name="first-name"
@@ -146,20 +153,20 @@ function TheForm() {
       />
       <textarea
         name="Comments"
-        placeholder="Comments"
+        placeholder="Message"
         disableUnderline
         multiline
-        rowsMin={3}
-        rows={10}
+        // rowsMin={3}
+        // rows={10}
         // rowsMax={6}
-        cols={30}
+        // cols={15}
         required
       />
       <Box m={2} />
-      <FormControlLabel
+      {/* <FormControlLabel
         control={<Checkbox name="" required style={{ color: esteemGreen }} />}
         label="I understand that it can take a day or two for a response."
-      />
+      /> */}
       <Box m={2} />
       <button
         style={{
@@ -254,13 +261,15 @@ class ContactUs extends Component {
           alignContent="center"
           direction="column"
           justify="center"
+          style={{
+            maxWidth: "500px"
+          }}
         >
           <Box
             style={{
               background: grey,
               borderRadius: "20px",
               margin: "20px",
-              maxWidth: "20em",
               // minWidth: "20em",
               padding: "20px 30px 20px 20px",
               position: "relative",
@@ -270,17 +279,20 @@ class ContactUs extends Component {
             <TheForm />
           </Box>
         </Grid>
-        <ThemeProvider theme={secondaryFont}>
-          <Typography
-            variant="h4"
-            style={{
-              margin: "20px 20px 20px 30px",
-              // fontFamily: "Omnes Semibold, sans-serif",
-            }}
-          >
-            Be sure to check out...
-          </Typography>
-        </ThemeProvider>
+        <center>
+          <ThemeProvider theme={secondaryFont}>
+            <Typography
+              variant="h5"
+              style={{
+                margin: "20px 20px 20px 30px",
+                // fontFamily: "Omnes Semibold, sans-serif",
+              }}
+            >
+              You can also find us on...
+            </Typography>
+          </ThemeProvider>
+        </center>
+        <br />
         <Grid
           container
           direction="row"
@@ -289,70 +301,75 @@ class ContactUs extends Component {
             marginRight: "auto",
             display: "flex",
             position: "relative",
+            maxWidth: "1200px",
           }}
         >
           <SocialMediaCard
-            label="See timely updates of our project"
+            label="See our updates and events that we hold!"
             icon={
               <LinkedInIcon
                 style={{
                   backgroundColor: grey,
                   marginLeft: "auto",
-                  marginTop: "100px",
+                  marginTop: iconMarginTop + "px",
                   marginRight: "auto",
+                  marginBottom: iconMarginBottom + "px",
                   display: "flex",
-                  transform: "scale(8)",
+                  transform: "scale(" + iconScale + ")",
                 }}
               />
             }
-            bgcolor="#202020"
+            bgcolor="#0e76a8"
             href="https://www.linkedin.com/company/team-esteem-2020"
           />
           <SocialMediaCard
-            label="Watch our videos on YouTube"
+            label="Watch videos about the construction process!"
             icon={
               <YouTubeIcon
                 style={{
                   backgroundColor: grey,
                   marginLeft: "auto",
-                  marginTop: "100px",
+                  marginTop: iconMarginTop + "px",
                   marginRight: "auto",
+                  marginBottom: iconMarginBottom + "px",
                   display: "flex",
-                  transform: "scale(8)",
+                  transform: "scale(" + iconScale + ")",
                 }}
               />
             }
-            bgcolor={red[600]}
+            bgcolor={"#FF0000"}
             href="https://www.youtube.com/channel/UC55Q10-DHmFwC7NWNMXcpfg"
           />
           <SocialMediaCard
-            label="See images of our progess!"
+            label="See pictures of our construction progess!"
             icon={
               <InstagramIcon
                 style={{
                   color: white,
                   marginLeft: "auto",
-                  marginTop: "100px",
+                  marginTop: iconMarginTop + "px",
                   marginRight: "auto",
+                  marginBottom: iconMarginBottom + "px",
                   display: "flex",
-                  transform: "scale(8)",
+                  transform: "scale(" + iconScale + ")",
                 }}
               />
             }
-            bgcolor={"#202020"}
+            bgcolor={"radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"}
             href="https://www.instagram.com/teamesteem2020/"
           />
           <SocialMediaCard
-            label="Listen to our VISION podcasts"
+            label="Listen to our podcast, Vision on Spotify"
             icon={
               <SvgIcon
                 style={{
                   color: white,
                   marginLeft: "auto",
-                  marginTop: "100px",
+                  marginTop: iconMarginTop + "px",
                   marginRight: "auto",
+                  marginBottom: iconMarginBottom + "px",
                   display: "flex",
-                  transform: "scale(7)",
+                  transform: "scale(" + iconScale + ")",
                 }}
               >
                 <svg
@@ -370,6 +387,7 @@ class ContactUs extends Component {
             href="https://open.spotify.com/show/572g2QVpSZRh1QEXVdZ6rq"
           />
         </Grid>
+        <br />
       </Box>
     );
   }

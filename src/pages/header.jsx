@@ -33,6 +33,12 @@ const headersData = [
     bgColor: esteemGreen,
   },
   {
+    label: "Campaigns",
+    href: "/campaign",
+    color: white,
+    bgColor: esteemGreen,
+  },
+  {
     label: "Sponsors",
     href: "/sponsors",
     color: white,

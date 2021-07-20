@@ -37,7 +37,7 @@ function FormRow2() {
         justify="space-evenly"
         alignItems="center"
       >
-        <ThemeProvider theme={secondaryFont}>
+        {/* <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
             style={{ textAlign: "center", color: grey, paddingBottom: "50px" }}
@@ -46,7 +46,16 @@ function FormRow2() {
             Get in <span style={{ color: lightGreen }}>Touch</span>
           </Typography>
         </ThemeProvider>
-        <br></br>
+        <br></br> */}
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="body1"
+            style={{ textAlign: "center", color: "#aaaaaa", paddingBottom: "50px" }}
+            id="footer"
+          >
+            Feel free to check out what we do on our social media channels
+          </Typography>
+        </ThemeProvider>
         <Grid
           container
           direction="row"
@@ -58,14 +67,18 @@ function FormRow2() {
               href="mailto:sdme2020@hw.ac.uk"
               style={{
                 textDecoration: "none",
-                color: white,
+                color: "#aaaaaa"
               }}
             >
               <MailOutline />
             </a>
           </IconButton>
           <IconButton>
-            <a href="https://www.linkedin.com/company/team-esteem-2020">
+            <a href="https://www.linkedin.com/company/team-esteem-2020"
+            style={{
+              textDecoration: "none",
+              color: "#aaaaaa"
+            }}>
               <LinkedInIcon />
             </a>
           </IconButton>
@@ -74,7 +87,7 @@ function FormRow2() {
               href="https://twitter.com/teamesteem2020"
               style={{
                 textDecoration: "none",
-                color: white,
+                color: "#aaaaaa",
               }}
             >
               <Twitter />
@@ -85,7 +98,7 @@ function FormRow2() {
               href="https://www.facebook.com/teamesteem2020"
               style={{
                 textDecoration: "none",
-                color: white,
+                color: "#aaaaaa",
               }}
             >
               <Facebook />
@@ -96,7 +109,7 @@ function FormRow2() {
               href="https://www.instagram.com/teamesteem2020/"
               style={{
                 textDecoration: "none",
-                color: white,
+                color: "#aaaaaa",
               }}
             >
               <Instagram />
@@ -107,14 +120,13 @@ function FormRow2() {
               href="https://www.youtube.com/channel/UC55Q10-DHmFwC7NWNMXcpfg"
               style={{
                 textDecoration: "none",
-                color: white,
+                color: "#aaaaaa",
               }}
             >
               <YouTubeIcon />
             </a>
           </IconButton>
         </Grid>
-        <br></br>
       </Grid>
     </>
   );
@@ -138,7 +150,7 @@ function FormRow1() {
             alt="logos"
             style={{
               filter: "brightness(0) invert(1) contrast(50%)",
-              width: "90%",
+              width: "90%", marginTop: "15px"
             }}
           ></img>
         </Grid>
@@ -171,8 +183,7 @@ class FormRow1V2 extends Component {
                 src={HWLogo}
                 alt="logos"
                 style={{
-                  filter: "brightness(0) invert(1) contrast(50%)",
-                  // width: "90%",
+                  filter: "brightness(0) invert(1) contrast(50%)", marginTop: "20px"
                 }}
               ></img>
             </div>
@@ -215,6 +226,8 @@ class Footer extends Component {
           </Grid>
           <div style={{ margin: "10px" }}></div>
         </Grid>
+        <script data-goatcounter="https://esteem.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
       </Box>
     );
   }

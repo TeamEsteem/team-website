@@ -146,13 +146,9 @@ class HomeModelV2 extends Component {
                   <model-viewer
                     src={SDMEhouse}
                     camera-controls
-                    shadow-intensity="0"
-                    // auto-rotate
-                    // camera-orbit="180deg 0deg -50m"
-                    camera-orbit="0rad 2.748893571891069rad auto"
-                    // min-camera-orbit="0rad 1.74 auto"
-                    // max-camera-orbit="0rad 3.74 auto"
-                    field-of-view="180"
+                    shadow-intensity="0.5"
+                    auto-rotate
+                    camera-orbit="130deg"
                   >
                     <div class="progress-bar hide" slot="progress-bar">
                       <div class="update-bar"></div>
