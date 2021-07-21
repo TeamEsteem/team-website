@@ -137,6 +137,7 @@ class HomeModelV2 extends Component {
                 <p>
                   Use your cursor or finger to rotate around the 3D model of our house.
                 </p>
+                <br />
               </Typography>
             </ThemeProvider>
             <br />

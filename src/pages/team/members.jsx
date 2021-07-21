@@ -349,6 +349,12 @@ export const members = [
     role: "Architecture Team Member",
     image: "/members/alix.jpg",
   },
+  {
+    team: ["architecture & Interior Design"],
+    name: "Antony",
+    role: "Architecture Team Member",
+    image: "/members/antony.jpg",
+  },
   // {
   //   team: ["architecture & Interior Design"],
   //   name: "Aurelia",
@@ -367,6 +373,19 @@ export const members = [
     role: "Architecture Team Member",
     image: "/members/jil_sheth.jpg",
     linkedin: "https://www.linkedin.com/in/jilsheth/",
+  },
+  {
+    team: ["architecture & Interior Design"],
+    name: "Niamh",
+    role: "Building Modelling & Interior Design Coordinator",
+    image: "/members/niamh.jpg",
+  },
+  {
+    team: ["architecture & Interior Design"],
+    name: "Lisa",
+    role: "Soundscape Advisor",
+    image: "/members/lisa.jpg",
+    linkedin: "https://www.linkedin.com/in/lisalavia/",
   },
 
   // Structural
@@ -543,12 +562,6 @@ export const members = [
     name: "Mahnoor",
     role: "IES Modeller",
     image: "/members/mahnoor.jpg",
-  },
-  {
-    team: ["building Modelling"],
-    name: "Niamh",
-    role: "Building Modelling & Interior Design Coordinator",
-    image: "/members/niamh.jpg",
   },
   {
     team: ["building Modelling"],
