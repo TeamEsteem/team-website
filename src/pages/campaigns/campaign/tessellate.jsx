@@ -46,39 +46,83 @@ export default class Tessellate extends Component {
               >
                 See your art in our home at the Dubai 2020 World Expo!
               </Typography>
-              <Button
-                variant="outlined"
-                size="large"
+              <a
+                href="#next"
                 style={{
-                  padding: "5px 25px",
+                  position: "relative",
+                  textDecoration: "none",
                   color: white,
-                  margin: "auto",
-                  marginTop: "40px",
-                  border: "2px solid" + white,
-                  borderRadius: "20px",
                 }}
-                startIcon={<ExpandMoreRoundedIcon />}
               >
-                <a
-                  href="#landingBottom"
+                <Button
+                  variant="outlined"
+                  size="large"
                   style={{
-                    position: "relative",
-                    textDecoration: "none",
+                    padding: "5px 25px",
                     color: white,
+                    margin: "auto",
+                    marginTop: "40px",
+                    border: "2px solid" + white,
+                    borderRadius: "20px",
                   }}
+                  startIcon={<ExpandMoreRoundedIcon />}
                 >
                   See more
-                </a>
-              </Button>
+                </Button>
+              </a>
             </ThemeProvider>
           </Grid>
         </div>
+        <Grid container
+          alignContent="center"
+          direction="column"
+          justify="center">
+          <ThemeProvider theme={primaryFont}>
+            <Typography
+              variant="h4"
+              style={{ textAlign: "center", margin: "100px 0 0 0", fontWeight: "bold" }}
+              id="next"
+            >
+              Rules of the Competition
+            </Typography>
+            <Typography
+              variant="body2"
+              style={{ textAlign: "center", margin: "25px 0 0 0", maxWidth: "1000px", fontSize: "1.25em" }}
+            >
+              Give yourself the best chance in winning by following the rules of this competition
+            </Typography>
+            <Button
+              variant="outlined"
+              size="large"
+              style={{
+                padding: "5px 25px",
+                color: white,
+                margin: "auto",
+                marginTop: "40px",
+                border: "2px solid" + white,
+                borderRadius: "20px",
+              }}
+              startIcon={<ExpandMoreRoundedIcon />}
+            >
+              <a
+                href="#next"
+                style={{
+                  position: "relative",
+                  textDecoration: "none",
+                  color: white,
+                }}
+              >
+                See more
+              </a>
+            </Button>
+          </ThemeProvider>
+        </Grid>
         <br />
         <br />
         <br />
         <br />
         <br />
-      </div>
+      </div >
     )
   }
 }
