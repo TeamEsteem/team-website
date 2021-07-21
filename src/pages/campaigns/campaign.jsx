@@ -66,9 +66,11 @@ export default class Campaign extends Component {
           </svg>
         </div>
 
-        <FullWidthGrid />
-        <br></br>
-        <br></br>
+        {/* <FullWidthGrid /> */}
+        <center>
+        <p>This page is a work in progress!</p>
+        </center>
+        <br /><br /><br /><br /><br /><br /><br /><br />
 
         <div class="footer-top">
           <svg
