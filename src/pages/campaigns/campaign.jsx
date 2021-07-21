@@ -66,12 +66,14 @@ export default class Campaign extends Component {
           </svg>
         </div>
 
+        {/* Uncomment below to see campaign cards */}
         {/* <FullWidthGrid /> */}
+        
         <center>
-        <p>This page is a work in progress!</p>
+          <p>This page is a work in progress!</p>
         </center>
-        <br /><br /><br /><br /><br /><br /><br /><br />
 
+        <br /><br /><br /><br /><br /><br /><br />
         <div class="footer-top">
           <svg
             data-name="Layer 1"
@@ -96,6 +98,7 @@ export default class Campaign extends Component {
           </ThemeProvider>
         </div>
       </div>
+
     );
   }
 }

@@ -58,58 +58,6 @@ class FlipCamp extends React.Component {
     return (
       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
 
-        <Box onClick={this.handleClick}>
-          <img
-            // className="landing-img"
-            style={{
-              display: "flex",
-              width: "500px",
-              height: "600px",
-              borderRadius: "40px",
-              marginRight: "40px",
-              borderColor: darkGrey,
-              borderStyle: "solid",
-              marginLeft: "40px"
-            }}
-            src="https://bloximages.chicago2.vip.townnews.com/napavalleyregister.com/content/tncms/assets/v3/editorial/f/3d/f3d48270-229d-5ddd-b143-7311d5728379/609e0e65c66b3.image.jpg?resize=500%2C612"
-            alt=""
-          // height="500px"
-          ></img>
-        </Box>
-
-        <Box onClick={this.handleClick}  >
-          <p style={{
-            display: "flex",
-            width: "500px",
-            height: "600px",
-            borderRadius: "40px",
-            padding: "30px",
-            borderColor: darkGrey,
-            alignItems: "center",
-            borderStyle: "solid",
-            marginRight: "40px",
-            marginLeft: "40px"
-          }}>
-            <ThemeProvider theme={secondaryFont}>
-              <Typography
-                variant="h5"
-                style={{ textAlign: "center", color: "#202020" }}
-              >
-                mew mew mew mew mew mew mew mew mew mew
-              </Typography>
-            </ThemeProvider>
-
-          </p>
-        </Box>
-      </ReactCardFlip>
-    )
-  }
-
-
-  render() {
-    return (
-      <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-
         <Box onClick={this.handleClick}
           style={{
             width: "500px",
@@ -166,6 +114,7 @@ class FlipCamp extends React.Component {
 }
 
 export default function FullWidthGrid() {
+
   return (
     <div className="campBody" style={{ flexGrow: 1 }}>
       <Grid container
@@ -180,49 +129,41 @@ export default function FullWidthGrid() {
           direction="column"
           justify="center"
           alignItems="center">
-          <Grid
-
-            item
-            spacing={12}
-            direction="column"
-            justify="center"
-            alignItems="center">
-            <Grid item xs={12}>
-              <FlipCamp
-                url="url('/images/csic - scott wood wide cropped.jpg')"
-                text="Destination Dubai"
-              />
-              <div className="campGrid" ></div>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <div className="campGridBuffer" style={{ height: '150px' }}></div>
-            </Grid>
-            <Grid item xs={12}>
-              <FlipCamp
-                url="url('/images/csic - scott wood wide cropped.jpg')"
-                text="Test"
-              />
-              <div className="campGrid"></div>
-            </Grid>
+          <Grid item xs={12}>
+             <FlipCamp 
+              url="url('/images/csic - scott wood wide cropped.jpg')"
+              text="Destination Dubai"
+             />
+            <div className="campGrid" ></div> 
           </Grid>
-          <Grid
-            item
-            direction="column"
-            justify="center"
-            alignItems="center">
-            <Grid item >
-              <div className="campGridBuffer" style={{ height: '150px' }}></div>
-            </Grid>
-            <Grid item>
-              <FlipCamp
-                url="url('/images/csic - scott wood wide cropped.jpg')"
-                text="Img 3"
-              />
-              <div className="campGrid"></div>
-            </Grid>
-            <Grid item>
-              <div className="campGridBuffer" style={{ height: '150px' }}></div>
-            </Grid>
+          <Grid item xs={12} sm={6}>
+            <div className="campGridBuffer" style={{ height: '150px' }}></div>
+          </Grid>
+          <Grid item xs={12}>
+            <FlipCamp 
+              url="url('/images/csic - scott wood wide cropped.jpg')"
+              text="Test"
+             />
+            <div className="campGrid"></div> 
+          </Grid>
+        </Grid>
+        <Grid
+          item
+          direction="column"
+          justify="center"
+          alignItems="center">
+          <Grid item >
+            <div className="campGridBuffer" style={{ height: '150px' }}></div>
+          </Grid>
+          <Grid item>
+            <FlipCamp 
+              url="url('/images/csic - scott wood wide cropped.jpg')"
+              text="Img 3"
+             />
+            <div className="campGrid"></div> 
+          </Grid>
+          <Grid item>
+            <div className="campGridBuffer" style={{ height: '150px' }}></div>
           </Grid>
         </Grid>
       </Grid>
