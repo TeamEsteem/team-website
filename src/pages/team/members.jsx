@@ -463,17 +463,18 @@ export const members = [
     image: "/members/abdulrahman.jpg",
     linkedin: "https://www.linkedin.com/in/aakaco",
   },
+  {
+    team: ["health & Safety"],
+    name: "Deepangika",
+    role: "Health & Safety Officer",
+    image: "/members/dia.jpg",
+    linkedin: "http://linkedin.com/in/deepangika-pillai-ba5040216/",
+  },
   // {
   //   team: ["health & Safety"],
   //   name: "Oke",
   //   role: "Health & Safety Officer",
   //   image: "/members/oke.jpg",
-  // },
-  // {
-  //   team: ["health & Safety"],
-  //   name: "Deepangika",
-  //   role: "Health & Safety Officer",
-  //   image: "/members/deepangika.jpg",
   // },
   {
     team: ["health & Safety"],
