@@ -45,10 +45,8 @@ export default class Campaign extends Component {
                 variant="body2"
                 style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
               >
-               We are spreading our sustainable and ecofriendly message to change attitudes on construction. You can be a part of it too!
-               <br /><br />
-               Click on a card to see more info
-            </Typography>
+                We are spreading our sustainable and ecofriendly message to change attitudes on construction. You can be a part of it too!
+              </Typography>
             </ThemeProvider>
           </Grid>
         </Grid>
@@ -66,8 +64,10 @@ export default class Campaign extends Component {
           </svg>
         </div>
 
+        <br /><br /><br /><br />
+
         <FullWidthGrid />
-        
+
         <br /><br /><br /><br /><br /><br /><br />
         <div class="footer-top">
           <svg

@@ -24,31 +24,31 @@ const headersData = [
     label: "Team",
     href: "/team",
     color: white,
-    bgColor: esteemGreen,
+    // bgColor: esteemGreen,
   },
   {
     label: "Impact",
     href: "/impact",
     color: white,
-    bgColor: esteemGreen,
+    // bgColor: esteemGreen,
   },
   {
     label: "Campaigns",
     href: "/campaign",
     color: white,
-    bgColor: esteemGreen,
+    // bgColor: esteemGreen,
   },
   {
     label: "Sponsors",
     href: "/sponsors",
     color: white,
-    bgColor: esteemGreen,
+    // bgColor: esteemGreen,
   },
   {
     label: "Contact",
     href: "/contact",
     color: white,
-    bgColor: esteemGreen,
+    // bgColor: esteemGreen,
   },
   {
     label: "Our Home",
@@ -60,7 +60,8 @@ const headersData = [
 
 const useStyles = makeStyles(() => ({
   header: {
-    backgroundColor: esteemGreen,
+    // backgroundColor: esteemGreen,
+    backgroundColor: "rgba(0, 152, 119, 0.85)",
     boxShadow: "none",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
