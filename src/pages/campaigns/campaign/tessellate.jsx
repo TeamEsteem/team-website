@@ -26,7 +26,10 @@ export default class Tessellate extends Component {
       <div>
         <div style={{
           backgroundImage: "url(/campaigns/tessellate/tessellate.jpg)",
-          height: "100vh"
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPositionX: "50%",
         }}>
           <Grid container
             alignContent="center"
@@ -483,8 +486,8 @@ export default class Tessellate extends Component {
                 </a>
                 <br /><br />
                 <b>
-                  If you have any further questions please contact Kinga at&nbsp;
-                  <a style={{ color: esteemGreen }} href="mailto:kp60@hw.ac.uk">kp60@hw.ac.uk</a>
+                  If you have any further questions please contact us at&nbsp;
+                  <a style={{ color: esteemGreen }} href="mailto:sdme2020@hw.ac.uk?subject=Tessellate Competition Question">sdme2020@hw.ac.uk</a>
                 </b>
               </center>
             </Typography>
