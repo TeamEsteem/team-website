@@ -214,6 +214,16 @@ textarea {
   padding: 100px 0 150px 0;
 }
 
+#footer {
+  padding: 50px;
+}
+
+@media screen and (min-width: 900px) {
+  #footer {
+    padding: 0;
+  }
+}
+
 .footer-top .shape-fill {
   fill: var(--dark-grey);
 }

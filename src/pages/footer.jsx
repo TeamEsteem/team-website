@@ -226,8 +226,6 @@ class Footer extends Component {
           </Grid>
           <div style={{ margin: "10px" }}></div>
         </Grid>
-        <script data-goatcounter="https://esteem.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
       </Box>
     );
   }

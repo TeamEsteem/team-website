@@ -124,38 +124,38 @@ class Landing extends Component {
             </Grid>
           </Grid>
           <Box m={3} />
-
-          <Button
-            variant="outlined"
-            size="large"
+          <a
+            // activeClass="active"
+            // to="section1"
+            // spy={true}
+            // smooth={true}
+            // duration={1000}
+            href="#landingBottom"
             style={{
-              padding: "5px 30px 5px 30px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              position: "relative",
+              textDecoration: "none",
               color: white,
-              margin: "auto",
-              marginBottom: "90px",
-              border: "2px solid" + white,
-              borderRadius: "20px",
             }}
-            startIcon={<ExpandMoreRoundedIcon />}
           >
-            <a
-              // activeClass="active"
-              // to="section1"
-              // spy={true}
-              // smooth={true}
-              // duration={1000}
-              href="#landingBottom"
+            <Button
+              variant="outlined"
+              size="large"
               style={{
-                marginLeft: "auto",
-                marginRight: "auto",
-                position: "relative",
-                textDecoration: "none",
+                padding: "5px 30px 5px 30px",
                 color: white,
+                margin: "auto",
+                marginBottom: "90px",
+                border: "2px solid" + white,
+                borderRadius: "20px",
               }}
+              startIcon={<ExpandMoreRoundedIcon />}
             >
+
               See more
-            </a>
-          </Button>
+            </Button>
+          </a>
         </Grid>
         {/* <Box m={-1} /> */}
         <div class="landing-bottom" id="landingBottom">
