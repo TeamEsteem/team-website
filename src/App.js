@@ -26,7 +26,9 @@ import Tessellate from "./pages/campaigns/campaign/tessellate.jsx";
 import Navbar from "create-react-nav";
 import EsteemLogo from "./assets/images/ESTEEM/Esteem Logo Full White.png";
 import { esteemGreen, white } from "./components/colors";
-import ScrollToTop from "./pages/scroll-to-top";
+import AutoScroll from "./pages/scroll-to-top";
+import ScrollToTop from "react-scroll-to-top";
+
 function TheHomePage() {
   return (
     <>
@@ -133,9 +135,7 @@ function TheHomePage() {
       </div>
       <div className="Landing-Section2">
         <ThemeProvider theme={primaryFont}>
-          <Typography
-            style={{ fontSize: "20px", fontWeight: "lighter" }}
-          >
+          <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
             <Section4 />
           </Typography>
         </ThemeProvider>
@@ -184,7 +184,13 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
+        <AutoScroll />
+        <ScrollToTop
+          smooth
+          color="#fafafa"
+          id="buttonScrollToTop"
+          top="1000px"
+        />
         {/* <Navbar logoImg={EsteemLogo} yToggle="true" routes={links} /> */}
         <Header />
         <div className="Body">
@@ -202,7 +208,9 @@ function App() {
               <Impactv2 />
               <div className="Footer">
                 <ThemeProvider theme={primaryFont}>
-                  <Typography style={{ fontSize: "20px", fontWeight: "lighter" }}>
+                  <Typography
+                    style={{ fontSize: "20px", fontWeight: "lighter" }}
+                  >
                     <Footer />
                   </Typography>
                 </ThemeProvider>
