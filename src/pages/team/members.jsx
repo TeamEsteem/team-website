@@ -642,6 +642,13 @@ export const members = [
   },
   {
     team: ["construction"],
+    name: "Natalia",
+    role: "Construction Team Member",
+    image: "/members/natalia.jpg",
+    linkedin: "linkedin.com/in/natalia-greenan-1a78a420b",
+  },
+  {
+    team: ["construction"],
     name: "Pashmeen",
     role: "Logistics",
     image: "/members/pashmeen.jpg",
