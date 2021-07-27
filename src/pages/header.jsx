@@ -51,6 +51,12 @@ const headersData = [
     // bgColor: esteemGreen,
   },
   {
+    label: "360°",
+    href: "/three60",
+    color: white,
+    // bgColor: esteemGreen,
+  },
+  {
     label: "Our Home",
     href: "/home-model",
     color: lightGreen,

@@ -28,6 +28,7 @@ import EsteemLogo from "./assets/images/ESTEEM/Esteem Logo Full White.png";
 import { esteemGreen, white } from "./components/colors";
 import AutoScroll from "./pages/scroll-to-top";
 import ScrollToTop from "react-scroll-to-top";
+import Three60 from "./pages/three60Images/three60";
 
 function TheHomePage() {
   return (
@@ -173,6 +174,7 @@ function App() {
     ["/impact", "Impact", Impactv2],
     ["/campaign", "Campaign", Campaign],
     ["/contact", "Contact", Contact],
+    ["/three60", "360° images", Three60],
     [
       "/home-model",
       <Button style={{ color: esteemGreen, backgroundColor: white }}>
@@ -250,6 +252,9 @@ function App() {
             </Route>
             <Route exact path="/timeline">
               <TimelinePage />
+            </Route>
+            <Route exact path="/three60">
+              <Three60 />
             </Route>
             <Route exact path="/contact">
               <Contact />
