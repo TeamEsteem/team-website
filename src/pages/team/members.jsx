@@ -52,7 +52,7 @@ export const members = [
     name: "Simon",
     role: "Head of HR",
     image: "/members/simon.jpg",
-    linkedin: "www.linkedin.com/in/simon-klekot-49a3a018a",
+    linkedin: "https://www.linkedin.com/in/simon-klekot-49a3a018a",
   },
 
   // Marketing
