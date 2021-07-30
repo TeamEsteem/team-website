@@ -17,7 +17,6 @@ import { Box, Button, ThemeProvider, Typography } from "@material-ui/core";
 import { primaryFont, secondaryFont } from "./components/fonts";
 import Sponsors from "./pages/sponsors/sponsors";
 import Team from "./pages/team/teamCard";
-import Impactv2 from "./pages/impact/impactV2";
 import HomeModel from "./pages/about-home/home-modelV2";
 import TimelinePage from "./pages/timeline/timeline-page.jsx";
 import Contact from "./pages/contact/contact";
@@ -171,7 +170,6 @@ function App() {
     ["/", "Home", TheHomePage],
     ["/sponsors", "Sponsors", Sponsors],
     ["/team", "Team", Team],
-    ["/impact", "Impact", Impactv2],
     ["/campaign", "Campaign", Campaign],
     ["/contact", "Contact", Contact],
     ["/three60", "360° images", Three60],
@@ -205,18 +203,6 @@ function App() {
             </Route>
             <Route exact path="/team">
               <Team />
-            </Route>
-            <Route exact path="/impact">
-              <Impactv2 />
-              <div className="Footer">
-                <ThemeProvider theme={primaryFont}>
-                  <Typography
-                    style={{ fontSize: "20px", fontWeight: "lighter" }}
-                  >
-                    <Footer />
-                  </Typography>
-                </ThemeProvider>
-              </div>
             </Route>
             <Route exact path="/campaign">
               <Campaign />

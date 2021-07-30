@@ -27,12 +27,6 @@ const headersData = [
     // bgColor: esteemGreen,
   },
   {
-    label: "Impact",
-    href: "/impact",
-    color: white,
-    // bgColor: esteemGreen,
-  },
-  {
     label: "Campaigns",
     href: "/campaign",
     color: white,
