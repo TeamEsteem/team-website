@@ -28,6 +28,8 @@ import { esteemGreen, white } from "./components/colors";
 import AutoScroll from "./pages/scroll-to-top";
 import ScrollToTop from "react-scroll-to-top";
 import Three60 from "./pages/three60Images/three60";
+import PressPage from "./pages/press/Press";
+import PageNotFound from "./pages/PageNotFound";
 
 function TheHomePage() {
   return (
@@ -183,14 +185,9 @@ function App() {
   ];
   return (
     <>
+      <ScrollToTop smooth color="#fafafa" id="buttonScrollToTop" top={400} />
       <Router>
         <AutoScroll />
-        <ScrollToTop
-          smooth
-          color="#fafafa"
-          id="buttonScrollToTop"
-          top="1000px"
-        />
         {/* <Navbar logoImg={EsteemLogo} yToggle="true" routes={links} /> */}
         <Header />
         <div className="Body">
@@ -241,6 +238,12 @@ function App() {
             </Route>
             <Route exact path="/three60">
               <Three60 />
+            </Route>
+            <Route exact path="/press">
+              <PressPage />
+            </Route>
+            <Route exact path="*">
+              <PageNotFound />
             </Route>
             <Route exact path="/contact">
               <Contact />
