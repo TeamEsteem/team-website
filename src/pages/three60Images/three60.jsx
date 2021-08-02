@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { ThemeProvider } from "styled-components";
 import { esteemGreen, white } from "../../components/colors";
 import { primaryFont } from "../../components/fonts";
+import { Pannellum } from "pannellum-react"
+import image from "../../assets/images/three60panoramas/p2-scaled.jpg"
 
 class Three60 extends Component {
   render() {
@@ -43,7 +45,7 @@ class Three60 extends Component {
             </ThemeProvider>
           </Grid>
         </Grid>
-        <div class="landing-bottom" style={{ backgroundColor: esteemGreen }}>
+        {/* <div class="landing-bottom" style={{ backgroundColor: esteemGreen }}>
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -55,10 +57,33 @@ class Three60 extends Component {
               style={{ fill: white }}
             ></path>
           </svg>
-        </div>
+        </div> */}
         <Box>
-
-
+          <Pannellum
+              width="100%"
+              height="70vh"
+              image={ image }
+              pitch={10}
+              yaw={180}
+              hfov={110}
+              autoLoad
+              onLoad={() => {
+                  console.log("panorama loaded");
+              }}
+          >
+            <Pannellum.Hotspot
+              type="info"
+              pitch={11}
+              yaw={-167}
+              text="Info Hotspot Text 3"
+            />
+            <Pannellum.Hotspot
+              type="info"
+              pitch={31}
+              yaw={-107}
+              text="Info Hotspot Text 4"
+            />
+          </Pannellum>
         </Box>
       </>
     );
