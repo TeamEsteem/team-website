@@ -56,7 +56,10 @@ class Three60 extends Component {
             ></path>
           </svg>
         </div>
-        <Box>This is where your content comes!</Box>
+        <Box>
+
+
+        </Box>
       </>
     );
   }
