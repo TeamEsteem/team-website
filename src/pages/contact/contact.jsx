@@ -139,7 +139,7 @@ function TheForm() {
       <br />
       <input
         type="text"
-        name="first-name"
+        name="name"
         placeholder="First name"
         disableUnderline
         required
@@ -153,7 +153,7 @@ function TheForm() {
         required
       />
       <textarea
-        name="Comments"
+        name="message"
         placeholder="Message"
         disableUnderline
         multiline
