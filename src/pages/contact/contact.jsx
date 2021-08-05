@@ -153,7 +153,7 @@ function TheForm() {
         required
       />
       <textarea
-        name="message"
+        name="comments"
         placeholder="Message"
         disableUnderline
         multiline
