@@ -72,6 +72,13 @@ export const members = [
   },
   {
     team: ["marketing"],
+    name: "Juliette",
+    role: "Former Head of Audio/Visual",
+    image: "/members/juliette.jpg",
+    linkedin: "https://www.linkedin.com/in/juliettegoddard1",
+  },
+  {
+    team: ["marketing"],
     name: "Alex B.",
     role: "Marketing Strategist",
     image: "/members/alex b.jpg",
