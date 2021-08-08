@@ -923,14 +923,3 @@ body > .container {
   background-color: var(--light-green);
   padding: 10px;
 }
-
-.pressCard {
-  background: linear-gradient(360deg, #008264 0%, rgba(34, 173, 135, 0.7) 50%);
-  border-radius: 0px 0px 20px 20px;
-  bottom: 0;
-  backdrop-filter: "blur(8px)";
-  position: fixed;
-  padding: 20px;
-  color: #fff;
-  max-height: 30em;
-}

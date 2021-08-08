@@ -1,6 +1,5 @@
 import {
   Box,
-  Card,
   CardHeader,
   Grid,
   Typography,
@@ -18,6 +17,7 @@ import {
 } from "../../components/colors";
 import { primaryFont } from "../../components/fonts";
 import "../../App.scss";
+import "./press.scss";
 import LinkOutlinedIcon from "@material-ui/icons/LinkOutlined";
 function TopPart() {
   return (
@@ -158,16 +158,51 @@ function SinglePressCard() {
     </Card>
   );
 }
+
+function Card(props) {
+  return (
+    <Grid item>
+      <div className="card">
+        <img src={props.img} />
+        <div className="card-body">
+          <h2>{props.title}</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <h5>{props.author}</h5>
+        </div>
+      </div>
+    </Grid>
+  );
+}
 class PressPage extends Component {
   render() {
     return (
       <>
         <TopPart />
-        <center>
-          <SinglePressCard />
-        </center>
-        {/* <SinglePressCard />
-        <SinglePressCard /> */}
+        <div className="cards">
+          <center>
+            <Grid container direction={"container"}>
+              <Card
+                img="https://picsum.photos/id/54/400/300"
+                title="What I learned from my visit to The Upside Down"
+                author="Nancy Wheeler"
+              />
+              <Card
+                img="https://picsum.photos/id/54/400/300"
+                title="What I learned from my visit to The Upside Down"
+                author="Nancy Wheeler"
+              />
+              <Card
+                img="https://picsum.photos/id/54/400/300"
+                title="What I learned from my visit to The Upside Down"
+                author="Nancy Wheeler"
+              />
+            </Grid>
+          </center>
+        </div>
         <Box m={3} />
       </>
     );
