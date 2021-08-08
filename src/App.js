@@ -189,22 +189,26 @@ function App() {
       <Router>
         <AutoScroll />
         {/* <Navbar logoImg={EsteemLogo} yToggle="true" routes={links} /> */}
-        <Header />
         <div className="Body">
           <Switch>
             <Route exact path="/">
+              <Header />
               <TheHomePage />
             </Route>
             <Route exact path="/sponsors">
+              <Header />
               <Sponsors />
             </Route>
             <Route exact path="/team">
+              <Header />
               <Team />
             </Route>
             <Route exact path="/campaign">
+              <Header />
               <Campaign />
             </Route>
             <Route exact path="/campaign/tessellate">
+              <Header />
               <Tessellate />
               <div class="footer-top">
                 <svg
@@ -231,21 +235,22 @@ function App() {
               </div>
             </Route>
             <Route exact path="/home-model">
+              <Header />
               <HomeModel />
             </Route>
             <Route exact path="/timeline">
+              <Header />
               <TimelinePage />
             </Route>
             <Route exact path="/three60">
               <Three60 />
             </Route>
             <Route exact path="/press">
+              <Header />
               <PressPage />
             </Route>
-            <Route exact path="*">
-              <PageNotFound />
-            </Route>
             <Route exact path="/contact">
+              <Header />
               <Contact />
               <Box m={2} />
               <div class="footer-top">
@@ -271,6 +276,9 @@ function App() {
                   </Typography>
                 </ThemeProvider>
               </div>
+            </Route>
+            <Route exact path="*">
+              <PageNotFound />
             </Route>
           </Switch>
         </div>
