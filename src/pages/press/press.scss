@@ -64,6 +64,7 @@ h5 {
 .card img {
   width: 100%;
   object-fit: cover;
+  object-position: 0% 0%;
   max-height: 25em;
 }
 
@@ -95,4 +96,8 @@ h5 {
 
 .card-body {
   padding: 1.2em;
+}
+
+a.MuiButtonBase-root {
+  padding: 5px;
 }

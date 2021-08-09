@@ -23,20 +23,28 @@ import { Link } from "@material-ui/icons";
 
 const PressData = [
   {
-    img: "https://images.unsplash.com/photo-1600727087945-904f186eeb80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1901&q=80",
+    img: "/press/engineerlive.jpg",
     link: "https://www.google.com",
-    title: "What I learned from my visit to The Upside Down",
-    author: "Nancy Wheeler",
+    title: "Profiling Team ESTEEM",
+    author: "Engineer Live · 30 Jul 2021",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "All you need to know about the student team that's aiming to shake up the solar sector.",
   },
   {
-    img: "https://images.unsplash.com/photo-1628189847457-b4607de7d222?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80",
-    link: "https://www.google.com",
-    title: "Just some title",
-    author: "Nancy Wheeler",
+    img: "/press/urban realm.jpg",
+    link: "https://www.urbanrealm.com/features/728/Team_Esteem%3A_Homegrown.html",
+    title: "Team Esteem: Homegrown",
+    author: "Urban Realm · 26 Jul 2021",
     content:
-      "Australia's Victoria state reported a steady rise in locally acquired Covid-19 cases on Monday as the state's near seven million population goes through a snap one-week lockdown, its sixth since the pandemic began.",
+      "Urban Realm speaks to the Heriot Watt team behind the prototype build to see at first hand how a marriage of architecture and engineering is breaking new ground in residential design at the Construction Scotland Innovation Centre.",
+  },
+  {
+    img: "/press/edinburghlive.jpg",
+    link: "https://www.urbanrealm.com/features/728/Team_Esteem%3A_Homegrown.html",
+    title: "Edinburgh students' eco house set to represent UK at global design competition",
+    author: "Edinburgh Live · Jacob Farr · 14 Jul 2021",
+    content:
+      "Team ESTEEM from Edinburgh’s Heriot Watt University have spoken of their excitement now that the construction of their eco-friendly prototype house has begun on campus.",
   },
 ];
 
@@ -61,7 +69,7 @@ function TopPart() {
                 fontWeight: "bold",
               }}
             >
-              Our team on the news
+              ESTEEM in the News
             </Typography>
             <Typography
               variant="body2"
@@ -73,8 +81,7 @@ function TopPart() {
                 fontSize: "1.5em",
               }}
             >
-              Check out Team ESTEEM's media presence.
-              {"Need a better caption :)"}
+              Read articles and magazines where we've been featured for a deeper look into what we're doing and how we're going to get there
             </Typography>
           </ThemeProvider>
         </Grid>
@@ -100,7 +107,7 @@ function Card(props) {
   return (
     <Grid item>
       <div className="card">
-        <img src={props.img} alt={props.title} />
+        <img src={props.img} alt={props.title}/>
         <div className="card-body">
           <h2>
             {props.title}
@@ -125,7 +132,7 @@ class PressPage extends Component {
         <TopPart />
         <div className="cards">
           <center>
-            <Grid container direction={"container"}>
+            <Grid container direction={"container"} style={{justifyContent: "center"}}>
               {PressData.map((PressData) => {
                 return (
                   <Card
