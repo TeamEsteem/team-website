@@ -892,7 +892,7 @@ body > .container {
 }
 
 .one {
-  border: 1px solid green;
+  border: 1px solid rgb(222, 228, 222);
   width: 29%;
   float: left;
   height: 100px;
@@ -916,4 +916,10 @@ body > .container {
     top: -100px;
     width: 100%;
   }
+}
+
+#buttonScrollToTop {
+  border-radius: 20px;
+  background-color: var(--light-green);
+  padding: 10px;
 }

@@ -101,18 +101,6 @@ export default function ButtonAppBar() {
                 </Typography>
               </IconButton>
             </Link>
-            <Link to="/impact" style={{ textDecoration: "none" }}>
-              <IconButton
-                style={{
-                  justifyContent: "center",
-                  color: white,
-                }}
-              >
-                <Typography component={"span"} variant={"body1"}>
-                  Impact
-                </Typography>
-              </IconButton>
-            </Link>
             <Link to="/campaign" style={{ textDecoration: "none" }}>
               <IconButton
                 style={{
