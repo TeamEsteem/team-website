@@ -19,6 +19,27 @@ import { primaryFont } from "../../components/fonts";
 import "../../App.scss";
 import "./press.scss";
 import LinkOutlinedIcon from "@material-ui/icons/LinkOutlined";
+import { Link } from "@material-ui/icons";
+
+const PressData = [
+  {
+    img: "https://images.unsplash.com/photo-1600727087945-904f186eeb80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1901&q=80",
+    link: "https://www.google.com",
+    title: "What I learned from my visit to The Upside Down",
+    author: "Nancy Wheeler",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1628189847457-b4607de7d222?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80",
+    link: "https://www.google.com",
+    title: "Just some title",
+    author: "Nancy Wheeler",
+    content:
+      "Australia's Victoria state reported a steady rise in locally acquired Covid-19 cases on Monday as the state's near seven million population goes through a snap one-week lockdown, its sixth since the pandemic began.",
+  },
+];
+
 function TopPart() {
   return (
     <>
@@ -75,108 +96,28 @@ function TopPart() {
   );
 }
 
-function SinglePressCard() {
-  return (
-    <Card
-      elevation={3}
-      style={{
-        background:
-          "url(https://images.unsplash.com/photo-1620739159255-1c4cb978a0f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)",
-        // filter: "blur(8px)",
-        backdropFilter: "blur(2px)",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        maxWidth: "30em",
-        height: "40em",
-        borderRadius: "20px",
-        margin: "10px",
-      }}
-    >
-      {/* <CardHeader>Heyy, how's it going?</CardHeader> */}
-
-      <div className="pressCard">
-        <div
-          style={{
-            background: "rgba(255, 255, 255, 0.4)",
-            borderRadius: "20px",
-            padding: "5px",
-            marginBottom: "10px",
-            // justifyContent: "left",
-            width: "fit-content",
-            backdropFilter: "blur(10px)",
-            color: white,
-          }}
-        >
-          <div style={{ display: "flex", position: "relative" }}>
-            <Typography
-              variant="h5"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                zIndex: "2",
-                margin: "15px",
-                marginLeft: "25px",
-              }}
-            >
-              About some topic
-            </Typography>
-            <IconButton
-              style={{
-                color: white,
-                marginRight: "20px",
-                padding: "5px",
-                marginLeft: "auto",
-              }}
-            >
-              <LinkOutlinedIcon />
-            </IconButton>
-          </div>
-          <Typography
-            variant="body2"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              zIndex: "2",
-              fontWeight: "300",
-              color: black,
-              textAlign: "left",
-              marginBottom: "5px",
-            }}
-          >
-            This is forty-fifth round Google interview type shit right here.
-            Let’s finish changing hearts and minds. We’ll make our .blur class
-            cover the entire height of the window but only half of the width, so
-            that we can see the difference after the filter is applied. If you
-            want the blur to have a color, you’ll need to add the background
-            property with an rgba value. Make sure that the alpha (opacity) is
-            less than 1, so we can see through the color. Then we’ll add the
-            magical backdrop-filter CSS property and give it a value of
-            blur(8px). Hint, hint…increase/decrease the px to increase/decrease
-            the blur.
-          </Typography>
-        </div>
-      </div>
-    </Card>
-  );
-}
-
 function Card(props) {
   return (
     <Grid item>
       <div className="card">
-        <img src={props.img} />
+        <img src={props.img} alt={props.title} />
         <div className="card-body">
-          <h2>{props.title}</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
+          <h2>
+            {props.title}
+            {
+              <IconButton href={props.link} target="_blank">
+                <Link fontSize="small" />
+              </IconButton>
+            }
+          </h2>
+          <p>{props.content}</p>
           <h5>{props.author}</h5>
         </div>
       </div>
     </Grid>
   );
 }
+
 class PressPage extends Component {
   render() {
     return (
@@ -185,21 +126,17 @@ class PressPage extends Component {
         <div className="cards">
           <center>
             <Grid container direction={"container"}>
-              <Card
-                img="https://picsum.photos/id/54/400/300"
-                title="What I learned from my visit to The Upside Down"
-                author="Nancy Wheeler"
-              />
-              <Card
-                img="https://picsum.photos/id/54/400/300"
-                title="What I learned from my visit to The Upside Down"
-                author="Nancy Wheeler"
-              />
-              <Card
-                img="https://picsum.photos/id/54/400/300"
-                title="What I learned from my visit to The Upside Down"
-                author="Nancy Wheeler"
-              />
+              {PressData.map((PressData) => {
+                return (
+                  <Card
+                    img={PressData.img}
+                    title={PressData.title}
+                    author={PressData.author}
+                    content={PressData.content}
+                    link={PressData.link}
+                  />
+                );
+              })}
             </Grid>
           </center>
         </div>
