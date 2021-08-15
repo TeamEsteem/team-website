@@ -205,6 +205,7 @@ export default class Sponsors extends Component {
               justify="center"
               className="sponsors-grid"
             >
+
               <a href="https://www.classofyourown.com/" target="_blank">
                 <img
                   className="sponsors-silver-image"
@@ -221,6 +222,14 @@ export default class Sponsors extends Component {
                 />
               </a>
 
+              <a href="https://www.lucecoplc.com/" target="_blank">
+                <img
+                  className="sponsors-silver-image"
+                  src="/sponsors/silver/luceco.png"
+                  alt=""
+                />
+              </a>
+
               <a href="https://www.paulheatrecovery.co.uk/" target="_blank">
                 <img
                   className="sponsors-silver-image"
@@ -228,39 +237,39 @@ export default class Sponsors extends Component {
                   alt=""
                 />
               </a>
-            </Grid>
 
-            <a href="https://www.seawatersolutions.org/" target="_blank">
-              <img
-                className="sponsors-silver-image"
-                src="/sponsors/silver/seawater.jpg"
-                alt=""
-              />
-            </a>
+              <a href="https://www.rothoblaas.com/" target="_blank">
+                <img
+                  className="sponsors-silver-image"
+                  src="/sponsors/silver/rothoblaas.jpg"
+                  alt=""
+                />
+              </a>
 
-            {/* <a href="http://terratonics.ie/" target="_blank">
+              <a href="https://www.seawatersolutions.org/" target="_blank">
+                <img
+                  className="sponsors-silver-image"
+                  src="/sponsors/silver/seawater.jpg"
+                  alt=""
+                />
+              </a>
+
+              {/* <a href="http://terratonics.ie/" target="_blank">
               <img
-                className="sponsors-silver-image"
-                src="/sponsors/silver/Terratonics.jpg"
-                alt=""
+              className="sponsors-silver-image"
+              src="/sponsors/silver/Terratonics.jpg"
+              alt=""
               />
             </a> */}
 
-            <a href="https://www.uponor.co.uk/" target="_blank">
-              <img
-                className="sponsors-silver-image"
-                src="/sponsors/silver/uponor.png"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.lucecoplc.com/" target="_blank">
-              <img
-                className="sponsors-silver-image"
-                src="/sponsors/silver/luceco.png"
-                alt=""
-              />
-            </a>
+              <a href="https://www.uponor.co.uk/" target="_blank">
+                <img
+                  className="sponsors-silver-image"
+                  src="/sponsors/silver/uponor.png"
+                  alt=""
+                />
+              </a>
+            </Grid>
           </div>
 
           {/* Bronze Sponsors */}
@@ -282,6 +291,15 @@ export default class Sponsors extends Component {
               justify="center"
               className="sponsors-grid"
             >
+
+              <a href="https://almaden.ch/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/almaden.png"
+                  alt=""
+                />
+              </a>
+
               <a href="https://www.concreative.me/" target="_blank">
                 <img
                   className="sponsors-bronze-image"
@@ -294,6 +312,14 @@ export default class Sponsors extends Component {
                 <img
                   className="sponsors-bronze-image"
                   src="/sponsors/bronze/fimer.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://helskeenergysave.com/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/helske.png"
                   alt=""
                 />
               </a>
@@ -313,55 +339,63 @@ export default class Sponsors extends Component {
                   alt=""
                 />
               </a>
+
+              <a href="https://itdotfocus.com/en/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/itfocus.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.proctorgroup.com/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/proctorgroup.jpeg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.puredrive-energy.co.uk/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/puredrive.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://solariskit.com/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/solariskit.jpg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.tala.co.uk/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/tala.webp"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.treedom.net/en/" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/treedom.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://www.trinasolar.com" target="_blank">
+                <img
+                  className="sponsors-bronze-image"
+                  src="/sponsors/bronze/trinasolar.jpg"
+                  alt=""
+                />
+              </a>
             </Grid>
-
-            <a href="https://itdotfocus.com/en/" target="_blank">
-              <img
-                className="sponsors-bronze-image"
-                src="/sponsors/bronze/itfocus.png"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.rothoblaas.com/" target="_blank">
-              <img
-                className="sponsors-bronze-image"
-                src="/sponsors/bronze/rothoblaas.jpg"
-                alt=""
-              />
-            </a>
-
-            <a href="https://solariskit.com/" target="_blank">
-              <img
-                className="sponsors-bronze-image"
-                src="/sponsors/bronze/solariskit.jpg"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.tala.co.uk/" target="_blank">
-              <img
-                className="sponsors-bronze-image"
-                src="/sponsors/bronze/tala.webp"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.proctorgroup.com/" target="_blank">
-              <img
-                className="sponsors-bronze-image"
-                src="/sponsors/bronze/proctorgroup.jpeg"
-                alt=""
-              />
-            </a>
-
-            <a href="https://www.treedom.net/en/" target="_blank">
-              <img
-                className="sponsors-bronze-image"
-                src="/sponsors/bronze/treedom.png"
-                alt=""
-              />
-            </a>
           </div>
 
           {/* Supporters */}
@@ -382,13 +416,13 @@ export default class Sponsors extends Component {
               justify="center"
               className="sponsors-grid"
             >
-              <a href="https://aecom.com/" target="_blank">
+              {/* <a href="https://aecom.com/" target="_blank">
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/aecom.png"
                   alt=""
                 />
-              </a>
+              </a> */}
 
               <a href="https://www.facebook.com/alphaarquitectos507/" target="_blank">
                 <img
@@ -430,7 +464,7 @@ export default class Sponsors extends Component {
                 />
               </a>
 
-              <a
+              {/* <a
                 href="https://www.designengineeringworkshop.co.uk/"
                 target="_blank"
               >
@@ -439,23 +473,23 @@ export default class Sponsors extends Component {
                   src="/sponsors/supporters/DEW.jpg"
                   alt=""
                 />
-              </a>
+              </a> */}
 
-              <a href="https://www.etp-scotland.ac.uk/" target="_blank">
+              {/* <a href="https://www.etp-scotland.ac.uk/" target="_blank">
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/ETP.gif"
                   alt=""
                 />
-              </a>
+              </a> */}
 
-              <a href="https://www.fgould.com/uk-europe/" target="_blank">
+              {/* <a href="https://www.fgould.com/uk-europe/" target="_blank">
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/faithfulgould.jpg"
                   alt=""
                 />
-              </a>
+              </a> */}
 
               <a href="https://www.gecurrent.com/" target="_blank">
                 <img
@@ -465,13 +499,13 @@ export default class Sponsors extends Component {
                 />
               </a>
 
-              <a href="https://isgltd.com/en" target="_blank">
+              {/* <a href="https://isgltd.com/en" target="_blank">
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/isg.png"
                   alt=""
                 />
-              </a>
+              </a> */}
 
               <a href="http://www.kenoteq.co.uk/" target="_blank">
                 <img
@@ -489,10 +523,18 @@ export default class Sponsors extends Component {
                 />
               </a>
 
-              <a href="https://www.rbge.org.uk/" target="_blank">
+              {/* <a href="https://www.rbge.org.uk/" target="_blank">
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/RBG.jpeg"
+                  alt=""
+                />
+              </a> */}
+
+              <a href="https://www.readysetrota.com/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/readysetcore.png"
                   alt=""
                 />
               </a>
@@ -513,13 +555,21 @@ export default class Sponsors extends Component {
                 />
               </a>
 
-              <a href="https://www.soltropy.com/" target="_blank">
+              <a href="https://swyfthome.com/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/swyft.png"
+                  alt=""
+                />
+              </a>
+
+              {/* <a href="https://www.soltropy.com/" target="_blank">
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/soltropy.png"
                   alt=""
                 />
-              </a>
+              </a> */}
             </Grid>
           </div>
         </div>
