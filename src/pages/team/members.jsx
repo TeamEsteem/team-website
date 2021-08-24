@@ -85,6 +85,13 @@ export const members = [
   },
   {
     team: ["marketing"],
+    name: "Aditya",
+    role: "Events Coordinator",
+    image: "/members/aditya.jpg",
+    linkedin: "https://www.linkedin.com/in/aditya-krishnan-78661b177",
+  },
+  {
+    team: ["marketing"],
     name: "Dhruv",
     role: "Podcast Editor",
     image: "/members/dhruv.jpg",
@@ -99,16 +106,16 @@ export const members = [
   },
   {
     team: ["marketing"],
-    name: "Pietro",
-    role: "Marketing Assisstant & Content Creator",
-    image: "/members/pietro.jpg",
+    name: "Mehdi",
+    role: "Digital Marketing",
+    image: "/members/mehdi.jpg",
+    linkedin: "https://www.linkedin.com/in/mehdi-asaria-889a98178/",
   },
   {
     team: ["marketing"],
-    name: "Aditya",
-    role: "Events Coordinator",
-    image: "/members/aditya.jpg",
-    linkedin: "https://www.linkedin.com/in/aditya-krishnan-78661b177",
+    name: "Pietro",
+    role: "Marketing Assisstant & Content Creator",
+    image: "/members/pietro.jpg",
   },
 
   // Website
