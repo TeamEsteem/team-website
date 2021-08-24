@@ -187,8 +187,14 @@ export const members = [
     name: "Ali",
     role: "Small Finances",
     image: "/members/ali.jpg",
-    linkedin:
-      "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
+    linkedin: "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
+  },
+  {
+    team: ["sponsorship"],
+    name: "Amrita",
+    role: "Sponsorship Researcher",
+    image: "/members/amrita.jpg",
+    linkedin: "https://www.linkedin.com/in/amrita-narayanan",
   },
 
   // {
