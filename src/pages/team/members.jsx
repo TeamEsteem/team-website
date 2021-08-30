@@ -181,6 +181,13 @@ export const members = [
     image: "/members/vishnu.jpg",
     linkedin: "https://www.linkedin.com/in/vishnu-kausik-401103172/",
   },
+  {
+    team: ["software & Sensors"],
+    name: "Zein",
+    role: "Interactive Experiences",
+    image: "/members/zein.jpg",
+    linkedin: "https://www.linkedin.com/in/zein-shah/",
+  },
   // {
   //   team: ["software & Sensors"],
   //   name: "Petar",
