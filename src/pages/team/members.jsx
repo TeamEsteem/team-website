@@ -188,6 +188,13 @@ export const members = [
     image: "/members/zein.jpg",
     linkedin: "https://www.linkedin.com/in/zein-shah/",
   },
+  {
+    team: ["software & Sensors"],
+    name: "Zoe",
+    role: "Interactive Experiences",
+    image: "/members/zoe.jpg",
+    linkedin: "https://www.linkedin.com/in/zoe-cook-4b932721b/",
+  },
   // {
   //   team: ["software & Sensors"],
   //   name: "Petar",
