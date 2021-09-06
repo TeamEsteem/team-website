@@ -168,7 +168,7 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/navya-thampan-895a921a4/",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
     name: "Sanmi",
     role: "AR/VR Lead",
     image: "/members/sanmi.jpg",
