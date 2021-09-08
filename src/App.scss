@@ -905,6 +905,14 @@ body > .container {
   height: 100px;
 }
 
+.Countdown {
+  text-align: center;
+  font-size: 5em;
+  display: flex;
+  flex-direction: row;
+}
+
+
 @media (max-width: 767px) {
   .one {
     position: relative;
@@ -916,10 +924,56 @@ body > .container {
     top: -100px;
     width: 100%;
   }
+
+
 }
 
 #buttonScrollToTop {
   border-radius: 20px;
   background-color: var(--light-green);
   padding: 10px;
+}
+
+
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.time-wrapper {
+  position: relative;
+  width: 180px;
+  height: 160px;
+  font-size: 30px;
+  font-family: "Montserrat";
+}
+
+.time-wrapper .time {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.time-wrapper .time.up {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.time-wrapper .time.down {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.Countdown{
+  display: flex; 
+  flex-direction: row-reverse; 
+  
 }

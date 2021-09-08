@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { useRef, useState } from "react";
+import ReactDOM from "react-dom";
 import {
   white,
   grey,
@@ -13,73 +15,88 @@ import { primaryFont, secondaryFont } from "../components/fonts";
 import "../App.scss";
 import LaunchIcon from '@material-ui/icons/Launch';
 import { transform } from "framer-motion";
+import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import CountdownTimer from "react-component-countdown-timer";
+import "../../node_modules/react-component-countdown-timer/lib/styles.css";
+ 
+const RenderTime = ({ remainingTime }) => {
+  const currentTime = useRef(remainingTime);
+  const prevTime = useRef(null);
+  const isNewTimeFirstTick = useRef(false);
+  const [, setOneLastRerender] = useState(0);
 
-function FormColumn() {
+  if (currentTime.current !== remainingTime) {
+    isNewTimeFirstTick.current = true;
+    prevTime.current = currentTime.current;
+    currentTime.current = remainingTime;
+  } else {
+    isNewTimeFirstTick.current = false;
+  }
+
+  // force one last re-render when the time is over to trigger the last animation
+  if (remainingTime === 0) {
+    setTimeout(() => {
+      setOneLastRerender(val => val + 1);
+    }, 20);
+  }
+
+  const isTimeUp = isNewTimeFirstTick.current;
+
   return (
-    <React.Fragment>
-      <Grid
-        container
-        direction="column"
-        justify="space-evenly"
-        alignItems="center"
-      >
-        <Grid class="mission-block">
-          <ThemeProvider theme={primaryFont}>
-            <Typography
-              variant="h3"
-              style={{ textAlign: "center", color: lightGreen }}
-            >
-              OUR IMPACT
-            </Typography>
-          </ThemeProvider>
-          <br></br>
-          <ThemeProvider theme={secondaryFont}>
-            <Typography
-              variant="h5"
-              style={{ textAlign: "center", color: white }}
-            >
-              Lorem ipsum dolor sit amet, consectetur <br></br>
-              adipiscing elit, sed do eiusmod tempor <br></br>
-              incididunt ut labore et dolore magna aliqua. <br></br>
-            </Typography>
-          </ThemeProvider>
-          <br></br>
-        </Grid>
-        <br></br>
-        <br></br>
-        <Grid class="mission-block">
-          <ThemeProvider theme={primaryFont}>
-            <Typography
-              variant="h3"
-              style={{ textAlign: "center", color: lightGreen }}
-            >
-              OUR RESEARCH
-            </Typography>
-          </ThemeProvider>
-          <br></br>
-          <ThemeProvider theme={secondaryFont}>
-            <Typography
-              variant="h5"
-              style={{ textAlign: "center", color: white }}
-            >
-              Lorem ipsum dolor sit amet, consectetur <br></br>
-              adipiscing elit, sed do eiusmod tempor <br></br>
-              incididunt ut labore et dolore magna aliqua. <br></br>
-            </Typography>
-          </ThemeProvider>
-          <br></br>
-        </Grid>
-      </Grid>
-    </React.Fragment>
+    <div className="time-wrapper">
+      <div key={remainingTime} className={`time ${isTimeUp ? "up" : ""}`}>
+        {remainingTime}
+      </div>
+      {prevTime.current !== null && (
+        <div
+          key={prevTime.current}
+          className={`time ${!isTimeUp ? "down" : ""}`}
+        >
+          {prevTime.current}
+        </div>
+      )}
+    </div>
   );
-}
+};
 
 class Section1V2 extends Component {
   render() {
+    var msDiff = new Date("2021-10-20").getTime() - new Date("2021-09-01").getTime() // shipping
+    var timePassed =  Math.floor(msDiff / (1000));
+    var msDiff = new Date("2021-10-20").getTime() - new Date().getTime();    //Future date - current date
+    var timeLeft = Math.floor(msDiff / (1000));
+
+    
+
     return (
       <>
+        <ThemeProvider theme={secondaryFont}>
+          
+          <Typography
+            variant="h3"
+            style={{ textAlign: "center", color: "#202020" }}
+          >
+            Countdown
+          </Typography>
+        </ThemeProvider>
+        <br></br>
+     
+          <CountdownCircleTimer
+            isPlaying
+            duration={timePassed}
+            initialRemainingTime={timeLeft}
+            size={450}
+            colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]} //esteem color here
+          >
+               <p className="Countdown">
+            <CountdownTimer count={timeLeft} border showTitle noPoints size={48} direction="down"responsive/>
+            </p>
+          </CountdownCircleTimer>
+  
+        <br></br>
         {/* <Box m={-10} /> */}
         <ThemeProvider theme={secondaryFont}>
+     
           <Typography
             variant="h3"
             style={{ textAlign: "center", color: "#202020" }}

@@ -32,12 +32,7 @@ const headersData = [
     color: white,
     // bgColor: esteemGreen,
   },
-  {
-    label: "Sponsors",
-    href: "/sponsors",
-    color: white,
-    // bgColor: esteemGreen,
-  },
+
   {
     label: "Contact",
     href: "/contact",

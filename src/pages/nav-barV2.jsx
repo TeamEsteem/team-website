@@ -97,7 +97,7 @@ export default function ButtonAppBar() {
                 }}
               >
                 <Typography component={"span"} variant={"body1"}>
-                  Sponsors
+                  Sponsorss
                 </Typography>
               </IconButton>
             </Link>
