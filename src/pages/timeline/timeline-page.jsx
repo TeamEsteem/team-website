@@ -121,18 +121,18 @@ class TimelinePage extends Component {
             image="images/Esteem Logo Full.png"
           ></TimelineElement>
           <TimelineElement
-            title="New Year, New ESTEEM!"
-            subtitle="January 2021"
-            desc="We gave ESTEEM a new look with improved colours and a design guideline to make sure that we stand out from the rest of the competition!"
-            tag="secondary"
-            image="images/esteem rebrand.png"
-          ></TimelineElement>
-          <TimelineElement
             title="3D Printed Concrete"
             subtitle="January 2020"
             desc="Back from the festive break, we start with an informative and constructive workshop with Thornton Thomasetti and Concreative in concrete 3D printing!​"
             tag="secondary"
             image="images/Esteem Logo Full.png"
+          ></TimelineElement>
+          <TimelineElement
+            title="New Year, New ESTEEM!"
+            subtitle="January 2021"
+            desc="We gave ESTEEM a new look with improved colours and a design guideline to make sure that we stand out from the rest of the competition!"
+            tag="secondary"
+            image="images/esteem rebrand.png"
           ></TimelineElement>
           <TimelineElement
             title="Building the CLT panels at CSIC"
