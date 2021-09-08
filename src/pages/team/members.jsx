@@ -1,5 +1,4 @@
 export const members = [
-
   // Asked To Be Removed
   // - Erik
   // - Hanin
@@ -52,7 +51,7 @@ export const members = [
     name: "Simon",
     role: "Head of HR",
     image: "/members/simon.jpg",
-    linkedin: "www.linkedin.com/in/simon-klekot-49a3a018a",
+    linkedin: "https://www.linkedin.com/in/simon-klekot-49a3a018a",
   },
 
   // Marketing
@@ -68,7 +67,7 @@ export const members = [
     name: "Alakbar",
     role: "Head of Audio/Visual & Website",
     image: "/members/alakbar.jpg",
-    linkedin: "https://alak.bar"
+    linkedin: "https://alak.bar",
   },
   {
     team: ["marketing"],
@@ -104,8 +103,6 @@ export const members = [
     image: "/members/aditya.jpg",
     linkedin: "https://www.linkedin.com/in/aditya-krishnan-78661b177",
   },
-
-
 
   // Website
   {
@@ -177,14 +174,14 @@ export const members = [
   //   image: "/members/petar.jpg",
   // },
 
-
   // Sponsorship
   {
     team: ["sponsorship"],
     name: "Ali",
     role: "Small Finances",
     image: "/members/ali.jpg",
-    linkedin: "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
+    linkedin:
+      "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
   },
 
   // {
@@ -530,7 +527,6 @@ export const members = [
   //   image: "/members/rebecca.jpg",
   // },
 
-
   // Building Modelling
   {
     team: ["building Modelling"],
@@ -584,7 +580,6 @@ export const members = [
     role: "IES Modeller",
     image: "/members/vinuki.jpg",
   },
-
 
   // Construction
   {
@@ -652,7 +647,7 @@ export const members = [
     name: "Pashmeen",
     role: "Logistics",
     image: "/members/pashmeen.jpg",
-    linkedin: "https://www.linkedin.com/in/pashmeensingh"
+    linkedin: "https://www.linkedin.com/in/pashmeensingh",
   },
   {
     team: ["construction"],
@@ -673,17 +668,12 @@ export const members = [
     image: "/members/liam_gordon.jpg",
   },
 
-
   // {
   //   team: ["construction"],
   //   name: "Shilpan",
   //   role: "Site Operations Coordinator",
   //   image: "/members/shilpan.jpg",
   // },
-
-
-
-
 
   // Windcatcher
   {

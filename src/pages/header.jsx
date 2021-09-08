@@ -40,6 +40,12 @@ const headersData = [
     // bgColor: esteemGreen,
   },
   {
+    label: "Press",
+    href: "/press",
+    color: white,
+    // bgColor: esteemGreen,
+  },
+  {
     label: "360°",
     href: "/three60",
     color: white,

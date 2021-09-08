@@ -17,6 +17,7 @@
     "framer-motion": "^4.1.17",
     "git-info": "^1.1.0",
     "mobiscroll": "^3.0.0-beta6",
+    "pannellum-react": "^1.2.4",
     "react": "^17.0.2",
     "react-addons-css-transition-group": "^15.6.2",
     "react-card-flip": "^1.1.1",

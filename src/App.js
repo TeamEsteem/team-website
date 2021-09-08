@@ -28,6 +28,8 @@ import { esteemGreen, white } from "./components/colors";
 import AutoScroll from "./pages/scroll-to-top";
 import ScrollToTop from "react-scroll-to-top";
 import Three60 from "./pages/three60Images/three60";
+import PressPage from "./pages/press/Press";
+import PageNotFound from "./pages/PageNotFound";
 
 function TheHomePage() {
   return (
@@ -183,31 +185,30 @@ function App() {
   ];
   return (
     <>
+      <ScrollToTop smooth color="#fafafa" id="buttonScrollToTop" top={400} />
       <Router>
         <AutoScroll />
-        <ScrollToTop
-          smooth
-          color="#fafafa"
-          id="buttonScrollToTop"
-          top="1000px"
-        />
         {/* <Navbar logoImg={EsteemLogo} yToggle="true" routes={links} /> */}
-        <Header />
         <div className="Body">
           <Switch>
             <Route exact path="/">
+              <Header />
               <TheHomePage />
             </Route>
             <Route exact path="/sponsors">
+              <Header />
               <Sponsors />
             </Route>
             <Route exact path="/team">
+              <Header />
               <Team />
             </Route>
             <Route exact path="/campaign">
+              <Header />
               <Campaign />
             </Route>
             <Route exact path="/campaign/tessellate">
+              <Header />
               <Tessellate />
               <div class="footer-top">
                 <svg
@@ -234,15 +235,45 @@ function App() {
               </div>
             </Route>
             <Route exact path="/home-model">
+              <Header />
               <HomeModel />
             </Route>
             <Route exact path="/timeline">
+              <Header />
               <TimelinePage />
             </Route>
             <Route exact path="/three60">
               <Three60 />
             </Route>
+            <Route exact path="/press">
+              <Header />
+              <PressPage />
+              <div class="footer-top">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1100 120"
+                  preserveAspectRatio="none"
+                  style={{ backgroundColor: "#ffffff" }}
+                >
+                  <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
+              </div>
+              <div className="Footer">
+                <ThemeProvider theme={primaryFont}>
+                  <Typography
+                    style={{ fontSize: "20px", fontWeight: "lighter" }}
+                  >
+                    <Footer />
+                  </Typography>
+                </ThemeProvider>
+              </div>
+            </Route>
             <Route exact path="/contact">
+              <Header />
               <Contact />
               <Box m={2} />
               <div class="footer-top">
@@ -268,6 +299,9 @@ function App() {
                   </Typography>
                 </ThemeProvider>
               </div>
+            </Route>
+            <Route exact path="*">
+              <PageNotFound />
             </Route>
           </Switch>
         </div>
