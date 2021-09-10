@@ -154,7 +154,7 @@ class PressPage extends Component {
     return (
       <>
         <TopPart />
-        <div className="cards">
+        <div className="cards" style={{maxWidth:"1250px"}}>
           <center>
             <Grid container direction={"container"} style={{justifyContent: "center"}}>
               {PressData.map((PressData) => {
