@@ -143,11 +143,10 @@ export class FlipCamp extends React.Component {
                       style={{
                         padding: "5px 25px",
                         color: white,
-                        border: "2px solid" + white,
+                        border: "2px solid #aaa",
+                        background: "rgba(0,0,0,0.5)",
                         borderRadius: "20px",
-                        marginTop: "20px",
-                        textShadow:
-                          "0 0 15px rgba(0,0,0,1), 0 0 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1)",
+                        marginTop: "20px"
                       }}
                     >
                       Quick Look
@@ -163,16 +162,15 @@ export class FlipCamp extends React.Component {
                     }}
                   >
                     <Button
-                      variant="outlined"
+                      variant="contained"
                       size="large"
                       style={{
                         padding: "5px 25px",
-                        color: white,
+                        color: "#202020",
                         border: "2px solid" + white,
                         borderRadius: "20px",
                         marginTop: "10px",
-                        textShadow:
-                          "0 0 15px rgba(0,0,0,1), 0 0 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1)",
+                        background: "#fff"
                       }}
                     >
                       See more
@@ -245,15 +243,17 @@ export default function FullWidthGrid() {
             />
             <div className="campGrid"></div>
           </Grid>
-          {/* <Grid item xs={12} sm={6}>
+
+          <Grid item xs={12} sm={6}>
             <div className="campGridBuffer" style={{ height: '150px' }}></div>
           </Grid>
           <Grid item xs={12}>
             <FlipCamp
-              image="url('/images/solariskit - kelvin points.jpg')"
-              title="Placeholder"
-              date="10 June 2021"
-              description="Test"
+              image="url()"
+              title="More to come!"
+              date="We're adding more to section"
+              description="Bear with us as we add more of our campaigns onto our website."
+              description2="We have quite the backlog to go through!"
             />
             <div className="campGrid"></div>
           </Grid>
@@ -268,17 +268,18 @@ export default function FullWidthGrid() {
           </Grid>
           <Grid item>
             <FlipCamp
-              image="url('/images/Jairis Render 1.jpg')"
-              title="Placeholder"
-              date="10 June 2021"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nisi in justo faucibus eleifend malesuada id velit. Cras consectetur neque id neque maximus pellentesque. Nulla facilisi. Vestibulum ornare gravida urna non malesuada."
-              text="Img 3"
+              image="url('/campaigns/destinationdubai/world.jpg')"
+              url="/campaign/destinationdubai"
+              title="Destination Dubai"
+              date="September 2020"
+              description="Join us in staying fit during the pandemic by running, walking, or cycling!"
+              description2="Become a member of our Strava club to count your miles towards the journey. The more you exercise, the faster we can get to Dubai (virtually)!"
             />
             <div className="campGrid"></div>
           </Grid>
           <Grid item>
             <div className="campGridBuffer" style={{ height: '150px' }}></div>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Grid>
     </div>

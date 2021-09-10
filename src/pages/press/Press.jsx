@@ -23,8 +23,32 @@ import { Link } from "@material-ui/icons";
 
 const PressData = [
   {
+    img: "/press/commercialinteriordesign.jpg",
+    link: "https://www.commercialinteriordesign.com/news/students-take-part-in-net-zero-design-and-construction-competition",
+    title: "Students take part in net-zero design and construction competition",
+    author: "Commercial Interior Design · 9 Sept 2021",
+    content:
+      "The students’ proposals must achieve net-zero energy and focus on solving the issues and needs for sustainable living in the Middle East",
+  },
+  {
+    img: "/press/gulfnews.jpg",
+    link: "https://gulfnews.com/expo-2020/news/dewa-pavilion-to-show-off-student-built-solar-houses-at-expo-2020-dubai-1.1629190393305",
+    title: "Dewa Pavilion to show off student-built solar houses at Expo 2020 Dubai",
+    author: "Gulf News · Zaynab Kamran · 19 Aug 2021",
+    content:
+      "Best homes to run on sunshine will take away Dh10 million at Solar Decathlon competition",
+  },
+  {
+    img: "/press/ttf.jpg",
+    link: "https://ttf.co.uk/students-show-homegrown-ingenuity-in-competition-with-scottish-clt/",
+    title: "Students show ‘homegrown’ ingenuity in competition with Scottish CLT",
+    author: "Timber Trade Federation · 19 Aug 2021",
+    content:
+      "A team of students from Herriot Watt University are building innovative prefabricated homes from CLT panels made with Scottish timber, as they seek to compete on the world stage in September.",
+  },
+  {
     img: "/press/engineerlive.jpg",
-    link: "https://www.google.com",
+    link: "https://www.engineerlive.com/content/profiling-team-esteem",
     title: "Profiling Team ESTEEM",
     author: "Engineer Live · 30 Jul 2021",
     content:
@@ -40,7 +64,7 @@ const PressData = [
   },
   {
     img: "/press/edinburghlive.jpg",
-    link: "https://www.urbanrealm.com/features/728/Team_Esteem%3A_Homegrown.html",
+    link: "https://www.edinburghlive.co.uk/news/edinburgh-news/edinburgh-students-eco-house-set-21054364",
     title: "Edinburgh students' eco house set to represent UK at global design competition",
     author: "Edinburgh Live · Jacob Farr · 14 Jul 2021",
     content:
