@@ -115,7 +115,9 @@ export default class Tessellate extends Component {
 
                 Tessellate is open to all Heriot-Watt University students and faculty, Thornton Tomasetti employees, and Team ESTEEM members. Artwork can be submitted in digital format to 5 different categories.
                 <br /><br />
-                <b>Artwork must be submitted to the form below by the end of September 13th at midnight (BST), 2021.</b>
+                <b>Artwork must be submitted to the form below by the end of September 30th at midnight (BST), 2021.</b>
+                <br /><br />
+                (we've extended the competition to give more people a chance to submit their work!)
               </p>
               <center>
                 <a

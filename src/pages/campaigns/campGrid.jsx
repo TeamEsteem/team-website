@@ -251,7 +251,7 @@ export default function FullWidthGrid() {
             <FlipCamp
               image="url()"
               title="More to come!"
-              date="We're adding more to section"
+              date="We're adding more to this section"
               description="Bear with us as we add more of our campaigns onto our website."
               description2="We have quite the backlog to go through!"
             />
