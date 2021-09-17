@@ -513,6 +513,13 @@ export const members = [
     role: "Health & Safety Officer",
     image: "/members/safa.jpg",
   },
+  {
+    team: ["health & Safety"],
+    name: "Srivathsan",
+    role: "Health & Safety Officer",
+    image: "/members/srivathsan.jpg",
+    linkedin: "http://www.linkedin.com/in/srivathsankarunanithi"
+  },
 
   // Building Services
   {
