@@ -23,6 +23,14 @@ import { Link } from "@material-ui/icons";
 
 const PressData = [
   {
+    img: "/press/nen.jpg",
+    link: "https://nen.press/2021/09/14/bon-voyage-esteem-house-see-you-in-dubai/",
+    title: "Bon Voyage, ESTEEM House: See you in Dubai!",
+    author: "North Edinburgh News · 14 Sept 2021",
+    content:
+      "The prototype construction phase is over, which means the ESTEEM house is on the way to Dubai!",
+  },
+  {
     img: "/press/commercialinteriordesign.jpg",
     link: "https://www.commercialinteriordesign.com/news/students-take-part-in-net-zero-design-and-construction-competition",
     title: "Students take part in net-zero design and construction competition",
@@ -44,7 +52,7 @@ const PressData = [
     title: "Students show ‘homegrown’ ingenuity in competition with Scottish CLT",
     author: "Timber Trade Federation · 19 Aug 2021",
     content:
-      "A team of students from Herriot Watt University are building innovative prefabricated homes from CLT panels made with Scottish timber, as they seek to compete on the world stage in September.",
+      "A team of students from Herriot Watt University are building innovative prefabricated homes from CLT panels made with Scottish timber, as they seek to compete on the world stage in September",
   },
   {
     img: "/press/engineerlive.jpg",
@@ -52,7 +60,7 @@ const PressData = [
     title: "Profiling Team ESTEEM",
     author: "Engineer Live · 30 Jul 2021",
     content:
-      "All you need to know about the student team that's aiming to shake up the solar sector.",
+      "All you need to know about the student team that's aiming to shake up the solar sector",
   },
   {
     img: "/press/urban realm.jpg",
@@ -60,7 +68,7 @@ const PressData = [
     title: "Team Esteem: Homegrown",
     author: "Urban Realm · 26 Jul 2021",
     content:
-      "Urban Realm speaks to the Heriot Watt team behind the prototype build to see at first hand how a marriage of architecture and engineering is breaking new ground in residential design at the Construction Scotland Innovation Centre.",
+      "Urban Realm speaks to the Heriot Watt team behind the prototype build to see at first hand how a marriage of architecture and engineering is breaking new ground in residential design at the Construction Scotland Innovation Centre",
   },
   {
     img: "/press/edinburghlive.jpg",
@@ -68,7 +76,7 @@ const PressData = [
     title: "Edinburgh students' eco house set to represent UK at global design competition",
     author: "Edinburgh Live · Jacob Farr · 14 Jul 2021",
     content:
-      "Team ESTEEM from Edinburgh’s Heriot Watt University have spoken of their excitement now that the construction of their eco-friendly prototype house has begun on campus.",
+      "Team ESTEEM from Edinburgh’s Heriot Watt University have spoken of their excitement now that the construction of their eco-friendly prototype house has begun on campus",
   },
 ];
 
