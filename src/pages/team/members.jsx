@@ -169,6 +169,13 @@ export const members = [
   },
   {
     team: ["software & Sensors"],
+    name: "Petar",
+    role: "UI Developer",
+    image: "/members/petar.jpg",
+    linkedin: "https://www.linkedin.com/in/petar-kotsev-335902193/"
+  },
+  {
+    team: ["software & Sensors"],
     name: "Sanmi",
     role: "AR/VR Lead",
     image: "/members/sanmi.jpg",
@@ -195,12 +202,6 @@ export const members = [
     image: "/members/zoe.jpg",
     linkedin: "https://www.linkedin.com/in/zoe-cook-4b932721b/",
   },
-  // {
-  //   team: ["software & Sensors"],
-  //   name: "Petar",
-  //   role: "OpenHAB Lead",
-  //   image: "/members/petar.jpg",
-  // },
 
   // Sponsorship
   {
