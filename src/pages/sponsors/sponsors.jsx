@@ -238,6 +238,14 @@ export default class Sponsors extends Component {
                 />
               </a>
 
+              <a href="https://www.puredrive-energy.co.uk/" target="_blank">
+                <img
+                  className="sponsors-silver-image"
+                  src="/sponsors/bronze/puredrive.png"
+                  alt=""
+                />
+              </a>
+
               <a href="https://www.rothoblaas.com/" target="_blank">
                 <img
                   className="sponsors-silver-image"
@@ -360,14 +368,6 @@ export default class Sponsors extends Component {
                 <img
                   className="sponsors-bronze-image"
                   src="/sponsors/bronze/proctorgroup.jpeg"
-                  alt=""
-                />
-              </a>
-
-              <a href="https://www.puredrive-energy.co.uk/" target="_blank">
-                <img
-                  className="sponsors-bronze-image"
-                  src="/sponsors/bronze/puredrive.png"
                   alt=""
                 />
               </a>
