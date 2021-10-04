@@ -71,10 +71,24 @@ export const members = [
   },
   {
     team: ["marketing"],
+    name: "Juliette",
+    role: "Former Head of Audio/Visual",
+    image: "/members/juliette.jpg",
+    linkedin: "https://www.linkedin.com/in/juliettegoddard1",
+  },
+  {
+    team: ["marketing"],
     name: "Alex B.",
     role: "Marketing Strategist",
     image: "/members/alex b.jpg",
     linkedin: "https://www.linkedin.com/in/alexander-burton-527904156/",
+  },
+  {
+    team: ["marketing"],
+    name: "Aditya",
+    role: "Events Coordinator",
+    image: "/members/aditya.jpg",
+    linkedin: "https://www.linkedin.com/in/aditya-krishnan-78661b177",
   },
   {
     team: ["marketing"],
@@ -92,16 +106,16 @@ export const members = [
   },
   {
     team: ["marketing"],
-    name: "Pietro",
-    role: "Marketing Assisstant & Content Creator",
-    image: "/members/pietro.jpg",
+    name: "Mehdi",
+    role: "Digital Marketing",
+    image: "/members/mehdi.jpg",
+    linkedin: "https://www.linkedin.com/in/mehdi-asaria-889a98178/",
   },
   {
     team: ["marketing"],
-    name: "Aditya",
-    role: "Events Coordinator",
-    image: "/members/aditya.jpg",
-    linkedin: "https://www.linkedin.com/in/aditya-krishnan-78661b177",
+    name: "Pietro",
+    role: "Marketing Assisstant & Content Creator",
+    image: "/members/pietro.jpg",
   },
 
   // Website
@@ -154,7 +168,14 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/navya-thampan-895a921a4/",
   },
   {
-    team: ["sensors"],
+    team: ["software & Sensors"],
+    name: "Petar",
+    role: "UI Developer",
+    image: "/members/petar.jpg",
+    linkedin: "https://www.linkedin.com/in/petar-kotsev-335902193/"
+  },
+  {
+    team: ["software & Sensors"],
     name: "Sanmi",
     role: "AR/VR Lead",
     image: "/members/sanmi.jpg",
@@ -167,12 +188,20 @@ export const members = [
     image: "/members/vishnu.jpg",
     linkedin: "https://www.linkedin.com/in/vishnu-kausik-401103172/",
   },
-  // {
-  //   team: ["software & Sensors"],
-  //   name: "Petar",
-  //   role: "OpenHAB Lead",
-  //   image: "/members/petar.jpg",
-  // },
+  {
+    team: ["software & Sensors"],
+    name: "Zein",
+    role: "Interactive Experiences",
+    image: "/members/zein.jpg",
+    linkedin: "https://www.linkedin.com/in/zein-shah/",
+  },
+  {
+    team: ["software & Sensors"],
+    name: "Zoe",
+    role: "Interactive Experiences",
+    image: "/members/zoe.jpg",
+    linkedin: "https://www.linkedin.com/in/zoe-cook-4b932721b/",
+  },
 
   // Sponsorship
   {
@@ -180,8 +209,14 @@ export const members = [
     name: "Ali",
     role: "Small Finances",
     image: "/members/ali.jpg",
-    linkedin:
-      "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
+    linkedin: "https://www.linkedin.com/in/ali-mateen-sheikh-fcca-uaeca-33535a60",
+  },
+  {
+    team: ["sponsorship"],
+    name: "Amrita",
+    role: "Sponsorship Researcher",
+    image: "/members/amrita.jpg",
+    linkedin: "https://www.linkedin.com/in/amrita-narayanan",
   },
 
   // {
@@ -478,6 +513,13 @@ export const members = [
     name: "Safa",
     role: "Health & Safety Officer",
     image: "/members/safa.jpg",
+  },
+  {
+    team: ["health & Safety"],
+    name: "Srivathsan",
+    role: "Health & Safety Officer",
+    image: "/members/srivathsan.jpg",
+    linkedin: "http://www.linkedin.com/in/srivathsankarunanithi"
   },
 
   // Building Services

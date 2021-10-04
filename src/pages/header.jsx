@@ -34,23 +34,23 @@ const headersData = [
   },
 
   {
-    label: "Contact",
-    href: "/contact",
-    color: white,
-    // bgColor: esteemGreen,
-  },
-  {
     label: "Press",
     href: "/press",
     color: white,
     // bgColor: esteemGreen,
   },
   {
-    label: "360°",
-    href: "/three60",
+    label: "Contact",
+    href: "/contact",
     color: white,
     // bgColor: esteemGreen,
   },
+  // {
+  //   label: "360°",
+  //   href: "/three60",
+  //   color: white,
+  //   // bgColor: esteemGreen,
+  // },
   {
     label: "Our Home",
     href: "/home-model",
