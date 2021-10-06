@@ -270,7 +270,7 @@ function App() {
               <Header />
               <TimelinePage />
             </Route>
-            <Route exact path="/three60">
+            <Route exact path="/360">
               <Three60 />
             </Route>
             <Route exact path="/press">

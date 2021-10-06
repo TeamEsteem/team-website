@@ -5,8 +5,110 @@ import { esteemGreen, white } from "../../components/colors";
 import { primaryFont } from "../../components/fonts";
 import { Pannellum } from "pannellum-react"
 import image from "../../assets/images/three60panoramas/p2-scaled.jpg"
+import Button from "@material-ui/core/Button";
+import ArrowBack from '@material-ui/icons/ArrowBack';
+import EsteemLogo from "../../assets/images/ESTEEM/Esteem Logo Full White.png";
 
 class Three60 extends Component {
+  render() {
+    return (
+      <>
+        <div
+          style={{ position: "absolute", width: "100vw", backgroundColor: "#009877", zIndex: "10", opacity: "85%", padding: "0 0 10px 0" }}
+        >
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 3fr 1fr", margin: "10px 0" }}>
+            <a
+              href="/"
+              style={{
+                position: "relative",
+                textDecoration: "none",
+                color: white,
+              }}
+            >
+              <Button
+                variant="outlined"
+                size="large"
+                style={{
+                  padding: "5px 0 5px 10px",
+                  color: white,
+                  margin: "auto",
+                  border: "2px solid" + white,
+                  borderRadius: "20px",
+                }}
+                startIcon={<ArrowBack />}
+              ></Button>
+            </a>
+            {/* <img src={EsteemLogo} style={{maxHeight: "5vh"}} alt="" /> */}
+            <p style={{
+              color: white,
+              fontWeight: "bold",
+              fontSize: "large",
+            }}>
+              Our Work Environments
+            </p>
+          </div>
+          <div style={{display:"flex", width:"100%", padding:"0 10px"}}>
+            <p
+              style={{ color: white, margin: "auto", textAlign: "center" }}
+            >
+              Look around the places that we've worked at. Hover over info icons to read more.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <Pannellum
+            width="100vw"
+            height="100vh"
+            title="CSIC Innovation Factory"
+            image={image}
+            pitch={0}
+            yaw={120}
+            hfov={80}
+            autoLoad
+            autoRotate={-2}
+            showFullscreenCtrl={false}
+            showZoomCtrl={false}
+            showControls={false}
+          >
+            <Pannellum.Hotspot
+              type="info"
+              pitch={180}
+              yaw={52}
+              text="Automatic trimming saw cuts the timber to the correct size"
+            />
+            <Pannellum.Hotspot
+              type="info"
+              pitch={200}
+              yaw={50}
+              text="Timber cut to size, ready to be assembled"
+            />
+            <Pannellum.Hotspot
+              type="info"
+              pitch={184}
+              yaw={-50}
+              text="Completed CLT panels. These will be cut to the right size"
+            />
+            <Pannellum.Hotspot
+              type="info"
+              pitch={181}
+              yaw={-80}
+              text="Vacuum press uses the pressure of the atmosphere to evenly press the timber together, pulling out air bubbles in the process"
+            />
+            <Pannellum.Hotspot
+              type="info"
+              pitch={176}
+              yaw={-84}
+              text="This machine moves over the timber, laying a bead of glue"
+            />
+          </Pannellum>
+        </div>
+      </>
+    );
+  }
+}
+
+class Backup extends Component {
   render() {
     return (
       <>
@@ -28,7 +130,7 @@ class Three60 extends Component {
                   fontWeight: "bold",
                 }}
               >
-                360° images
+                Our Work Environment
               </Typography>
               <Typography
                 variant="body2"
@@ -40,7 +142,7 @@ class Three60 extends Component {
                   fontSize: "1.5em",
                 }}
               >
-                any description you wanna give would come here!
+                Have an immersive look at the places we've worked in to construct the prototype!
               </Typography>
             </ThemeProvider>
           </Grid>
@@ -62,16 +164,16 @@ class Three60 extends Component {
           height={"70%"}
         >
           <Pannellum
-              width="100%"
-              height="70vh"
-              image={ image }
-              pitch={10}
-              yaw={180}
-              hfov={110}
-              autoLoad
-              onLoad={() => {
-                  console.log("panorama loaded");
-              }}
+            width="100%"
+            height="70vh"
+            image={image}
+            pitch={10}
+            yaw={180}
+            hfov={110}
+            autoLoad
+            onLoad={() => {
+              console.log("panorama loaded");
+            }}
           >
             <Pannellum.Hotspot
               type="info"

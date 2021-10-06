@@ -2,7 +2,7 @@ import { Box, Typography, Grid, Card, Divider } from "@material-ui/core";
 import React, { Component } from "react";
 import SDMEhouse from "./sdmehouse-architecture 1.glb";
 import "@google/model-viewer";
-import { darkGreen, darkGrey, esteemGreen, grey, lightGreen, white,black } from "../../components/colors";
+import { darkGreen, darkGrey, esteemGreen, grey, lightGreen, white, black } from "../../components/colors";
 import "./homestyles.css";
 import Header from "../nav-barV2";
 import { ThemeProvider } from "styled-components";
@@ -18,6 +18,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import LaunchIcon from '@material-ui/icons/Launch';
 
 
 const theme = createMuiTheme({
@@ -144,9 +145,8 @@ const useStyles = makeStyles((theme) => ({
   },
   imageTitle: {
     position: "relative",
-    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${
-      theme.spacing(1) + 6
-    }px`,
+    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6
+      }px`,
   },
   imageMarked: {
     height: 3,
@@ -255,7 +255,7 @@ function ImpactButtonsV2(props) {
 
 class HomeModelV2 extends Component {
   render() {
-    return ( 
+    return (
       <div style={{ width: "100%" }} onScroll={this.handleScroll}>
         <Grid
           container
@@ -271,10 +271,10 @@ class HomeModelV2 extends Component {
                 style={{ textAlign: "center", color: white, margin: "150px 0 0 0", fontWeight: "bold" }}
               >
                 Our Home
-          </Typography>
+              </Typography>
               <Typography
                 variant="body2"
-                style={{ textAlign: "center", color: white, margin: "25px 0 100px 0", maxWidth: "1000px", fontSize: "1.5em" }}
+                style={{ textAlign: "center", color: white, margin: "25px 0 25px 0", maxWidth: "1000px", fontSize: "1.5em" }}
               >
                 <p>
                   It has taken nearly 3 years of effort, but we are nearly there; the prototype construction is underway!
@@ -284,6 +284,32 @@ class HomeModelV2 extends Component {
                   We post updates on our <a href="https://www.instagram.com/teamesteem2020/">Instagram</a> and <a href="https://www.linkedin.com/company/team-esteem-2020">LinkedIn</a> if you're interested in seeing our progress.
                 </p>
               </Typography>
+              <center>
+                <a
+                  href="/360"
+                  style={{
+                    position: "relative",
+                    textDecoration: "none",
+                    color: white,
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    style={{
+                      padding: "5px 25px",
+                      color: white,
+                      margin: "auto",
+                      border: "2px solid" + white,
+                      borderRadius: "20px",
+                    }}
+                    startIcon={<LaunchIcon />}
+                  >
+                    Explore in 360°
+                  </Button>
+                </a>
+              </center>
+              <br /><br />
             </ThemeProvider>
           </Grid>
         </Grid>
@@ -375,7 +401,7 @@ class HomeModelV2 extends Component {
                 style={{ textAlign: "center", color: "#202020" }}
               >
                 3D Model
-          </Typography>
+              </Typography>
             </ThemeProvider>
             <ThemeProvider theme={primaryFont}>
               <Typography variant="body1" style={{ fontSize: "1em", textAlign: "center", marginTop: "20px" }}>
@@ -408,20 +434,20 @@ class HomeModelV2 extends Component {
             </Grid>
           </Grid>
         </div>
-        <Box m={10}></Box>      
+        <Box m={10}></Box>
         <div class="sections-bottom">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <div style={{ backgroundColor: "#f5f5f5", padding: "0 10px" }}>
           <Grid container direction="column" style={{ maxWidth: "1250px" }}>
             <ThemeProvider theme={secondaryFont}>
@@ -429,14 +455,14 @@ class HomeModelV2 extends Component {
                 variant="h3"
                 style={{ textAlign: "center", color: "#202020" }}
               >
-                  Pillars of <span style={{ color: "#009877" }}>ESTEEM</span>
-          </Typography>
+                Pillars of <span style={{ color: "#009877" }}>ESTEEM</span>
+              </Typography>
             </ThemeProvider>
             <ThemeProvider theme={primaryFont}>
               <Typography variant="body1" style={{ fontSize: "1em", textAlign: "center", marginTop: "20px" }}>
                 <p>
-                Sustainability, Future, Innovation, Clean Energy, Mobility,
-                Smart Solutions &#38; Happiness.
+                  Sustainability, Future, Innovation, Clean Energy, Mobility,
+                  Smart Solutions &#38; Happiness.
                 </p>
                 <br />
               </Typography>
@@ -444,10 +470,10 @@ class HomeModelV2 extends Component {
             <ThemeProvider theme={primaryFont}>
               <Typography variant="body1" style={{ fontSize: "1em", textAlign: "center", marginTop: "20px" }}>
                 <p>
-                These are the seven pillars of the SDME competition, highlighted
-        by the Dubai Electricity and Water Authority (DEWA) as integral
-        to the future of building services across the globe, but what do
-        these words mean to Team ESTEEM?
+                  These are the seven pillars of the SDME competition, highlighted
+                  by the Dubai Electricity and Water Authority (DEWA) as integral
+                  to the future of building services across the globe, but what do
+                  these words mean to Team ESTEEM?
                 </p>
                 <br>
                 </br>
@@ -461,21 +487,21 @@ class HomeModelV2 extends Component {
 
           </Grid>
         </div>
-       {images.map((image) => (
-                  <ImpactButtonsV2
-                    // key={image.key}
-                    url={image.url}
-                    title={image.title}
-                    width={image.width}
-                    desc={image.desc}
-                  />
-                ))}
+        {images.map((image) => (
+          <ImpactButtonsV2
+            // key={image.key}
+            url={image.url}
+            title={image.title}
+            width={image.width}
+            desc={image.desc}
+          />
+        ))}
         <br>
         </br>
         <br></br>
         <br></br>
         <br></br>
-        <div class="footer-top">
+        {/* <div class="footer-top">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -488,10 +514,10 @@ class HomeModelV2 extends Component {
               class="shape-fill"
             ></path>
           </svg>
-        </div>
-        <div className="Footer">
-        <ThemeProvider theme={primaryFont}>
-              <Typography variant="body1" style={{ fontSize: "1em" }}>
+        </div> */}
+        <div className="Footer" style={{ paddingTop: "50px" }}>
+          <ThemeProvider theme={primaryFont}>
+            <Typography variant="body1" style={{ fontSize: "1em" }}>
               <Footer />
             </Typography>
           </ThemeProvider>

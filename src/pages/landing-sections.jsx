@@ -18,7 +18,7 @@ import { transform } from "framer-motion";
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import CountdownTimer from "react-component-countdown-timer";
 import "../../node_modules/react-component-countdown-timer/lib/styles.css";
- 
+
 const RenderTime = ({ remainingTime }) => {
   const currentTime = useRef(remainingTime);
   const prevTime = useRef(null);
@@ -61,42 +61,11 @@ const RenderTime = ({ remainingTime }) => {
 
 class Section1V2 extends Component {
   render() {
-    var msDiff = new Date("2021-10-20").getTime() - new Date("2021-09-01").getTime() // shipping
-    var timePassed =  Math.floor(msDiff / (1000));
-    var msDiff = new Date("2021-10-20").getTime() - new Date().getTime();    //Future date - current date
-    var timeLeft = Math.floor(msDiff / (1000));
-
-    
-
     return (
       <>
-        <ThemeProvider theme={secondaryFont}>
-          
-          <Typography
-            variant="h3"
-            style={{ textAlign: "center", color: "#202020" }}
-          >
-            Countdown
-          </Typography>
-        </ThemeProvider>
-        <br></br>
-     
-          <CountdownCircleTimer
-            isPlaying
-            duration={timePassed}
-            initialRemainingTime={timeLeft}
-            size={450}
-            colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]} //esteem color here
-          >
-               <p className="Countdown">
-            <CountdownTimer count={timeLeft} border showTitle noPoints size={48} direction="down"responsive/>
-            </p>
-          </CountdownCircleTimer>
-  
-        <br></br>
         {/* <Box m={-10} /> */}
         <ThemeProvider theme={secondaryFont}>
-     
+
           <Typography
             variant="h3"
             style={{ textAlign: "center", color: "#202020" }}
@@ -106,7 +75,6 @@ class Section1V2 extends Component {
         </ThemeProvider>
         <br></br>
         <Grid container direction="row" style={{ maxWidth: "1250px" }}>
-          <Box m={2} />
           <Box
             style={{
               // background: white,
@@ -318,10 +286,14 @@ class Section3V2 extends Component {
 
 class Section4 extends Component {
   render() {
+    var msDiff = new Date("2021-10-20").getTime() - new Date("2021-09-01").getTime() // shipping
+    var timePassed = Math.floor(msDiff / (1000));
+    var msDiff = new Date("2021-10-20").getTime() - new Date().getTime();    //Future date - current date
+    var timeLeft = Math.floor(msDiff / (1000));
+
     return (
       <>
-        <Box m={-2} />
-        <ThemeProvider theme={secondaryFont}>
+        {/* <ThemeProvider theme={secondaryFont}>
           <Typography
             variant="h3"
             style={{ textAlign: "center", color: "#202020" }}
@@ -401,7 +373,28 @@ class Section4 extends Component {
           >
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PT8aveu2Asg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </Box>
-        </Grid>
+        </Grid> */}
+        <ThemeProvider theme={secondaryFont}>
+          <Typography
+            variant="h3"
+            style={{ textAlign: "center", color: "#202020" }}
+          >
+            Countdown to the World Expo!
+          </Typography>
+        </ThemeProvider>
+        <br></br>
+
+        <CountdownCircleTimer
+          isPlaying
+          duration={timePassed}
+          initialRemainingTime={timeLeft}
+          size={350}
+          colors={[["#009877"]]} //esteem color here
+        >
+          <p className="Countdown">
+            <CountdownTimer count={timeLeft} border showTitle noPoints size={36} direction="" responsive />
+          </p>
+        </CountdownCircleTimer>
       </>
     );
   }
