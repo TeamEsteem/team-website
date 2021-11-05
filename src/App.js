@@ -11,7 +11,6 @@ import {
   Section4,
 } from "./pages/landing-sections";
 import Footer from "./pages/footer";
-import PressKit from "./pages/presskit";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { Box, Button, ThemeProvider, Typography } from "@material-ui/core";
