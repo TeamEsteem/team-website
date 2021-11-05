@@ -332,9 +332,6 @@ function App() {
             <Route exact path="*">
               <PageNotFound />
             </Route>
-            <Route exact path="/presskit">
-              <PressKit />
-            </Route>
           </Switch>
         </div>
       </Router>
