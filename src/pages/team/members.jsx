@@ -696,6 +696,7 @@ export const members = [
     name: "Umma",
     role: "Site Operations Coordinator",
     image: "/members/umma.jpg",
+    linkedin: "https://www.linkedin.com/in/umma-waza-kulsouma-bibi-5008a0187"
   },
   {
     team: ["construction"],
