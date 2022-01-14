@@ -579,6 +579,13 @@ export const members = [
   },
   {
     team: ["building Modelling"],
+    name: "Banzir",
+    role: "Building Modeller",
+    image: "/members/banzir.jpg",
+    linkedin: "https://www.linkedin.com/in/banzir-hazra-1a09a7121"
+  },
+  {
+    team: ["building Modelling"],
     name: "Emilia",
     role: "Revit Modeller",
     image: "/members/emilia.jpg",
