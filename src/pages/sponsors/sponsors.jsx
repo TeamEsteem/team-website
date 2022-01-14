@@ -214,6 +214,14 @@ export default class Sponsors extends Component {
                 />
               </a>
 
+              <a href="https://www.dciuae.com/" target="_blank">
+                <img
+                  className="sponsors-silver-image"
+                  src="/sponsors/silver/dci.png"
+                  alt=""
+                />
+              </a>
+
               <a href="https://www.ecosystemstech.com/" target="_blank">
                 <img
                   className="sponsors-silver-image"
@@ -631,6 +639,14 @@ export default class Sponsors extends Component {
                 <img
                   className="sponsors-supporters-image"
                   src="/sponsors/supporters/SE.png"
+                  alt=""
+                />
+              </a>
+
+              <a href="http://smrenergy.in/" target="_blank">
+                <img
+                  className="sponsors-supporters-image"
+                  src="/sponsors/supporters/smr.png"
                   alt=""
                 />
               </a>
