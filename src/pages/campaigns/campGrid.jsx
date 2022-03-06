@@ -238,8 +238,8 @@ export default function FullWidthGrid() {
               title="Tessellate"
               date="September 2021"
               ongoing=""
-              description="Envisioned and evaluated with the support of Thornton Tomasetti, Tessellate is a global art competition created to fill our house with unique art pieces."
-              description2="We invite artists of all ages and backgrounds to use this platform to show their talents to the world and to help us create not just a house, but a home."
+              description="Envisioned and evaluated with the support of Thornton Tomasetti, Tessellate was a global art competition created to fill our house with unique art pieces."
+              description2="We invited artists of all ages and backgrounds to use this platform to show their talents to the world and to help us create not just a house, but a home."
             />
             <div className="campGrid"></div>
           </Grid>
